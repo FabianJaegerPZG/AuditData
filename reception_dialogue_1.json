@@ -51,7 +51,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Willkommen in unserer Firma XY. Wie kann ich Ihnen weiterhelfen?",
+      "name": "Willkommen in unserer Firma Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
       "position": {
         "x": 16,
         "y": 256
@@ -977,7 +977,7 @@
       "type": "Text",
       "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
       "actor": "",
-      "name": "Willkommen in unserer Firma XY. Wie kann ich Ihnen weiterhelfen?",
+      "name": "Willkommen in unserer Firma Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
       "choices": [
         "576f5569-fe3f-4ee7-968d-35018853888b"
       ]
