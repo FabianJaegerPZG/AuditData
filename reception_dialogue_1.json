@@ -410,10 +410,10 @@
         "output"
       ],
       "title": "",
-      "name": "Nein, ich habe keine weiteren Fragen. Vielen Dank.",
+      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
       "position": {
-        "x": 2128,
-        "y": 16
+        "x": 1632,
+        "y": 48
       },
       "angle": 0,
       "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
@@ -540,10 +540,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
+      "name": "",
       "position": {
-        "x": 1728,
-        "y": 16
+        "x": 1776,
+        "y": 416
       },
       "angle": 0,
       "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
@@ -623,8 +623,8 @@
       },
       "name": "",
       "position": {
-        "x": 1456,
-        "y": 80
+        "x": 1408,
+        "y": 368
       },
       "angle": 0,
       "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
@@ -661,56 +661,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "36a0f4a8-07be-4426-9273-0960f4aaadc7",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "1fdc1d48-a465-4d5d-8c62-a29fe69d24c1",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -725,8 +675,8 @@
       "title": "",
       "name": "Ich habe noch weitere Fragen zu einigen Arbeitsanweisungen, auf die Sie sich im Prozess stützen!",
       "position": {
-        "x": 2128,
-        "y": 256
+        "x": 2160,
+        "y": 272
       },
       "angle": 0,
       "id": "c6a15295-673a-494a-816b-6a58fbe4e6c6",
@@ -774,6 +724,31 @@
       },
       "target": {
         "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "36a0f4a8-07be-4426-9273-0960f4aaadc7",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -971,7 +946,7 @@
       "type": "Choice",
       "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
       "title": "",
-      "name": "Nein, ich habe keine weiteren Fragen. Vielen Dank.",
+      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
       "next": null,
       "lua": ""
     },
@@ -980,20 +955,22 @@
       "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
       "actor": "",
       "name": "Ja, den gibt es. Aber dazu müssen Sie sich im Gebäude auskennen.",
-      "next": "e842fb77-d8fe-41cf-bc74-937da403c229"
+      "choices": [
+        "8bbc29fb-b7da-40b8-b80a-73e38080c040"
+      ]
     },
     {
       "type": "Text",
       "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
       "actor": "",
-      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
+      "name": "",
       "next": null
     },
     {
       "type": "Lua",
       "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
       "name": "",
-      "next": "de333299-7f95-46d1-ba03-4bf0d072390c",
+      "next": null,
       "lua": "\n"
     },
     {
