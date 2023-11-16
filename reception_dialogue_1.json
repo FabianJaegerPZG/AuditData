@@ -229,7 +229,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen.\nKann ich sonst noch etwas für Sie tun?",
+      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Wenn Sie im Büro sind, dann klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen. Sie können auch vom Büro aus mit Herrn Klein telefonieren.\nKann ich sonst noch etwas für Sie tun?",
       "position": {
         "x": 64,
         "y": 816
@@ -918,7 +918,7 @@
       "type": "Text",
       "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
       "actor": "",
-      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen.\nKann ich sonst noch etwas für Sie tun?",
+      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Wenn Sie im Büro sind, dann klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen. Sie können auch vom Büro aus mit Herrn Klein telefonieren.\nKann ich sonst noch etwas für Sie tun?",
       "choices": [
         "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c"
       ]
