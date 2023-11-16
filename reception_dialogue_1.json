@@ -51,7 +51,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Willkommen in unserer Firma Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
       "position": {
         "x": 16,
         "y": 256
@@ -127,7 +127,7 @@
         "output"
       ],
       "title": "",
-      "name": "Guten Tag. Ich werde heute hier ein internes Prozessaudit durchführen, und ich kenne mich hier nicht aus. Können Sie mir sagen, wie ich zur QM-Abteilung der Prozessplanung komme?",
+      "name": "Guten Tag, ich komme von Kustoplast, zentrale QM-Abteilung. Herr Klein, hat mich informiert, dass ich alle wichtigen Informationen hier an der Rezeption bekomme.",
       "position": {
         "x": 16,
         "y": 496
@@ -229,7 +229,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ja klar, ich helfe Ihnen sehr gerne. Sie müssen zuerst auf der linke Seite auf die blauen Kreisen klicken und Sie werden damit zur Treppe geführt. Dort sollten Sie auf die blauen zylindrischen Schaltfläche klicken, die Sie zur QM-Abteilung führt. Ich hoffe, ich konnte Ihnen das ausführlich erklären?",
+      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen.\nKann ich sonst noch etwas für Sie tun?",
       "position": {
         "x": 64,
         "y": 816
@@ -306,7 +306,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Gerne! Ich wünsche Ihnen viel Erfolg bei Ihrer Prüfung. Wenn es sonst noch etwas gibt, bei dem ich Ihnen helfen kann, sagen Sie es einfach.",
+      "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe. Dort können Sie über die hohe, blaue Säule ins Büro springen. Hat Ihnen diese Information weitergeholfen?",
       "position": {
         "x": 400,
         "y": 16
@@ -358,7 +358,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ja, können Sie mir vielleicht noch sagen, ob ich dahin mit dem Aufzug schneller komme?",
+      "name": "Gibt es auch einen kürzeren Weg ins Büro?",
       "position": {
         "x": 768,
         "y": 16
@@ -463,7 +463,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Nein, damit kommen Sie in die Kantine. Ich würde Ihnen zuerst einfach die Treppe empfehlen. Haben Sie noch weiteren Fragen?",
+      "name": "Ja, den gibt es. Aber dazu müssen Sie sich im Gebäude auskennen.",
       "position": {
         "x": 1104,
         "y": 16
@@ -540,7 +540,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Vielen Dank!",
+      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
       "position": {
         "x": 1728,
         "y": 16
@@ -662,31 +662,6 @@
     },
     {
       "type": "link",
-      "id": "3c3b902c-6f66-4373-95d2-ed1d5f08f4f5",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 22,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "36a0f4a8-07be-4426-9273-0960f4aaadc7",
       "smooth": true,
       "embeds": "",
@@ -789,31 +764,6 @@
     },
     {
       "type": "link",
-      "id": "a3046056-6a1e-4a08-a4ef-aae0f1edb976",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "c6a15295-673a-494a-816b-6a58fbe4e6c6",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "3300b27e-db20-4bb0-8701-10cf627d03e7",
       "smooth": true,
       "embeds": "",
@@ -850,7 +800,7 @@
         "output"
       ],
       "title": "",
-      "name": "Im Moment habe ich keine weiteren Fragen.",
+      "name": "Ja, es war sehr ausführlich, vielen Dank! Im Moment habe ich keine weiteren Fragen.",
       "position": {
         "x": 1024,
         "y": 384
@@ -926,7 +876,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ja, es war sehr ausführlich, vielen Dank!",
+      "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme. War ja noch nie hier.",
       "position": {
         "x": 656,
         "y": 752
@@ -977,7 +927,7 @@
       "type": "Text",
       "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
       "actor": "",
-      "name": "Willkommen in unserer Firma Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
       "choices": [
         "576f5569-fe3f-4ee7-968d-35018853888b"
       ]
@@ -986,14 +936,14 @@
       "type": "Choice",
       "id": "576f5569-fe3f-4ee7-968d-35018853888b",
       "title": "",
-      "name": "Guten Tag. Ich werde heute hier ein internes Prozessaudit durchführen, und ich kenne mich hier nicht aus. Können Sie mir sagen, wie ich zur QM-Abteilung der Prozessplanung komme?",
+      "name": "Guten Tag, ich komme von Kustoplast, zentrale QM-Abteilung. Herr Klein, hat mich informiert, dass ich alle wichtigen Informationen hier an der Rezeption bekomme.",
       "next": "63a96906-80f5-4b30-bd22-8a4d190d7d17"
     },
     {
       "type": "Text",
       "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
       "actor": "",
-      "name": "Ja klar, ich helfe Ihnen sehr gerne. Sie müssen zuerst auf der linke Seite auf die blauen Kreisen klicken und Sie werden damit zur Treppe geführt. Dort sollten Sie auf die blauen zylindrischen Schaltfläche klicken, die Sie zur QM-Abteilung führt. Ich hoffe, ich konnte Ihnen das ausführlich erklären?",
+      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen.\nKann ich sonst noch etwas für Sie tun?",
       "choices": [
         "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c"
       ]
@@ -1002,7 +952,7 @@
       "type": "Text",
       "id": "f3416075-84ab-4834-927b-6ee48640108d",
       "actor": "",
-      "name": "Gerne! Ich wünsche Ihnen viel Erfolg bei Ihrer Prüfung. Wenn es sonst noch etwas gibt, bei dem ich Ihnen helfen kann, sagen Sie es einfach.",
+      "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe. Dort können Sie über die hohe, blaue Säule ins Büro springen. Hat Ihnen diese Information weitergeholfen?",
       "lua": "InterviewPassed();",
       "choices": [
         "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
@@ -1013,7 +963,7 @@
       "type": "Choice",
       "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
       "title": "",
-      "name": "Ja, können Sie mir vielleicht noch sagen, ob ich dahin mit dem Aufzug schneller komme?",
+      "name": "Gibt es auch einen kürzeren Weg ins Büro?",
       "next": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
       "lua": ""
     },
@@ -1029,18 +979,15 @@
       "type": "Text",
       "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
       "actor": "",
-      "name": "Nein, damit kommen Sie in die Kantine. Ich würde Ihnen zuerst einfach die Treppe empfehlen. Haben Sie noch weiteren Fragen?",
+      "name": "Ja, den gibt es. Aber dazu müssen Sie sich im Gebäude auskennen.",
       "next": "e842fb77-d8fe-41cf-bc74-937da403c229"
     },
     {
       "type": "Text",
       "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
       "actor": "",
-      "name": "Vielen Dank!",
-      "choices": [
-        "8bbc29fb-b7da-40b8-b80a-73e38080c040",
-        "c6a15295-673a-494a-816b-6a58fbe4e6c6"
-      ]
+      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
+      "next": null
     },
     {
       "type": "Lua",
@@ -1061,14 +1008,14 @@
       "type": "Choice",
       "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
       "title": "",
-      "name": "Im Moment habe ich keine weiteren Fragen.",
+      "name": "Ja, es war sehr ausführlich, vielen Dank! Im Moment habe ich keine weiteren Fragen.",
       "next": null
     },
     {
       "type": "Choice",
       "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
       "title": "",
-      "name": "Ja, es war sehr ausführlich, vielen Dank!",
+      "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme. War ja noch nie hier.",
       "next": "f3416075-84ab-4834-927b-6ee48640108d"
     }
   ]
