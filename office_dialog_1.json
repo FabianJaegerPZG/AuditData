@@ -1,0 +1,475 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 34,
+        "y": 64
+      },
+      "angle": 0,
+      "id": "013f8705-ef72-4649-b57f-319d5071b2c5",
+      "z": 0,
+      "lua": "-- Choices aus der Checkliste",
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Human_4",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Herzlich willkommen in unserer QM-Abteilung! Wir freuen uns sehr, dich bei uns im Büro zu begrüßen zu dürfen.",
+      "position": {
+        "x": 32,
+        "y": 304
+      },
+      "angle": 0,
+      "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "d8a3a97e-84b3-43c2-945e-c12a41249853",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "013f8705-ef72-4649-b57f-319d5071b2c5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Hallo, Vielen Dank! Ihr habt echt ein nettes Büro!",
+      "position": {
+        "x": 384,
+        "y": 64
+      },
+      "angle": 0,
+      "id": "8831a25f-6940-47f6-905c-34957e5c0031",
+      "z": 3,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6b1cce21-3b13-4c18-b6af-92762d1ab154",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8831a25f-6940-47f6-905c-34957e5c0031",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Human_4",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ah danke, falls du irgendwelchen Fragen hast oder Unterstützung benötigst, kannst du uns jeder Zeit ansprechen.",
+      "position": {
+        "x": 384,
+        "y": 304
+      },
+      "angle": 0,
+      "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+      "z": 5,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "15f64c39-7c5a-42f1-8608-ee271a04447f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8831a25f-6940-47f6-905c-34957e5c0031",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 6,
+      "vertices": [
+        {
+          "x": 528,
+          "y": 352
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja okay, vielen Dank!",
+      "position": {
+        "x": 720,
+        "y": 144
+      },
+      "angle": 0,
+      "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+      "z": 7,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0be329fd-922a-4874-8673-fafcbe4168dc",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 1056,
+        "y": 192
+      },
+      "angle": 0,
+      "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
+      "z": 9,
+      "lua": "InterviewPassed();\n",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ef874925-b52a-4f84-ba93-73ea56de1406",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 10,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "013f8705-ef72-4649-b57f-319d5071b2c5",
+      "actor": "Player",
+      "name": "START",
+      "next": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6"
+    },
+    {
+      "type": "Text",
+      "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+      "actor": "Human_4",
+      "name": "Herzlich willkommen in unserer QM-Abteilung! Wir freuen uns sehr, dich bei uns im Büro zu begrüßen zu dürfen.",
+      "next": "8831a25f-6940-47f6-905c-34957e5c0031"
+    },
+    {
+      "type": "Text",
+      "id": "8831a25f-6940-47f6-905c-34957e5c0031",
+      "actor": "Player",
+      "name": "Hallo, Vielen Dank! Ihr habt echt ein nettes Büro!",
+      "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
+    },
+    {
+      "type": "Text",
+      "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+      "actor": "Human_4",
+      "name": "Ah danke, falls du irgendwelchen Fragen hast oder Unterstützung benötigst, kannst du uns jeder Zeit ansprechen.",
+      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+    },
+    {
+      "type": "Text",
+      "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+      "actor": "Player",
+      "name": "Ja okay, vielen Dank!",
+      "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
+    },
+    {
+      "type": "Lua",
+      "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();\n"
+    }
+  ]
+}
