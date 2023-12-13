@@ -1,0 +1,133 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 1440,
+        "y": 464
+      },
+      "angle": 0,
+      "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prueferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Hallo,\nich bin Factory_Prueferin",
+      "position": {
+        "x": 2032,
+        "y": 528
+      },
+      "angle": 0,
+      "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5f7b3813-3ec4-4b06-92e2-b82e1e19dc44",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
+      "actor": "Player",
+      "name": "START",
+      "next": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7"
+    },
+    {
+      "type": "Text",
+      "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
+      "actor": "Factory_Prueferin",
+      "name": "Hallo,\nich bin Factory_Prueferin",
+      "next": null
+    }
+  ]
+}
