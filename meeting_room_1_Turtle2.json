@@ -1,0 +1,385 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 330,
+        "y": 240
+      },
+      "angle": 0,
+      "id": "318ee66b-4940-445e-bf4e-96e9693b26fb",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Haben Sie mit jedem gesprochen?",
+      "position": {
+        "x": 688,
+        "y": 240
+      },
+      "angle": 0,
+      "id": "13187cb7-77f4-4fd6-9c4c-a32fe8aa299c",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Habe ich.",
+      "position": {
+        "x": 1040,
+        "y": 240
+      },
+      "angle": 0,
+      "id": "48ac3408-251f-4b2a-b1b6-0f4470c24b85",
+      "z": 2,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Dann geht es jetzt auf zur Werkshalle.",
+      "position": {
+        "x": 1408,
+        "y": 240
+      },
+      "angle": 0,
+      "id": "1fc383bc-9004-4a85-8010-367263107810",
+      "z": 3,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "00143ba6-93be-45c4-b048-871057ad2339",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "318ee66b-4940-445e-bf4e-96e9693b26fb",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "13187cb7-77f4-4fd6-9c4c-a32fe8aa299c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "04948cf1-8259-4424-8683-be5cf98e2e10",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "13187cb7-77f4-4fd6-9c4c-a32fe8aa299c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "48ac3408-251f-4b2a-b1b6-0f4470c24b85",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 5,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5c491d6f-fe56-47f5-9af9-318db20f7696",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "48ac3408-251f-4b2a-b1b6-0f4470c24b85",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "1fc383bc-9004-4a85-8010-367263107810",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 6,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 1792,
+        "y": 288
+      },
+      "angle": 0,
+      "id": "ece9229d-ffbd-43a4-954c-3e96c2281531",
+      "z": 7,
+      "lua": "InterviewPassed();\n",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "93a805cf-5ee8-4591-a7cf-81885b0708f2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "1fc383bc-9004-4a85-8010-367263107810",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ece9229d-ffbd-43a4-954c-3e96c2281531",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "318ee66b-4940-445e-bf4e-96e9693b26fb",
+      "actor": "Player",
+      "name": "START",
+      "next": "13187cb7-77f4-4fd6-9c4c-a32fe8aa299c"
+    },
+    {
+      "type": "Text",
+      "id": "13187cb7-77f4-4fd6-9c4c-a32fe8aa299c",
+      "actor": "TurtleMeetingRoom",
+      "name": "Haben Sie mit jedem gesprochen?",
+      "choices": [
+        "48ac3408-251f-4b2a-b1b6-0f4470c24b85"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "48ac3408-251f-4b2a-b1b6-0f4470c24b85",
+      "title": "",
+      "name": "Habe ich.",
+      "next": "1fc383bc-9004-4a85-8010-367263107810"
+    },
+    {
+      "type": "Text",
+      "id": "1fc383bc-9004-4a85-8010-367263107810",
+      "actor": "TurtleMeetingRoom",
+      "name": "Dann geht es jetzt auf zur Werkshalle.",
+      "next": "ece9229d-ffbd-43a4-954c-3e96c2281531"
+    },
+    {
+      "type": "Lua",
+      "id": "ece9229d-ffbd-43a4-954c-3e96c2281531",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();\n"
+    }
+  ]
+}
