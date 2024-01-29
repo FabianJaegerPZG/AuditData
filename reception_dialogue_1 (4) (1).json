@@ -1,0 +1,975 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 16,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "482b5745-2dd2-4540-8dcf-71e36d60cb62",
+      "z": 0,
+      "lua": "-- Choices aus der Checkliste",
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "position": {
+        "x": 16,
+        "y": 256
+      },
+      "angle": 0,
+      "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
+      "z": 1,
+      "lua": "Cheat();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "87a3be87-a541-484d-9a24-766e849b9073",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "482b5745-2dd2-4540-8dcf-71e36d60cb62",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Guten Tag, ich komme von Kustoplast, zentrale QM-Abteilung. Herr Klein, hat mich informiert, dass ich alle wichtigen Informationen hier an der Rezeption bekomme.",
+      "position": {
+        "x": 16,
+        "y": 496
+      },
+      "angle": 0,
+      "id": "576f5569-fe3f-4ee7-968d-35018853888b",
+      "z": 3,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "7993c4c6-3dad-4a4d-b993-c29a3ad85880",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "576f5569-fe3f-4ee7-968d-35018853888b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a5834106-e09d-4f2a-9b1e-96d59fc10666",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "576f5569-fe3f-4ee7-968d-35018853888b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 5,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Wenn Sie im Büro sind, dann klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen. Sie können auch vom Büro aus mit Herrn Klein telefonieren.\nKann ich sonst noch etwas für Sie tun?",
+      "position": {
+        "x": 64,
+        "y": 816
+      },
+      "angle": 0,
+      "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
+      "z": 6,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b982d909-1556-4fde-b67f-f87f32363728",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe. Dort können Sie über die hohe, blaue Säule ins Büro springen. Hat Ihnen diese Information weitergeholfen?",
+      "position": {
+        "x": 400,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "f3416075-84ab-4834-927b-6ee48640108d",
+      "z": 11,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Gibt es auch einen kürzeren Weg ins Büro?",
+      "position": {
+        "x": 768,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
+      "z": 17,
+      "lua": "",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
+      "position": {
+        "x": 1632,
+        "y": 48
+      },
+      "angle": 0,
+      "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
+      "z": 17,
+      "lua": "",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja, den gibt es. Aber dazu müssen Sie sich im Gebäude auskennen.",
+      "position": {
+        "x": 1104,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
+      "z": 19,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "2bf4f4db-bfe7-4438-9ff4-94597c097d12",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 20,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "",
+      "position": {
+        "x": 1776,
+        "y": 416
+      },
+      "angle": 0,
+      "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ebb3826b-ae19-4b97-ae5b-063dff59f223",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f3416075-84ab-4834-927b-6ee48640108d",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "vertices": [
+        {
+          "x": 1216,
+          "y": 800
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 1408,
+        "y": 368
+      },
+      "angle": 0,
+      "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
+      "z": 22,
+      "lua": "\n",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich habe noch weitere Fragen zu einigen Arbeitsanweisungen, auf die Sie sich im Prozess stützen!",
+      "position": {
+        "x": 2160,
+        "y": 272
+      },
+      "angle": 0,
+      "id": "c6a15295-673a-494a-816b-6a58fbe4e6c6",
+      "z": 23,
+      "lua": "QueueNextInterview();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "36a0f4a8-07be-4426-9273-0960f4aaadc7",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ja, es war sehr ausführlich, vielen Dank! Im Moment habe ich keine weiteren Fragen.",
+      "position": {
+        "x": 1024,
+        "y": 384
+      },
+      "angle": 0,
+      "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
+      "z": 24,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "29f137c6-e58c-4865-be98-f7c1c645566a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f3416075-84ab-4834-927b-6ee48640108d",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 24,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme. War ja noch nie hier.",
+      "position": {
+        "x": 656,
+        "y": 752
+      },
+      "angle": 0,
+      "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
+      "z": 26,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "482b5745-2dd2-4540-8dcf-71e36d60cb62",
+      "actor": "",
+      "name": "START",
+      "next": "8e56791c-5b69-43d1-b370-8255a826ef92"
+    },
+    {
+      "type": "Text",
+      "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
+      "actor": "",
+      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "lua": "Cheat();",
+      "choices": [
+        "576f5569-fe3f-4ee7-968d-35018853888b"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "576f5569-fe3f-4ee7-968d-35018853888b",
+      "title": "",
+      "name": "Guten Tag, ich komme von Kustoplast, zentrale QM-Abteilung. Herr Klein, hat mich informiert, dass ich alle wichtigen Informationen hier an der Rezeption bekomme.",
+      "next": "63a96906-80f5-4b30-bd22-8a4d190d7d17"
+    },
+    {
+      "type": "Text",
+      "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
+      "actor": "",
+      "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Wenn Sie im Büro sind, dann klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen. Sie können auch vom Büro aus mit Herrn Klein telefonieren.\nKann ich sonst noch etwas für Sie tun?",
+      "choices": [
+        "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c"
+      ]
+    },
+    {
+      "type": "Text",
+      "id": "f3416075-84ab-4834-927b-6ee48640108d",
+      "actor": "",
+      "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe. Dort können Sie über die hohe, blaue Säule ins Büro springen. Hat Ihnen diese Information weitergeholfen?",
+      "lua": "InterviewPassed();",
+      "choices": [
+        "1e278688-ffc6-4f7b-b674-05f3f48ebcbe"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
+      "title": "",
+      "name": "Gibt es auch einen kürzeren Weg ins Büro?",
+      "next": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
+      "lua": ""
+    },
+    {
+      "type": "Choice",
+      "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
+      "title": "",
+      "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
+      "next": null,
+      "lua": ""
+    },
+    {
+      "type": "Text",
+      "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
+      "actor": "",
+      "name": "Ja, den gibt es. Aber dazu müssen Sie sich im Gebäude auskennen.",
+      "choices": [
+        "8bbc29fb-b7da-40b8-b80a-73e38080c040"
+      ]
+    },
+    {
+      "type": "Text",
+      "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
+      "actor": "",
+      "name": "",
+      "next": null
+    },
+    {
+      "type": "Lua",
+      "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
+      "name": "",
+      "next": null,
+      "lua": "\n"
+    },
+    {
+      "type": "Choice",
+      "id": "c6a15295-673a-494a-816b-6a58fbe4e6c6",
+      "title": "",
+      "name": "Ich habe noch weitere Fragen zu einigen Arbeitsanweisungen, auf die Sie sich im Prozess stützen!",
+      "next": null,
+      "lua": "QueueNextInterview();"
+    },
+    {
+      "type": "Choice",
+      "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
+      "title": "",
+      "name": "Ja, es war sehr ausführlich, vielen Dank! Im Moment habe ich keine weiteren Fragen.",
+      "next": null
+    },
+    {
+      "type": "Choice",
+      "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
+      "title": "",
+      "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme. War ja noch nie hier.",
+      "next": "f3416075-84ab-4834-927b-6ee48640108d"
+    }
+  ]
+}
