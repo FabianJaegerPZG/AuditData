@@ -63,110 +63,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Turtle",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Als nächstes solltest du deine Fragen, die du aus der Prozessanalyse mit dem Turtle-Modell, erstellt hast, den richtigen Personen stellen.",
-      "position": {
-        "x": 368,
-        "y": 544
-      },
-      "angle": 0,
-      "id": "dad4141a-c87c-464f-a143-a2d288f797e8",
-      "z": 9,
-      "lua": "Turtle gibt Hinweis",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Wir haben seit einiger Zeit Reklamationen. Um den Prozess besser verstehen zu können werde ich Ihnen ein paar Fragen dazu stellen.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut?",
-      "position": {
-        "x": 1584,
-        "y": 544
-      },
-      "angle": 0,
-      "id": "0073f788-c29e-4838-8aee-6cdd104c853e",
-      "z": 13,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -181,8 +77,8 @@
       "title": "",
       "name": "Woher wissen Sie, was Sie machen sollen?",
       "position": {
-        "x": 2352,
-        "y": 864
+        "x": 2160,
+        "y": 800
       },
       "angle": 0,
       "id": "85b8707c-de44-4dc9-8664-35d9e7c6325c",
@@ -226,16 +122,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "SGM",
+      "actor": "Player",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Herr Neumann abgelegt. ",
+      "name": "Dann fangen wir gleich mit der ersten Frage an.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut.",
       "position": {
-        "x": 1952,
-        "y": 544
+        "x": 1696,
+        "y": 48
       },
       "angle": 0,
       "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
@@ -399,56 +295,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "77904f14-353d-4071-9d3a-50d2033f45ea",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "dad4141a-c87c-464f-a143-a2d288f797e8",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "cbd41ed6-74ae-4ccd-840b-91ed82acfa2f",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 22,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "c54049d9-5ecb-4264-83fb-1431606a5dcc",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "cbd41ed6-74ae-4ccd-840b-91ed82acfa2f",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 22,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -462,10 +308,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Guten Tag, mein Name ist Wolff. Ich bin der Maschinenführer.",
+      "name": "Das mit den Reklamationen ist nicht gut. Das müssen wir ändern. Aber ich bin mir sicher, dass es nicht an meiner Maschine liegt.",
       "position": {
-        "x": 1184,
-        "y": 544
+        "x": 1264,
+        "y": 48
       },
       "angle": 0,
       "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
@@ -497,83 +343,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Guten Tag Herr Wolff, ich heiße XY und auditiere heute den Produktionsprozess.",
-      "position": {
-        "x": 816,
-        "y": 544
-      },
-      "angle": 0,
-      "id": "cbd41ed6-74ae-4ccd-840b-91ed82acfa2f",
-      "z": 23,
-      "lua": "Bei XY Name des Spieles einsetzen",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "1ec83dec-faa6-442b-80bd-a91ad7b549b9",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "0073f788-c29e-4838-8aee-6cdd104c853e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -625,31 +394,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "86b139e2-3cbb-42f2-97e3-619707fb90b3",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "0073f788-c29e-4838-8aee-6cdd104c853e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 24,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -911,31 +655,6 @@
     },
     {
       "type": "link",
-      "id": "5e382b1d-6bce-432f-97da-ae1e2167cc49",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "85b8707c-de44-4dc9-8664-35d9e7c6325c",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 31,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "2b64931e-6421-41af-b2a0-a8f782490052",
       "smooth": true,
       "embeds": "",
@@ -1014,31 +733,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "40c23bb7-7049-41c9-b3d4-eee5d756b7ac",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "75b9d9bb-5863-4611-a78c-4303842ae35f",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 32,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -3294,6 +2988,83 @@
       }
     },
     {
+      "type": "link",
+      "id": "50667ad2-bc53-4268-8399-436fa212dd4d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 91,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "SGM",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Herr Neumann abgelegt.",
+      "position": {
+        "x": 2048,
+        "y": 32
+      },
+      "angle": 0,
+      "id": "1eed7577-31b0-4c16-8209-7837094c709e",
+      "z": 91,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "size": {
         "width": 300,
         "height": 225
@@ -3356,6 +3127,56 @@
       },
       "target": {
         "id": "e6382112-9a24-4056-8942-4d7091a71f7c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 92,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "92ef3ef5-af00-4a12-96d5-10aeb74bb8ed",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "82395227-c112-434b-97d4-d8db262f0559",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 92,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5963d36c-9168-4da9-9c29-c1baded86ab2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "1eed7577-31b0-4c16-8209-7837094c709e",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -3472,6 +3293,31 @@
     },
     {
       "type": "link",
+      "id": "6fb9c2a0-4f15-4377-96b1-613ce243c548",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "1eed7577-31b0-4c16-8209-7837094c709e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "75b9d9bb-5863-4611-a78c-4303842ae35f",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 93,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "d346926f-b5c3-42c7-b719-fdf8a8d44889",
       "smooth": true,
       "embeds": "",
@@ -3521,6 +3367,41 @@
       }
     },
     {
+      "type": "link",
+      "id": "c494a3df-fd8c-4cbe-8514-9ab587fbdf76",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "1eed7577-31b0-4c16-8209-7837094c709e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "85b8707c-de44-4dc9-8664-35d9e7c6325c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 94,
+      "vertices": [
+        {
+          "x": 2416,
+          "y": 208
+        },
+        {
+          "x": 1744,
+          "y": 832
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -3528,13 +3409,13 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "SGM",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Hallo! Wie kann ich Ihnen denn weiterhelfen?",
+      "name": "Guten Tag, mein Name ist Wolff. Ich bin der Maschinenführer. Sie werden wahrscheinlich das Audit durchführen.",
       "position": {
         "x": 464,
         "y": 48
@@ -3583,21 +3464,12 @@
         "port": "output"
       },
       "target": {
-        "id": "dad4141a-c87c-464f-a143-a2d288f797e8",
+        "id": "82395227-c112-434b-97d4-d8db262f0559",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 96,
-      "vertices": [
-        {
-          "x": 976,
-          "y": 368
-        },
-        {
-          "x": 224,
-          "y": 480
-        }
-      ],
+      "vertices": [],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -3629,6 +3501,58 @@
         },
         ".link-tools .tool-remove circle, .marker-vertex": {
           "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Guten Tag Herr Wolff. Ich heiße Schmidt und Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
+      "position": {
+        "x": 896,
+        "y": 48
+      },
+      "angle": 0,
+      "id": "82395227-c112-434b-97d4-d8db262f0559",
+      "z": 97,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
         }
       }
     },
@@ -3747,23 +3671,6 @@
       "next": "4473f1e8-cab5-48d5-9b2c-73f277f17dd9"
     },
     {
-      "type": "Text",
-      "id": "dad4141a-c87c-464f-a143-a2d288f797e8",
-      "actor": "Turtle",
-      "name": "Als nächstes solltest du deine Fragen, die du aus der Prozessanalyse mit dem Turtle-Modell, erstellt hast, den richtigen Personen stellen.",
-      "lua": "Turtle gibt Hinweis",
-      "choices": [
-        "cbd41ed6-74ae-4ccd-840b-91ed82acfa2f"
-      ]
-    },
-    {
-      "type": "Choice",
-      "id": "0073f788-c29e-4838-8aee-6cdd104c853e",
-      "title": "",
-      "name": "Wir haben seit einiger Zeit Reklamationen. Um den Prozess besser verstehen zu können werde ich Ihnen ein paar Fragen dazu stellen.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut?",
-      "next": "aa65037c-ac2b-47ab-954a-e59af190b6b1"
-    },
-    {
       "type": "Choice",
       "id": "85b8707c-de44-4dc9-8664-35d9e7c6325c",
       "title": "",
@@ -3774,12 +3681,9 @@
     {
       "type": "Text",
       "id": "aa65037c-ac2b-47ab-954a-e59af190b6b1",
-      "actor": "SGM",
-      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Herr Neumann abgelegt. ",
-      "choices": [
-        "85b8707c-de44-4dc9-8664-35d9e7c6325c",
-        "75b9d9bb-5863-4611-a78c-4303842ae35f"
-      ]
+      "actor": "Player",
+      "name": "Dann fangen wir gleich mit der ersten Frage an.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut.",
+      "next": "1eed7577-31b0-4c16-8209-7837094c709e"
     },
     {
       "type": "Text",
@@ -3801,18 +3705,8 @@
       "type": "Text",
       "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
       "actor": "SGM",
-      "name": "Guten Tag, mein Name ist Wolff. Ich bin der Maschinenführer.",
-      "choices": [
-        "0073f788-c29e-4838-8aee-6cdd104c853e"
-      ]
-    },
-    {
-      "type": "Choice",
-      "id": "cbd41ed6-74ae-4ccd-840b-91ed82acfa2f",
-      "title": "",
-      "name": "Guten Tag Herr Wolff, ich heiße XY und auditiere heute den Produktionsprozess.",
-      "next": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
-      "lua": "Bei XY Name des Spieles einsetzen"
+      "name": "Das mit den Reklamationen ist nicht gut. Das müssen wir ändern. Aber ich bin mir sicher, dass es nicht an meiner Maschine liegt.",
+      "next": "aa65037c-ac2b-47ab-954a-e59af190b6b1"
     },
     {
       "type": "Choice",
@@ -4089,6 +3983,16 @@
       ]
     },
     {
+      "type": "Text",
+      "id": "1eed7577-31b0-4c16-8209-7837094c709e",
+      "actor": "SGM",
+      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Herr Neumann abgelegt.",
+      "choices": [
+        "75b9d9bb-5863-4611-a78c-4303842ae35f",
+        "85b8707c-de44-4dc9-8664-35d9e7c6325c"
+      ]
+    },
+    {
       "type": "Choice",
       "id": "31aadb7c-fef4-4de7-bf7f-ac8d947ac615",
       "title": "",
@@ -4105,9 +4009,16 @@
     {
       "type": "Text",
       "id": "4473f1e8-cab5-48d5-9b2c-73f277f17dd9",
-      "actor": "",
-      "name": "Hallo! Wie kann ich Ihnen denn weiterhelfen?",
-      "next": "dad4141a-c87c-464f-a143-a2d288f797e8"
+      "actor": "SGM",
+      "name": "Guten Tag, mein Name ist Wolff. Ich bin der Maschinenführer. Sie werden wahrscheinlich das Audit durchführen.",
+      "next": "82395227-c112-434b-97d4-d8db262f0559"
+    },
+    {
+      "type": "Text",
+      "id": "82395227-c112-434b-97d4-d8db262f0559",
+      "actor": "Player",
+      "name": "Guten Tag Herr Wolff. Ich heiße Schmidt und Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
+      "next": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7"
     }
   ]
 }
