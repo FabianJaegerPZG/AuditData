@@ -715,31 +715,6 @@
     },
     {
       "type": "link",
-      "id": "3300b27e-db20-4bb0-8701-10cf627d03e7",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "f3416075-84ab-4834-927b-6ee48640108d",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "36a0f4a8-07be-4426-9273-0960f4aaadc7",
       "smooth": true,
       "embeds": "",
@@ -932,7 +907,6 @@
       "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe. Dort können Sie über die hohe, blaue Säule ins Büro springen. Hat Ihnen diese Information weitergeholfen?",
       "lua": "InterviewPassed();",
       "choices": [
-        "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
         "1e278688-ffc6-4f7b-b674-05f3f48ebcbe"
       ]
     },
