@@ -437,8 +437,8 @@
       "title": "",
       "name": "Wie lange arbeiten Sie schon an der Spritzgussmaschine?\n",
       "position": {
-        "x": 2400,
-        "y": 240
+        "x": 2480,
+        "y": 112
       },
       "angle": 0,
       "id": "75b9d9bb-5863-4611-a78c-4303842ae35f",
@@ -698,7 +698,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ich mache das hier schon lange und weiß was ich machen muss.",
+      "name": "Ich mache das hier schon lange und weiß, was ich machen muss.",
       "position": {
         "x": 2752,
         "y": 864
@@ -3752,7 +3752,7 @@
       "type": "Text",
       "id": "3fe91543-9f05-46a4-bd58-e83bfe6df0ac",
       "actor": "SGM",
-      "name": "Ich mache das hier schon lange und weiß was ich machen muss.",
+      "name": "Ich mache das hier schon lange und weiß, was ich machen muss.",
       "choices": [
         "b0d12e65-41e9-4c3a-b6ad-8e206022d720",
         "75b9d9bb-5863-4611-a78c-4303842ae35f"
