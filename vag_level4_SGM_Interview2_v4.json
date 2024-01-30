@@ -3513,7 +3513,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Tutle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -4060,7 +4060,7 @@
     {
       "type": "Text",
       "id": "32dec55e-5d72-4518-b5dd-7892ed156bac",
-      "actor": "",
+      "actor": "Tutle",
       "name": "Meine Vermutung ist, dass die gezeigten Dokumente zwar bekannt sind, aber nicht regelmäßig auf Richtigkeit und damit auf Gültigkeit geprüft werden. Es wirkt, als ob der Prozess mit mündlichen Überlieferungen gesteuert wird. So kann es schnell zu Fehlern im Prozess kommen, wenn Änderungen nicht verifiziert und danach dokumentiert werden.\nHier sollte weiter geprüft werden, ob der Dokumentenmanagement -und der Fehlermanagement-Prozess effektiv gehandhabt wird.\n\nVergessen Sie nicht sich Notizen zu machen, was Ihnen aufgefallen ist!\n",
       "next": null,
       "lua": "InterviewPassed();"
