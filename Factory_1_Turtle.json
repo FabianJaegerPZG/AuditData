@@ -1,0 +1,306 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 144,
+        "y": 80
+      },
+      "angle": 0,
+      "id": "cd27556b-bd79-4369-9c76-c75fe58b6e56",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleFactory",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Willkommen in der Werkshalle. Möchten Sie zuerst einen Rundgang durch die Werkshalle vornehmen oder Interviews mit dem Fachpersonal führen?",
+      "position": {
+        "x": 512,
+        "y": 80
+      },
+      "angle": 0,
+      "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
+      "position": {
+        "x": 896,
+        "y": 80
+      },
+      "angle": 0,
+      "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
+      "z": 2,
+      "lua": "ShowTourWaypoints();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
+      "position": {
+        "x": 896,
+        "y": 336
+      },
+      "angle": 0,
+      "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
+      "z": 3,
+      "lua": "ShowInterviewWaypoints();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "c22da6f7-7f7a-477a-9a41-78cd811f3362",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f7cb710c-444b-4044-af04-5acce1e97530",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 5,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0acc49a3-0343-4b0f-8ea7-75b17d17a263",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cd27556b-bd79-4369-9c76-c75fe58b6e56",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 6,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "cd27556b-bd79-4369-9c76-c75fe58b6e56",
+      "actor": "Player",
+      "name": "START",
+      "next": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571"
+    },
+    {
+      "type": "Text",
+      "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
+      "actor": "TurtleFactory",
+      "name": "Willkommen in der Werkshalle. Möchten Sie zuerst einen Rundgang durch die Werkshalle vornehmen oder Interviews mit dem Fachpersonal führen?",
+      "choices": [
+        "51689a35-24a3-43af-9fcd-33dfb3754b02",
+        "6bd9272d-2c96-4ba5-b670-73a301a63d54"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
+      "title": "",
+      "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
+      "next": null,
+      "lua": "ShowTourWaypoints();"
+    },
+    {
+      "type": "Choice",
+      "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
+      "title": "",
+      "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
+      "next": null,
+      "lua": "ShowInterviewWaypoints();"
+    }
+  ]
+}
