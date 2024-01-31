@@ -13,8 +13,8 @@
       },
       "inPorts": [],
       "position": {
-        "x": 1440,
-        "y": 464
+        "x": 16,
+        "y": 32
       },
       "angle": 0,
       "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
@@ -50,10 +50,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hallo,\nich bin Factory_Prueferin",
+      "name": "Guten Tag, mein Name ist Frau Winter. Ich prüfe die Enten nachdem sie bemalt wurden.\n",
       "position": {
-        "x": 2032,
-        "y": 528
+        "x": 544,
+        "y": 64
       },
       "angle": 0,
       "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
@@ -112,6 +112,2886 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Guten Tag Frau Winter, ich auditiere heute den Produktionsprozess und dazu gehört auch die Inspektion der Enten. Es gab in letzter Zeit viele Reklamationen und ich suche  mit diesem Audit  Hinweise darauf, wieso es zu den Reklamationen kam. Deswegen meine erste Frage an Sie:\n\nWie prüfen Sie die gefertigten Enten?\n",
+      "position": {
+        "x": 1024,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
+      "z": 3,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ca6ffc7b-5faa-42da-8b41-c7bb34ac5d38",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Nachdem die Enten bemalt worden sind, kommen sie in diesen Kisten zu mir an den Prüfplatz und dann schaue ich sie mir genau an. Ich mache das schon ganz lange und kenne alle Enten, die wir herstellen. \n",
+      "position": {
+        "x": 1424,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+      "z": 5,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "dd2247d3-6323-4cb5-8d5d-af16dbcdbf5f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 6,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Nach welcher Methode gehen Sie vor bei der Prüfung?\n",
+      "position": {
+        "x": 1856,
+        "y": 336
+      },
+      "angle": 0,
+      "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+      "z": 7,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Wie lange prüfen Sie schon Enten?\n",
+      "position": {
+        "x": 1856,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
+      "z": 8,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "2a5b2435-1e45-4a9a-838a-36d7da8fc3e2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 9,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "47308604-f9e7-4489-abdf-eeb43c8e3d06",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 10,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das kann bei manchen Fragestellungen eine hilfreiche Frage sein. Hier jedoch nicht.",
+      "position": {
+        "x": 2256,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "8f2c7bf2-7513-4d46-bda5-4ede3ce404ac",
+      "z": 11,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1f3e3503-944e-4b99-9d48-9d98ea3db349",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8f2c7bf2-7513-4d46-bda5-4ede3ce404ac",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 12,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ich habe keine spezielle Methode. Ich schaue mir die Enten genau an. Dazu benutze ich die Prüfmittel, die hier liegen. Schauen sie nur.\n",
+      "position": {
+        "x": 2256,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
+      "z": 13,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "e0120fbf-2d52-45a0-a9f2-ad6d0b48d42c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Bitte zeigen Sie mir ihre Prüfanweisung, mit der Sie die Prüfungen durchführen.\n",
+      "position": {
+        "x": 2624,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
+      "z": 15,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3b00797e-692f-4d46-aec6-ed382e5ed72b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 16,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b2f50254-d6ab-4ee1-ac06-a636cfe6b54d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8f2c7bf2-7513-4d46-bda5-4ede3ce404ac",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 17,
+      "vertices": [
+        {
+          "x": 2624,
+          "y": 256
+        },
+        {
+          "x": 1872,
+          "y": 256
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ich habe keine Prüfanweisung. Ich mache das schon so lange, dass ich keine Anweisung mehr brauche. Wie gesagt, ich kenn unser ganzes Sortiment auswenig und weiß bei jeder Ente, wie sie auszusehen hat.\n",
+      "position": {
+        "x": 3008,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
+      "z": 18,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a3780b50-1bc7-4aa7-a16f-ea11b23368d2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 19,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es ist natürlich gut, wenn Sie so viel Erfahrung haben, dass Sie nicht mehr die Prüfanweisung lesen müssen bevor Sie prüfen,  aber ich würde trotzdem gerne wissen, ob Sie die Prüfanweisung griffbereit haben?\n",
+      "position": {
+        "x": 3424,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a22a5aca-0098-4fe8-950c-5d156c798dbf",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja, also, schauen Sie hier am Regal. Da habe ich eine Auflistung von allen Enten, die wir herstellen. Ich kenne zwar alle unsere Enten auswendig, aber trotzdem muss ich hin und wieder mal nachlesen, welche Sachen ich bei den einzelenen Modellen genauer anschauen muss.\n",
+      "position": {
+        "x": 3856,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
+      "z": 22,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "639f4e25-80b1-40d3-93da-8dc37b723527",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ich sehe, dass sie mit Herz und Seele dabei sind, aber ein Dokument, das die Prüfungen beschreibt, würde ich trotzdem gerne sehen.\n",
+      "position": {
+        "x": 4224,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
+      "z": 24,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1fa30190-5130-4cdc-ba1c-8a6bf0445141",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 25,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich bin bereit",
+      "position": {
+        "x": 4624,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "259c325c-faf0-4acd-aa35-1208e2d1ebe8",
+      "z": 26,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "23305e39-9830-44af-a7cd-78561a0c773e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "259c325c-faf0-4acd-aa35-1208e2d1ebe8",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 27,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "1. Haben wir mittlerweile genügend Informationen, um zu verstehen, warum fehlerhafte Enten beim Kunden angekommen sind?\n",
+      "position": {
+        "x": 5024,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "5ce8798e-4d16-4687-9bda-c7d269f21242",
+      "z": 28,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "18aeff49-e277-4e56-9fca-e6cd7ba534d5",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "259c325c-faf0-4acd-aa35-1208e2d1ebe8",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "5ce8798e-4d16-4687-9bda-c7d269f21242",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 29,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Nein",
+      "position": {
+        "x": 5600,
+        "y": 336
+      },
+      "angle": 0,
+      "id": "7293b097-177e-48a7-abb8-42ee0b75b5c7",
+      "z": 31,
+      "lua": "AddPoints(10, 'Richtig!');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ja   ",
+      "position": {
+        "x": 5600,
+        "y": 608
+      },
+      "angle": 0,
+      "id": "98af29a3-6796-48f2-9585-fc05a070e715",
+      "z": 32,
+      "lua": "AddPoints(-1, 'Leider falsch!');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b7f9dccf-1b76-4382-bcb7-6cdced3db4c2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "5ce8798e-4d16-4687-9bda-c7d269f21242",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7293b097-177e-48a7-abb8-42ee0b75b5c7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 32,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3a9fefd0-01ca-4214-934d-572ba8e97579",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "5ce8798e-4d16-4687-9bda-c7d269f21242",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "98af29a3-6796-48f2-9585-fc05a070e715",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 33,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "2. Welche Reaktion wäre nun zielführend aus Ihrer Sicht?\n",
+      "position": {
+        "x": 6032,
+        "y": 413.33333337306976
+      },
+      "angle": 0,
+      "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+      "z": 34,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "99795ec0-8b01-49c5-a17a-9130d468b451",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7293b097-177e-48a7-abb8-42ee0b75b5c7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 35,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "59f28285-b139-4af3-b2a4-23076e4ac48e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "98af29a3-6796-48f2-9585-fc05a070e715",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 36,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "a, Bitte zeigen Sie mir jetzt die Prüfungsanweisung.",
+      "position": {
+        "x": 6432,
+        "y": 192
+      },
+      "angle": 0,
+      "id": "c663f4b8-78ec-4857-ac2a-50bf497a88a2",
+      "z": 37,
+      "lua": "AddPoints(-1, 'Leider falsch!');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "b, Zeigen Sie mir, bitte, im Detail wie Sie eine Ente prüfen.",
+      "position": {
+        "x": 6448,
+        "y": 464
+      },
+      "angle": 0,
+      "id": "f1877fef-5a64-41d4-9d99-039aef88d4f9",
+      "z": 38,
+      "lua": "AddPoints(10, 'Richtig!');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "c, Wenn Sie keine Prüfanweisung haben, wie wollen Sie denn wissen, was falsch ist?",
+      "position": {
+        "x": 6464,
+        "y": 784
+      },
+      "angle": 0,
+      "id": "072bfaae-f8be-475d-831d-ab4a69c4120e",
+      "z": 39,
+      "lua": "AddPoints(-1, 'Leider falsch!');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5a5dfdbf-3b6d-4b59-8bb2-71a2240747e6",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "c663f4b8-78ec-4857-ac2a-50bf497a88a2",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 40,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1e0e6478-6010-4a58-b60b-977914bbb651",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f1877fef-5a64-41d4-9d99-039aef88d4f9",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 41,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "deed451c-24ae-40c6-94c9-dff779dd5d25",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "072bfaae-f8be-475d-831d-ab4a69c4120e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 42,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "\nAus meiner Sicht würden wir in diesem Interview weiterkommen, wenn wir uns von Frau Winter zeigen lassen, wie Sie ihre Arbeit macht. Daran erkennen wir, ob sie das was sie macht, gut macht und wieviel Erfahrung Sie hat. Zwar wissen wir dann immer noch nicht, wo die Prüfanweisung ist, oder ob es sie überhuapt gibt. Aber wir wissen mehr darüber, ob und wie das Prüfen funktioniert. \n",
+      "position": {
+        "x": 6896,
+        "y": 464
+      },
+      "angle": 0,
+      "id": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+      "z": 43,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5129a164-9e70-4841-80da-a6bc7716403d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "c663f4b8-78ec-4857-ac2a-50bf497a88a2",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 44,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "15aba08b-3b22-4b55-9af1-ed2148e492e2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f1877fef-5a64-41d4-9d99-039aef88d4f9",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 45,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fc588191-d3d4-4db8-ad29-19bb65e07b78",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "072bfaae-f8be-475d-831d-ab4a69c4120e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 46,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Zeigen Sie mir doch bitte praktisch, wie Sie die Enten prüfen, am besten von Anfang an.\n",
+      "position": {
+        "x": 7360,
+        "y": 464
+      },
+      "angle": 0,
+      "id": "19c9e740-a90e-46bc-8939-073954556975",
+      "z": 47,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "cf909cd7-d1d9-432b-910d-37d069e50c21",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "19c9e740-a90e-46bc-8939-073954556975",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 48,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Aber gerne. Da nehme ich mir z.B. den Korb , bla bla blub\n",
+      "position": {
+        "x": 7760,
+        "y": 464
+      },
+      "angle": 0,
+      "id": "089ad1fa-ff77-4a89-b6c7-daaef60c36dd",
+      "z": 49,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fc81fe52-dee4-4515-82ac-975a8f0ba237",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "19c9e740-a90e-46bc-8939-073954556975",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "089ad1fa-ff77-4a89-b6c7-daaef60c36dd",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 50,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100 % der Charge?\n",
+      "position": {
+        "x": 8160,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
+      "z": 51,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fbb611dc-b2f5-417b-9286-60fa38e13307",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "089ad1fa-ff77-4a89-b6c7-daaef60c36dd",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 52,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja klar. Ich mache das ja sehr schnell und ich habe die Sicherheit, dass ich nichts übersehe. Es ist für uns alle am schnellsten, wenn ich alles kontrolliere und die anderen vor mir das nicht machen müssen.\n",
+      "position": {
+        "x": 8576,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
+      "z": 53,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f2af2f03-128b-49aa-9a80-9128e1c8437c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 54,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Wohin legen Sie die aussortierten Enten und was geschieht mit ihnen?\n",
+      "position": {
+        "x": 8976,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "ccb50c10-59be-41ac-b473-20130d187245",
+      "z": 55,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6127039c-e5bc-4724-8a76-341b63d55957",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ccb50c10-59be-41ac-b473-20130d187245",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 56,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Alle Enten, die nicht gut sind, kommen hier in diesen Korb. Auf den lege ich den Zettel \"Nicht verkaufen\" und der Korb wird dann abgeholt",
+      "position": {
+        "x": 9360,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
+      "z": 57,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a4ec1cfa-ca0c-4294-9564-c4da0f7ec5d8",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ccb50c10-59be-41ac-b473-20130d187245",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 58,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?\n",
+      "position": {
+        "x": 9808,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "3df08bee-260e-497e-a137-84589455e7d4",
+      "z": 59,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "18c3c912-1567-49f6-871b-47ecc9d77a59",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "3df08bee-260e-497e-a137-84589455e7d4",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 60,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Meinen sie das Lager, iin dem der Ausschuss gesammelt wird? Ja der ist gleich um die Ecke. Das ist nicht weit weg. Die Leute müssen nicht weit schieben.\n",
+      "position": {
+        "x": 10192,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
+      "z": 61,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1b91c9c1-d604-4843-ab3b-67b2270d55f2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "3df08bee-260e-497e-a137-84589455e7d4",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 62,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ist dieser handgeschriebene Zettel mit der Beschriftung \"Nicht verkaufen\" die einzige Kennzeichnung für Ausschussware auf dne Körben?\n",
+      "position": {
+        "x": 10608,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
+      "z": 63,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a96387ea-e69d-4056-b0d6-0ad6e93a245a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 64,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ich glaube schon.\n",
+      "position": {
+        "x": 11040,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
+      "z": 65,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f59e8486-a6e3-4ac2-b5bc-82c575f37ed2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 66,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Und wo legen Sie die Enten hin, die i.O. sind?\n",
+      "position": {
+        "x": 11440,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
+      "z": 67,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "2f2dbe2d-7e73-472d-b9cf-f82482a82b7f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 68,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Die kommen gleich in den Korb daneben. Damit ich nicht so weit laufen muss, ist der auch gleich neben mir.\n",
+      "position": {
+        "x": 11856,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "a5f94b9b-335b-4c99-ae17-5512afa39ddc",
+      "z": 69,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "697c6f7f-42cf-41e4-857e-b795917251a9",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a5f94b9b-335b-4c99-ae17-5512afa39ddc",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 70,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Aus der Perspektive der Arbeitssicherheit ist das Argument, nicht weit laufen zu müssen, valide. Aber haben Sie keine Bedenken, dass Sie die Körbe verwechseln?\n",
+      "position": {
+        "x": 12256,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "9684711e-7dd5-46fe-ac30-dd1291665662",
+      "z": 71,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fa63c25d-9769-4d01-89f0-4a5e87247978",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a5f94b9b-335b-4c99-ae17-5512afa39ddc",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "9684711e-7dd5-46fe-ac30-dd1291665662",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 72,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Nein, Nein, die habe ich noch nie verwechselt.\n",
+      "position": {
+        "x": 12656,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "8c742138-c0c8-4d3c-817f-7021cf459467",
+      "z": 73,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "7ef7d13d-81b4-47f1-927a-443f82fe7163",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "9684711e-7dd5-46fe-ac30-dd1291665662",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8c742138-c0c8-4d3c-817f-7021cf459467",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 74,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Mir scheint es, als habe ich eine Spur gefunden, warum fehlerhafte Enten beim Kunden angekommen sind...\n",
+      "position": {
+        "x": 13056,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "3aaccd2e-d379-4301-baf7-ff7a940276fb",
+      "z": 75,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "bb7f82ea-9d17-4a0b-83ed-8398960b8d80",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8c742138-c0c8-4d3c-817f-7021cf459467",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "3aaccd2e-d379-4301-baf7-ff7a940276fb",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 76,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Hast du auch ein Gefühl dafür bekommen, was der Grund sein könnte, dass Reklamationen entstanden sind, obwohl Frau Winter jede Ente prüft und sogar die Bemalung eigenhändig ausbessert, wenn sie Fehler entdeckt?\n\nSchreibe deine Vermutung in deinen Notizblock und überlege was du jetzt als nächstes machen solltest.\n\nFür mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weiter Person befragen. Siehst du das auch so?\n",
+      "position": {
+        "x": 13440,
+        "y": 480
+      },
+      "angle": 0,
+      "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
+      "z": 77,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "11fd51db-30de-46ef-8344-9d77bc9bf1f1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "3aaccd2e-d379-4301-baf7-ff7a940276fb",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 78,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -126,8 +3006,280 @@
       "type": "Text",
       "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
       "actor": "Factory_Prueferin",
-      "name": "Hallo,\nich bin Factory_Prueferin",
-      "next": null
+      "name": "Guten Tag, mein Name ist Frau Winter. Ich prüfe die Enten nachdem sie bemalt wurden.\n",
+      "next": "7f830d91-5f16-4309-822f-bc80c37cbaea"
+    },
+    {
+      "type": "Text",
+      "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
+      "actor": "",
+      "name": "Guten Tag Frau Winter, ich auditiere heute den Produktionsprozess und dazu gehört auch die Inspektion der Enten. Es gab in letzter Zeit viele Reklamationen und ich suche  mit diesem Audit  Hinweise darauf, wieso es zu den Reklamationen kam. Deswegen meine erste Frage an Sie:\n\nWie prüfen Sie die gefertigten Enten?\n",
+      "next": "74a79552-ef38-4944-9070-1af1e1f76f51"
+    },
+    {
+      "type": "Text",
+      "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+      "actor": "Factory_Prüferin",
+      "name": "Nachdem die Enten bemalt worden sind, kommen sie in diesen Kisten zu mir an den Prüfplatz und dann schaue ich sie mir genau an. Ich mache das schon ganz lange und kenne alle Enten, die wir herstellen. \n",
+      "choices": [
+        "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+        "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+      "title": "",
+      "name": "Nach welcher Methode gehen Sie vor bei der Prüfung?\n",
+      "next": "1d799b72-6406-4a24-b902-2e436d7a2bc7"
+    },
+    {
+      "type": "Choice",
+      "id": "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
+      "title": "",
+      "name": "Wie lange prüfen Sie schon Enten?\n",
+      "next": "8f2c7bf2-7513-4d46-bda5-4ede3ce404ac"
+    },
+    {
+      "type": "Text",
+      "id": "8f2c7bf2-7513-4d46-bda5-4ede3ce404ac",
+      "actor": "Turtle",
+      "name": "Das kann bei manchen Fragestellungen eine hilfreiche Frage sein. Hier jedoch nicht.",
+      "choices": [
+        "e7a4abd1-aec8-47ec-a706-b7b336b76957"
+      ]
+    },
+    {
+      "type": "Text",
+      "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
+      "actor": "Factory_Prüferin",
+      "name": "Ich habe keine spezielle Methode. Ich schaue mir die Enten genau an. Dazu benutze ich die Prüfmittel, die hier liegen. Schauen sie nur.\n",
+      "next": "b44e4a03-3931-4778-b20d-132ae40ea29a"
+    },
+    {
+      "type": "Text",
+      "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
+      "actor": "",
+      "name": "Bitte zeigen Sie mir ihre Prüfanweisung, mit der Sie die Prüfungen durchführen.\n",
+      "next": "91e98bb0-8aa9-468a-90cb-17f19dda6980"
+    },
+    {
+      "type": "Text",
+      "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
+      "actor": "Factory_Prüferin",
+      "name": "Ich habe keine Prüfanweisung. Ich mache das schon so lange, dass ich keine Anweisung mehr brauche. Wie gesagt, ich kenn unser ganzes Sortiment auswenig und weiß bei jeder Ente, wie sie auszusehen hat.\n",
+      "next": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03"
+    },
+    {
+      "type": "Text",
+      "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
+      "actor": "",
+      "name": "Es ist natürlich gut, wenn Sie so viel Erfahrung haben, dass Sie nicht mehr die Prüfanweisung lesen müssen bevor Sie prüfen,  aber ich würde trotzdem gerne wissen, ob Sie die Prüfanweisung griffbereit haben?\n",
+      "next": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3"
+    },
+    {
+      "type": "Text",
+      "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
+      "actor": "Factory_Prüferin",
+      "name": "Ja, also, schauen Sie hier am Regal. Da habe ich eine Auflistung von allen Enten, die wir herstellen. Ich kenne zwar alle unsere Enten auswendig, aber trotzdem muss ich hin und wieder mal nachlesen, welche Sachen ich bei den einzelenen Modellen genauer anschauen muss.\n",
+      "next": "7c5731a0-6b21-483a-aed8-67ecd79a2584"
+    },
+    {
+      "type": "Text",
+      "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
+      "actor": "",
+      "name": "Ich sehe, dass sie mit Herz und Seele dabei sind, aber ein Dokument, das die Prüfungen beschreibt, würde ich trotzdem gerne sehen.\n",
+      "choices": [
+        "259c325c-faf0-4acd-aa35-1208e2d1ebe8"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "259c325c-faf0-4acd-aa35-1208e2d1ebe8",
+      "title": "",
+      "name": "Ich bin bereit",
+      "next": "5ce8798e-4d16-4687-9bda-c7d269f21242"
+    },
+    {
+      "type": "Text",
+      "id": "5ce8798e-4d16-4687-9bda-c7d269f21242",
+      "actor": "Turtle",
+      "name": "1. Haben wir mittlerweile genügend Informationen, um zu verstehen, warum fehlerhafte Enten beim Kunden angekommen sind?\n",
+      "choices": [
+        "7293b097-177e-48a7-abb8-42ee0b75b5c7",
+        "98af29a3-6796-48f2-9585-fc05a070e715"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "7293b097-177e-48a7-abb8-42ee0b75b5c7",
+      "title": "",
+      "name": "Nein",
+      "next": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+      "lua": "AddPoints(10, 'Richtig!');"
+    },
+    {
+      "type": "Choice",
+      "id": "98af29a3-6796-48f2-9585-fc05a070e715",
+      "title": "",
+      "name": "Ja   ",
+      "next": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+      "lua": "AddPoints(-1, 'Leider falsch!');"
+    },
+    {
+      "type": "Text",
+      "id": "e4b9d7d6-2188-4aca-bcf5-060288e71bb5",
+      "actor": "Turtle",
+      "name": "2. Welche Reaktion wäre nun zielführend aus Ihrer Sicht?\n",
+      "choices": [
+        "c663f4b8-78ec-4857-ac2a-50bf497a88a2",
+        "f1877fef-5a64-41d4-9d99-039aef88d4f9",
+        "072bfaae-f8be-475d-831d-ab4a69c4120e"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "c663f4b8-78ec-4857-ac2a-50bf497a88a2",
+      "title": "",
+      "name": "a, Bitte zeigen Sie mir jetzt die Prüfungsanweisung.",
+      "next": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+      "lua": "AddPoints(-1, 'Leider falsch!');"
+    },
+    {
+      "type": "Choice",
+      "id": "f1877fef-5a64-41d4-9d99-039aef88d4f9",
+      "title": "",
+      "name": "b, Zeigen Sie mir, bitte, im Detail wie Sie eine Ente prüfen.",
+      "next": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+      "lua": "AddPoints(10, 'Richtig!');"
+    },
+    {
+      "type": "Choice",
+      "id": "072bfaae-f8be-475d-831d-ab4a69c4120e",
+      "title": "",
+      "name": "c, Wenn Sie keine Prüfanweisung haben, wie wollen Sie denn wissen, was falsch ist?",
+      "next": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+      "lua": "AddPoints(-1, 'Leider falsch!');"
+    },
+    {
+      "type": "Text",
+      "id": "47388bf9-360f-4b91-b82e-ea9eaeda2773",
+      "actor": "Turtle",
+      "name": "\nAus meiner Sicht würden wir in diesem Interview weiterkommen, wenn wir uns von Frau Winter zeigen lassen, wie Sie ihre Arbeit macht. Daran erkennen wir, ob sie das was sie macht, gut macht und wieviel Erfahrung Sie hat. Zwar wissen wir dann immer noch nicht, wo die Prüfanweisung ist, oder ob es sie überhuapt gibt. Aber wir wissen mehr darüber, ob und wie das Prüfen funktioniert. \n",
+      "next": "19c9e740-a90e-46bc-8939-073954556975"
+    },
+    {
+      "type": "Text",
+      "id": "19c9e740-a90e-46bc-8939-073954556975",
+      "actor": "",
+      "name": "Zeigen Sie mir doch bitte praktisch, wie Sie die Enten prüfen, am besten von Anfang an.\n",
+      "next": "089ad1fa-ff77-4a89-b6c7-daaef60c36dd"
+    },
+    {
+      "type": "Text",
+      "id": "089ad1fa-ff77-4a89-b6c7-daaef60c36dd",
+      "actor": "Factory_Prüferin",
+      "name": "Aber gerne. Da nehme ich mir z.B. den Korb , bla bla blub\n",
+      "next": "dd127067-357b-46a9-9d2f-04807d4e8dbc"
+    },
+    {
+      "type": "Text",
+      "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
+      "actor": "",
+      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100 % der Charge?\n",
+      "next": "16b60c23-bb4b-436e-b2c5-0af06bde6426"
+    },
+    {
+      "type": "Text",
+      "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
+      "actor": "Factory_Prüferin",
+      "name": "Ja klar. Ich mache das ja sehr schnell und ich habe die Sicherheit, dass ich nichts übersehe. Es ist für uns alle am schnellsten, wenn ich alles kontrolliere und die anderen vor mir das nicht machen müssen.\n",
+      "next": "ccb50c10-59be-41ac-b473-20130d187245"
+    },
+    {
+      "type": "Text",
+      "id": "ccb50c10-59be-41ac-b473-20130d187245",
+      "actor": "",
+      "name": "Wohin legen Sie die aussortierten Enten und was geschieht mit ihnen?\n",
+      "next": "8609b5e8-eaba-4efd-be06-f50eaec8099e"
+    },
+    {
+      "type": "Text",
+      "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
+      "actor": "Factory_Prüferin",
+      "name": "Alle Enten, die nicht gut sind, kommen hier in diesen Korb. Auf den lege ich den Zettel \"Nicht verkaufen\" und der Korb wird dann abgeholt",
+      "next": "3df08bee-260e-497e-a137-84589455e7d4"
+    },
+    {
+      "type": "Text",
+      "id": "3df08bee-260e-497e-a137-84589455e7d4",
+      "actor": "",
+      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?\n",
+      "next": "ac871682-7c58-486f-9f68-c2f968f9e2df"
+    },
+    {
+      "type": "Text",
+      "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
+      "actor": "Factory_Prüferin",
+      "name": "Meinen sie das Lager, iin dem der Ausschuss gesammelt wird? Ja der ist gleich um die Ecke. Das ist nicht weit weg. Die Leute müssen nicht weit schieben.\n",
+      "next": "7cc8322d-755d-4564-b5bf-0c21450e95b6"
+    },
+    {
+      "type": "Text",
+      "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
+      "actor": "",
+      "name": "Ist dieser handgeschriebene Zettel mit der Beschriftung \"Nicht verkaufen\" die einzige Kennzeichnung für Ausschussware auf dne Körben?\n",
+      "next": "cb03a9d1-f25e-4f32-8589-79169aba097a"
+    },
+    {
+      "type": "Text",
+      "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
+      "actor": "Factory_Prüferin",
+      "name": "Ich glaube schon.\n",
+      "next": "a671075c-63e6-48a9-9e72-69ebc278a927"
+    },
+    {
+      "type": "Text",
+      "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
+      "actor": "",
+      "name": "Und wo legen Sie die Enten hin, die i.O. sind?\n",
+      "next": "a5f94b9b-335b-4c99-ae17-5512afa39ddc"
+    },
+    {
+      "type": "Text",
+      "id": "a5f94b9b-335b-4c99-ae17-5512afa39ddc",
+      "actor": "Factory_Prüferin",
+      "name": "Die kommen gleich in den Korb daneben. Damit ich nicht so weit laufen muss, ist der auch gleich neben mir.\n",
+      "next": "9684711e-7dd5-46fe-ac30-dd1291665662"
+    },
+    {
+      "type": "Text",
+      "id": "9684711e-7dd5-46fe-ac30-dd1291665662",
+      "actor": "",
+      "name": "Aus der Perspektive der Arbeitssicherheit ist das Argument, nicht weit laufen zu müssen, valide. Aber haben Sie keine Bedenken, dass Sie die Körbe verwechseln?\n",
+      "next": "8c742138-c0c8-4d3c-817f-7021cf459467"
+    },
+    {
+      "type": "Text",
+      "id": "8c742138-c0c8-4d3c-817f-7021cf459467",
+      "actor": "Factory_Prüferin",
+      "name": "Nein, Nein, die habe ich noch nie verwechselt.\n",
+      "next": "3aaccd2e-d379-4301-baf7-ff7a940276fb"
+    },
+    {
+      "type": "Text",
+      "id": "3aaccd2e-d379-4301-baf7-ff7a940276fb",
+      "actor": "",
+      "name": "Mir scheint es, als habe ich eine Spur gefunden, warum fehlerhafte Enten beim Kunden angekommen sind...\n",
+      "next": "41f3712d-a47c-4778-91de-94ca7b4a05a9"
+    },
+    {
+      "type": "Text",
+      "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
+      "actor": "Turtle",
+      "name": "Hast du auch ein Gefühl dafür bekommen, was der Grund sein könnte, dass Reklamationen entstanden sind, obwohl Frau Winter jede Ente prüft und sogar die Bemalung eigenhändig ausbessert, wenn sie Fehler entdeckt?\n\nSchreibe deine Vermutung in deinen Notizblock und überlege was du jetzt als nächstes machen solltest.\n\nFür mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weiter Person befragen. Siehst du das auch so?\n",
+      "next": null,
+      "lua": "InterviewPassed();"
     }
   ]
 }
