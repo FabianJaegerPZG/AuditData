@@ -51,15 +51,15 @@
         "width": 300,
         "height": 225
       },
-      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "name": "Sollen alle Sprungpunkte und Tasks erfüllt werden (Cheat)?",
       "position": {
         "x": 16,
-        "y": 256
+        "y": 288
       },
       "angle": 0,
       "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
       "z": 1,
-      "lua": "Cheat();",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -106,6 +106,7 @@
         "port": "input"
       },
       "z": 2,
+      "vertices": [],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -130,8 +131,8 @@
       "title": "",
       "name": "Guten Tag, ich komme von Kustoplast, zentrale QM-Abteilung. Herr Klein, hat mich informiert, dass ich alle wichtigen Informationen hier an der Rezeption bekomme.",
       "position": {
-        "x": 16,
-        "y": 496
+        "x": 768,
+        "y": 720
       },
       "angle": 0,
       "id": "576f5569-fe3f-4ee7-968d-35018853888b",
@@ -163,31 +164,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "7993c4c6-3dad-4a4d-b993-c29a3ad85880",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "576f5569-fe3f-4ee7-968d-35018853888b",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 4,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -232,8 +208,8 @@
       },
       "name": "Aber ja, ich habe Sie schon erwartet und habe Unterlagen für Sie. Herr Klein meinte, dass er Ihnen alles ausführlich erklärt, wenn Sie ihn anrufen. Er ist wegen einer Familienangelegenheit heute nicht da. Wenn Sie im Büro sind, dann klicken Sie auf die Aktentasche und Sie können alle Informationen nachlesen. Sie können auch vom Büro aus mit Herrn Klein telefonieren.\nKann ich sonst noch etwas für Sie tun?",
       "position": {
-        "x": 64,
-        "y": 816
+        "x": 1120,
+        "y": 720
       },
       "angle": 0,
       "id": "63a96906-80f5-4b30-bd22-8a4d190d7d17",
@@ -309,8 +285,8 @@
       },
       "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe. Dort können Sie über die hohe, blaue Säule ins Büro springen. Hat Ihnen diese Information weitergeholfen?",
       "position": {
-        "x": 400,
-        "y": 16
+        "x": 1824,
+        "y": 720
       },
       "angle": 0,
       "id": "f3416075-84ab-4834-927b-6ee48640108d",
@@ -361,8 +337,8 @@
       "title": "",
       "name": "Gibt es auch einen kürzeren Weg ins Büro?",
       "position": {
-        "x": 768,
-        "y": 16
+        "x": 1440,
+        "y": 32
       },
       "angle": 0,
       "id": "adedbd90-6a55-4d49-a10b-2070ccf2e2f5",
@@ -413,8 +389,8 @@
       "title": "",
       "name": "Vielen Dank! Dann mache ich mich mal auf den Weg.",
       "position": {
-        "x": 1632,
-        "y": 48
+        "x": 2144,
+        "y": 32
       },
       "angle": 0,
       "id": "8bbc29fb-b7da-40b8-b80a-73e38080c040",
@@ -466,8 +442,8 @@
       },
       "name": "Ja, den gibt es. Aber dazu müssen Sie sich im Gebäude auskennen.",
       "position": {
-        "x": 1104,
-        "y": 16
+        "x": 1792,
+        "y": 32
       },
       "angle": 0,
       "id": "ce13ed3c-ec6b-41d9-a5c4-039767bdc161",
@@ -543,12 +519,64 @@
       },
       "name": "",
       "position": {
-        "x": 1776,
-        "y": 416
+        "x": 2496,
+        "y": 272
       },
       "angle": 0,
       "id": "de333299-7f95-46d1-ba03-4bf0d072390c",
       "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ja, bitte.",
+      "position": {
+        "x": 368,
+        "y": 176
+      },
+      "angle": 0,
+      "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
+      "z": 21,
+      "lua": "Cheat();",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -595,12 +623,7 @@
         "port": "input"
       },
       "z": 21,
-      "vertices": [
-        {
-          "x": 1216,
-          "y": 800
-        }
-      ],
+      "vertices": [],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -624,8 +647,8 @@
       },
       "name": "",
       "position": {
-        "x": 1408,
-        "y": 368
+        "x": 2496,
+        "y": 512
       },
       "angle": 0,
       "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
@@ -676,8 +699,8 @@
       "title": "",
       "name": "Ich habe noch weitere Fragen zu einigen Arbeitsanweisungen, auf die Sie sich im Prozess stützen!",
       "position": {
-        "x": 2160,
-        "y": 272
+        "x": 2496,
+        "y": 32
       },
       "angle": 0,
       "id": "c6a15295-673a-494a-816b-6a58fbe4e6c6",
@@ -751,10 +774,86 @@
         "output"
       ],
       "title": "",
+      "name": "Nein, ich möchte keine Cheats verwenden.",
+      "position": {
+        "x": 368,
+        "y": 464
+      },
+      "angle": 0,
+      "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
+      "z": 23,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3a6dc6a3-c98f-4606-84f0-e291c2109676",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
       "name": "Ja, es war sehr ausführlich, vielen Dank! Im Moment habe ich keine weiteren Fragen.",
       "position": {
-        "x": 1024,
-        "y": 384
+        "x": 2176,
+        "y": 720
       },
       "angle": 0,
       "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
@@ -815,6 +914,83 @@
       }
     },
     {
+      "type": "link",
+      "id": "ba7f0d53-7431-4619-9728-a217c89abdca",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 24,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "position": {
+        "x": 720,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+      "z": 25,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "size": {
         "width": 300,
         "height": 225
@@ -829,8 +1005,8 @@
       "title": "",
       "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme. War ja noch nie hier.",
       "position": {
-        "x": 656,
-        "y": 752
+        "x": 1472,
+        "y": 720
       },
       "angle": 0,
       "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
@@ -864,6 +1040,91 @@
           "ref-dx": 0
         }
       }
+    },
+    {
+      "type": "link",
+      "id": "cab0c3cd-e09b-4258-84b0-13e84ebfcdd0",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 26,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "9bb965f1-293c-4644-ab8a-e07c07c607e0",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 27,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "c7ae523b-b647-422c-9c8a-cf561eeb8587",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "576f5569-fe3f-4ee7-968d-35018853888b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 27,
+      "vertices": [
+        {
+          "x": 1040,
+          "y": 576
+        },
+        {
+          "x": 672,
+          "y": 736
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -878,10 +1139,11 @@
       "type": "Text",
       "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
       "actor": "",
-      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
-      "lua": "Cheat();",
+      "name": "Sollen alle Sprungpunkte und Tasks erfüllt werden (Cheat)?",
+      "lua": "",
       "choices": [
-        "576f5569-fe3f-4ee7-968d-35018853888b"
+        "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
+        "b6419f12-8752-4c2d-a30a-9f52a34e37ef"
       ]
     },
     {
@@ -943,6 +1205,14 @@
       "next": null
     },
     {
+      "type": "Choice",
+      "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
+      "title": "",
+      "name": "Ja, bitte.",
+      "next": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+      "lua": "Cheat();"
+    },
+    {
       "type": "Lua",
       "id": "e842fb77-d8fe-41cf-bc74-937da403c229",
       "name": "",
@@ -959,10 +1229,26 @@
     },
     {
       "type": "Choice",
+      "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
+      "title": "",
+      "name": "Nein, ich möchte keine Cheats verwenden.",
+      "next": "61cc9a34-d39d-4aee-9c0b-f4a643193842"
+    },
+    {
+      "type": "Choice",
       "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
       "title": "",
       "name": "Ja, es war sehr ausführlich, vielen Dank! Im Moment habe ich keine weiteren Fragen.",
       "next": null
+    },
+    {
+      "type": "Text",
+      "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+      "actor": "",
+      "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
+      "choices": [
+        "576f5569-fe3f-4ee7-968d-35018853888b"
+      ]
     },
     {
       "type": "Choice",
