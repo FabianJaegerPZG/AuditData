@@ -45,16 +45,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "QMB",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Herzlich willkommen in unsere Büro XXX_2! Wir freuen uns sehr, dich bei uns im Büro zu begrüßen zu dürfen.",
+      "name": "Also, zuerst möchte ich mich dafür bedanken, dass Sie uns aushelfen und die Auditaufgaben so schnell übernehmen konnten. Ich bin die Geschäftsführerin von Tub Ducks und bin sehr froh, dass wir jetzt einen  konsolidierten Ansatz wählen, um die Reklamationen der Kunden zielorientiert und nachhaltig zu beenden. Das hat mir große Sorgen gemacht.",
       "position": {
-        "x": 32,
-        "y": 304
+        "x": 416,
+        "y": 80
       },
       "angle": 0,
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
@@ -115,32 +115,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "6b1cce21-3b13-4c18-b6af-92762d1ab154",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 4,
-      "vertices": [],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -156,8 +130,8 @@
       },
       "name": "Ich bin CEO",
       "position": {
-        "x": 912,
-        "y": 288
+        "x": 1008,
+        "y": 464
       },
       "angle": 0,
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
@@ -283,8 +257,8 @@
       },
       "name": "",
       "position": {
-        "x": 4016,
-        "y": 416
+        "x": 880,
+        "y": 112
       },
       "angle": 0,
       "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
@@ -385,8 +359,8 @@
       "title": "",
       "name": "Hallo, Vielen Dank! Ihr habt echt ein nettes Büro! Stellt euch doch einmal vor!",
       "position": {
-        "x": 480,
-        "y": 368
+        "x": 544,
+        "y": 480
       },
       "angle": 0,
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
@@ -550,31 +524,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "76cebf00-5890-476d-ba89-db3a966a4744",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "b4d12132-e36e-454e-8ce1-b1c26f5e89a4",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 14,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -705,6 +654,31 @@
     },
     {
       "type": "link",
+      "id": "3fa2d56c-7cc0-480e-ac7b-c46515ec3e49",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 17,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "bed32c49-ee75-4586-bf84-b629a5f3c50b",
       "smooth": true,
       "embeds": "",
@@ -740,11 +714,9 @@
     {
       "type": "Text",
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
-      "actor": "",
-      "name": "Herzlich willkommen in unsere Büro XXX_2! Wir freuen uns sehr, dich bei uns im Büro zu begrüßen zu dürfen.",
-      "choices": [
-        "54112f4f-de6b-4619-8e69-9d766b98c939"
-      ]
+      "actor": "QMB",
+      "name": "Also, zuerst möchte ich mich dafür bedanken, dass Sie uns aushelfen und die Auditaufgaben so schnell übernehmen konnten. Ich bin die Geschäftsführerin von Tub Ducks und bin sehr froh, dass wir jetzt einen  konsolidierten Ansatz wählen, um die Reklamationen der Kunden zielorientiert und nachhaltig zu beenden. Das hat mir große Sorgen gemacht.",
+      "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     },
     {
       "type": "Text",
@@ -786,7 +758,7 @@
       "id": "b4d12132-e36e-454e-8ce1-b1c26f5e89a4",
       "title": "",
       "name": "Freut mich, euch kennenzulernen!",
-      "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
+      "next": null
     },
     {
       "type": "Text",
