@@ -13,8 +13,8 @@
       },
       "inPorts": [],
       "position": {
-        "x": 1440,
-        "y": 464
+        "x": 16,
+        "y": 32
       },
       "angle": 0,
       "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
@@ -52,8 +52,8 @@
       },
       "name": "Hallo,\nich bin Factory_QMB",
       "position": {
-        "x": 2032,
-        "y": 528
+        "x": 0,
+        "y": 496
       },
       "angle": 0,
       "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
@@ -89,8 +89,216 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser x Personen würden SIe jetzt  zum zweiten Mal oder vielleicht zum ersten Mal Fragen stellen, nachdem was Sie jetzt wissen?",
+      "position": {
+        "x": 512,
+        "y": 128
+      },
+      "angle": 0,
+      "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+      "z": 3,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "SGM",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es schadet nie sich den Produktionsprozess näher anzuschauen und zu analysieren, wo hier die Ursache für Fehler liegen könnte. Hast du ja auch schon gemacht. Aber aktuell gäbe es hier keinen Grund, um weiter zu suchen.\n",
+      "position": {
+        "x": 960,
+        "y": 368
+      },
+      "angle": 0,
+      "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
+      "z": 5,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prüferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Sie hat uns viele wichtigen Informationen gegben. Wir verstehen jetzt, dass die Prüfung eine 100%-Prüfung ist und überdies alle fehlerhaften Enten aussortiert. So dürften eigentliche nie fehlerhafte Enten zum Kunden gelangen. Hier muss man nicht weiter suchen.\n",
+      "position": {
+        "x": 960,
+        "y": 640
+      },
+      "angle": 0,
+      "id": "51a80e34-f656-4588-916f-a6a6a3f3dd82",
+      "z": 6,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Produktionsleitung",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Man könnte meinen, dass die Produktionsleiterin eigentlich dafür verantwortlich sein müsste, dass fehlerhafte Ware nicht an den Kunden geliefert werden darf. Das ist so auch richtig, aber es gibt eine noch viel wichtigere Person, die die volle Verantwortung beim Sperren von mangelhafter Ware trägt.\n",
+      "position": {
+        "x": 960,
+        "y": 944
+      },
+      "angle": 0,
+      "id": "6781cb78-949e-44b1-bc46-9c08868c4a55",
+      "z": 7,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
-      "id": "5f7b3813-3ec4-4b06-92e2-b82e1e19dc44",
+      "id": "49dd3ef8-c0ca-4156-bbf3-eb14ef107388",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -99,17 +307,94 @@
         "port": "output"
       },
       "target": {
-        "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 2,
+      "z": 7,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
         },
         ".link-tools .tool-remove circle, .marker-vertex": {
           "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3c6ab5b8-6d4e-49a1-811f-cf561c74cd23",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Bingo! Der QMB trägt die Verantwortung, dass ein Sperrenprozess funktioniert. Es sieht aktuell so aus, dass fehlerhaft gekennzeichnete Enten doch zum Kunden geschickt wurden, obwohl sie eigentlich im Sperrlager sein sollten. Nun gilt es den QMB zu interviewen, wie das passieren konnte. Welche Frage stellst du als nächstes?\n",
+      "position": {
+        "x": 960,
+        "y": 80
+      },
+      "angle": 0,
+      "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+      "z": 12,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
         }
       }
     }
@@ -120,13 +405,48 @@
       "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
       "actor": "Player",
       "name": "START",
-      "next": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7"
+      "next": "cc5649e0-ba31-45ff-b870-74bd53edef3b"
     },
     {
       "type": "Text",
       "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
       "actor": "Factory_QMB",
       "name": "Hallo,\nich bin Factory_QMB",
+      "next": null
+    },
+    {
+      "type": "Text",
+      "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+      "actor": "Turtle",
+      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser x Personen würden SIe jetzt  zum zweiten Mal oder vielleicht zum ersten Mal Fragen stellen, nachdem was Sie jetzt wissen?",
+      "next": "627e4376-ec2e-443d-8c40-dc0cbce7412a"
+    },
+    {
+      "type": "Text",
+      "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
+      "actor": "SGM",
+      "name": "Es schadet nie sich den Produktionsprozess näher anzuschauen und zu analysieren, wo hier die Ursache für Fehler liegen könnte. Hast du ja auch schon gemacht. Aber aktuell gäbe es hier keinen Grund, um weiter zu suchen.\n",
+      "next": null
+    },
+    {
+      "type": "Text",
+      "id": "51a80e34-f656-4588-916f-a6a6a3f3dd82",
+      "actor": "Factory_Prüferin",
+      "name": "Sie hat uns viele wichtigen Informationen gegben. Wir verstehen jetzt, dass die Prüfung eine 100%-Prüfung ist und überdies alle fehlerhaften Enten aussortiert. So dürften eigentliche nie fehlerhafte Enten zum Kunden gelangen. Hier muss man nicht weiter suchen.\n",
+      "next": null
+    },
+    {
+      "type": "Text",
+      "id": "6781cb78-949e-44b1-bc46-9c08868c4a55",
+      "actor": "Produktionsleitung",
+      "name": "Man könnte meinen, dass die Produktionsleiterin eigentlich dafür verantwortlich sein müsste, dass fehlerhafte Ware nicht an den Kunden geliefert werden darf. Das ist so auch richtig, aber es gibt eine noch viel wichtigere Person, die die volle Verantwortung beim Sperren von mangelhafter Ware trägt.\n",
+      "next": null
+    },
+    {
+      "type": "Text",
+      "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+      "actor": "Factory_QMB",
+      "name": "Bingo! Der QMB trägt die Verantwortung, dass ein Sperrenprozess funktioniert. Es sieht aktuell so aus, dass fehlerhaft gekennzeichnete Enten doch zum Kunden geschickt wurden, obwohl sie eigentlich im Sperrlager sein sollten. Nun gilt es den QMB zu interviewen, wie das passieren konnte. Welche Frage stellst du als nächstes?\n",
       "next": null
     }
   ]
