@@ -51,7 +51,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Also, zuerst möchte ich mich dafür bedanken, dass Sie uns aushelfen und die Auditaufgaben so schnell übernehmen konnten. Ich bin die Geschäftsführerin von Tub Ducks und bin sehr froh, dass wir jetzt einen  konsolidierten Ansatz wählen, um die Reklamationen der Kunden zielorientiert und nachhaltig zu beenden. Das hat mir große Sorgen gemacht.",
+      "name": "Also, zuerst möchte ich mich dafür bedanken, dass Sie uns aushelfen und die Auditaufgaben so schnell übernehmen konnten. Ich bin ... und sehr froh, dass wir jetzt einen  konsolidierten Ansatz wählen, um die Reklamationen der Kunden zielorientiert und nachhaltig zu beenden. Das hat mir große Sorgen gemacht. Die Reklamationen gefährden unser Geschäft.",
       "position": {
         "x": 448,
         "y": 64
@@ -715,7 +715,7 @@
       "type": "Text",
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "actor": "CEO",
-      "name": "Also, zuerst möchte ich mich dafür bedanken, dass Sie uns aushelfen und die Auditaufgaben so schnell übernehmen konnten. Ich bin die Geschäftsführerin von Tub Ducks und bin sehr froh, dass wir jetzt einen  konsolidierten Ansatz wählen, um die Reklamationen der Kunden zielorientiert und nachhaltig zu beenden. Das hat mir große Sorgen gemacht.",
+      "name": "Also, zuerst möchte ich mich dafür bedanken, dass Sie uns aushelfen und die Auditaufgaben so schnell übernehmen konnten. Ich bin ... und sehr froh, dass wir jetzt einen  konsolidierten Ansatz wählen, um die Reklamationen der Kunden zielorientiert und nachhaltig zu beenden. Das hat mir große Sorgen gemacht. Die Reklamationen gefährden unser Geschäft.",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     },
     {
