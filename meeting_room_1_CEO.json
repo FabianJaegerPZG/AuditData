@@ -353,7 +353,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Produktion",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1197,7 +1197,7 @@
     {
       "type": "Text",
       "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
-      "actor": "Produktion",
+      "actor": "TurtleMeetingRoom",
       "name": "Du hast dich richtig entschieden. Es ist die Geschäftsführerin.",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     },
