@@ -126,7 +126,7 @@
         "output"
       ],
       "title": "",
-      "name": "A: dich persönlich vorstellen?",
+      "name": "B: dich persönlich vorstellen?",
       "position": {
         "x": 944,
         "y": 192
@@ -211,8 +211,8 @@
       },
       "name": "Das war die richtige Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: Mein Name ist ___ und ich werde heute das interne Audit durchführen. Dazu zeige ich Ihnen eine  Präsentation mit der Agenda und erläutere Ihnen den Ablauf des heutigen Tages. Ich freue mich, wenn Sie sich auch kurz vorstellen könnten, damit ich weiß wer Sie sind.",
       "position": {
-        "x": 1392,
-        "y": 192
+        "x": 2192,
+        "y": 176
       },
       "angle": 0,
       "id": "26f95d7f-87f3-4960-b0e9-03f43f1352f2",
@@ -286,8 +286,8 @@
       },
       "name": "",
       "position": {
-        "x": 1808,
-        "y": 240
+        "x": 2560,
+        "y": 224
       },
       "angle": 0,
       "id": "37d62d1c-454d-4b2a-a684-bd951d3f35a6",
@@ -361,7 +361,7 @@
         "output"
       ],
       "title": "",
-      "name": "B: nach frischem Kaffee fragen?",
+      "name": "A: nach frischem Kaffee fragen?",
       "position": {
         "x": 944,
         "y": 512
@@ -438,7 +438,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Upps, das war die falsche Wahl, aber ich denke, das weißt du. ",
+      "name": "Upps, das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
       "position": {
         "x": 1408,
         "y": 512
@@ -502,8 +502,110 @@
       }
     },
     {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "B: dich persönlich vorstellen?",
+      "position": {
+        "x": 1808,
+        "y": 512
+      },
+      "angle": 0,
+      "id": "de5ada05-36ea-4666-9085-62a5f957a7ed",
+      "z": 13,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "A: nach frischem Kaffee fragen?",
+      "position": {
+        "x": 1776,
+        "y": 784
+      },
+      "angle": 0,
+      "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
+      "z": 14,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
-      "id": "6ea35038-a658-4b56-a183-1739709c6a65",
+      "id": "cc8ba706-d586-44ee-8f1e-759da8f6a3c3",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -512,19 +614,94 @@
         "port": "output"
       },
       "target": {
+        "id": "de5ada05-36ea-4666-9085-62a5f957a7ed",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 15,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "4841cb6c-9972-44d2-a175-0ac4db62fc46",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "20402384-47dc-4697-b7bf-0f948283d92b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 16,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1a707998-6b9c-46a6-8e23-a210d13b5705",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "de5ada05-36ea-4666-9085-62a5f957a7ed",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "26f95d7f-87f3-4960-b0e9-03f43f1352f2",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 17,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "7f03c7bc-3901-41a5-8215-28e698aedae9",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
         "id": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 13,
+      "z": 18,
       "vertices": [
         {
-          "x": 1824,
-          "y": 768
+          "x": 2080,
+          "y": 1136
         },
         {
-          "x": 496,
-          "y": 768
+          "x": 528,
+          "y": 752
         }
       ],
       "attrs": {
@@ -559,7 +736,7 @@
       "type": "Choice",
       "id": "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
       "title": "",
-      "name": "A: dich persönlich vorstellen?",
+      "name": "B: dich persönlich vorstellen?",
       "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
     },
     {
@@ -580,14 +757,31 @@
       "type": "Choice",
       "id": "306a3052-23d5-4702-b7f0-618158d7b55e",
       "title": "",
-      "name": "B: nach frischem Kaffee fragen?",
+      "name": "A: nach frischem Kaffee fragen?",
       "next": "20402384-47dc-4697-b7bf-0f948283d92b"
     },
     {
       "type": "Text",
       "id": "20402384-47dc-4697-b7bf-0f948283d92b",
       "actor": "TurtleMeetingRoom",
-      "name": "Upps, das war die falsche Wahl, aber ich denke, das weißt du. ",
+      "name": "Upps, das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
+      "choices": [
+        "de5ada05-36ea-4666-9085-62a5f957a7ed",
+        "96aad37a-d678-4fd3-84f5-3808d73f4b8c"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "de5ada05-36ea-4666-9085-62a5f957a7ed",
+      "title": "",
+      "name": "B: dich persönlich vorstellen?",
+      "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
+    },
+    {
+      "type": "Choice",
+      "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
+      "title": "",
+      "name": "A: nach frischem Kaffee fragen?",
       "next": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f"
     }
   ]
