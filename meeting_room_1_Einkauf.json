@@ -122,7 +122,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "CEO",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -353,7 +353,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1013,31 +1013,6 @@
     },
     {
       "type": "link",
-      "id": "62fdcb9c-285f-407c-8de3-1a9b18970585",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 25,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "0678cd44-dea0-425f-a83b-2db09fbfabfb",
       "smooth": true,
       "embeds": "",
@@ -1072,8 +1047,9 @@
         "port": "output"
       },
       "target": {
-        "x": 1264,
-        "y": 672
+        "id": "1069d16f-638f-4a20-ae89-b663324ec209",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
       },
       "z": 27,
       "attrs": {
@@ -1134,6 +1110,137 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "link",
+      "id": "8bf8c6e0-2d5a-49b7-991d-6bbbd0f4dfb6",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 29,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "d5fcf72c-c3de-4483-b962-4adf709ce8f7",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f05515ea-b82e-41fc-915e-88b3525a18de",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 30,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "83bee2bc-6335-43f4-be08-3e5591753267",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "1069d16f-638f-4a20-ae89-b663324ec209",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 31,
+      "vertices": [
+        {
+          "x": 1040,
+          "y": 704
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1b2e06c0-4bd1-49e4-a50a-2905871ababe",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "00e50274-c481-4a4c-93e1-ff875b71b70a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 32,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f09c726a-8516-4a53-a543-e7de49d15adf",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "c1f6369c-f40d-4f99-b516-d137cf95bced",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 33,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -1154,9 +1261,15 @@
     {
       "type": "Text",
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-      "actor": "CEO",
+      "actor": "TurtleMeetingRoom",
       "name": "Leider nein. Versuchs noch Mal.",
-      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+      "choices": [
+        "54112f4f-de6b-4619-8e69-9d766b98c939",
+        "f05515ea-b82e-41fc-915e-88b3525a18de",
+        "1069d16f-638f-4a20-ae89-b663324ec209",
+        "00e50274-c481-4a4c-93e1-ff875b71b70a",
+        "c1f6369c-f40d-4f99-b516-d137cf95bced"
+      ]
     },
     {
       "type": "Text",
@@ -1166,10 +1279,10 @@
       "choices": [
         "54112f4f-de6b-4619-8e69-9d766b98c939",
         "f05515ea-b82e-41fc-915e-88b3525a18de",
+        "1069d16f-638f-4a20-ae89-b663324ec209",
         "00e50274-c481-4a4c-93e1-ff875b71b70a",
         "c1f6369c-f40d-4f99-b516-d137cf95bced"
-      ],
-      "next": null
+      ]
     },
     {
       "type": "Lua",
@@ -1188,7 +1301,7 @@
     {
       "type": "Text",
       "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "name": "Du hast dich richtig entschieden. Es ist die Person vom Einkauf.",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     },
