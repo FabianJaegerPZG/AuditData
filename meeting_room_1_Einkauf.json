@@ -45,7 +45,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Einkauf",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -128,10 +128,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ich bin CEO",
+      "name": "Leider nein. Versuchs noch Mal.",
       "position": {
-        "x": 928,
-        "y": 464
+        "x": 416,
+        "y": 528
       },
       "angle": 0,
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
@@ -174,16 +174,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "QMB",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Ich bin QMB",
+      "name": "Hoppla, da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n\nWeiß du es trotzdem?\n\nWelche Position im Unternehmen hat die Person inne?",
       "position": {
-        "x": 1424,
-        "y": 368
+        "x": 848,
+        "y": 96
       },
       "angle": 0,
       "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
@@ -219,31 +219,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "0be329fd-922a-4874-8673-fafcbe4168dc",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 8,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Lua",
       "inPorts": [
         "input"
@@ -257,8 +232,8 @@
       },
       "name": "",
       "position": {
-        "x": 864,
-        "y": 96
+        "x": 2112,
+        "y": 112
       },
       "angle": 0,
       "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
@@ -291,31 +266,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "a491c23f-45ef-40d6-b5e0-5f55a8d0f0e0",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 10,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -357,10 +307,10 @@
         "output"
       ],
       "title": "",
-      "name": "Hallo, Vielen Dank! Ihr habt echt ein nettes Büro! Stellt euch doch einmal vor!",
+      "name": "CEO",
       "position": {
-        "x": 400,
-        "y": 448
+        "x": 1328,
+        "y": 80
       },
       "angle": 0,
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
@@ -403,16 +353,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Produktion",
+      "actor": "",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Ich bin Produktion",
+      "name": "Du hast dich richtig entschieden. Es ist die Person vom Einkauf.",
       "position": {
-        "x": 1968,
-        "y": 432
+        "x": 1712,
+        "y": 96
       },
       "angle": 0,
       "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
@@ -444,31 +394,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "4f5372eb-4f9a-4f8e-82ac-c5001e74e8e8",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 12,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -524,6 +449,31 @@
       }
     },
     {
+      "type": "link",
+      "id": "a26a4b4b-394f-4d14-b8db-089fa7520381",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -572,6 +522,37 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f74a52d3-d7a9-48e5-8478-743af39152fc",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 15,
+      "vertices": [
+        {
+          "x": 1216,
+          "y": 160
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
         }
       }
     },
@@ -629,7 +610,7 @@
     },
     {
       "type": "link",
-      "id": "56db473a-baed-4d65-9ffa-d08305636ba7",
+      "id": "3a6de1a2-7ed3-4e63-affa-e0364680adef",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -638,11 +619,11 @@
         "port": "output"
       },
       "target": {
-        "id": "0eda167d-e344-4ab3-bd3a-5314af0f9180",
+        "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 17,
+      "z": 16,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -653,27 +634,53 @@
       }
     },
     {
-      "type": "link",
-      "id": "1cee0824-0128-4b70-9c8e-c1f6f77076e3",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
+      "size": {
+        "width": 300,
+        "height": 225
       },
-      "target": {
-        "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Produktionsleitung",
+      "position": {
+        "x": 1328,
+        "y": 352
       },
+      "angle": 0,
+      "id": "f05515ea-b82e-41fc-915e-88b3525a18de",
       "z": 17,
       "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
+        ".inPorts>.port0>text": {
+          "text": "input"
         },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
         }
       }
     },
@@ -701,6 +708,432 @@
           "r": 8
         }
       }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "QMB",
+      "position": {
+        "x": 1328,
+        "y": 608
+      },
+      "angle": 0,
+      "id": "1069d16f-638f-4a20-ae89-b663324ec209",
+      "z": 18,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Personalabteilung",
+      "position": {
+        "x": 1344,
+        "y": 896
+      },
+      "angle": 0,
+      "id": "00e50274-c481-4a4c-93e1-ff875b71b70a",
+      "z": 19,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Einkauf",
+      "position": {
+        "x": 1360,
+        "y": 1168
+      },
+      "angle": 0,
+      "id": "c1f6369c-f40d-4f99-b516-d137cf95bced",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "32cf592f-5ffa-4351-949c-e7ee5b21dc09",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "c1f6369c-f40d-4f99-b516-d137cf95bced",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 20,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f0373825-fb95-45f3-8207-eba2eaf2c829",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "vertices": [
+        {
+          "x": 320,
+          "y": 480
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "9274869f-305b-494d-9ded-9997f72ef79d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f05515ea-b82e-41fc-915e-88b3525a18de",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 22,
+      "vertices": [
+        {
+          "x": 480,
+          "y": 480
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8ed955df-5dea-42a9-8dab-218c10482970",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "1069d16f-638f-4a20-ae89-b663324ec209",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
+      "vertices": [
+        {
+          "x": 480,
+          "y": 912
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b4d5e8b2-b929-4469-8c74-6a69506ad045",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "00e50274-c481-4a4c-93e1-ff875b71b70a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 24,
+      "vertices": [
+        {
+          "x": 432,
+          "y": 944
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "62fdcb9c-285f-407c-8de3-1a9b18970585",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 25,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0678cd44-dea0-425f-a83b-2db09fbfabfb",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f05515ea-b82e-41fc-915e-88b3525a18de",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 26,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "078ec378-80db-49e5-b6fd-db066f70f18d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "x": 1264,
+        "y": 672
+      },
+      "z": 27,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "52e81cb9-2eed-4f2a-ae74-97eea59118f4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "00e50274-c481-4a4c-93e1-ff875b71b70a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 28,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "acb961ab-297b-4926-8bb8-2501f8e223ba",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "c1f6369c-f40d-4f99-b516-d137cf95bced",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 29,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -714,23 +1147,29 @@
     {
       "type": "Text",
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
-      "actor": "",
+      "actor": "Einkauf",
       "name": "Ich freue mich, dass ich heute auch dabei sein darf. War noch nie bei einem Audit. Ich lerne immer wieder gerne dazu. Ich bin ... und möchte aus diesem Audit lernen, wie ich in Zukunft besser mit unseren Zulieferern umgehen muss.",
-      "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
+      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
     },
     {
       "type": "Text",
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
       "actor": "CEO",
-      "name": "Ich bin CEO",
+      "name": "Leider nein. Versuchs noch Mal.",
       "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
     },
     {
       "type": "Text",
       "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-      "actor": "QMB",
-      "name": "Ich bin QMB",
-      "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4"
+      "actor": "TurtleMeetingRoom",
+      "name": "Hoppla, da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n\nWeiß du es trotzdem?\n\nWelche Position im Unternehmen hat die Person inne?",
+      "choices": [
+        "54112f4f-de6b-4619-8e69-9d766b98c939",
+        "f05515ea-b82e-41fc-915e-88b3525a18de",
+        "00e50274-c481-4a4c-93e1-ff875b71b70a",
+        "c1f6369c-f40d-4f99-b516-d137cf95bced"
+      ],
+      "next": null
     },
     {
       "type": "Lua",
@@ -743,15 +1182,15 @@
       "type": "Choice",
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
       "title": "",
-      "name": "Hallo, Vielen Dank! Ihr habt echt ein nettes Büro! Stellt euch doch einmal vor!",
+      "name": "CEO",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
     },
     {
       "type": "Text",
       "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
-      "actor": "Produktion",
-      "name": "Ich bin Produktion",
-      "next": "0eda167d-e344-4ab3-bd3a-5314af0f9180"
+      "actor": "",
+      "name": "Du hast dich richtig entschieden. Es ist die Person vom Einkauf.",
+      "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     },
     {
       "type": "Choice",
@@ -775,6 +1214,34 @@
       "choices": [
         "b4d12132-e36e-454e-8ce1-b1c26f5e89a4"
       ]
+    },
+    {
+      "type": "Choice",
+      "id": "f05515ea-b82e-41fc-915e-88b3525a18de",
+      "title": "",
+      "name": "Produktionsleitung",
+      "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
+    },
+    {
+      "type": "Choice",
+      "id": "1069d16f-638f-4a20-ae89-b663324ec209",
+      "title": "",
+      "name": "QMB",
+      "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
+    },
+    {
+      "type": "Choice",
+      "id": "00e50274-c481-4a4c-93e1-ff875b71b70a",
+      "title": "",
+      "name": "Personalabteilung",
+      "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
+    },
+    {
+      "type": "Choice",
+      "id": "c1f6369c-f40d-4f99-b516-d137cf95bced",
+      "title": "",
+      "name": "Einkauf",
+      "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4"
     }
   ]
 }
