@@ -808,31 +808,6 @@
     },
     {
       "type": "link",
-      "id": "866bc858-9167-4e5f-b594-442ac5241dc3",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 18,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "619ac253-53f6-45e6-baed-f5a62d14762f",
       "smooth": true,
       "embeds": "",
@@ -1260,7 +1235,7 @@
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "actor": "Produktion",
       "name": "Bitte, entschuldigen Sie meine Verspätung. In der Produktion hatte sich ein Unfall ereignet. Da wollte ich schauen, wie es der Mitarbeiterin geht. Sie wissen ja, wir haben seit kurzem die Null-Unfall-Strategie. Das ist eine Platzwunde am Kopf ein Ereignis, dass mir Sorge bereitet, inwieweit unsere Strategie richtig durchgeführt wird.",
-      "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
+      "next": null
     },
     {
       "type": "Text",
