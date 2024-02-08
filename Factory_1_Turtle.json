@@ -109,7 +109,7 @@
       "angle": 0,
       "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
       "z": 2,
-      "lua": "ShowTourWaypoints();",
+      "lua": "ShowTourWaypoints();\n\nAddPoints(20, \"Dann schauen wir uns jetzt die Werkshalle an.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -161,7 +161,7 @@
       "angle": 0,
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "z": 3,
-      "lua": "ShowInterviewWaypoints();",
+      "lua": "ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -393,7 +393,7 @@
       "title": "",
       "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
       "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-      "lua": "ShowTourWaypoints();"
+      "lua": "ShowTourWaypoints();\n\nAddPoints(20, \"Dann schauen wir uns jetzt die Werkshalle an.\");"
     },
     {
       "type": "Choice",
@@ -401,7 +401,7 @@
       "title": "",
       "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
       "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-      "lua": "ShowInterviewWaypoints();"
+      "lua": "ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");"
     },
     {
       "type": "Lua",
