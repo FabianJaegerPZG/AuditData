@@ -161,7 +161,7 @@
       "angle": 0,
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "z": 3,
-      "lua": "ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");",
+      "lua": "//ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -329,11 +329,21 @@
         "port": "output"
       },
       "target": {
-        "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
+        "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 8,
+      "vertices": [
+        {
+          "x": 1344,
+          "y": 624
+        },
+        {
+          "x": 832,
+          "y": 768
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -359,6 +369,124 @@
         "port": "input"
       },
       "z": 9,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das ist ein Schritt zu früh.",
+      "position": {
+        "x": 912,
+        "y": 768
+      },
+      "angle": 0,
+      "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+      "z": 10,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "4fff9ce5-2fce-4f6f-a4a5-88820e90e2e1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 11,
+      "vertices": [
+        {
+          "x": 1184,
+          "y": 704
+        },
+        {
+          "x": 704,
+          "y": 592
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "66255a94-2e28-412f-9bfc-68cd9f105a85",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 12,
+      "vertices": [
+        {
+          "x": 688,
+          "y": 512
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -400,8 +528,8 @@
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "title": "",
       "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
-      "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-      "lua": "ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");"
+      "next": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+      "lua": "//ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");"
     },
     {
       "type": "Lua",
@@ -409,6 +537,16 @@
       "name": "",
       "next": null,
       "lua": "InterviewPassed();\n"
+    },
+    {
+      "type": "Text",
+      "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+      "actor": "",
+      "name": "Das ist ein Schritt zu früh.",
+      "choices": [
+        "6bd9272d-2c96-4ba5-b670-73a301a63d54",
+        "51689a35-24a3-43af-9fcd-33dfb3754b02"
+      ]
     }
   ]
 }
