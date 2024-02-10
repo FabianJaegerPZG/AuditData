@@ -13,8 +13,8 @@
       },
       "inPorts": [],
       "position": {
-        "x": 144,
-        "y": 80
+        "x": 64,
+        "y": 48
       },
       "angle": 0,
       "id": "cd27556b-bd79-4369-9c76-c75fe58b6e56",
@@ -50,10 +50,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Willkommen in der Werkshalle. Möchten Sie zuerst einen Rundgang durch die Werkshalle vornehmen oder Interviews mit dem Fachpersonal führen?",
+      "name": "Wow, die Gespräche haben ja lange gedauert. Wollen wir jetzt wieder in den Besprechungsraum zurückkehren?",
       "position": {
-        "x": 512,
-        "y": 80
+        "x": 416,
+        "y": 48
       },
       "angle": 0,
       "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
@@ -101,15 +101,15 @@
         "output"
       ],
       "title": "",
-      "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
+      "name": "Ja, sehr gerne.",
       "position": {
-        "x": 896,
-        "y": 80
+        "x": 784,
+        "y": 48
       },
       "angle": 0,
       "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
       "z": 2,
-      "lua": "ShowTourWaypoints();\n\nAddPoints(20, \"Dann schauen wir uns jetzt die Werkshalle an.\");",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -153,15 +153,15 @@
         "output"
       ],
       "title": "",
-      "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
+      "name": "Nein, ich bin mir noch nicht ganz sicher.",
       "position": {
-        "x": 896,
-        "y": 336
+        "x": 784,
+        "y": 368
       },
       "angle": 0,
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "z": 3,
-      "lua": "--ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -268,117 +268,6 @@
       }
     },
     {
-      "type": "dialogue.Lua",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "size": {
-        "width": 250,
-        "height": 135
-      },
-      "name": "",
-      "position": {
-        "x": 1392,
-        "y": 208
-      },
-      "angle": 0,
-      "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-      "z": 7,
-      "lua": "InterviewPassed();\n",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "c9743343-e3c2-424a-8057-5394794d28ed",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 8,
-      "vertices": [
-        {
-          "x": 1344,
-          "y": 624
-        },
-        {
-          "x": 832,
-          "y": 768
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "f8c06907-bc5c-4a17-a2f0-0e9c1a642766",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 9,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -392,14 +281,65 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das ist ein Schritt zu früh.",
+      "name": "Alles klar, dann gehen wir mal rüber.",
       "position": {
-        "x": 912,
-        "y": 768
+        "x": 1136,
+        "y": 48
       },
       "angle": 0,
-      "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
-      "z": 10,
+      "id": "bae635f2-cb83-448e-994e-5ecf033facbd",
+      "z": 9,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 1520,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
+      "z": 9,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -432,30 +372,20 @@
     },
     {
       "type": "link",
-      "id": "4fff9ce5-2fce-4f6f-a4a5-88820e90e2e1",
+      "id": "9b715d0d-41e1-4302-86c4-39bc5e939979",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+        "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
+        "id": "bae635f2-cb83-448e-994e-5ecf033facbd",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 11,
-      "vertices": [
-        {
-          "x": 1184,
-          "y": 704
-        },
-        {
-          "x": 704,
-          "y": 592
-        }
-      ],
+      "z": 10,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -467,26 +397,20 @@
     },
     {
       "type": "link",
-      "id": "66255a94-2e28-412f-9bfc-68cd9f105a85",
+      "id": "1ad7f883-28e4-43ed-b23c-d3987ecb75c1",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+        "id": "bae635f2-cb83-448e-994e-5ecf033facbd",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
+        "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 12,
-      "vertices": [
-        {
-          "x": 688,
-          "y": 512
-        }
-      ],
+      "z": 10,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -509,7 +433,7 @@
       "type": "Text",
       "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
       "actor": "TurtleFactory",
-      "name": "Willkommen in der Werkshalle. Möchten Sie zuerst einen Rundgang durch die Werkshalle vornehmen oder Interviews mit dem Fachpersonal führen?",
+      "name": "Wow, die Gespräche haben ja lange gedauert. Wollen wir jetzt wieder in den Besprechungsraum zurückkehren?",
       "choices": [
         "51689a35-24a3-43af-9fcd-33dfb3754b02",
         "6bd9272d-2c96-4ba5-b670-73a301a63d54"
@@ -519,34 +443,31 @@
       "type": "Choice",
       "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
       "title": "",
-      "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
-      "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-      "lua": "ShowTourWaypoints();\n\nAddPoints(20, \"Dann schauen wir uns jetzt die Werkshalle an.\");"
+      "name": "Ja, sehr gerne.",
+      "next": "bae635f2-cb83-448e-994e-5ecf033facbd",
+      "lua": ""
     },
     {
       "type": "Choice",
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "title": "",
-      "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
-      "next": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
-      "lua": "--ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");"
-    },
-    {
-      "type": "Lua",
-      "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-      "name": "",
+      "name": "Nein, ich bin mir noch nicht ganz sicher.",
       "next": null,
-      "lua": "InterviewPassed();\n"
+      "lua": ""
     },
     {
       "type": "Text",
-      "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
+      "id": "bae635f2-cb83-448e-994e-5ecf033facbd",
       "actor": "",
-      "name": "Das ist ein Schritt zu früh.",
-      "choices": [
-        "6bd9272d-2c96-4ba5-b670-73a301a63d54",
-        "51689a35-24a3-43af-9fcd-33dfb3754b02"
-      ]
+      "name": "Alles klar, dann gehen wir mal rüber.",
+      "next": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
+      "lua": "InterviewPassed();"
+    },
+    {
+      "type": "Lua",
+      "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
+      "name": "",
+      "next": null
     }
   ]
 }
