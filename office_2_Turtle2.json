@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das Audit haben Sie doch prima gemeistert. Wollen wir vielleicht noch mal ein bisschen darüber sprechen?",
+      "name": "Wunderbar! \nHervorragend! \nAusgezeichnet!\nDu hast das sehr gut gemacht! \n",
       "position": {
         "x": 960,
         "y": 320
@@ -165,51 +165,27 @@
       }
     },
     {
-      "type": "link",
-      "id": "3d3d2a01-3061-4836-b3fc-3cd2cfd4a608",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "91b99566-e45d-422a-a702-42ee9134591b",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "efa63ab9-8615-4f73-918a-169497f5e03d",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 4,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
+      "type": "dialogue.Text",
       "inPorts": [
         "input"
       ],
       "outPorts": [
         "output"
       ],
-      "title": "",
-      "name": "Nein, lieber nicht. Auf Wiedersehen!",
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Nun kannst du dich zurücklehnen und entspannen.\n\nAber vielleicht haben deine Kolleg*innen noch etwas mit dir vor...",
       "position": {
-        "x": 1600,
-        "y": 336
+        "x": 1456,
+        "y": 320
       },
       "angle": 0,
-      "id": "efa63ab9-8615-4f73-918a-169497f5e03d",
-      "z": 5,
+      "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+      "z": 4,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -242,11 +218,36 @@
     },
     {
       "type": "link",
-      "id": "fed911d2-6324-4b6c-a3ed-0bdbab9a1b9a",
+      "id": "bbf88a09-49e6-46a7-a3fd-a516014abf1c",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "efa63ab9-8615-4f73-918a-169497f5e03d",
+        "id": "91b99566-e45d-422a-a702-42ee9134591b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 5,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6d614e23-5614-485a-855a-3a082de8241c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
@@ -278,10 +279,8 @@
       "type": "Text",
       "id": "91b99566-e45d-422a-a702-42ee9134591b",
       "actor": "TurtleOffice",
-      "name": "Das Audit haben Sie doch prima gemeistert. Wollen wir vielleicht noch mal ein bisschen darüber sprechen?",
-      "choices": [
-        "efa63ab9-8615-4f73-918a-169497f5e03d"
-      ]
+      "name": "Wunderbar! \nHervorragend! \nAusgezeichnet!\nDu hast das sehr gut gemacht! \n",
+      "next": "377b319f-6330-462f-9e22-8078f9b8b8bb"
     },
     {
       "type": "Lua",
@@ -291,10 +290,10 @@
       "lua": "InterviewPassed();"
     },
     {
-      "type": "Choice",
-      "id": "efa63ab9-8615-4f73-918a-169497f5e03d",
-      "title": "",
-      "name": "Nein, lieber nicht. Auf Wiedersehen!",
+      "type": "Text",
+      "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+      "actor": "",
+      "name": "Nun kannst du dich zurücklehnen und entspannen.\n\nAber vielleicht haben deine Kolleg*innen noch etwas mit dir vor...",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
     }
   ]
