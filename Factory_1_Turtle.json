@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Willkommen in der Werkshalle. Möchten Sie zuerst einen Rundgang durch die Werkshalle vornehmen oder Interviews mit dem Fachpersonal führen?",
+      "name": "Schön dich zu sehen, du hast die ersten Herausforderungen eines Audits gut gelöst. Ab hier beginnt der wirklich anspruchsvolle Teil, das Auditieren und die Prüfung der Gegebenheit vor Ort. Was glaubst du, solltest du als erstes machen?",
       "position": {
         "x": 512,
         "y": 80
@@ -101,7 +101,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
+      "name": "a) Zuerst einen Rundgang durch die Werkshalle machen.",
       "position": {
         "x": 896,
         "y": 80
@@ -153,7 +153,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
+      "name": "b) mit den Interviews beginnen",
       "position": {
         "x": 896,
         "y": 336
@@ -392,7 +392,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das ist ein Schritt zu früh.",
+      "name": "Im Prinzip darfst du sofort mit den Interviews beginnen. Doch dann vergibst du die Chance dir einen Überblick über die relevanten Begebenheiten im Produktionsprozess zu bekommen. Es hat sich als praktikabel und sinnvoll erwiesen entweder den Rundgang als erstes zu machen, oder Rundgang und Interviews zu kombinieren. Bitte, starte mit dem Rundgang.",
       "position": {
         "x": 912,
         "y": 768
@@ -509,7 +509,7 @@
       "type": "Text",
       "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
       "actor": "TurtleFactory",
-      "name": "Willkommen in der Werkshalle. Möchten Sie zuerst einen Rundgang durch die Werkshalle vornehmen oder Interviews mit dem Fachpersonal führen?",
+      "name": "Schön dich zu sehen, du hast die ersten Herausforderungen eines Audits gut gelöst. Ab hier beginnt der wirklich anspruchsvolle Teil, das Auditieren und die Prüfung der Gegebenheit vor Ort. Was glaubst du, solltest du als erstes machen?",
       "choices": [
         "51689a35-24a3-43af-9fcd-33dfb3754b02",
         "6bd9272d-2c96-4ba5-b670-73a301a63d54"
@@ -519,7 +519,7 @@
       "type": "Choice",
       "id": "51689a35-24a3-43af-9fcd-33dfb3754b02",
       "title": "",
-      "name": "Ich möchte zuerst einen Rundgang durch die Werkshalle machen.",
+      "name": "a) Zuerst einen Rundgang durch die Werkshalle machen.",
       "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
       "lua": "ShowTourWaypoints();\n\nAddPoints(20, \"Dann schauen wir uns jetzt die Werkshalle an.\");"
     },
@@ -527,7 +527,7 @@
       "type": "Choice",
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "title": "",
-      "name": "Ich möchte zuerst mit dem Fachpersonal hier sprechen.",
+      "name": "b) mit den Interviews beginnen",
       "next": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
       "lua": "--ShowInterviewWaypoints();\n\nAddPoints(-5, \"Das ist ein Schritt zu früh.\");"
     },
@@ -542,7 +542,7 @@
       "type": "Text",
       "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
       "actor": "",
-      "name": "Das ist ein Schritt zu früh.",
+      "name": "Im Prinzip darfst du sofort mit den Interviews beginnen. Doch dann vergibst du die Chance dir einen Überblick über die relevanten Begebenheiten im Produktionsprozess zu bekommen. Es hat sich als praktikabel und sinnvoll erwiesen entweder den Rundgang als erstes zu machen, oder Rundgang und Interviews zu kombinieren. Bitte, starte mit dem Rundgang.",
       "choices": [
         "6bd9272d-2c96-4ba5-b670-73a301a63d54",
         "51689a35-24a3-43af-9fcd-33dfb3754b02"
