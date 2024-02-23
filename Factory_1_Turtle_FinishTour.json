@@ -281,8 +281,8 @@
       },
       "name": "",
       "position": {
-        "x": 3696,
-        "y": 480
+        "x": 4288,
+        "y": 352
       },
       "angle": 0,
       "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
@@ -723,8 +723,8 @@
       },
       "name": "Gut gemacht! Nun kannst du zu deinen Interviewpartnern gehen und mit dem ersten Interview starten.",
       "position": {
-        "x": 3392,
-        "y": 112
+        "x": 3792,
+        "y": 320
       },
       "angle": 0,
       "id": "d64dfcb3-ca26-4917-b9f2-02ccf9c410ad",
@@ -836,6 +836,10 @@
         {
           "x": 2384,
           "y": 448
+        },
+        {
+          "x": 3600,
+          "y": 416
         }
       ],
       "attrs": {
@@ -962,10 +966,10 @@
         "output"
       ],
       "title": "",
-      "name": "...Betriebssicherheit betreffen?",
+      "name": "...die Betriebssicherheit betreffen?",
       "position": {
-        "x": 2208,
-        "y": 624
+        "x": 2224,
+        "y": 592
       },
       "angle": 0,
       "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
@@ -1063,7 +1067,7 @@
         "output"
       ],
       "title": "",
-      "name": "...deine eigenen Sicherheit betreffen?",
+      "name": "...die deine eigenen Sicherheit betreffen?",
       "position": {
         "x": 2208,
         "y": 896
@@ -1173,12 +1177,12 @@
           "y": 1168
         },
         {
-          "x": 2032,
-          "y": 1120
-        },
-        {
           "x": 1840,
           "y": 640
+        },
+        {
+          "x": 1808,
+          "y": 304
         }
       ],
       "attrs": {
@@ -1198,16 +1202,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleFactory",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Sehr gut. Welche könnten das sein?",
+      "name": "Welche könnten das sein? Wähle aus einer Liste aus.",
       "position": {
-        "x": 2656,
-        "y": 144
+        "x": 2640,
+        "y": 48
       },
       "angle": 0,
       "id": "443f5236-4950-4086-9db0-45da57af02c0",
@@ -1268,56 +1272,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "b217c18d-703a-4162-8fdc-b651513336a4",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6066c64a-d6e1-430b-94db-c60df574924c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "443f5236-4950-4086-9db0-45da57af02c0",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 33,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "3c11f3ad-035d-4409-bf48-113d776df82b",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "443f5236-4950-4086-9db0-45da57af02c0",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 34,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -1325,16 +1279,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleFactory",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nEs sollten die Antworten, die mit Arbeitssicherheit zu tun haben als richtig gelten,\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
       "position": {
-        "x": 3040,
-        "y": 144
+        "x": 3024,
+        "y": 64
       },
       "angle": 0,
       "id": "ed201c46-8e4d-46c1-b43c-aa77776ab8e3",
@@ -1395,8 +1349,393 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleFactory",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Zu den möglichen Gründen für die Reklamation solltest du hier auch etwas gefunden haben. Wähle sie aus der folgenden Liste aus.",
+      "position": {
+        "x": 2640,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
+      "z": 37,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
-      "id": "3fb65b42-5e97-4013-97b6-fee09eb1e027",
+      "id": "c25b724f-00f1-4f8b-8042-e5cb3214c899",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6066c64a-d6e1-430b-94db-c60df574924c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 38,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleFactory",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nEs sollten die Antworten, die mit Reklamationen zu tun haben als richtig gelten,\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "position": {
+        "x": 3024,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "f2386052-d86d-4f05-9668-df7f1d430630",
+      "z": 39,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleFactory",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nEs sollten die Antworten, die mit Betriebssicherheitzu tun haben als richtig gelten,\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "position": {
+        "x": 3040,
+        "y": 592
+      },
+      "angle": 0,
+      "id": "08979f27-685c-4712-aa24-6aa2d34cf694",
+      "z": 40,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "426add85-de73-4e21-a6ab-e4d747d31a65",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f2386052-d86d-4f05-9668-df7f1d430630",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 41,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleFactory",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Du hast schon ein paar Punkte gefunden. Nun schaue, ob du auch weitere Punkte unter ",
+      "position": {
+        "x": 3408,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41",
+      "z": 42,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleFactory",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Zur Betriebssicherheit waren recht augenfällige Punkte dabei. Bitte wähle aus folgender Liste die richtigen aus.",
+      "position": {
+        "x": 2640,
+        "y": 592
+      },
+      "angle": 0,
+      "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
+      "z": 42,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "350ac94b-58a4-4cd4-b67a-7f16bb7bfa8b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 43,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a2d3dba4-baf3-4be2-b4ee-0fdb5772323d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f2386052-d86d-4f05-9668-df7f1d430630",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 44,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "325336d6-ca51-4dc9-9c11-322c7875d782",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "08979f27-685c-4712-aa24-6aa2d34cf694",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 44,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6c2d372e-b899-486b-bf1d-550729aeec6e",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -1405,11 +1744,86 @@
         "port": "output"
       },
       "target": {
+        "id": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 45,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f2c2d55f-7812-4e38-8bee-21de254f2895",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f2386052-d86d-4f05-9668-df7f1d430630",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 46,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b8ac5568-552c-4c0a-aefe-10a54d8af551",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "08979f27-685c-4712-aa24-6aa2d34cf694",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 47,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "06416e3c-f1d0-4843-8d67-9e78ccd0be32",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
         "id": "d64dfcb3-ca26-4917-b9f2-02ccf9c410ad",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 37,
+      "z": 48,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1524,35 +1938,73 @@
       "id": "6066c64a-d6e1-430b-94db-c60df574924c",
       "title": "",
       "name": "...die Reklamationen betreffen?",
-      "next": "443f5236-4950-4086-9db0-45da57af02c0"
+      "next": "dd00b633-18cb-4221-994c-66752e0bb5e7"
     },
     {
       "type": "Choice",
       "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
       "title": "",
-      "name": "...Betriebssicherheit betreffen?",
-      "next": "443f5236-4950-4086-9db0-45da57af02c0"
+      "name": "...die Betriebssicherheit betreffen?",
+      "next": "b51cc9f3-f885-4caa-84c0-37367e935b41"
     },
     {
       "type": "Choice",
       "id": "c71c1cf1-d640-4374-869f-326d54bd9f8e",
       "title": "",
-      "name": "...deine eigenen Sicherheit betreffen?",
+      "name": "...die deine eigenen Sicherheit betreffen?",
       "next": "b2afff76-8168-4dec-86f7-b643432b20b7"
     },
     {
       "type": "Text",
       "id": "443f5236-4950-4086-9db0-45da57af02c0",
-      "actor": "",
-      "name": "Sehr gut. Welche könnten das sein?",
+      "actor": "TurtleFactory",
+      "name": "Welche könnten das sein? Wähle aus einer Liste aus.",
       "next": "ed201c46-8e4d-46c1-b43c-aa77776ab8e3"
     },
     {
       "type": "Text",
       "id": "ed201c46-8e4d-46c1-b43c-aa77776ab8e3",
-      "actor": "",
-      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "actor": "TurtleFactory",
+      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nEs sollten die Antworten, die mit Arbeitssicherheit zu tun haben als richtig gelten,\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "next": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41"
+    },
+    {
+      "type": "Text",
+      "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
+      "actor": "TurtleFactory",
+      "name": "Zu den möglichen Gründen für die Reklamation solltest du hier auch etwas gefunden haben. Wähle sie aus der folgenden Liste aus.",
+      "next": "f2386052-d86d-4f05-9668-df7f1d430630"
+    },
+    {
+      "type": "Text",
+      "id": "f2386052-d86d-4f05-9668-df7f1d430630",
+      "actor": "TurtleFactory",
+      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nEs sollten die Antworten, die mit Reklamationen zu tun haben als richtig gelten,\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "choices": [
+        "11393980-98ad-4bed-a1fe-36f1bb124e45"
+      ],
+      "next": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41"
+    },
+    {
+      "type": "Text",
+      "id": "08979f27-685c-4712-aa24-6aa2d34cf694",
+      "actor": "TurtleFactory",
+      "name": "Hier würde ich eine Auswahlliste, analog zu der Frageliste im Level 2, vorschlagen. Diese Liste sollte automatisch erscheinen, ohne, dass etwas angeklickt werden muss.\n\nEs sollten die Antworten, die mit Betriebssicherheitzu tun haben als richtig gelten,\n\nIn der Liste sind als richtige Auswahl:\n1. Notausgang ist mit Kisten verstellt.\n2. Im Mülleimer liegt n.i.O-Ware\n3. Gabelstapler nicht vorschriftsmäßig angestellt\n4. Klappe zur Sicherung des Bedienfeldes an SGM nicht geschlossen\n5. Feuerlöscher fehlt\n6. Prüferin trägt nicht-vorschriftsmäßige Schuhe\n7. Ungesicherte Stapelung von Material\n\nFalsche Auswahl könnte sein:\n1. Fahrwege sind zu schmal\n2. Schlechte Beleuchtung an der Maschinenbedienung\n3. Rollcontainer haben falsche Farbe\n4. Fluchtwegbeschilderung unzureichend\n5. Kaffeemaschine nicht brandgesichert",
+      "next": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41"
+    },
+    {
+      "type": "Text",
+      "id": "e6ad4542-87f6-4e34-99f0-2e0f2b4b9c41",
+      "actor": "TurtleFactory",
+      "name": "Du hast schon ein paar Punkte gefunden. Nun schaue, ob du auch weitere Punkte unter ",
       "next": "d64dfcb3-ca26-4917-b9f2-02ccf9c410ad"
+    },
+    {
+      "type": "Text",
+      "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
+      "actor": "TurtleFactory",
+      "name": "Zur Betriebssicherheit waren recht augenfällige Punkte dabei. Bitte wähle aus folgender Liste die richtigen aus.",
+      "next": "08979f27-685c-4712-aa24-6aa2d34cf694"
     }
   ]
 }
