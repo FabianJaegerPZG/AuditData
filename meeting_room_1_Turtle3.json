@@ -127,7 +127,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "",
+      "name": "Das Meeting muss gut strukturiert sein!",
       "position": {
         "x": 752,
         "y": 16
@@ -205,8 +205,8 @@
       },
       "name": "",
       "position": {
-        "x": 1968,
-        "y": 112
+        "x": 2464,
+        "y": 128
       },
       "angle": 0,
       "id": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
@@ -306,7 +306,7 @@
         "port": "output"
       },
       "target": {
-        "id": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
+        "id": "cd89d4f1-c92d-4e30-bcd3-823e68324d9e",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -420,6 +420,82 @@
           "r": 8
         }
       }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Alles klar, von mir aus kann es losgehen!",
+      "position": {
+        "x": 2016,
+        "y": 64
+      },
+      "angle": 0,
+      "id": "cd89d4f1-c92d-4e30-bcd3-823e68324d9e",
+      "z": 11,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b326dd0a-1b85-422e-a38f-70a50d8806d8",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cd89d4f1-c92d-4e30-bcd3-823e68324d9e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 12,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -441,7 +517,7 @@
       "type": "Text",
       "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
       "actor": "",
-      "name": "",
+      "name": "Das Meeting muss gut strukturiert sein!",
       "lua": "OpenAuditSortingGame();",
       "choices": [
         "44fdb007-7244-436c-b978-718b708619de"
@@ -459,8 +535,10 @@
       "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
       "actor": "",
       "name": "Ja, das hat doch schon mal gut geklappt. Das Meeting werden wir nicht simulieren. Ich denke, wir können jetzt in Produktionsstätte gehen.",
-      "next": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
-      "lua": ""
+      "lua": "",
+      "choices": [
+        "cd89d4f1-c92d-4e30-bcd3-823e68324d9e"
+      ]
     },
     {
       "type": "Choice",
@@ -468,6 +546,13 @@
       "title": "",
       "name": "Ich denke, ich bin jetzt gut vorbereitet auf das Meeting!",
       "next": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b"
+    },
+    {
+      "type": "Choice",
+      "id": "cd89d4f1-c92d-4e30-bcd3-823e68324d9e",
+      "title": "",
+      "name": "Alles klar, von mir aus kann es losgehen!",
+      "next": "38113649-c0c0-4649-896b-cf7cc4aa3e0e"
     }
   ]
 }
