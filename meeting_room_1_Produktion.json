@@ -59,6 +59,7 @@
       "angle": 0,
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "z": 1,
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -130,8 +131,8 @@
       },
       "name": "Hoppla, da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.",
       "position": {
-        "x": 832,
-        "y": 80
+        "x": 944,
+        "y": 48
       },
       "angle": 0,
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
@@ -1220,6 +1221,82 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 832,
+        "y": 288
+      },
+      "angle": 0,
+      "id": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
+      "z": 33,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "23990e9d-6882-4f0e-89a2-c013864caeaf",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 34,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -1235,7 +1312,8 @@
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "actor": "Produktion",
       "name": "Bitte, entschuldigen Sie meine Verspätung. In der Produktion hatte sich ein Unfall ereignet. Da wollte ich schauen, wie es der Mitarbeiterin geht. Sie wissen ja, wir haben seit kurzem die Null-Unfall-Strategie. Das ist eine Platzwunde am Kopf ein Ereignis, dass mir Sorge bereitet, inwieweit unsere Strategie richtig durchgeführt wird.",
-      "next": null
+      "next": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
+      "lua": ""
     },
     {
       "type": "Text",
@@ -1334,6 +1412,13 @@
       "title": "",
       "name": "QMB",
       "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+    },
+    {
+      "type": "Lua",
+      "id": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();"
     }
   ]
 }
