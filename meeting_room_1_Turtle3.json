@@ -256,7 +256,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das hat doch schon mal gut geklappt. Das Meeting lief super! Ich denke, wir können jetzt in Produktionsstätte gehen.",
+      "name": "Ja, das hat doch schon mal gut geklappt. Das Meeting werden wir nicht simulieren. Ich denke, wir können jetzt in Produktionsstätte gehen.",
       "position": {
         "x": 1552,
         "y": 48
@@ -331,11 +331,87 @@
         "port": "output"
       },
       "target": {
-        "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+        "id": "44fdb007-7244-436c-b978-718b708619de",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich denke, ich bin jetzt gut vorbereitet auf das Meeting!",
+      "position": {
+        "x": 1168,
+        "y": 64
+      },
+      "angle": 0,
+      "id": "44fdb007-7244-436c-b978-718b708619de",
+      "z": 9,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5fcc7a2a-f773-462e-8094-d35d226d3d20",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "44fdb007-7244-436c-b978-718b708619de",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 10,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -366,8 +442,10 @@
       "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
       "actor": "",
       "name": "",
-      "next": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
-      "lua": "OpenAuditSortingGame();"
+      "lua": "OpenAuditSortingGame();",
+      "choices": [
+        "44fdb007-7244-436c-b978-718b708619de"
+      ]
     },
     {
       "type": "Lua",
@@ -380,9 +458,16 @@
       "type": "Text",
       "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
       "actor": "",
-      "name": "Das hat doch schon mal gut geklappt. Das Meeting lief super! Ich denke, wir können jetzt in Produktionsstätte gehen.",
+      "name": "Ja, das hat doch schon mal gut geklappt. Das Meeting werden wir nicht simulieren. Ich denke, wir können jetzt in Produktionsstätte gehen.",
       "next": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
       "lua": ""
+    },
+    {
+      "type": "Choice",
+      "id": "44fdb007-7244-436c-b978-718b708619de",
+      "title": "",
+      "name": "Ich denke, ich bin jetzt gut vorbereitet auf das Meeting!",
+      "next": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b"
     }
   ]
 }
