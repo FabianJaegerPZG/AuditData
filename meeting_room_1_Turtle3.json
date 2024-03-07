@@ -1,0 +1,388 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 16,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "868a4ac6-1bcb-473c-8e00-d7fa6e2cf099",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "So, jetzt sind wir ja vollständig. Wie möchten Sie das Meeting strukturieren?",
+      "position": {
+        "x": 384,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f1778748-3f2d-4a91-a28b-72694e90fd75",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "868a4ac6-1bcb-473c-8e00-d7fa6e2cf099",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "",
+      "position": {
+        "x": 752,
+        "y": 16
+      },
+      "angle": 0,
+      "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
+      "z": 3,
+      "lua": "OpenAuditSortingGame();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "00823060-a828-43d1-b9a2-7802d3249d6b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 1968,
+        "y": 112
+      },
+      "angle": 0,
+      "id": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
+      "z": 5,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das hat doch schon mal gut geklappt. Das Meeting lief super! Ich denke, wir können jetzt in Produktionsstätte gehen.",
+      "position": {
+        "x": 1552,
+        "y": 48
+      },
+      "angle": 0,
+      "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+      "z": 6,
+      "lua": "",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8af17f69-24c4-4f80-b24b-124004aa71c4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 7,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "afd22362-9949-4113-b9ee-3fa00513469c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "868a4ac6-1bcb-473c-8e00-d7fa6e2cf099",
+      "actor": "Player",
+      "name": "START",
+      "next": "026ff6a3-f8d3-4a19-8833-63479cfc1844"
+    },
+    {
+      "type": "Text",
+      "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
+      "actor": "",
+      "name": "So, jetzt sind wir ja vollständig. Wie möchten Sie das Meeting strukturieren?",
+      "next": "be5dc836-6d00-46b1-b34b-b62a956a7cf3"
+    },
+    {
+      "type": "Text",
+      "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
+      "actor": "",
+      "name": "",
+      "next": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+      "lua": "OpenAuditSortingGame();"
+    },
+    {
+      "type": "Lua",
+      "id": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();"
+    },
+    {
+      "type": "Text",
+      "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
+      "actor": "",
+      "name": "Das hat doch schon mal gut geklappt. Das Meeting lief super! Ich denke, wir können jetzt in Produktionsstätte gehen.",
+      "next": "38113649-c0c0-4649-896b-cf7cc4aa3e0e",
+      "lua": ""
+    }
+  ]
+}
