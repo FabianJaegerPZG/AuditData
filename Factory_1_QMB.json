@@ -347,6 +347,82 @@
       }
     },
     {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 1661,
+        "y": 227
+      },
+      "angle": 0,
+      "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+      "z": 9,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5e7635ab-57c4-4ad5-8093-448082852f00",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 10,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -443,11 +519,18 @@
       "next": null
     },
     {
+      "type": "Lua",
+      "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();"
+    },
+    {
       "type": "Text",
       "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
       "actor": "Factory_QMB",
       "name": "Bingo! Der QMB trägt die Verantwortung, dass ein Sperrenprozess funktioniert. Es sieht aktuell so aus, dass fehlerhaft gekennzeichnete Enten doch zum Kunden geschickt wurden, obwohl sie eigentlich im Sperrlager sein sollten. Nun gilt es den QMB zu interviewen, wie das passieren konnte. Welche Frage stellst du als nächstes?\n",
-      "next": null
+      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
     }
   ]
 }
