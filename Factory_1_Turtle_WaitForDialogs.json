@@ -1,0 +1,133 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 1600,
+        "y": 208
+      },
+      "angle": 0,
+      "id": "e2872364-a95e-4661-9caa-24296bc8703e",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Sie haben noch nicht mit allen beteiligten Personen gesprochen.",
+      "position": {
+        "x": 2192,
+        "y": 304
+      },
+      "angle": 0,
+      "id": "e11ee050-f986-4692-9b6e-e9c02e00da38",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "2a861c37-44d3-459a-9612-a4882e6b9fbf",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e2872364-a95e-4661-9caa-24296bc8703e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e11ee050-f986-4692-9b6e-e9c02e00da38",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "e2872364-a95e-4661-9caa-24296bc8703e",
+      "actor": "Player",
+      "name": "START",
+      "next": "e11ee050-f986-4692-9b6e-e9c02e00da38"
+    },
+    {
+      "type": "Text",
+      "id": "e11ee050-f986-4692-9b6e-e9c02e00da38",
+      "actor": "",
+      "name": "Sie haben noch nicht mit allen beteiligten Personen gesprochen.",
+      "next": null
+    }
+  ]
+}
