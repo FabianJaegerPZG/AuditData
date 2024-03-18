@@ -51,7 +51,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hallo, mein Name ist Blume, willkommen in unserer QM-Abteilung. Ich glaube Sie werden uns beim internen Audit unterstützen. Gestern habe ich schon mit den Vorbereitungen begonnen, bin aber nicht weitergekommen als die Dokumente zu sortieren. Ich hoffe, Sie können mir zeigen, was wir alles vorbereitenmüssen für das Audit.",
+      "name": "Hallo, mein Name ist Blume, willkommen in unserer QM-Abteilung. Sie werden uns beim internen Audit unterstützen? Gerne können Sie unser Büro nutzen, um das Audit vorzubereiten.",
       "position": {
         "x": 32,
         "y": 320
@@ -128,7 +128,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hallo, Vielen Dank! Ich denke, dass ich mir erst mal einen Überblick verschaffen muss, wo welche Dokumente liegen und was die Zielsetzung des Audits ist.",
+      "name": "Hallo, Herr Blume, Vielen Dank! Ich denke, dass ich mir erst mal einen Überblick verschaffen muss, wo welche Dokumente liegen und was die Zielsetzung des Audits ist.",
       "position": {
         "x": 384,
         "y": 64
@@ -288,7 +288,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ja, es hieß, dass ich alles nachlesen kann, wenn ich auf den Aktenordner klicke. Abgesehen davon hat wohl Herr Klein eine Sprachnachricht für mich interlassen.",
+      "name": "Ja, es hieß, dass ich alles im Büro  nachlesen kann, abgesehen davon hat wohl Herr Klein eine Sprachnachricht für mich interlassen.",
       "position": {
         "x": 720,
         "y": 144
@@ -441,7 +441,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Human_4",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -523,14 +523,14 @@
       "type": "Text",
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "actor": "Human_4",
-      "name": "Hallo, mein Name ist Blume, willkommen in unserer QM-Abteilung. Ich glaube Sie werden uns beim internen Audit unterstützen. Gestern habe ich schon mit den Vorbereitungen begonnen, bin aber nicht weitergekommen als die Dokumente zu sortieren. Ich hoffe, Sie können mir zeigen, was wir alles vorbereitenmüssen für das Audit.",
+      "name": "Hallo, mein Name ist Blume, willkommen in unserer QM-Abteilung. Sie werden uns beim internen Audit unterstützen? Gerne können Sie unser Büro nutzen, um das Audit vorzubereiten.",
       "next": "8831a25f-6940-47f6-905c-34957e5c0031"
     },
     {
       "type": "Text",
       "id": "8831a25f-6940-47f6-905c-34957e5c0031",
       "actor": "Player",
-      "name": "Hallo, Vielen Dank! Ich denke, dass ich mir erst mal einen Überblick verschaffen muss, wo welche Dokumente liegen und was die Zielsetzung des Audits ist.",
+      "name": "Hallo, Herr Blume, Vielen Dank! Ich denke, dass ich mir erst mal einen Überblick verschaffen muss, wo welche Dokumente liegen und was die Zielsetzung des Audits ist.",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
     },
     {
@@ -544,7 +544,7 @@
       "type": "Text",
       "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
       "actor": "Player",
-      "name": "Ja, es hieß, dass ich alles nachlesen kann, wenn ich auf den Aktenordner klicke. Abgesehen davon hat wohl Herr Klein eine Sprachnachricht für mich interlassen.",
+      "name": "Ja, es hieß, dass ich alles im Büro  nachlesen kann, abgesehen davon hat wohl Herr Klein eine Sprachnachricht für mich interlassen.",
       "next": "ea11c3ea-05b7-4d73-aed6-8d96aefb16b7"
     },
     {
@@ -557,7 +557,7 @@
     {
       "type": "Text",
       "id": "ea11c3ea-05b7-4d73-aed6-8d96aefb16b7",
-      "actor": "",
+      "actor": "Human_4",
       "name": "Wenn Sie Ihn anrufen möchten, dann klicken Sie auf das Telefon.\nWenn Sie aber gleich beginnen wollen mit der Vorbereitung zum Audit, dann können Sie im Computer oder am Whiteboard arbeiten.\n",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     }
