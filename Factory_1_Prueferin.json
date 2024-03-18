@@ -198,7 +198,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -504,7 +504,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -693,7 +693,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -847,7 +847,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1845,7 +1845,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1999,7 +1999,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2153,7 +2153,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2307,7 +2307,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2461,7 +2461,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2615,7 +2615,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2769,7 +2769,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -3019,7 +3019,7 @@
     {
       "type": "Text",
       "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Nachdem die Enten bemalt worden sind, kommen sie in diesen Kisten zu mir an den Prüfplatz und dann schaue ich sie mir genau an. Ich mache das schon ganz lange und kenne alle Enten, die wir herstellen. \n",
       "choices": [
         "e7a4abd1-aec8-47ec-a706-b7b336b76957",
@@ -3052,7 +3052,7 @@
     {
       "type": "Text",
       "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Ich habe keine spezielle Methode. Ich schaue mir die Enten genau an. Dazu benutze ich die Prüfmittel, die hier liegen. Schauen sie nur.\n",
       "next": "b44e4a03-3931-4778-b20d-132ae40ea29a"
     },
@@ -3066,7 +3066,7 @@
     {
       "type": "Text",
       "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Ich habe keine Prüfanweisung. Ich mache das schon so lange, dass ich keine Anweisung mehr brauche. Wie gesagt, ich kenn unser ganzes Sortiment auswenig und weiß bei jeder Ente, wie sie auszusehen hat.\n",
       "next": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03"
     },
@@ -3080,7 +3080,7 @@
     {
       "type": "Text",
       "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Ja, also, schauen Sie hier am Regal. Da habe ich eine Auflistung von allen Enten, die wir herstellen. Ich kenne zwar alle unsere Enten auswendig, aber trotzdem muss ich hin und wieder mal nachlesen, welche Sachen ich bei den einzelenen Modellen genauer anschauen muss.\n",
       "next": "7c5731a0-6b21-483a-aed8-67ecd79a2584"
     },
@@ -3178,7 +3178,7 @@
     {
       "type": "Text",
       "id": "089ad1fa-ff77-4a89-b6c7-daaef60c36dd",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Aber gerne. Da nehme ich mir z.B. den Korb , bla bla blub\n",
       "next": "dd127067-357b-46a9-9d2f-04807d4e8dbc"
     },
@@ -3192,7 +3192,7 @@
     {
       "type": "Text",
       "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Ja klar. Ich mache das ja sehr schnell und ich habe die Sicherheit, dass ich nichts übersehe. Es ist für uns alle am schnellsten, wenn ich alles kontrolliere und die anderen vor mir das nicht machen müssen.\n",
       "next": "ccb50c10-59be-41ac-b473-20130d187245"
     },
@@ -3206,7 +3206,7 @@
     {
       "type": "Text",
       "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Alle Enten, die nicht gut sind, kommen hier in diesen Korb. Auf den lege ich den Zettel \"Nicht verkaufen\" und der Korb wird dann abgeholt",
       "next": "3df08bee-260e-497e-a137-84589455e7d4"
     },
@@ -3220,7 +3220,7 @@
     {
       "type": "Text",
       "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Meinen sie das Lager, iin dem der Ausschuss gesammelt wird? Ja der ist gleich um die Ecke. Das ist nicht weit weg. Die Leute müssen nicht weit schieben.\n",
       "next": "7cc8322d-755d-4564-b5bf-0c21450e95b6"
     },
@@ -3234,7 +3234,7 @@
     {
       "type": "Text",
       "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Ich glaube schon.\n",
       "next": "a671075c-63e6-48a9-9e72-69ebc278a927"
     },
@@ -3248,7 +3248,7 @@
     {
       "type": "Text",
       "id": "a5f94b9b-335b-4c99-ae17-5512afa39ddc",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Die kommen gleich in den Korb daneben. Damit ich nicht so weit laufen muss, ist der auch gleich neben mir.\n",
       "next": "9684711e-7dd5-46fe-ac30-dd1291665662"
     },
@@ -3262,7 +3262,7 @@
     {
       "type": "Text",
       "id": "8c742138-c0c8-4d3c-817f-7021cf459467",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Nein, Nein, die habe ich noch nie verwechselt.\n",
       "next": "3aaccd2e-d379-4301-baf7-ff7a940276fb"
     },
