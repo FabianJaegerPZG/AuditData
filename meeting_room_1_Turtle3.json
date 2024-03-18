@@ -44,7 +44,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -250,13 +250,13 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Ja, das hat doch schon mal gut geklappt. Das Meeting werden wir nicht simulieren. Ich denke, wir können jetzt in Produktionsstätte gehen.",
+      "name": "Sehr gut. Das Meeting werden wir nicht weiter simulieren. Lassu uns in die  Produktionsstätte gehen.",
       "position": {
         "x": 1552,
         "y": 48
@@ -509,7 +509,7 @@
     {
       "type": "Text",
       "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
-      "actor": "",
+      "actor": "Turtle",
       "name": "So, jetzt sind wir ja vollständig. Wie möchten Sie das Meeting strukturieren?",
       "next": "be5dc836-6d00-46b1-b34b-b62a956a7cf3"
     },
@@ -533,8 +533,8 @@
     {
       "type": "Text",
       "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
-      "actor": "",
-      "name": "Ja, das hat doch schon mal gut geklappt. Das Meeting werden wir nicht simulieren. Ich denke, wir können jetzt in Produktionsstätte gehen.",
+      "actor": "Turtle",
+      "name": "Sehr gut. Das Meeting werden wir nicht weiter simulieren. Lassu uns in die  Produktionsstätte gehen.",
       "lua": "",
       "choices": [
         "cd89d4f1-c92d-4e30-bcd3-823e68324d9e"

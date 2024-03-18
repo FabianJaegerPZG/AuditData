@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Wunderbar! \nHervorragend! \nAusgezeichnet!\nDu hast das sehr gut gemacht! \n",
+      "name": "Ausgezeichnet!\nDu hast das sehr gut gemacht! \n",
       "position": {
         "x": 960,
         "y": 320
@@ -178,7 +178,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Nun kannst du dich zurücklehnen und entspannen.\n\nAber vielleicht haben deine Kolleg*innen noch etwas mit dir vor...",
+      "name": "Nun hast du hier Deine Arbeit erfolgreich erledigt!",
       "position": {
         "x": 1456,
         "y": 320
@@ -279,7 +279,7 @@
       "type": "Text",
       "id": "91b99566-e45d-422a-a702-42ee9134591b",
       "actor": "TurtleOffice",
-      "name": "Wunderbar! \nHervorragend! \nAusgezeichnet!\nDu hast das sehr gut gemacht! \n",
+      "name": "Ausgezeichnet!\nDu hast das sehr gut gemacht! \n",
       "next": "377b319f-6330-462f-9e22-8078f9b8b8bb"
     },
     {
@@ -293,7 +293,7 @@
       "type": "Text",
       "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
       "actor": "",
-      "name": "Nun kannst du dich zurücklehnen und entspannen.\n\nAber vielleicht haben deine Kolleg*innen noch etwas mit dir vor...",
+      "name": "Nun hast du hier Deine Arbeit erfolgreich erledigt!",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
     }
   ]

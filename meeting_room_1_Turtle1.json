@@ -209,10 +209,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das war die richtige Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: Mein Name ist ___ und ich werde heute das interne Audit durchführen. Dazu zeige ich Ihnen eine  Präsentation mit der Agenda und erläutere Ihnen den Ablauf des heutigen Tages. Ich freue mich, wenn Sie sich auch kurz vorstellen könnten, damit ich weiß wer Sie sind.",
+      "name": "Gute Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: \"Mein Name ist ___ und ich werde heute das interne Audit durchführen.",
       "position": {
-        "x": 2192,
-        "y": 176
+        "x": 2080,
+        "y": 96
       },
       "angle": 0,
       "id": "26f95d7f-87f3-4960-b0e9-03f43f1352f2",
@@ -286,8 +286,8 @@
       },
       "name": "",
       "position": {
-        "x": 2560,
-        "y": 224
+        "x": 3392,
+        "y": 160
       },
       "angle": 0,
       "id": "37d62d1c-454d-4b2a-a684-bd951d3f35a6",
@@ -334,11 +334,12 @@
         "port": "output"
       },
       "target": {
-        "id": "37d62d1c-454d-4b2a-a684-bd951d3f35a6",
+        "id": "75b03bfb-e355-4f86-ab72-cf0830851ce7",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 8,
+      "vertices": [],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -438,7 +439,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Upps, das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
+      "name": "Das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
       "position": {
         "x": 1408,
         "y": 512
@@ -712,6 +713,160 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Wir besprechen die Agenda und erläutere Ihnen den Ablauf des heutigen Tages. Dazu habe ich eine Präsenation vorbereitet.",
+      "position": {
+        "x": 2608,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "75b03bfb-e355-4f86-ab72-cf0830851ce7",
+      "z": 19,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Doch starten wir mit einer Vorstellungsrunde?",
+      "position": {
+        "x": 2992,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "b59a1e4a-2246-431d-b6a9-5781f4079bb4",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a52bc811-a10d-424f-93d9-1631af6cd22a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "75b03bfb-e355-4f86-ab72-cf0830851ce7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b59a1e4a-2246-431d-b6a9-5781f4079bb4",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a9549675-7caa-4c27-b50e-f680d07154a2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b59a1e4a-2246-431d-b6a9-5781f4079bb4",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "37d62d1c-454d-4b2a-a684-bd951d3f35a6",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 22,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -743,8 +898,8 @@
       "type": "Text",
       "id": "26f95d7f-87f3-4960-b0e9-03f43f1352f2",
       "actor": "TurtleMeetingRoom",
-      "name": "Das war die richtige Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: Mein Name ist ___ und ich werde heute das interne Audit durchführen. Dazu zeige ich Ihnen eine  Präsentation mit der Agenda und erläutere Ihnen den Ablauf des heutigen Tages. Ich freue mich, wenn Sie sich auch kurz vorstellen könnten, damit ich weiß wer Sie sind.",
-      "next": "37d62d1c-454d-4b2a-a684-bd951d3f35a6"
+      "name": "Gute Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: \"Mein Name ist ___ und ich werde heute das interne Audit durchführen.",
+      "next": "75b03bfb-e355-4f86-ab72-cf0830851ce7"
     },
     {
       "type": "Lua",
@@ -764,7 +919,7 @@
       "type": "Text",
       "id": "20402384-47dc-4697-b7bf-0f948283d92b",
       "actor": "TurtleMeetingRoom",
-      "name": "Upps, das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
+      "name": "Das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
       "choices": [
         "de5ada05-36ea-4666-9085-62a5f957a7ed",
         "96aad37a-d678-4fd3-84f5-3808d73f4b8c"
@@ -783,6 +938,20 @@
       "title": "",
       "name": "A: nach frischem Kaffee fragen?",
       "next": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f"
+    },
+    {
+      "type": "Text",
+      "id": "75b03bfb-e355-4f86-ab72-cf0830851ce7",
+      "actor": "TurtleMeetingRoom",
+      "name": "Wir besprechen die Agenda und erläutere Ihnen den Ablauf des heutigen Tages. Dazu habe ich eine Präsenation vorbereitet.",
+      "next": "b59a1e4a-2246-431d-b6a9-5781f4079bb4"
+    },
+    {
+      "type": "Text",
+      "id": "b59a1e4a-2246-431d-b6a9-5781f4079bb4",
+      "actor": "TurtleMeetingRoom",
+      "name": "Doch starten wir mit einer Vorstellungsrunde?",
+      "next": "37d62d1c-454d-4b2a-a684-bd951d3f35a6"
     }
   ]
 }
