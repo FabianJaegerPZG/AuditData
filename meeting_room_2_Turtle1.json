@@ -127,8 +127,8 @@
       },
       "name": "",
       "position": {
-        "x": 3504,
-        "y": 448
+        "x": 3712,
+        "y": 464
       },
       "angle": 0,
       "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
@@ -409,8 +409,8 @@
       },
       "name": "Hoppla, was ist denn hier passiert. Der QMB hat dir deine Präsentation wohl etwas krumm genommen. Was kann der Grund sein?",
       "position": {
-        "x": 1616,
-        "y": 240
+        "x": 2432,
+        "y": 256
       },
       "angle": 0,
       "id": "28bc183c-ea52-4a48-9275-34ee98ff6b95",
@@ -456,7 +456,7 @@
         "port": "output"
       },
       "target": {
-        "id": "28bc183c-ea52-4a48-9275-34ee98ff6b95",
+        "id": "6e1bf792-c4fe-455f-868b-2ff9e23e9893",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -481,7 +481,7 @@
         "port": "output"
       },
       "target": {
-        "id": "28bc183c-ea52-4a48-9275-34ee98ff6b95",
+        "id": "6e1bf792-c4fe-455f-868b-2ff9e23e9893",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -510,8 +510,8 @@
       "title": "",
       "name": "1. Der QMB hat etwas schlechtes gegessen, nun ist ihm unwohl.",
       "position": {
-        "x": 2096,
-        "y": 128
+        "x": 2864,
+        "y": 144
       },
       "angle": 0,
       "id": "b3a2650a-9f53-45d0-91b0-d6c06aa0c714",
@@ -561,8 +561,8 @@
       "title": "",
       "name": "2. Der QMB nimmt dir übel, dass du seine Anstrengungen zu wenig würdigst, dass er die Reklamationen verringern wollte.",
       "position": {
-        "x": 2096,
-        "y": 384
+        "x": 2848,
+        "y": 352
       },
       "angle": 0,
       "id": "6eb9903e-d4a3-4458-8c47-c042e21109ac",
@@ -612,8 +612,8 @@
       "title": "",
       "name": "3. Deine berechtigte Feststellung, dass der Sperrprozess nicht nach Definition ausgeführt wird, wurde angreifend  und ungeschickt formuliert. ",
       "position": {
-        "x": 2096,
-        "y": 656
+        "x": 2832,
+        "y": 688
       },
       "angle": 0,
       "id": "ff08801c-2c96-491b-8002-6e0724817794",
@@ -739,8 +739,8 @@
       },
       "name": "Richtig. Die Formulierung war zu direkt und könnte als persönlicher Angriff gewertet werden. Deswegen ist es besser, auch massive Fehler, die während des Audits zu Tage treten, sachlich und wertfrei zu formulieren. Schau dir die Musterlösung hier an.",
       "position": {
-        "x": 2560,
-        "y": 336
+        "x": 3296,
+        "y": 432
       },
       "angle": 0,
       "id": "253eaf64-45a4-473c-9e84-5ff07bdd364b",
@@ -793,12 +793,12 @@
       "z": 23,
       "vertices": [
         {
-          "x": 2432,
-          "y": 176
+          "x": 2592,
+          "y": 112
         },
         {
-          "x": 2016,
-          "y": 80
+          "x": 2352,
+          "y": 208
         }
       ],
       "attrs": {
@@ -878,14 +878,246 @@
       "z": 24,
       "vertices": [
         {
-          "x": 2416,
-          "y": 576
+          "x": 2512,
+          "y": 704
         },
         {
-          "x": 1728,
-          "y": 736
+          "x": 2320,
+          "y": 544
         }
       ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "QMB_Mad",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das ist doch wirklich Unsinn!",
+      "position": {
+        "x": 1616,
+        "y": 112
+      },
+      "angle": 0,
+      "id": "6e1bf792-c4fe-455f-868b-2ff9e23e9893",
+      "z": 24,
+      "lua": "GetMad();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "QMB_Mad",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Der Fehler liegt da ganz sicher nicht bei mir!",
+      "position": {
+        "x": 1760,
+        "y": 384
+      },
+      "angle": 0,
+      "id": "69686337-cb38-4b5a-9b24-79e8f6fb6e25",
+      "z": 25,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "9e8e82dd-b63b-48ee-824f-c2167d92d7d4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6e1bf792-c4fe-455f-868b-2ff9e23e9893",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "69686337-cb38-4b5a-9b24-79e8f6fb6e25",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 26,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "QMB_Mad",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das muss ich mir wirklich nicht gefallen lassen!",
+      "position": {
+        "x": 1936,
+        "y": 656
+      },
+      "angle": 0,
+      "id": "5be8d7a6-7faa-43b3-8e23-db3c34034845",
+      "z": 27,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "9930296e-9887-425b-a609-881a97c09438",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "69686337-cb38-4b5a-9b24-79e8f6fb6e25",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "5be8d7a6-7faa-43b3-8e23-db3c34034845",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 28,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fe6b19bd-d22a-45e6-a419-8d9962cb741f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "5be8d7a6-7faa-43b3-8e23-db3c34034845",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "28bc183c-ea52-4a48-9275-34ee98ff6b95",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 29,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -933,14 +1165,14 @@
       "id": "4ca00ce7-6482-4cc9-bebe-955321d6c7be",
       "title": "",
       "name": "Präsentation 1",
-      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95"
+      "next": "6e1bf792-c4fe-455f-868b-2ff9e23e9893"
     },
     {
       "type": "Choice",
       "id": "31cc4470-e245-45fc-9b47-171f48e935b4",
       "title": "",
       "name": "Präsentation 2",
-      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95"
+      "next": "6e1bf792-c4fe-455f-868b-2ff9e23e9893"
     },
     {
       "type": "Text",
@@ -980,6 +1212,28 @@
       "actor": "TurtleMeetingRoom",
       "name": "Richtig. Die Formulierung war zu direkt und könnte als persönlicher Angriff gewertet werden. Deswegen ist es besser, auch massive Fehler, die während des Audits zu Tage treten, sachlich und wertfrei zu formulieren. Schau dir die Musterlösung hier an.",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
+    },
+    {
+      "type": "Text",
+      "id": "6e1bf792-c4fe-455f-868b-2ff9e23e9893",
+      "actor": "QMB_Mad",
+      "name": "Das ist doch wirklich Unsinn!",
+      "next": "69686337-cb38-4b5a-9b24-79e8f6fb6e25",
+      "lua": "GetMad();"
+    },
+    {
+      "type": "Text",
+      "id": "69686337-cb38-4b5a-9b24-79e8f6fb6e25",
+      "actor": "QMB_Mad",
+      "name": "Der Fehler liegt da ganz sicher nicht bei mir!",
+      "next": "5be8d7a6-7faa-43b3-8e23-db3c34034845"
+    },
+    {
+      "type": "Text",
+      "id": "5be8d7a6-7faa-43b3-8e23-db3c34034845",
+      "actor": "QMB_Mad",
+      "name": "Das muss ich mir wirklich nicht gefallen lassen!",
+      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95"
     }
   ]
 }
