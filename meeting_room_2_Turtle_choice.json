@@ -439,7 +439,7 @@
       "angle": 0,
       "id": "b2f8c013-4c04-4351-9908-955d4b8ec589",
       "z": 11,
-      "lua": "InterviewPassed();",
+      "lua": "GetMad();\nInterviewPassed();",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -570,6 +570,237 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das ist doch wirklich Unsinn!",
+      "position": {
+        "x": 2400,
+        "y": 544
+      },
+      "angle": 0,
+      "id": "951edda6-1f2a-4785-a402-ac05b08ad6c1",
+      "z": 15,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "e803526a-fa02-4821-9819-ff8a1574936a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b2f8c013-4c04-4351-9908-955d4b8ec589",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "951edda6-1f2a-4785-a402-ac05b08ad6c1",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 16,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Der Fehler liegt da ganz sicher nicht bei mir!",
+      "position": {
+        "x": 2768,
+        "y": 544
+      },
+      "angle": 0,
+      "id": "50d06560-1074-46b8-9eed-0a665f934fad",
+      "z": 17,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b4140ee9-1752-425f-a429-c6a393fa8130",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "951edda6-1f2a-4785-a402-ac05b08ad6c1",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "50d06560-1074-46b8-9eed-0a665f934fad",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 18,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das muss ich mir wirklich nicht gefallen lassen!",
+      "position": {
+        "x": 3184,
+        "y": 544
+      },
+      "angle": 0,
+      "id": "ca8ff397-2751-4bcb-840e-c784469e6a38",
+      "z": 19,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "15d30e7c-d2d3-45fb-8f96-3d4516c7260a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "50d06560-1074-46b8-9eed-0a665f934fad",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ca8ff397-2751-4bcb-840e-c784469e6a38",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 20,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -623,8 +854,8 @@
       "type": "Lua",
       "id": "b2f8c013-4c04-4351-9908-955d4b8ec589",
       "name": "",
-      "next": null,
-      "lua": "InterviewPassed();"
+      "next": "951edda6-1f2a-4785-a402-ac05b08ad6c1",
+      "lua": "GetMad();\nInterviewPassed();"
     },
     {
       "type": "Lua",
@@ -632,6 +863,27 @@
       "name": "",
       "next": null,
       "lua": "InterviewPassed();"
+    },
+    {
+      "type": "Text",
+      "id": "951edda6-1f2a-4785-a402-ac05b08ad6c1",
+      "actor": "QMB",
+      "name": "Das ist doch wirklich Unsinn!",
+      "next": "50d06560-1074-46b8-9eed-0a665f934fad"
+    },
+    {
+      "type": "Text",
+      "id": "50d06560-1074-46b8-9eed-0a665f934fad",
+      "actor": "QMB",
+      "name": "Der Fehler liegt da ganz sicher nicht bei mir!",
+      "next": "ca8ff397-2751-4bcb-840e-c784469e6a38"
+    },
+    {
+      "type": "Text",
+      "id": "ca8ff397-2751-4bcb-840e-c784469e6a38",
+      "actor": "QMB",
+      "name": "Das muss ich mir wirklich nicht gefallen lassen!",
+      "next": null
     }
   ]
 }
