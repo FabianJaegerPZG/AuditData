@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Super. Wie es mir scheint, hast D u alles erledigt. \nDann geht es nun zum Meetingraum.",
+      "name": "Super. Wie es mir scheint, hast Du alles erledigt. \nDann geht es nun zum Meetingraum.",
       "position": {
         "x": 960,
         "y": 320
@@ -202,7 +202,7 @@
       "type": "Text",
       "id": "91b99566-e45d-422a-a702-42ee9134591b",
       "actor": "TurtleOffice",
-      "name": "Super. Wie es mir scheint, hast D u alles erledigt. \nDann geht es nun zum Meetingraum.",
+      "name": "Super. Wie es mir scheint, hast Du alles erledigt. \nDann geht es nun zum Meetingraum.",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
     },
     {
