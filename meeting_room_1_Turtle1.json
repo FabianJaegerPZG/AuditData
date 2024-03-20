@@ -14,7 +14,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hallo, da bist du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Überlege dir, was würdest du als erstes tun?  ",
+      "name": "Hallo, da bist du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Was tust Du als Erstes? ",
       "position": {
         "x": 512,
         "y": 192
@@ -126,7 +126,7 @@
         "output"
       ],
       "title": "",
-      "name": "B: dich persönlich vorstellen?",
+      "name": "B: Mich persönlich vorstellen.",
       "position": {
         "x": 944,
         "y": 192
@@ -362,7 +362,7 @@
         "output"
       ],
       "title": "",
-      "name": "A: nach frischem Kaffee fragen?",
+      "name": "A: Nach frischem Kaffee fragen.",
       "position": {
         "x": 944,
         "y": 512
@@ -515,7 +515,7 @@
         "output"
       ],
       "title": "",
-      "name": "B: dich persönlich vorstellen?",
+      "name": "B: Mich persönlich vorstellen.",
       "position": {
         "x": 1808,
         "y": 512
@@ -566,7 +566,7 @@
         "output"
       ],
       "title": "",
-      "name": "A: nach frischem Kaffee fragen?",
+      "name": "A: Nach frischem Kaffee fragen.",
       "position": {
         "x": 1776,
         "y": 784
@@ -780,7 +780,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Doch starten wir mit einer Vorstellungsrunde?",
+      "name": "Doch starten wir mit einer Vorstellungsrunde.\"",
       "position": {
         "x": 2992,
         "y": 96
@@ -874,7 +874,7 @@
       "type": "Text",
       "id": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f",
       "actor": "TurtleMeetingRoom",
-      "name": "Hallo, da bist du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Überlege dir, was würdest du als erstes tun?  ",
+      "name": "Hallo, da bist du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Was tust Du als Erstes? ",
       "choices": [
         "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
         "306a3052-23d5-4702-b7f0-618158d7b55e"
@@ -891,7 +891,7 @@
       "type": "Choice",
       "id": "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
       "title": "",
-      "name": "B: dich persönlich vorstellen?",
+      "name": "B: Mich persönlich vorstellen.",
       "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
     },
     {
@@ -912,7 +912,7 @@
       "type": "Choice",
       "id": "306a3052-23d5-4702-b7f0-618158d7b55e",
       "title": "",
-      "name": "A: nach frischem Kaffee fragen?",
+      "name": "A: Nach frischem Kaffee fragen.",
       "next": "20402384-47dc-4697-b7bf-0f948283d92b"
     },
     {
@@ -929,14 +929,14 @@
       "type": "Choice",
       "id": "de5ada05-36ea-4666-9085-62a5f957a7ed",
       "title": "",
-      "name": "B: dich persönlich vorstellen?",
+      "name": "B: Mich persönlich vorstellen.",
       "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
     },
     {
       "type": "Choice",
       "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
       "title": "",
-      "name": "A: nach frischem Kaffee fragen?",
+      "name": "A: Nach frischem Kaffee fragen.",
       "next": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f"
     },
     {
@@ -950,7 +950,7 @@
       "type": "Text",
       "id": "b59a1e4a-2246-431d-b6a9-5781f4079bb4",
       "actor": "TurtleMeetingRoom",
-      "name": "Doch starten wir mit einer Vorstellungsrunde?",
+      "name": "Doch starten wir mit einer Vorstellungsrunde.\"",
       "next": "37d62d1c-454d-4b2a-a684-bd951d3f35a6"
     }
   ]
