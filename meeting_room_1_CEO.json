@@ -128,7 +128,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Leider nein. Versuchs noch Mal.",
+      "name": "Leider nein. Versuch's noch Mal.",
       "position": {
         "x": 576,
         "y": 512
@@ -180,7 +180,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hoppla, da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n\nWeiß du es trotzdem?\n\nWelche Position im Unternehmen hat die Person inne?",
+      "name": "Da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n\nWeiß du es trotzdem?\n\nWelche Position im Unternehmen hat die Person inne?",
       "position": {
         "x": 848,
         "y": 80
@@ -270,31 +270,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "ef874925-b52a-4f84-ba93-73ea56de1406",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "e3479b4c-bee8-45f0-bca3-ccb3776a4c2e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "b4d12132-e36e-454e-8ce1-b1c26f5e89a4",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 10,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -307,7 +282,7 @@
         "output"
       ],
       "title": "",
-      "name": "CEO",
+      "name": "Geschäftsführung",
       "position": {
         "x": 1264,
         "y": 96
@@ -410,57 +385,6 @@
         "output"
       ],
       "title": "",
-      "name": "Freut mich, euch kennenzulernen!",
-      "position": {
-        "x": 3424,
-        "y": 368
-      },
-      "angle": 0,
-      "id": "b4d12132-e36e-454e-8ce1-b1c26f5e89a4",
-      "z": 13,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
       "name": "Produktionsleitung",
       "position": {
         "x": 1280,
@@ -469,58 +393,6 @@
       "angle": 0,
       "id": "a9dbe41a-f9aa-4f32-8ada-623d9da1e2a6",
       "z": 14,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Einkauf",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Ich bin Einkauf",
-      "position": {
-        "x": 2432,
-        "y": 400
-      },
-      "angle": 0,
-      "id": "0eda167d-e344-4ab3-bd3a-5314af0f9180",
-      "z": 15,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -572,58 +444,6 @@
       "angle": 0,
       "id": "12c9c2ee-b12b-49e8-ae12-e6590423f4bc",
       "z": 15,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "HR",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Ich bin HR",
-      "position": {
-        "x": 3008,
-        "y": 432
-      },
-      "angle": 0,
-      "id": "e3479b4c-bee8-45f0-bca3-ccb3776a4c2e",
-      "z": 16,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -772,31 +592,6 @@
         "port": "input"
       },
       "z": 17,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "bed32c49-ee75-4586-bf84-b629a5f3c50b",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "0eda167d-e344-4ab3-bd3a-5314af0f9180",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "e3479b4c-bee8-45f0-bca3-ccb3776a4c2e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 18,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1254,7 +1049,7 @@
       "type": "Text",
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
       "actor": "TurtleMeetingRoom",
-      "name": "Leider nein. Versuchs noch Mal.",
+      "name": "Leider nein. Versuch's noch Mal.",
       "choices": [
         "54112f4f-de6b-4619-8e69-9d766b98c939",
         "a9dbe41a-f9aa-4f32-8ada-623d9da1e2a6",
@@ -1267,7 +1062,7 @@
       "type": "Text",
       "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
       "actor": "TurtleMeetingRoom",
-      "name": "Hoppla, da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n\nWeiß du es trotzdem?\n\nWelche Position im Unternehmen hat die Person inne?",
+      "name": "Da hat die Person doch glatt vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n\nWeiß du es trotzdem?\n\nWelche Position im Unternehmen hat die Person inne?",
       "choices": [
         "54112f4f-de6b-4619-8e69-9d766b98c939",
         "a9dbe41a-f9aa-4f32-8ada-623d9da1e2a6",
@@ -1287,7 +1082,7 @@
       "type": "Choice",
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
       "title": "",
-      "name": "CEO",
+      "name": "Geschäftsführung",
       "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4"
     },
     {
@@ -1299,24 +1094,10 @@
     },
     {
       "type": "Choice",
-      "id": "b4d12132-e36e-454e-8ce1-b1c26f5e89a4",
-      "title": "",
-      "name": "Freut mich, euch kennenzulernen!",
-      "next": null
-    },
-    {
-      "type": "Choice",
       "id": "a9dbe41a-f9aa-4f32-8ada-623d9da1e2a6",
       "title": "",
       "name": "Produktionsleitung",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
-    },
-    {
-      "type": "Text",
-      "id": "0eda167d-e344-4ab3-bd3a-5314af0f9180",
-      "actor": "Einkauf",
-      "name": "Ich bin Einkauf",
-      "next": "e3479b4c-bee8-45f0-bca3-ccb3776a4c2e"
     },
     {
       "type": "Choice",
@@ -1324,15 +1105,6 @@
       "title": "",
       "name": "QMB",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
-    },
-    {
-      "type": "Text",
-      "id": "e3479b4c-bee8-45f0-bca3-ccb3776a4c2e",
-      "actor": "HR",
-      "name": "Ich bin HR",
-      "choices": [
-        "b4d12132-e36e-454e-8ce1-b1c26f5e89a4"
-      ]
     },
     {
       "type": "Choice",
