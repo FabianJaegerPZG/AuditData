@@ -256,7 +256,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Sehr gut. Das Meeting werden wir nicht weiter simulieren. Lassu uns in die  Produktionsstätte gehen.",
+      "name": "Sehr gut. Nach dem erfolgreichen Start ins Audit können wir nun in die Werkshalle gehen.",
       "position": {
         "x": 1552,
         "y": 48
@@ -534,7 +534,7 @@
       "type": "Text",
       "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
       "actor": "Turtle",
-      "name": "Sehr gut. Das Meeting werden wir nicht weiter simulieren. Lassu uns in die  Produktionsstätte gehen.",
+      "name": "Sehr gut. Nach dem erfolgreichen Start ins Audit können wir nun in die Werkshalle gehen.",
       "lua": "",
       "choices": [
         "cd89d4f1-c92d-4e30-bcd3-823e68324d9e"
