@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Haben Sie mit jedem gesprochen?",
+      "name": "Haben sich nun alle vorgestellt? ",
       "position": {
         "x": 352,
         "y": 16
@@ -101,7 +101,7 @@
         "output"
       ],
       "title": "",
-      "name": "Habe ich.",
+      "name": "Ja. ",
       "position": {
         "x": 688,
         "y": 16
@@ -330,7 +330,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ja, lass' uns loslegen!",
+      "name": "Ja, wir können loslegen!",
       "position": {
         "x": 1392,
         "y": 16
@@ -951,7 +951,7 @@
         "output"
       ],
       "title": "",
-      "name": "Die Auflistung aller Mitarbeiter:innen.",
+      "name": "Die Auflistung aller Mitarbeitenden.",
       "position": {
         "x": 2160,
         "y": 784
@@ -1236,8 +1236,8 @@
       "z": 32,
       "vertices": [
         {
-          "x": 2144,
-          "y": 272
+          "x": 1200,
+          "y": 304
         },
         {
           "x": 1728,
@@ -1423,7 +1423,7 @@
         "output"
       ],
       "title": "",
-      "name": "Die Geschäftsführerin.",
+      "name": "Den Einkauf.",
       "position": {
         "x": 2144,
         "y": 1376
@@ -1501,7 +1501,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Die ist doch schon hier?",
+      "name": "Der Einkauf wurde nicht eingeladen.",
       "position": {
         "x": 2512,
         "y": 1328
@@ -1792,7 +1792,7 @@
       "type": "Text",
       "id": "13187cb7-77f4-4fd6-9c4c-a32fe8aa299c",
       "actor": "TurtleMeetingRoom",
-      "name": "Haben Sie mit jedem gesprochen?",
+      "name": "Haben sich nun alle vorgestellt? ",
       "choices": [
         "48ac3408-251f-4b2a-b1b6-0f4470c24b85"
       ]
@@ -1801,7 +1801,7 @@
       "type": "Choice",
       "id": "48ac3408-251f-4b2a-b1b6-0f4470c24b85",
       "title": "",
-      "name": "Habe ich.",
+      "name": "Ja. ",
       "next": "1fc383bc-9004-4a85-8010-367263107810"
     },
     {
@@ -1827,7 +1827,7 @@
       "type": "Choice",
       "id": "bd52f137-f3f7-43a9-aaa4-550687ccae55",
       "title": "",
-      "name": "Ja, lass' uns loslegen!",
+      "name": "Ja, wir können loslegen!",
       "next": "ce6d4552-ff87-4af1-92cc-a4f3838bbde3"
     },
     {
@@ -1882,7 +1882,7 @@
       "type": "Choice",
       "id": "65940953-1b60-4823-b2dd-bebef758f7b4",
       "title": "",
-      "name": "Die Auflistung aller Mitarbeiter:innen.",
+      "name": "Die Auflistung aller Mitarbeitenden.",
       "next": "ef4938ab-c727-48c5-baf9-0cb0ad23374e"
     },
     {
@@ -1921,14 +1921,14 @@
       "type": "Choice",
       "id": "70418e5b-85b3-4f00-8024-7e806cf25733",
       "title": "",
-      "name": "Die Geschäftsführerin.",
+      "name": "Den Einkauf.",
       "next": "886bdf7a-6b46-4e12-a51e-af311eda4796"
     },
     {
       "type": "Text",
       "id": "886bdf7a-6b46-4e12-a51e-af311eda4796",
       "actor": "",
-      "name": "Die ist doch schon hier?",
+      "name": "Der Einkauf wurde nicht eingeladen.",
       "lua": "AddPoints(-1, \"Unberechtigte Sorge\");",
       "choices": [
         "f9b84d1d-0e0f-4250-9239-3350fd1eeb59"
