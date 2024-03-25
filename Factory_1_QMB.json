@@ -44,20 +44,20 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_QMB",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Hallo,\nich bin Factory_QMB",
+      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser Personen würden Sie jetzt befragen wollen? ",
       "position": {
-        "x": 0,
-        "y": 496
+        "x": 480,
+        "y": 176
       },
       "angle": 0,
-      "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
-      "z": 1,
+      "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+      "z": 3,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -102,62 +102,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser x Personen würden SIe jetzt  zum zweiten Mal oder vielleicht zum ersten Mal Fragen stellen, nachdem was Sie jetzt wissen?",
+      "name": "Der Maschineführer Herr Wolf wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
       "position": {
-        "x": 512,
-        "y": 128
-      },
-      "angle": 0,
-      "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
-      "z": 3,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "SGM",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Es schadet nie sich den Produktionsprozess näher anzuschauen und zu analysieren, wo hier die Ursache für Fehler liegen könnte. Hast du ja auch schon gemacht. Aber aktuell gäbe es hier keinen Grund, um weiter zu suchen.\n",
-      "position": {
-        "x": 960,
-        "y": 368
+        "x": 1328,
+        "y": 320
       },
       "angle": 0,
       "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
@@ -200,72 +148,20 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Sie hat uns viele wichtigen Informationen gegben. Wir verstehen jetzt, dass die Prüfung eine 100%-Prüfung ist und überdies alle fehlerhaften Enten aussortiert. So dürften eigentliche nie fehlerhafte Enten zum Kunden gelangen. Hier muss man nicht weiter suchen.\n",
+      "name": "Die Prüferin Frau WInter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.\n",
       "position": {
-        "x": 960,
-        "y": 640
+        "x": 1360,
+        "y": 608
       },
       "angle": 0,
       "id": "51a80e34-f656-4588-916f-a6a6a3f3dd82",
       "z": 6,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Produktionsleitung",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Man könnte meinen, dass die Produktionsleiterin eigentlich dafür verantwortlich sein müsste, dass fehlerhafte Ware nicht an den Kunden geliefert werden darf. Das ist so auch richtig, aber es gibt eine noch viel wichtigere Person, die die volle Verantwortung beim Sperren von mangelhafter Ware trägt.\n",
-      "position": {
-        "x": 960,
-        "y": 944
-      },
-      "angle": 0,
-      "id": "6781cb78-949e-44b1-bc46-9c08868c4a55",
-      "z": 7,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -322,31 +218,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "3c6ab5b8-6d4e-49a1-811f-cf561c74cd23",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 8,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Lua",
       "inPorts": [
         "input"
@@ -360,8 +231,8 @@
       },
       "name": "",
       "position": {
-        "x": 1661,
-        "y": 227
+        "x": 4192,
+        "y": 48
       },
       "angle": 0,
       "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
@@ -398,31 +269,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "5e7635ab-57c4-4ad5-8093-448082852f00",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 10,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -430,16 +276,16 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_QMB",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Bingo! Der QMB trägt die Verantwortung, dass ein Sperrenprozess funktioniert. Es sieht aktuell so aus, dass fehlerhaft gekennzeichnete Enten doch zum Kunden geschickt wurden, obwohl sie eigentlich im Sperrlager sein sollten. Nun gilt es den QMB zu interviewen, wie das passieren konnte. Welche Frage stellst du als nächstes?\n",
+      "name": "Richtig! Der QM-Mitarbeiter Herr Blume trägt die Verantwortung für den Sperrprozess.",
       "position": {
-        "x": 960,
-        "y": 80
+        "x": 1328,
+        "y": 48
       },
       "angle": 0,
       "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
@@ -473,6 +319,848 @@
           "ref-dx": 0
         }
       }
+    },
+    {
+      "type": "link",
+      "id": "9e3593ff-6d00-4065-835e-9e894e11e13c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 12,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Der Maschinenführer Herr Wolf.",
+      "position": {
+        "x": 928,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "c684933f-d7e4-4d31-af6a-060e59a6f02a",
+      "z": 13,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8ecb52eb-6700-4eea-b2a1-7d47bd34c26e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 13,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "QM-Mitarbeiter Herr Blume.",
+      "position": {
+        "x": 928,
+        "y": 64
+      },
+      "angle": 0,
+      "id": "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
+      "z": 14,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3f407897-c494-4097-aae1-5038d996c9b7",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "c684933f-d7e4-4d31-af6a-060e59a6f02a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "vertices": [
+        {
+          "x": 832,
+          "y": 352
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "900d8162-ceb6-4aaa-9c4e-272c51f90d6e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "c684933f-d7e4-4d31-af6a-060e59a6f02a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 15,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Die Prüferin Frau Winter.",
+      "position": {
+        "x": 960,
+        "y": 608
+      },
+      "angle": 0,
+      "id": "6cde9e85-5a46-45e5-b2cf-0d9e7a2824d3",
+      "z": 15,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8d770dc3-af41-4b69-9bc8-5151c0be285a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6cde9e85-5a46-45e5-b2cf-0d9e7a2824d3",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 16,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "eeb2c3bd-bb3f-44ce-a4c1-9c5948040736",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6cde9e85-5a46-45e5-b2cf-0d9e7a2824d3",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "51a80e34-f656-4588-916f-a6a6a3f3dd82",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 17,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "84c59e82-2393-4496-b070-ed7cbd9b88b9",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "51a80e34-f656-4588-916f-a6a6a3f3dd82",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 18,
+      "vertices": [
+        {
+          "x": 1712,
+          "y": 944
+        },
+        {
+          "x": 496,
+          "y": 848
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "03ca502a-3bdb-4a82-b701-551e63796b46",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 19,
+      "vertices": [
+        {
+          "x": 1728,
+          "y": 528
+        },
+        {
+          "x": 528,
+          "y": 704
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es sieht danach aus, dass fehlerhafte Enten, in im Sperrlager gebracht werden, sondern an Kunden geliefert werden. Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
+      "position": {
+        "x": 1760,
+        "y": 176
+      },
+      "angle": 0,
+      "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f2874540-4a39-49c3-b99d-3e9e52b3625d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 20,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem extra Behälter aussortiert hatte?",
+      "position": {
+        "x": 2144,
+        "y": 160
+      },
+      "angle": 0,
+      "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0da23ce8-1186-43da-b763-1b5333f92011",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ich bringe die Behälter mit dem Zettel \"Nicht zum Verkauf\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
+      "position": {
+        "x": 2544,
+        "y": 192
+      },
+      "angle": 0,
+      "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
+      "z": 23,
+      "lua": "Personas und Player stehen vor dem Sperrlager. ",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ac775f65-2f89-4937-a772-25d807cd90d2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Können Sie mir den Sperrprozess zeigen?",
+      "position": {
+        "x": 2960,
+        "y": 208
+      },
+      "angle": 0,
+      "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+      "z": 24,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "e896d28f-c05d-4b6c-88ac-282ea7dd30a8",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 25,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
+      "position": {
+        "x": 3360,
+        "y": 224
+      },
+      "angle": 0,
+      "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+      "z": 26,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5f05f038-a78f-4225-88f6-e9518b54c52f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 27,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "position": {
+        "x": 3776,
+        "y": 224
+      },
+      "angle": 0,
+      "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+      "z": 28,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3313323d-f700-4be2-96a7-c0378217f56b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 29,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -485,38 +1173,28 @@
     },
     {
       "type": "Text",
-      "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
-      "actor": "Factory_QMB",
-      "name": "Hallo,\nich bin Factory_QMB",
-      "next": null
-    },
-    {
-      "type": "Text",
       "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
       "actor": "Turtle",
-      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser x Personen würden SIe jetzt  zum zweiten Mal oder vielleicht zum ersten Mal Fragen stellen, nachdem was Sie jetzt wissen?",
-      "next": "627e4376-ec2e-443d-8c40-dc0cbce7412a"
+      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser Personen würden Sie jetzt befragen wollen? ",
+      "choices": [
+        "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
+        "c684933f-d7e4-4d31-af6a-060e59a6f02a",
+        "6cde9e85-5a46-45e5-b2cf-0d9e7a2824d3"
+      ]
     },
     {
       "type": "Text",
       "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
-      "actor": "SGM",
-      "name": "Es schadet nie sich den Produktionsprozess näher anzuschauen und zu analysieren, wo hier die Ursache für Fehler liegen könnte. Hast du ja auch schon gemacht. Aber aktuell gäbe es hier keinen Grund, um weiter zu suchen.\n",
-      "next": null
+      "actor": "Turtle",
+      "name": "Der Maschineführer Herr Wolf wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
+      "next": "cc5649e0-ba31-45ff-b870-74bd53edef3b"
     },
     {
       "type": "Text",
       "id": "51a80e34-f656-4588-916f-a6a6a3f3dd82",
-      "actor": "Factory_Prüferin",
-      "name": "Sie hat uns viele wichtigen Informationen gegben. Wir verstehen jetzt, dass die Prüfung eine 100%-Prüfung ist und überdies alle fehlerhaften Enten aussortiert. So dürften eigentliche nie fehlerhafte Enten zum Kunden gelangen. Hier muss man nicht weiter suchen.\n",
-      "next": null
-    },
-    {
-      "type": "Text",
-      "id": "6781cb78-949e-44b1-bc46-9c08868c4a55",
-      "actor": "Produktionsleitung",
-      "name": "Man könnte meinen, dass die Produktionsleiterin eigentlich dafür verantwortlich sein müsste, dass fehlerhafte Ware nicht an den Kunden geliefert werden darf. Das ist so auch richtig, aber es gibt eine noch viel wichtigere Person, die die volle Verantwortung beim Sperren von mangelhafter Ware trägt.\n",
-      "next": null
+      "actor": "Turtle",
+      "name": "Die Prüferin Frau WInter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.\n",
+      "next": "cc5649e0-ba31-45ff-b870-74bd53edef3b"
     },
     {
       "type": "Lua",
@@ -528,9 +1206,73 @@
     {
       "type": "Text",
       "id": "627e4376-ec2e-443d-8c40-dc0cbce7412a",
+      "actor": "Turtle",
+      "name": "Richtig! Der QM-Mitarbeiter Herr Blume trägt die Verantwortung für den Sperrprozess.",
+      "next": "033bf5ee-27f8-4437-805a-80b03ad6faeb"
+    },
+    {
+      "type": "Choice",
+      "id": "c684933f-d7e4-4d31-af6a-060e59a6f02a",
+      "title": "",
+      "name": "Der Maschinenführer Herr Wolf.",
+      "next": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38"
+    },
+    {
+      "type": "Choice",
+      "id": "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
+      "title": "",
+      "name": "QM-Mitarbeiter Herr Blume.",
+      "next": "627e4376-ec2e-443d-8c40-dc0cbce7412a"
+    },
+    {
+      "type": "Choice",
+      "id": "6cde9e85-5a46-45e5-b2cf-0d9e7a2824d3",
+      "title": "",
+      "name": "Die Prüferin Frau Winter.",
+      "next": "51a80e34-f656-4588-916f-a6a6a3f3dd82"
+    },
+    {
+      "type": "Text",
+      "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+      "actor": "Turtle",
+      "name": "Es sieht danach aus, dass fehlerhafte Enten, in im Sperrlager gebracht werden, sondern an Kunden geliefert werden. Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
+      "next": "ce0d1058-e3f1-4932-b4ce-987da12ce004"
+    },
+    {
+      "type": "Text",
+      "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+      "actor": "Player",
+      "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem extra Behälter aussortiert hatte?",
+      "next": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d"
+    },
+    {
+      "type": "Text",
+      "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
       "actor": "Factory_QMB",
-      "name": "Bingo! Der QMB trägt die Verantwortung, dass ein Sperrenprozess funktioniert. Es sieht aktuell so aus, dass fehlerhaft gekennzeichnete Enten doch zum Kunden geschickt wurden, obwohl sie eigentlich im Sperrlager sein sollten. Nun gilt es den QMB zu interviewen, wie das passieren konnte. Welche Frage stellst du als nächstes?\n",
-      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
+      "name": "Ich bringe die Behälter mit dem Zettel \"Nicht zum Verkauf\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
+      "next": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+      "lua": "Personas und Player stehen vor dem Sperrlager. "
+    },
+    {
+      "type": "Text",
+      "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+      "actor": "Player",
+      "name": "Können Sie mir den Sperrprozess zeigen?",
+      "next": "53248d3c-3a46-49c1-91a8-b74d19c08bc4"
+    },
+    {
+      "type": "Text",
+      "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+      "actor": "Factory_QMB",
+      "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
+      "next": "59b0ecda-a234-4c06-b669-25f97e9a25cd"
+    },
+    {
+      "type": "Text",
+      "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+      "actor": "Turtle",
+      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "next": null
     }
   ]
 }
