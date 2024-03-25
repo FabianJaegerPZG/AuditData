@@ -867,7 +867,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ich bringe die Behälter mit dem Zettel \"Nicht zum Verkauf\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
+      "name": "Ich bringe die Behälter mit dem Zettel \"n.i.O.\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
       "position": {
         "x": 2544,
         "y": 192
@@ -1249,7 +1249,7 @@
       "type": "Text",
       "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
       "actor": "Factory_QMB",
-      "name": "Ich bringe die Behälter mit dem Zettel \"Nicht zum Verkauf\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
+      "name": "Ich bringe die Behälter mit dem Zettel \"n.i.O.\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
       "next": "70358a09-1ef9-4847-b751-b9df1913aa5e",
       "lua": "Personas und Player stehen vor dem Sperrlager. "
     },
