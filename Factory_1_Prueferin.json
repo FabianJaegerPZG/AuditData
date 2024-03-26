@@ -1777,7 +1777,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hast du auch ein Gefühl dafür bekommen, was der Grund sein könnte, dass Reklamationen entstanden sind, obwohl Frau Winter jede Ente prüft und sogar die Bemalung eigenhändig ausbessert, wenn sie Fehler entdeckt?\n\nSchreibe deine Vermutung in deinen Notizblock und überlege was du jetzt als nächstes machen solltest.\n\nBist Du der Sache mit den Reklamationen näher gekommen? Für mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weitere Person befragen.\n",
+      "name": "Hast du auch ein Gefühl dafür bekommen, was der Grund sein könnte, dass Reklamationen entstanden sind, obwohl Frau Winter jede Ente prüft. \n\nSchreibe deine Vermutung in Deine Notizen. \n\nFür mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weitere Person befragen.\n",
       "position": {
         "x": 10064,
         "y": 352
@@ -2177,7 +2177,7 @@
       "type": "Text",
       "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
       "actor": "Turtle",
-      "name": "Hast du auch ein Gefühl dafür bekommen, was der Grund sein könnte, dass Reklamationen entstanden sind, obwohl Frau Winter jede Ente prüft und sogar die Bemalung eigenhändig ausbessert, wenn sie Fehler entdeckt?\n\nSchreibe deine Vermutung in deinen Notizblock und überlege was du jetzt als nächstes machen solltest.\n\nBist Du der Sache mit den Reklamationen näher gekommen? Für mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weitere Person befragen.\n",
+      "name": "Hast du auch ein Gefühl dafür bekommen, was der Grund sein könnte, dass Reklamationen entstanden sind, obwohl Frau Winter jede Ente prüft. \n\nSchreibe deine Vermutung in Deine Notizen. \n\nFür mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weitere Person befragen.\n",
       "next": null,
       "lua": "InterviewPassed();"
     },
