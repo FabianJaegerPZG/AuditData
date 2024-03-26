@@ -1,0 +1,552 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 16,
+        "y": 32
+      },
+      "angle": 0,
+      "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 3392,
+        "y": 224
+      },
+      "angle": 0,
+      "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+      "z": 9,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b354ee3e-3a0d-4682-a0dd-a249d57ef270",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 11,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "aef46958-59d4-4b9a-a160-491358723930",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 12,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b180ba2e-0edb-4bf5-884f-cf63677a03d0",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 13,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
+      "position": {
+        "x": 704,
+        "y": 144
+      },
+      "angle": 0,
+      "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem Extra-Behälter aussortiert hatte?",
+      "position": {
+        "x": 1248,
+        "y": 160
+      },
+      "angle": 0,
+      "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0da23ce8-1186-43da-b763-1b5333f92011",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Sprechen über den Sperrprozess. Wo finde ich den Prozess?",
+      "position": {
+        "x": 1920,
+        "y": 176
+      },
+      "angle": 0,
+      "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+      "z": 24,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
+      "position": {
+        "x": 2384,
+        "y": 176
+      },
+      "angle": 0,
+      "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+      "z": 26,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5f05f038-a78f-4225-88f6-e9518b54c52f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 27,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "position": {
+        "x": 2912,
+        "y": 192
+      },
+      "angle": 0,
+      "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+      "z": 28,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3313323d-f700-4be2-96a7-c0378217f56b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 29,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
+      "actor": "Player",
+      "name": "START",
+      "next": "033bf5ee-27f8-4437-805a-80b03ad6faeb"
+    },
+    {
+      "type": "Lua",
+      "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();"
+    },
+    {
+      "type": "Text",
+      "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+      "actor": "Turtle",
+      "name": "Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
+      "next": "ce0d1058-e3f1-4932-b4ce-987da12ce004"
+    },
+    {
+      "type": "Text",
+      "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+      "actor": "Player",
+      "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem Extra-Behälter aussortiert hatte?",
+      "next": "70358a09-1ef9-4847-b751-b9df1913aa5e"
+    },
+    {
+      "type": "Text",
+      "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
+      "actor": "Player",
+      "name": "Sprechen über den Sperrprozess. Wo finde ich den Prozess?",
+      "next": "53248d3c-3a46-49c1-91a8-b74d19c08bc4"
+    },
+    {
+      "type": "Text",
+      "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+      "actor": "Factory_QMB",
+      "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
+      "next": "59b0ecda-a234-4c06-b669-25f97e9a25cd"
+    },
+    {
+      "type": "Text",
+      "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+      "actor": "Turtle",
+      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
+    }
+  ]
+}
