@@ -50,10 +50,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser Personen würden Sie jetzt befragen wollen? ",
+      "name": "Anders als geplant, musst Du nun eine weitere Befragung durchführen, um dem Fehler auf die Spur zu kommen. \nWelcher dieser Personen würdest Du jetzt befragen wollen? ",
       "position": {
-        "x": 480,
-        "y": 176
+        "x": 304,
+        "y": 416
       },
       "angle": 0,
       "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
@@ -203,7 +203,7 @@
         "port": "output"
       },
       "target": {
-        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
+        "id": "a1c84923-b884-4c4e-88fc-1665ed52bff1",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -231,8 +231,8 @@
       },
       "name": "",
       "position": {
-        "x": 4192,
-        "y": 48
+        "x": 2208,
+        "y": 192
       },
       "angle": 0,
       "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
@@ -713,7 +713,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Es sieht danach aus, dass fehlerhafte Enten, in im Sperrlager gebracht werden, sondern an Kunden geliefert werden. Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
+      "name": "Es sieht danach aus, dass fehlerhafte Enten, nicht ins Sperrlager gebracht werden, sondern an Kunden geliefert werden. Sprechen wir mit Herrn Blume.",
       "position": {
         "x": 1760,
         "y": 176
@@ -777,60 +777,8 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Player",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem extra Behälter aussortiert hatte?",
-      "position": {
-        "x": 2144,
-        "y": 160
-      },
-      "angle": 0,
-      "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
-      "z": 20,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "type": "link",
-      "id": "0da23ce8-1186-43da-b763-1b5333f92011",
+      "id": "642bd676-d1f0-408c-85e5-df26c3fdcde5",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -839,243 +787,11 @@
         "port": "output"
       },
       "target": {
-        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+        "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 21,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Factory_QMB",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Ich bringe die Behälter mit dem Zettel \"n.i.O.\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
-      "position": {
-        "x": 2544,
-        "y": 192
-      },
-      "angle": 0,
-      "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
-      "z": 23,
-      "lua": "Personas und Player stehen vor dem Sperrlager. ",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "ac775f65-2f89-4937-a772-25d807cd90d2",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Player",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Können Sie mir den Sperrprozess zeigen?",
-      "position": {
-        "x": 2960,
-        "y": 208
-      },
-      "angle": 0,
-      "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
-      "z": 24,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "e896d28f-c05d-4b6c-88ac-282ea7dd30a8",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 25,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Factory_QMB",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
-      "position": {
-        "x": 3360,
-        "y": 224
-      },
-      "angle": 0,
-      "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
-      "z": 26,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "5f05f038-a78f-4225-88f6-e9518b54c52f",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 27,
+      "z": 22,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1099,14 +815,14 @@
         "width": 300,
         "height": 225
       },
-      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "name": "Der Grund für die Reklamationen liegt wahrscheinlich nicht nur in der Herstellung und Prüfung der Enten, sondern an einem anderen Prozess. ",
       "position": {
-        "x": 3776,
-        "y": 224
+        "x": 400,
+        "y": 16
       },
       "angle": 0,
-      "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
-      "z": 28,
+      "id": "a1c84923-b884-4c4e-88fc-1665ed52bff1",
+      "z": 30,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1139,20 +855,30 @@
     },
     {
       "type": "link",
-      "id": "3313323d-f700-4be2-96a7-c0378217f56b",
+      "id": "3cc8c9d2-a06a-4931-91db-7e93e4f6d991",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+        "id": "a1c84923-b884-4c4e-88fc-1665ed52bff1",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+        "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 29,
+      "z": 31,
+      "vertices": [
+        {
+          "x": 752,
+          "y": 224
+        },
+        {
+          "x": 256,
+          "y": 368
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1169,13 +895,13 @@
       "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
       "actor": "Player",
       "name": "START",
-      "next": "cc5649e0-ba31-45ff-b870-74bd53edef3b"
+      "next": "a1c84923-b884-4c4e-88fc-1665ed52bff1"
     },
     {
       "type": "Text",
       "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
       "actor": "Turtle",
-      "name": "Es sieht so aus, als könnten man den Grund für die Reklamationen nicht nur in der Herstellung und Prüfung der Enten suchen, sonder noch an einem anderen Ort. Das haben wir uns anders gedacht bei der Auswahl der Interviewpartner. Nun müssen wir uns spontan demjenigen zuwenden, bei dem wir eine Antwort auf unseren weiteren Fragen, wie es zu den fehlerhaften Enten beim Kunden kommen konnte, erwarten.\n\nWelcher dieser Personen würden Sie jetzt befragen wollen? ",
+      "name": "Anders als geplant, musst Du nun eine weitere Befragung durchführen, um dem Fehler auf die Spur zu kommen. \nWelcher dieser Personen würdest Du jetzt befragen wollen? ",
       "choices": [
         "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
         "c684933f-d7e4-4d31-af6a-060e59a6f02a",
@@ -1235,44 +961,15 @@
       "type": "Text",
       "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
       "actor": "Turtle",
-      "name": "Es sieht danach aus, dass fehlerhafte Enten, in im Sperrlager gebracht werden, sondern an Kunden geliefert werden. Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
-      "next": "ce0d1058-e3f1-4932-b4ce-987da12ce004"
+      "name": "Es sieht danach aus, dass fehlerhafte Enten, nicht ins Sperrlager gebracht werden, sondern an Kunden geliefert werden. Sprechen wir mit Herrn Blume.",
+      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
     },
     {
       "type": "Text",
-      "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
-      "actor": "Player",
-      "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem extra Behälter aussortiert hatte?",
-      "next": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d"
-    },
-    {
-      "type": "Text",
-      "id": "93e9ba31-f7e3-4e09-8c15-74a4cef3cc8d",
-      "actor": "Factory_QMB",
-      "name": "Ich bringe die Behälter mit dem Zettel \"n.i.O.\" in das Sperrlager.\n\nGehen wir einmal zusammen zum Sperrlager",
-      "next": "70358a09-1ef9-4847-b751-b9df1913aa5e",
-      "lua": "Personas und Player stehen vor dem Sperrlager. "
-    },
-    {
-      "type": "Text",
-      "id": "70358a09-1ef9-4847-b751-b9df1913aa5e",
-      "actor": "Player",
-      "name": "Können Sie mir den Sperrprozess zeigen?",
-      "next": "53248d3c-3a46-49c1-91a8-b74d19c08bc4"
-    },
-    {
-      "type": "Text",
-      "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
-      "actor": "Factory_QMB",
-      "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
-      "next": "59b0ecda-a234-4c06-b669-25f97e9a25cd"
-    },
-    {
-      "type": "Text",
-      "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+      "id": "a1c84923-b884-4c4e-88fc-1665ed52bff1",
       "actor": "Turtle",
-      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
-      "next": null
+      "name": "Der Grund für die Reklamationen liegt wahrscheinlich nicht nur in der Herstellung und Prüfung der Enten, sondern an einem anderen Prozess. ",
+      "next": "cc5649e0-ba31-45ff-b870-74bd53edef3b"
     }
   ]
 }
