@@ -112,6 +112,82 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 2608,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "7b8b5899-43ac-462c-9aed-ebfa20862a73",
+      "z": 3,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "15775e8c-45fd-45c9-b23c-8162ae65d24b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e11ee050-f986-4692-9b6e-e9c02e00da38",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7b8b5899-43ac-462c-9aed-ebfa20862a73",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -127,7 +203,14 @@
       "id": "e11ee050-f986-4692-9b6e-e9c02e00da38",
       "actor": "",
       "name": "Sie haben noch nicht mit allen beteiligten Personen gesprochen.",
-      "next": null
+      "next": "7b8b5899-43ac-462c-9aed-ebfa20862a73"
+    },
+    {
+      "type": "Lua",
+      "id": "7b8b5899-43ac-462c-9aed-ebfa20862a73",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();"
     }
   ]
 }
