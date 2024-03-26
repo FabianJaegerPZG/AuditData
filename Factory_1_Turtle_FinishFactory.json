@@ -50,8 +50,8 @@
       },
       "name": "",
       "position": {
-        "x": 6736,
-        "y": 720
+        "x": 3568,
+        "y": 208
       },
       "angle": 0,
       "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
@@ -89,6 +89,56 @@
     },
     {
       "type": "link",
+      "id": "cdfbe1b7-002e-426e-8260-816bf73a7ba2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "c582078e-436b-484c-8672-1fed3460a082",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "c337d98c-4707-4783-b9f6-0aea1d32fb14",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "e69962e5-2f9f-45ca-8f77-cb6475580fc1",
       "smooth": true,
       "embeds": "",
@@ -103,6 +153,41 @@
         "port": "input"
       },
       "z": 15,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6a88f6de-c3f3-4d8a-8bf9-f7326262a3cf",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 15,
+      "vertices": [
+        {
+          "x": 1664,
+          "y": 432
+        },
+        {
+          "x": 544,
+          "y": 544
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -151,7 +236,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hast DU alle Informationen zum Sperrprozess gesammelt und notiert?",
+      "name": "Hast Du alle Informationen zum Sperrprozess gesammelt und notiert?",
       "position": {
         "x": 528,
         "y": 48
@@ -204,8 +289,8 @@
       "title": "",
       "name": "Ja, ich bin bereit für Fragen.",
       "position": {
-        "x": 5056,
-        "y": 816
+        "x": 1392,
+        "y": -16
       },
       "angle": 0,
       "id": "c582078e-436b-484c-8672-1fed3460a082",
@@ -255,8 +340,8 @@
       "title": "",
       "name": "Bin mir nicht sicher. Schaue lieber noch mal genauer hin und kontrolliere meine Notizen.",
       "position": {
-        "x": 5056,
-        "y": 1088
+        "x": 1296,
+        "y": 592
       },
       "angle": 0,
       "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
@@ -292,56 +377,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "05ca1adf-440b-491d-bfda-49fc359d9a69",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "c582078e-436b-484c-8672-1fed3460a082",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 55,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "4c4ca0ee-0dca-42db-b6a5-fa61f477c514",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 56,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -355,15 +390,15 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hast etwas aus dieser Auswahl beobachtet und notiert?\n\n1. Waschbecken am Prüfplatz fehlt. (false)\n2. Behälter für i.O und n.i.O.-Ware können verwechselt werden. (true)\n3. Behälter für i.O. und n.i.O.-Ware unzureichend beschriftet.(true)\n4.Sperrbereich nicht ausreichend gekennzeichnet. (false)\n6. Im Sperrlager nur die Regale gekennzeichnet, aber nicht die Gitterboxen.\n7. Schlüssel fürs Sperrlager öffentlich zugänglich. \n\netc...",
+      "name": "Was hast Du beobachtet und notiert?\n\n4.Sperrbereich nicht ausreichend gekennzeichnet. (false)\n",
       "position": {
-        "x": 5472,
-        "y": 800
+        "x": 2064,
+        "y": 112
       },
       "angle": 0,
       "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
       "z": 57,
-      "lua": "Zuordnungsquiz mit Auswahl s. oben",
+      "lua": "OpenQuiz('SperrlagerQuiz');",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -420,45 +455,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "0c3bfa2f-cd7f-4ded-9c1f-465513b3d653",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 59,
-      "vertices": [
-        {
-          "x": 672,
-          "y": 624
-        },
-        {
-          "x": 1472,
-          "y": 416
-        },
-        {
-          "x": 416,
-          "y": 528
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -474,8 +470,8 @@
       },
       "name": "Sehr gut, nun weißt du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
       "position": {
-        "x": 5792,
-        "y": 512
+        "x": 2592,
+        "y": 112
       },
       "angle": 0,
       "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
@@ -526,8 +522,8 @@
       },
       "name": "Nun kannst du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
       "position": {
-        "x": 6160,
-        "y": 640
+        "x": 3040,
+        "y": 160
       },
       "angle": 0,
       "id": "85691f3e-4b02-4e88-957e-50160c403695",
@@ -632,7 +628,7 @@
       "type": "Text",
       "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
       "actor": "TurtleFactory",
-      "name": "Hast DU alle Informationen zum Sperrprozess gesammelt und notiert?",
+      "name": "Hast Du alle Informationen zum Sperrprozess gesammelt und notiert?",
       "choices": [
         "c582078e-436b-484c-8672-1fed3460a082",
         "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3"
@@ -656,9 +652,9 @@
       "type": "Text",
       "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
       "actor": "TurtleFactory",
-      "name": "Hast etwas aus dieser Auswahl beobachtet und notiert?\n\n1. Waschbecken am Prüfplatz fehlt. (false)\n2. Behälter für i.O und n.i.O.-Ware können verwechselt werden. (true)\n3. Behälter für i.O. und n.i.O.-Ware unzureichend beschriftet.(true)\n4.Sperrbereich nicht ausreichend gekennzeichnet. (false)\n6. Im Sperrlager nur die Regale gekennzeichnet, aber nicht die Gitterboxen.\n7. Schlüssel fürs Sperrlager öffentlich zugänglich. \n\netc...",
+      "name": "Was hast Du beobachtet und notiert?\n\n4.Sperrbereich nicht ausreichend gekennzeichnet. (false)\n",
       "next": "803d84a7-201a-47ed-8eac-23a76680b3ca",
-      "lua": "Zuordnungsquiz mit Auswahl s. oben"
+      "lua": "OpenQuiz('SperrlagerQuiz');"
     },
     {
       "type": "Text",
