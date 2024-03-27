@@ -488,7 +488,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Nein, wir arbeiten zu zweit an der Maschine. Frau Blume ist heute nicht da. Wir vertreten uns auch im Urlaub gegenseitig.",
+      "name": "Nein, wir arbeiten zu zweit an der Maschine. Meine Kollegin ist heute nicht da. Wir vertreten uns gegenseitig.",
       "position": {
         "x": 3712,
         "y": 176
@@ -1028,7 +1028,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Diese Frage ist zwar inhaltlich berechtigt, aber führt nicht  zu einem konstruktiven Gespräch, in dem der Auditiernde zielführende Fragen stellt und eine freundliche aber verbindliche Gesprächsatmosphäre schafft.\n",
+      "name": "Diese Frage ist zwar inhaltlich berechtigt, aber nicht sehr geschickt und zielführend, da sie keine freundliche aber verbindliche Gesprächsatmosphäre schafft.\n",
       "position": {
         "x": 3680,
         "y": 1104
@@ -1081,7 +1081,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Richtige Frage, aber es ist eine geschlossene Frage, auf die man mit Ja oder Nein antworten kann. Besser wäre folgendes zu fragen:\n'Wie und in welchen Abständen überprüfen Sie die Maschine, bevor Sie sie in Betrieb nehmen?'",
+      "name": "Richtige Frage, aber es ist eine geschlossene Frage, auf die man mit Ja oder Nein antworten kann.",
       "position": {
         "x": 4720,
         "y": 640
@@ -1287,82 +1287,6 @@
       }
     },
     {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Vielen Dank. Das sieht schon mal gut aus.\n",
-      "position": {
-        "x": 5120,
-        "y": 976
-      },
-      "angle": 0,
-      "id": "7ccf174c-6b99-42a8-bc56-0f1616b295ff",
-      "z": 41,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "122d86d2-face-4850-a1cc-e9f99cd764fb",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "55047aae-7c16-43ab-bbfe-3c6acaf02c1c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "7ccf174c-6b99-42a8-bc56-0f1616b295ff",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 42,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -1411,31 +1335,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "1ee0b805-abe6-4ac6-a379-0daeaf40a065",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "7ccf174c-6b99-42a8-bc56-0f1616b295ff",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "34a952ef-6140-41a3-8902-a4f74bbe471e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 44,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -3026,7 +2925,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Herr Neumann abgelegt.",
+      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Frau Schwarz abgelegt.",
       "position": {
         "x": 2048,
         "y": 32
@@ -3388,6 +3287,10 @@
           "y": 208
         },
         {
+          "x": 2240,
+          "y": 352
+        },
+        {
           "x": 1744,
           "y": 832
         }
@@ -3454,6 +3357,58 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Vielen Dank, das sieht schon mal gut aus.",
+      "position": {
+        "x": 5168,
+        "y": 784
+      },
+      "angle": 0,
+      "id": "478adaea-c7f4-4529-b8f6-534f79ae3328",
+      "z": 95,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "b255db8b-bc8e-4500-94a5-24db7197c6ae",
       "smooth": true,
@@ -3470,6 +3425,31 @@
       },
       "z": 96,
       "vertices": [],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f8160800-087f-4e17-9ee3-53791708ed5c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "55047aae-7c16-43ab-bbfe-3c6acaf02c1c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "478adaea-c7f4-4529-b8f6-534f79ae3328",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 96,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -3518,7 +3498,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Guten Tag Herr Wolff. Ich heiße Schmidt und Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
+      "name": "Guten Tag Herr Wolff. Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
       "position": {
         "x": 896,
         "y": 48
@@ -3553,6 +3533,31 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "74f7beda-3b12-49b7-995b-28bcb032a4c8",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "478adaea-c7f4-4529-b8f6-534f79ae3328",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "34a952ef-6140-41a3-8902-a4f74bbe471e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 97,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
         }
       }
     },
@@ -3645,11 +3650,11 @@
       "vertices": [
         {
           "x": 5024,
-          "y": 576
+          "y": 624
         },
         {
-          "x": 3760,
-          "y": 528
+          "x": 3792,
+          "y": 560
         }
       ],
       "attrs": {
@@ -3727,7 +3732,7 @@
       "type": "Text",
       "id": "9bc3b932-f2ef-4847-b0b7-5514ee419983",
       "actor": "SGM",
-      "name": "Nein, wir arbeiten zu zweit an der Maschine. Frau Blume ist heute nicht da. Wir vertreten uns auch im Urlaub gegenseitig.",
+      "name": "Nein, wir arbeiten zu zweit an der Maschine. Meine Kollegin ist heute nicht da. Wir vertreten uns gegenseitig.",
       "choices": [
         "9b20cc43-73cc-4d9a-8a40-26990302d6de",
         "10c143e8-4916-4ca6-9e12-15afd3a79439",
@@ -3777,7 +3782,7 @@
       "type": "Text",
       "id": "21a26059-76d2-4f47-bdc6-454c79c74bec",
       "actor": "Turtle",
-      "name": "Diese Frage ist zwar inhaltlich berechtigt, aber führt nicht  zu einem konstruktiven Gespräch, in dem der Auditiernde zielführende Fragen stellt und eine freundliche aber verbindliche Gesprächsatmosphäre schafft.\n",
+      "name": "Diese Frage ist zwar inhaltlich berechtigt, aber nicht sehr geschickt und zielführend, da sie keine freundliche aber verbindliche Gesprächsatmosphäre schafft.\n",
       "lua": "AddPoints(-1, 'Ungeschickte Frage');",
       "choices": [
         "75b9d9bb-5863-4611-a78c-4303842ae35f"
@@ -3787,7 +3792,7 @@
       "type": "Text",
       "id": "ba359429-01fc-4cf7-be82-e93aa836c678",
       "actor": "Turtle",
-      "name": "Richtige Frage, aber es ist eine geschlossene Frage, auf die man mit Ja oder Nein antworten kann. Besser wäre folgendes zu fragen:\n'Wie und in welchen Abständen überprüfen Sie die Maschine, bevor Sie sie in Betrieb nehmen?'",
+      "name": "Richtige Frage, aber es ist eine geschlossene Frage, auf die man mit Ja oder Nein antworten kann.",
       "next": "9bc3b932-f2ef-4847-b0b7-5514ee419983",
       "lua": "Hinweis Turtle"
     },
@@ -3796,16 +3801,7 @@
       "id": "55047aae-7c16-43ab-bbfe-3c6acaf02c1c",
       "actor": "SGM",
       "name": "Ich überprüfe, die Einstelldaten mit denen, die in den Auftragsunterlagen gefordert werden. Außerdem haben wir eine Checkliste, was zu Schichtanfang und Schichtende an der Maschine geprüft werden muss.",
-      "choices": [
-        "7ccf174c-6b99-42a8-bc56-0f1616b295ff"
-      ]
-    },
-    {
-      "type": "Choice",
-      "id": "7ccf174c-6b99-42a8-bc56-0f1616b295ff",
-      "title": "",
-      "name": "Vielen Dank. Das sieht schon mal gut aus.\n",
-      "next": "34a952ef-6140-41a3-8902-a4f74bbe471e"
+      "next": "478adaea-c7f4-4529-b8f6-534f79ae3328"
     },
     {
       "type": "Text",
@@ -3986,7 +3982,7 @@
       "type": "Text",
       "id": "1eed7577-31b0-4c16-8209-7837094c709e",
       "actor": "SGM",
-      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Herr Neumann abgelegt.",
+      "name": "Ja, selbstverständlich, ich wurde eingearbeitet. Das Protokoll hat Frau Schwarz abgelegt.",
       "choices": [
         "75b9d9bb-5863-4611-a78c-4303842ae35f",
         "85b8707c-de44-4dc9-8664-35d9e7c6325c"
@@ -4015,9 +4011,16 @@
     },
     {
       "type": "Text",
+      "id": "478adaea-c7f4-4529-b8f6-534f79ae3328",
+      "actor": "",
+      "name": "Vielen Dank, das sieht schon mal gut aus.",
+      "next": "34a952ef-6140-41a3-8902-a4f74bbe471e"
+    },
+    {
+      "type": "Text",
       "id": "82395227-c112-434b-97d4-d8db262f0559",
       "actor": "Player",
-      "name": "Guten Tag Herr Wolff. Ich heiße Schmidt und Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
+      "name": "Guten Tag Herr Wolff. Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
       "next": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7"
     }
   ]
