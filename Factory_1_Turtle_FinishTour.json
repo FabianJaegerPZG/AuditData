@@ -153,7 +153,7 @@
         "output"
       ],
       "title": "",
-      "name": "Nein, mir fehlen Bereiche in der Halle, die ich näher anschauen sollte.",
+      "name": "Nein, mir fehlen Bereiche in der Werkshalle, die ich näher anschauen sollte.",
       "position": {
         "x": 816,
         "y": 704
@@ -281,8 +281,8 @@
       },
       "name": "",
       "position": {
-        "x": 4560,
-        "y": 320
+        "x": 4208,
+        "y": 208
       },
       "angle": 0,
       "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
@@ -367,37 +367,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "f8c06907-bc5c-4a17-a2f0-0e9c1a642766",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "f45558a2-3e6c-4432-9971-e66804109ece",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 9,
-      "vertices": [
-        {
-          "x": 2160,
-          "y": 160
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -529,58 +498,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "TurtleFactory",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Welche Themen hast Du gefunden? ",
-      "position": {
-        "x": 1840,
-        "y": 48
-      },
-      "angle": 0,
-      "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
-      "z": 13,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "type": "link",
       "id": "ae0b0802-9b26-4392-b845-1c5dee10d8d0",
       "smooth": true,
@@ -632,7 +549,83 @@
     },
     {
       "type": "link",
-      "id": "834c1b87-a223-4650-b1f5-77d05d39df4f",
+      "id": "e94845c0-2cb6-4b1a-b916-af9048a58c36",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "443f5236-4950-4086-9db0-45da57af02c0",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "36c77f6c-669c-4d5d-9804-10e651cb6639",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 22,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 2688,
+        "y": 112
+      },
+      "angle": 0,
+      "id": "36c77f6c-669c-4d5d-9804-10e651cb6639",
+      "z": 23,
+      "lua": "OpenSelectionWindow('factory_selection');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "51604ef8-9b32-434c-840c-c0832ebf5a65",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -641,277 +634,12 @@
         "port": "output"
       },
       "target": {
-        "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
+        "id": "443f5236-4950-4086-9db0-45da57af02c0",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 16,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "TurtleFactory",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Es gab einige Dinge, die dir hätten gefährlich werden können auf diesem Rundgang. Diese lassen sich unter den Kategorien Arbeitssicherheit oder Betriebssicherheit kategorisieren.",
-      "position": {
-        "x": 2640,
-        "y": 880
-      },
-      "angle": 0,
-      "id": "b2afff76-8168-4dec-86f7-b643432b20b7",
-      "z": 17,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "e758b6e8-49e5-4678-a417-6acd3c04d691",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6b3ad60e-caae-401a-8fd5-97e643cff937",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 22,
-      "vertices": [
-        {
-          "x": 2384,
-          "y": 448
-        },
-        {
-          "x": 3600,
-          "y": 416
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Themen aus dem Bereich Arbeitssicherheit",
-      "position": {
-        "x": 2192,
-        "y": 48
-      },
-      "angle": 0,
-      "id": "f45558a2-3e6c-4432-9971-e66804109ece",
-      "z": 23,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Themen, die Reklamationen betreffen",
-      "position": {
-        "x": 2192,
-        "y": 320
-      },
-      "angle": 0,
-      "id": "6066c64a-d6e1-430b-94db-c60df574924c",
       "z": 24,
       "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Themen aus dem Bereich Betriebssicherheit",
-      "position": {
-        "x": 2224,
-        "y": 592
-      },
-      "angle": 0,
-      "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
-      "z": 25,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "38fb5ceb-efd7-4e5d-85f5-788812bdb95d",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "6066c64a-d6e1-430b-94db-c60df574924c",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 26,
-      "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
         },
@@ -922,172 +650,20 @@
     },
     {
       "type": "link",
-      "id": "1998023a-3504-49e5-924d-699a29a00360",
+      "id": "de2ea8cd-ea8b-478a-ac2b-35fd0b749eca",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
+        "id": "36c77f6c-669c-4d5d-9804-10e651cb6639",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
+        "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 27,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Themen, die die eigene Sicherheit betreffen",
-      "position": {
-        "x": 2208,
-        "y": 896
-      },
-      "angle": 0,
-      "id": "c71c1cf1-d640-4374-869f-326d54bd9f8e",
-      "z": 28,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "f97bf949-d14e-45b8-8020-b0e512bc96e9",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "c71c1cf1-d640-4374-869f-326d54bd9f8e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 28,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "bae54947-4cd4-4399-8dfc-b4ed2f9f15e9",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "c71c1cf1-d640-4374-869f-326d54bd9f8e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "b2afff76-8168-4dec-86f7-b643432b20b7",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 29,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "7947ca62-33f2-456d-99a0-e2d1c2e71714",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "b2afff76-8168-4dec-86f7-b643432b20b7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 30,
-      "vertices": [
-        {
-          "x": 3072,
-          "y": 896
-        },
-        {
-          "x": 2608,
-          "y": 864
-        },
-        {
-          "x": 2448,
-          "y": 880
-        },
-        {
-          "x": 2000,
-          "y": 656
-        },
-        {
-          "x": 1840,
-          "y": 640
-        },
-        {
-          "x": 1808,
-          "y": 304
-        }
-      ],
+      "z": 24,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1113,13 +689,13 @@
       },
       "name": "Was hast Du beobachtet? Wähle aus der Liste aus.",
       "position": {
-        "x": 2640,
-        "y": 48
+        "x": 2080,
+        "y": 64
       },
       "angle": 0,
       "id": "443f5236-4950-4086-9db0-45da57af02c0",
       "z": 31,
-      "lua": "OpenQuiz('Rundgang');",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1147,338 +723,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "80568f17-fad0-4fcb-80d6-25d5c54d0177",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "f45558a2-3e6c-4432-9971-e66804109ece",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "443f5236-4950-4086-9db0-45da57af02c0",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 32,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "32741a43-34d5-4f2b-8702-4315591c8e08",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "443f5236-4950-4086-9db0-45da57af02c0",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 36,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "TurtleFactory",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Zu den möglichen Gründen für die Reklamation solltest du hier auch etwas gefunden haben. Wähle sie aus der folgenden Liste aus.",
-      "position": {
-        "x": 2640,
-        "y": 320
-      },
-      "angle": 0,
-      "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
-      "z": 37,
-      "lua": "OpenQuiz('Rundgang');",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "c25b724f-00f1-4f8b-8042-e5cb3214c899",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6066c64a-d6e1-430b-94db-c60df574924c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 38,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "TurtleFactory",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Zur Betriebssicherheit waren einige Punkte dabei. Bitte wähle aus folgender Liste die richtigen aus.",
-      "position": {
-        "x": 2640,
-        "y": 592
-      },
-      "angle": 0,
-      "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
-      "z": 42,
-      "lua": "OpenQuiz('Rundgang');",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "350ac94b-58a4-4cd4-b67a-7f16bb7bfa8b",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 43,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "b54e7e86-e4e5-4873-9e79-70dfe9117037",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 43,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Lua",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "size": {
-        "width": 250,
-        "height": 135
-      },
-      "name": "",
-      "position": {
-        "x": 3215.625244140625,
-        "y": 14.988426208496094
-      },
-      "angle": 0,
-      "id": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-      "z": 44,
-      "lua": "Openquiz",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "228369a9-daf9-4bfd-855e-aa99db2d0e52",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 45,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "b4ffb6e0-9626-4c70-b593-b1a9f058265e",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 47,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -1567,7 +811,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleFactory",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1575,8 +819,8 @@
       },
       "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner.",
       "position": {
-        "x": 3600,
-        "y": 0
+        "x": 3328,
+        "y": 48
       },
       "angle": 0,
       "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
@@ -1635,37 +879,6 @@
           "r": 8
         }
       }
-    },
-    {
-      "type": "link",
-      "id": "a0c5a1c2-c170-4903-9ff8-65befc776393",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "79935b90-d99d-41dc-9ef0-296d0ded9c9b",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 50,
-      "vertices": [
-        {
-          "x": 3856,
-          "y": 800
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
     }
   ],
   "gameData": [
@@ -1698,7 +911,7 @@
       "type": "Choice",
       "id": "6bd9272d-2c96-4ba5-b670-73a301a63d54",
       "title": "",
-      "name": "Nein, mir fehlen Bereiche in der Halle, die ich näher anschauen sollte.",
+      "name": "Nein, mir fehlen Bereiche in der Werkshalle, die ich näher anschauen sollte.",
       "next": "79935b90-d99d-41dc-9ef0-296d0ded9c9b",
       "lua": ""
     },
@@ -1724,104 +937,41 @@
       "id": "6b3ad60e-caae-401a-8fd5-97e643cff937",
       "title": "",
       "name": "Ich drehe leiber noch mal eine Runde und mache mir Notizen.",
-      "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd"
+      "next": null
     },
     {
       "type": "Choice",
       "id": "821670f3-998d-4012-80c4-100c12cc443c",
       "title": "",
       "name": "Ja, ich bin bereit.",
-      "next": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6"
-    },
-    {
-      "type": "Text",
-      "id": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6",
-      "actor": "TurtleFactory",
-      "name": "Welche Themen hast Du gefunden? ",
-      "choices": [
-        "f45558a2-3e6c-4432-9971-e66804109ece",
-        "6066c64a-d6e1-430b-94db-c60df574924c",
-        "11393980-98ad-4bed-a1fe-36f1bb124e45",
-        "c71c1cf1-d640-4374-869f-326d54bd9f8e"
-      ]
-    },
-    {
-      "type": "Text",
-      "id": "b2afff76-8168-4dec-86f7-b643432b20b7",
-      "actor": "TurtleFactory",
-      "name": "Es gab einige Dinge, die dir hätten gefährlich werden können auf diesem Rundgang. Diese lassen sich unter den Kategorien Arbeitssicherheit oder Betriebssicherheit kategorisieren.",
-      "next": "843e3f43-dc44-4eb7-aaf1-7989c8232bc6"
-    },
-    {
-      "type": "Choice",
-      "id": "f45558a2-3e6c-4432-9971-e66804109ece",
-      "title": "",
-      "name": "Themen aus dem Bereich Arbeitssicherheit",
       "next": "443f5236-4950-4086-9db0-45da57af02c0"
     },
     {
-      "type": "Choice",
-      "id": "6066c64a-d6e1-430b-94db-c60df574924c",
-      "title": "",
-      "name": "Themen, die Reklamationen betreffen",
-      "next": "dd00b633-18cb-4221-994c-66752e0bb5e7"
-    },
-    {
-      "type": "Choice",
-      "id": "11393980-98ad-4bed-a1fe-36f1bb124e45",
-      "title": "",
-      "name": "Themen aus dem Bereich Betriebssicherheit",
-      "next": "b51cc9f3-f885-4caa-84c0-37367e935b41"
-    },
-    {
-      "type": "Choice",
-      "id": "c71c1cf1-d640-4374-869f-326d54bd9f8e",
-      "title": "",
-      "name": "Themen, die die eigene Sicherheit betreffen",
-      "next": "b2afff76-8168-4dec-86f7-b643432b20b7"
+      "type": "Lua",
+      "id": "36c77f6c-669c-4d5d-9804-10e651cb6639",
+      "name": "",
+      "next": "22d364cd-862c-44fc-b0ac-806a150cd365",
+      "lua": "OpenSelectionWindow('factory_selection');"
     },
     {
       "type": "Text",
       "id": "443f5236-4950-4086-9db0-45da57af02c0",
       "actor": "TurtleFactory",
       "name": "Was hast Du beobachtet? Wähle aus der Liste aus.",
-      "next": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-      "lua": "OpenQuiz('Rundgang');"
-    },
-    {
-      "type": "Text",
-      "id": "dd00b633-18cb-4221-994c-66752e0bb5e7",
-      "actor": "TurtleFactory",
-      "name": "Zu den möglichen Gründen für die Reklamation solltest du hier auch etwas gefunden haben. Wähle sie aus der folgenden Liste aus.",
-      "next": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-      "lua": "OpenQuiz('Rundgang');"
-    },
-    {
-      "type": "Text",
-      "id": "b51cc9f3-f885-4caa-84c0-37367e935b41",
-      "actor": "TurtleFactory",
-      "name": "Zur Betriebssicherheit waren einige Punkte dabei. Bitte wähle aus folgender Liste die richtigen aus.",
-      "next": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-      "lua": "OpenQuiz('Rundgang');"
-    },
-    {
-      "type": "Lua",
-      "id": "dfa8c2a5-2e03-43a6-bf60-8468550e3607",
-      "name": "",
-      "next": "22d364cd-862c-44fc-b0ac-806a150cd365",
-      "lua": "Openquiz"
+      "next": "36c77f6c-669c-4d5d-9804-10e651cb6639",
+      "lua": ""
     },
     {
       "type": "Text",
       "id": "79935b90-d99d-41dc-9ef0-296d0ded9c9b",
       "actor": "TurtleFactory",
       "name": "Gut, dann sieh sich weiter um und mach Dir Notizen.",
-      "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd"
+      "next": null
     },
     {
       "type": "Text",
       "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
-      "actor": "",
+      "actor": "TurtleFactory",
       "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner.",
       "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd"
     }
