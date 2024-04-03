@@ -2391,58 +2391,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Player",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Was machen Sie wenn die Enten der Stichprobe fehlerhaft sind?",
-      "position": {
-        "x": 13120,
-        "y": 848
-      },
-      "angle": 0,
-      "id": "078e7442-4d5c-4a84-89e6-b09a9404e9d4",
-      "z": 85,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -2505,31 +2453,6 @@
       },
       "target": {
         "id": "478adaea-c7f4-4529-b8f6-534f79ae3328",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 86,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "ac95ee75-a803-4c81-9147-8a1c905d2ad1",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "f730318e-8b4e-43fa-b22e-d0a085c5451e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "078e7442-4d5c-4a84-89e6-b09a9404e9d4",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -2640,7 +2563,7 @@
       "angle": 0,
       "id": "056ca5e2-4655-4f15-b796-007331d4596c",
       "z": 87,
-      "lua": "Start Dialog 3",
+      "lua": "InterviewPassed();\nQueueNextInterview();",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -2725,31 +2648,6 @@
     },
     {
       "type": "link",
-      "id": "fe033b68-2219-442e-af0a-153a3c61a28d",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "078e7442-4d5c-4a84-89e6-b09a9404e9d4",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "b2f0df3f-c1f7-482b-a0c4-52dae2204291",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 88,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "b3387cfd-8c3e-401b-929c-19156be413c0",
       "smooth": true,
       "embeds": "",
@@ -2775,6 +2673,31 @@
     },
     {
       "type": "link",
+      "id": "ecf26698-0d28-43ba-b408-6884f7eb12c6",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f730318e-8b4e-43fa-b22e-d0a085c5451e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "665feedc-1831-4d54-aca9-32d5bd0f97b7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 88,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "2b2d026e-8613-4db7-9aec-db9f1c82dbd0",
       "smooth": true,
       "embeds": "",
@@ -2785,6 +2708,82 @@
       },
       "target": {
         "id": "702f089c-d13e-46ee-ae9f-a506ee31700c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 89,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Was machen Sie wenn die Enten der Stichprobe fehlerhaft sind?",
+      "position": {
+        "x": 13136,
+        "y": 1088
+      },
+      "angle": 0,
+      "id": "665feedc-1831-4d54-aca9-32d5bd0f97b7",
+      "z": 89,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6eab5076-34bb-4586-b193-5ec42ebe6b75",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "665feedc-1831-4d54-aca9-32d5bd0f97b7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b2f0df3f-c1f7-482b-a0c4-52dae2204291",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -3637,7 +3636,9 @@
       "id": "f730318e-8b4e-43fa-b22e-d0a085c5451e",
       "actor": "SGM",
       "name": "Ich habe für jeden Auftrag einen eigenen Prüfplan und dort steht die Stichprobengröße drin. Jetzt muss ich 10 Enten alle 30 Minuten prüfen.",
-      "next": "078e7442-4d5c-4a84-89e6-b09a9404e9d4"
+      "choices": [
+        "665feedc-1831-4d54-aca9-32d5bd0f97b7"
+      ]
     },
     {
       "type": "Choice",
@@ -3652,13 +3653,6 @@
       "actor": "SGM",
       "name": "Außerdem haben wir eine Checkliste, was zu Schichtanfang und Schichtende an der Maschine geprüft werden muss.",
       "next": "478adaea-c7f4-4529-b8f6-534f79ae3328"
-    },
-    {
-      "type": "Text",
-      "id": "078e7442-4d5c-4a84-89e6-b09a9404e9d4",
-      "actor": "Player",
-      "name": "Was machen Sie wenn die Enten der Stichprobe fehlerhaft sind?",
-      "next": "b2f0df3f-c1f7-482b-a0c4-52dae2204291"
     },
     {
       "type": "Choice",
@@ -3679,7 +3673,7 @@
       "id": "056ca5e2-4655-4f15-b796-007331d4596c",
       "name": "",
       "next": null,
-      "lua": "Start Dialog 3"
+      "lua": "InterviewPassed();\nQueueNextInterview();"
     },
     {
       "type": "Text",
@@ -3687,6 +3681,13 @@
       "actor": "Turtle",
       "name": "Dann müssen wir als nächsten Schritt im Audit den Ablauf an der Maschine anschauen.\n",
       "next": "c8b2c6b2-5370-4c78-ae34-2af4d8a7ffa8"
+    },
+    {
+      "type": "Choice",
+      "id": "665feedc-1831-4d54-aca9-32d5bd0f97b7",
+      "title": "",
+      "name": "Was machen Sie wenn die Enten der Stichprobe fehlerhaft sind?",
+      "next": "b2f0df3f-c1f7-482b-a0c4-52dae2204291"
     },
     {
       "type": "Text",
