@@ -624,6 +624,57 @@
       }
     },
     {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ok",
+      "position": {
+        "x": 3488,
+        "y": 112
+      },
+      "angle": 0,
+      "id": "e8ffc8a6-d6bb-4949-9748-8fc5ce2f4cc0",
+      "z": 23,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "51604ef8-9b32-434c-840c-c0832ebf5a65",
       "smooth": true,
@@ -660,6 +711,31 @@
       },
       "target": {
         "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 24,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "10a7e076-b6af-4b33-b17a-837663fbb735",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e8ffc8a6-d6bb-4949-9748-8fc5ce2f4cc0",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -819,8 +895,8 @@
       },
       "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner.",
       "position": {
-        "x": 3328,
-        "y": 48
+        "x": 3024,
+        "y": 96
       },
       "angle": 0,
       "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
@@ -861,7 +937,7 @@
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
+        "id": "e8ffc8a6-d6bb-4949-9748-8fc5ce2f4cc0",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
@@ -954,6 +1030,13 @@
       "lua": "OpenSelectionWindow('factory_selection');"
     },
     {
+      "type": "Choice",
+      "id": "e8ffc8a6-d6bb-4949-9748-8fc5ce2f4cc0",
+      "title": "",
+      "name": "Ok",
+      "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd"
+    },
+    {
       "type": "Text",
       "id": "443f5236-4950-4086-9db0-45da57af02c0",
       "actor": "TurtleFactory",
@@ -973,7 +1056,9 @@
       "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
       "actor": "TurtleFactory",
       "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner.",
-      "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd"
+      "choices": [
+        "e8ffc8a6-d6bb-4949-9748-8fc5ce2f4cc0"
+      ]
     }
   ]
 }
