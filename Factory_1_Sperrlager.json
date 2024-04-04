@@ -442,6 +442,7 @@
       "angle": 0,
       "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
       "z": 28,
+      "lua": "QueueNextInterview(Factory_1_Turtle_FinishTour);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -546,7 +547,8 @@
       "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
       "actor": "Turtle",
       "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
-      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
+      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+      "lua": "QueueNextInterview(Factory_1_Turtle_FinishTour);"
     }
   ]
 }
