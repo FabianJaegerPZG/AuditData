@@ -1011,7 +1011,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2352,7 +2352,7 @@
     {
       "type": "Text",
       "id": "ceb067dc-7a23-46c4-bde9-c2245db295ec",
-      "actor": "Factory_Prüferin",
+      "actor": "Factory_Prueferin",
       "name": "Die werden erstmal ebenfalls dort drüben beim Sperrlagen hingestellt und gehen dann in die Verpackung.",
       "next": "7c5731a0-6b21-483a-aed8-67ecd79a2584"
     },
