@@ -1,0 +1,300 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 534,
+        "y": 315
+      },
+      "angle": 0,
+      "id": "e65b9e60-f352-490d-a91a-29b7e5ca6988",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Blume_Office",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das war eine ereignisreicher Tag. Nun sind wir wieder hier zurück wo wir heute Morgen gestartet sind. \n",
+      "position": {
+        "x": 992,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "91b99566-e45d-422a-a702-42ee9134591b",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "e0805db0-0ba0-47a2-922c-d2b10f201750",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e65b9e60-f352-490d-a91a-29b7e5ca6988",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "91b99566-e45d-422a-a702-42ee9134591b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Lua",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "size": {
+        "width": 250,
+        "height": 135
+      },
+      "name": "",
+      "position": {
+        "x": 2080,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
+      "z": 4,
+      "lua": "InterviewPassed();",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja das kann man sagen. Ich möchte mich ganz herzlich für Ihre Unterstützung bedanken!",
+      "position": {
+        "x": 1456,
+        "y": 320
+      },
+      "angle": 0,
+      "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+      "z": 4,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "bbf88a09-49e6-46a7-a3fd-a516014abf1c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "91b99566-e45d-422a-a702-42ee9134591b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 5,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6d614e23-5614-485a-855a-3a082de8241c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 6,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "e65b9e60-f352-490d-a91a-29b7e5ca6988",
+      "actor": "Player",
+      "name": "START",
+      "next": "91b99566-e45d-422a-a702-42ee9134591b"
+    },
+    {
+      "type": "Text",
+      "id": "91b99566-e45d-422a-a702-42ee9134591b",
+      "actor": "Blume_Office",
+      "name": "Das war eine ereignisreicher Tag. Nun sind wir wieder hier zurück wo wir heute Morgen gestartet sind. \n",
+      "next": "377b319f-6330-462f-9e22-8078f9b8b8bb"
+    },
+    {
+      "type": "Lua",
+      "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
+      "name": "",
+      "next": null,
+      "lua": "InterviewPassed();"
+    },
+    {
+      "type": "Text",
+      "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
+      "actor": "",
+      "name": "Ja das kann man sagen. Ich möchte mich ganz herzlich für Ihre Unterstützung bedanken!",
+      "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
+    }
+  ]
+}
