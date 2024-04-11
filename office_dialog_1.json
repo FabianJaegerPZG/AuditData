@@ -45,7 +45,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Human_4",
+      "actor": "Blume_Office",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -199,7 +199,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Human_4",
+      "actor": "Blume_Office",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -441,7 +441,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Human_4",
+      "actor": "Blume_Office",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -522,7 +522,7 @@
     {
       "type": "Text",
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
-      "actor": "Human_4",
+      "actor": "Blume_Office",
       "name": "Hallo, mein Name ist Blume, willkommen in unserer QM-Abteilung. Sie werden uns beim internen Audit unterstützen? Gerne können Sie unser Büro nutzen, um das Audit vorzubereiten.",
       "next": "8831a25f-6940-47f6-905c-34957e5c0031"
     },
@@ -536,7 +536,7 @@
     {
       "type": "Text",
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-      "actor": "Human_4",
+      "actor": "Blume_Office",
       "name": "Haben Sie die Informationen von Herrn Klein bekommen? Dort ist die Zielsetzung beschrieben.",
       "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
     },
@@ -557,7 +557,7 @@
     {
       "type": "Text",
       "id": "ea11c3ea-05b7-4d73-aed6-8d96aefb16b7",
-      "actor": "Human_4",
+      "actor": "Blume_Office",
       "name": "Wenn Sie Ihn anrufen möchten, dann klicken Sie auf das Telefon.\nWenn Sie aber gleich beginnen wollen mit der Vorbereitung zum Audit, dann können Sie im Computer oder am Whiteboard arbeiten.\n",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     }
