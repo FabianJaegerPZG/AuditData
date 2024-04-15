@@ -44,7 +44,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Turtle",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -250,7 +250,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "Turtle",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -509,7 +509,7 @@
     {
       "type": "Text",
       "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
-      "actor": "Turtle",
+      "actor": "TurtleMeetingRoom",
       "name": "So, jetzt sind wir ja vollständig. Wie möchten Sie das Meeting strukturieren?",
       "next": "be5dc836-6d00-46b1-b34b-b62a956a7cf3"
     },
@@ -533,7 +533,7 @@
     {
       "type": "Text",
       "id": "a5e4254d-daae-4c99-a1df-e99ef6e2c73b",
-      "actor": "Turtle",
+      "actor": "TurtleMeetingRoom",
       "name": "Sehr gut. Nach dem erfolgreichen Start ins Audit können wir nun in die Werkshalle gehen.",
       "lua": "",
       "choices": [
