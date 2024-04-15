@@ -127,8 +127,8 @@
       },
       "name": "",
       "position": {
-        "x": 4960,
-        "y": 592
+        "x": 6256,
+        "y": 672
       },
       "angle": 0,
       "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
@@ -1353,11 +1353,352 @@
         "port": "output"
       },
       "target": {
-        "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
+        "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 34,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Mit richtigen Agenda lief das Gespräch deutlich besser. Was ist nun zu tun?",
+      "position": {
+        "x": 4992,
+        "y": 768
+      },
+      "angle": 0,
+      "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
+      "z": 35,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Endlich Kaffeepause machen.",
+      "position": {
+        "x": 5408,
+        "y": 400
+      },
+      "angle": 0,
+      "id": "9a621fbb-105c-4850-bb65-9378c011027e",
+      "z": 36,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "432d1df1-7db8-49fa-8958-745725cb358f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "9a621fbb-105c-4850-bb65-9378c011027e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 37,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "da1b5b53-cabb-47eb-bc32-6031509c9c76",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "9a621fbb-105c-4850-bb65-9378c011027e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 38,
+      "vertices": [
+        {
+          "x": 5760,
+          "y": 352
+        },
+        {
+          "x": 4960,
+          "y": 480
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich möchte den Abschlußbericht versenden.",
+      "position": {
+        "x": 5440,
+        "y": 704
+      },
+      "angle": 0,
+      "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
+      "z": 39,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3abf7b28-dc94-4446-a373-4ed89dee8157",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 40,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja, genau. Der Bericht soll auch zeitnah erstellt und versendet werden.",
+      "position": {
+        "x": 5856,
+        "y": 624
+      },
+      "angle": 0,
+      "id": "a751365c-c04d-4b8f-b430-3daa78cd3106",
+      "z": 41,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6751fb7a-7923-4ead-abd9-ea3e3844eca3",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a751365c-c04d-4b8f-b430-3daa78cd3106",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 42,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b739f84d-07a5-4f1c-a415-a5d9a88b0cad",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a751365c-c04d-4b8f-b430-3daa78cd3106",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "19101146-e10e-47cc-94f6-8379f9cd1873",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 43,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1499,6 +1840,37 @@
       "id": "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c",
       "title": "",
       "name": "So ist die Agenda besser und wir können, das Abschlussgespräch nun führen. ",
+      "next": "50643169-ffd5-4212-bd81-8220ac240ec5"
+    },
+    {
+      "type": "Text",
+      "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
+      "actor": "TurtleMeetingRoom",
+      "name": "Mit richtigen Agenda lief das Gespräch deutlich besser. Was ist nun zu tun?",
+      "choices": [
+        "9a621fbb-105c-4850-bb65-9378c011027e",
+        "d26ba716-ef61-4472-ae21-fd7f4b51055b"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "9a621fbb-105c-4850-bb65-9378c011027e",
+      "title": "",
+      "name": "Endlich Kaffeepause machen.",
+      "next": "50643169-ffd5-4212-bd81-8220ac240ec5"
+    },
+    {
+      "type": "Choice",
+      "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
+      "title": "",
+      "name": "Ich möchte den Abschlußbericht versenden.",
+      "next": "a751365c-c04d-4b8f-b430-3daa78cd3106"
+    },
+    {
+      "type": "Text",
+      "id": "a751365c-c04d-4b8f-b430-3daa78cd3106",
+      "actor": "TurtleMeetingRoom",
+      "name": "Ja, genau. Der Bericht soll auch zeitnah erstellt und versendet werden.",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
     }
   ]
