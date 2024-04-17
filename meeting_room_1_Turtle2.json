@@ -1690,7 +1690,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ah! stimmt! Die müssen wir einmal holen lassen!",
+      "name": "Ah! stimmt! Die müssen wir holen lassen!",
       "position": {
         "x": 2528,
         "y": 1712
@@ -1945,7 +1945,7 @@
       "type": "Text",
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "actor": "",
-      "name": "Ah! stimmt! Die müssen wir einmal holen lassen!",
+      "name": "Ah! stimmt! Die müssen wir holen lassen!",
       "next": "ece9229d-ffbd-43a4-954c-3e96c2281531",
       "lua": "AddPoints(30, \"Produktionsleitung fehlt\");"
     }
