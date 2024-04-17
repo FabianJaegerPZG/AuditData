@@ -283,7 +283,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
+      "name": "Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
       "position": {
         "x": 1824,
         "y": 720
@@ -497,6 +497,7 @@
       "angle": 0,
       "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
       "z": 24,
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -642,7 +643,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme.",
+      "name": "Ja, ich müsste bitte noch wissen, wie ich zur QM-Abteilung komme.",
       "position": {
         "x": 1472,
         "y": 720
@@ -805,7 +806,7 @@
       "type": "Text",
       "id": "f3416075-84ab-4834-927b-6ee48640108d",
       "actor": "",
-      "name": "Ja klar, da helfe ich Ihnen sehr gerne. Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
+      "name": "Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
       "lua": "InterviewPassed();",
       "choices": [
         "1e278688-ffc6-4f7b-b674-05f3f48ebcbe"
@@ -831,7 +832,8 @@
       "id": "1e278688-ffc6-4f7b-b674-05f3f48ebcbe",
       "title": "",
       "name": "Vielen Dank! Im Moment habe ich keine weiteren Fragen.",
-      "next": null
+      "next": null,
+      "lua": ""
     },
     {
       "type": "Text",
@@ -846,7 +848,7 @@
       "type": "Choice",
       "id": "ebb3fbba-c576-4a23-b4dc-ae1a06e3264c",
       "title": "",
-      "name": "Ja, ich müsste bitte noch wissen, wie ich ins Büro zu meinem Arbeitsplatz komme.",
+      "name": "Ja, ich müsste bitte noch wissen, wie ich zur QM-Abteilung komme.",
       "next": "f3416075-84ab-4834-927b-6ee48640108d"
     }
   ]
