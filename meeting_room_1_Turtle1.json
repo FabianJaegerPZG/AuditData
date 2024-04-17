@@ -126,7 +126,7 @@
         "output"
       ],
       "title": "",
-      "name": "B: Mich persönlich vorstellen.",
+      "name": "Mich persönlich vorstellen.",
       "position": {
         "x": 944,
         "y": 192
@@ -362,7 +362,7 @@
         "output"
       ],
       "title": "",
-      "name": "A: Nach frischem Kaffee fragen.",
+      "name": "Nach frischem Kaffee fragen.",
       "position": {
         "x": 944,
         "y": 512
@@ -515,7 +515,7 @@
         "output"
       ],
       "title": "",
-      "name": "B: Mich persönlich vorstellen.",
+      "name": "Mich persönlich vorstellen.",
       "position": {
         "x": 1808,
         "y": 512
@@ -566,7 +566,7 @@
         "output"
       ],
       "title": "",
-      "name": "A: Nach frischem Kaffee fragen.",
+      "name": "Nach frischem Kaffee fragen.",
       "position": {
         "x": 1776,
         "y": 784
@@ -670,41 +670,6 @@
         "port": "input"
       },
       "z": 17,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "7f03c7bc-3901-41a5-8215-28e698aedae9",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 18,
-      "vertices": [
-        {
-          "x": 2080,
-          "y": 1136
-        },
-        {
-          "x": 528,
-          "y": 752
-        }
-      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -867,6 +832,41 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "link",
+      "id": "71ce79f5-ffc1-43cb-b23c-959a21125af9",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "20402384-47dc-4697-b7bf-0f948283d92b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 22,
+      "vertices": [
+        {
+          "x": 2224,
+          "y": 1120
+        },
+        {
+          "x": 1392,
+          "y": 1280
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -891,7 +891,7 @@
       "type": "Choice",
       "id": "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
       "title": "",
-      "name": "B: Mich persönlich vorstellen.",
+      "name": "Mich persönlich vorstellen.",
       "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
     },
     {
@@ -912,7 +912,7 @@
       "type": "Choice",
       "id": "306a3052-23d5-4702-b7f0-618158d7b55e",
       "title": "",
-      "name": "A: Nach frischem Kaffee fragen.",
+      "name": "Nach frischem Kaffee fragen.",
       "next": "20402384-47dc-4697-b7bf-0f948283d92b"
     },
     {
@@ -929,15 +929,15 @@
       "type": "Choice",
       "id": "de5ada05-36ea-4666-9085-62a5f957a7ed",
       "title": "",
-      "name": "B: Mich persönlich vorstellen.",
+      "name": "Mich persönlich vorstellen.",
       "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
     },
     {
       "type": "Choice",
       "id": "96aad37a-d678-4fd3-84f5-3808d73f4b8c",
       "title": "",
-      "name": "A: Nach frischem Kaffee fragen.",
-      "next": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f"
+      "name": "Nach frischem Kaffee fragen.",
+      "next": "20402384-47dc-4697-b7bf-0f948283d92b"
     },
     {
       "type": "Text",
