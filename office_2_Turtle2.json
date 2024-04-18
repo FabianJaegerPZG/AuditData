@@ -186,6 +186,7 @@
       "angle": 0,
       "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
       "z": 4,
+      "lua": "OpenCompletionWindow();",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -294,7 +295,8 @@
       "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
       "actor": "",
       "name": "Nun hast du hier Deine Arbeit erfolgreich erledigt!",
-      "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
+      "next": "19101146-e10e-47cc-94f6-8379f9cd1873",
+      "lua": "OpenCompletionWindow();"
     }
   ]
 }
