@@ -460,7 +460,7 @@
         "output"
       ],
       "title": "",
-      "name": "Die berechtigte Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend und ungeschickt formuliert. ",
+      "name": "Die Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend und ungeschickt formuliert. ",
       "position": {
         "x": 2832,
         "y": 688
@@ -1381,7 +1381,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Mit richtigen Agenda lief das Gespräch deutlich besser. Was ist nun zu tun?",
+      "name": "Mit der richtigen Agenda lief das Gespräch deutlich besser. Was ist nun zu tun?",
       "position": {
         "x": 4992,
         "y": 768
@@ -1852,7 +1852,7 @@
       "type": "Choice",
       "id": "ff08801c-2c96-491b-8002-6e0724817794",
       "title": "",
-      "name": "Die berechtigte Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend und ungeschickt formuliert. ",
+      "name": "Die Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend und ungeschickt formuliert. ",
       "next": "253eaf64-45a4-473c-9e84-5ff07bdd364b"
     },
     {
@@ -1923,7 +1923,7 @@
       "type": "Text",
       "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
       "actor": "TurtleMeetingRoom",
-      "name": "Mit richtigen Agenda lief das Gespräch deutlich besser. Was ist nun zu tun?",
+      "name": "Mit der richtigen Agenda lief das Gespräch deutlich besser. Was ist nun zu tun?",
       "choices": [
         "9a621fbb-105c-4850-bb65-9378c011027e",
         "d26ba716-ef61-4472-ae21-fd7f4b51055b"
