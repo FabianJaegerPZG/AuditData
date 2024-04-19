@@ -858,7 +858,7 @@
         "output"
       ],
       "title": "",
-      "name": "Das sieht schon mal gut aus. Befolgen Sie die vorgeschriebenen Wartungs- und Instandhaltungspläne?\n",
+      "name": "Befolgen Sie die vorgeschriebenen Wartungs- und Instandhaltungspläne?\n",
       "position": {
         "x": 5920,
         "y": 688
@@ -1307,45 +1307,6 @@
     },
     {
       "type": "link",
-      "id": "fabb9c4c-ee48-4aac-afc9-49946a3c1024",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "066844b8-bb20-440d-a8a1-2a06c9cc7f48",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "076e8d14-e881-4297-9f90-f810b55e34ee",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 74,
-      "vertices": [
-        {
-          "x": 6944,
-          "y": 656
-        },
-        {
-          "x": 6576,
-          "y": 432
-        },
-        {
-          "x": 5152,
-          "y": 464
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "cafd8da9-3165-4f6c-83dc-b6b570a76610",
       "smooth": true,
       "embeds": "",
@@ -1360,6 +1321,45 @@
         "port": "input"
       },
       "z": 74,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fabb9c4c-ee48-4aac-afc9-49946a3c1024",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "066844b8-bb20-440d-a8a1-2a06c9cc7f48",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "661448bd-49e0-49ad-8524-17354b537197",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 74,
+      "vertices": [
+        {
+          "x": 5296,
+          "y": 704
+        },
+        {
+          "x": 6576,
+          "y": 432
+        },
+        {
+          "x": 5152,
+          "y": 464
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1865,7 +1865,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Glauben Sie, dass die Ursache für die Reklamationen an der Wartung der Maschine liegt?",
+      "name": "Glaubst Du, dass die Ursache für die Reklamationen an der Wartung der Maschine liegt?",
       "position": {
         "x": 9328,
         "y": 928
@@ -2224,7 +2224,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meisten muss ich dann die Parameter neu einstellen und die Maschine neut starten.",
+      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meisten muss ich dann die Parameter neu einstellen und die Maschine neu starten.",
       "position": {
         "x": 13616,
         "y": 832
@@ -2681,7 +2681,7 @@
         "output"
       ],
       "title": "",
-      "name": "Guten Tag Herr Wolff. Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
+      "name": "Guten Tag Herr Wolff. Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen, warum wir so viele Reklamationen bekommen.",
       "position": {
         "x": 880,
         "y": 64
@@ -2732,7 +2732,7 @@
         "output"
       ],
       "title": "",
-      "name": "Dann fangen wir gleich mit der ersten Frage an.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut.",
+      "name": "Dann fangen wir gleich mit der ersten Frage an.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut?",
       "position": {
         "x": 1664,
         "y": 336
@@ -2936,7 +2936,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Dann notieren Sie sich Ihre Gedanken in den Notizen. Später können Sie vergleichen, ob wir beide den gleichen Hinweis aufgenommen haben.\n",
+      "name": "Dann mach Dir weiter Notizen. Später können wir vergleichen, ob wir beide den gleichen Hinweis aufgenommen haben.\n",
       "position": {
         "x": 10464,
         "y": 704
@@ -3587,7 +3587,7 @@
       "type": "Choice",
       "id": "9049f298-544c-44ee-b93a-a478228c5010",
       "title": "",
-      "name": "Das sieht schon mal gut aus. Befolgen Sie die vorgeschriebenen Wartungs- und Instandhaltungspläne?\n",
+      "name": "Befolgen Sie die vorgeschriebenen Wartungs- und Instandhaltungspläne?\n",
       "next": "066844b8-bb20-440d-a8a1-2a06c9cc7f48"
     },
     {
@@ -3603,7 +3603,7 @@
       "actor": "Turtle",
       "name": "Das ist eine ungünstige Frage, da sie wieder nur mit Ja oder Nein beantwortet werden kann und das Gespräch nicht am Laufen hält.",
       "choices": [
-        "076e8d14-e881-4297-9f90-f810b55e34ee"
+        "661448bd-49e0-49ad-8524-17354b537197"
       ]
     },
     {
@@ -3680,7 +3680,7 @@
       "type": "Text",
       "id": "a33189b2-0a8c-4ab2-925d-8d94a478393a",
       "actor": "Turtle",
-      "name": "Glauben Sie, dass die Ursache für die Reklamationen an der Wartung der Maschine liegt?",
+      "name": "Glaubst Du, dass die Ursache für die Reklamationen an der Wartung der Maschine liegt?",
       "lua": "Hinweis Turtle",
       "choices": [
         "ba3f8e15-4abb-49ad-a7bb-26923505cf04",
@@ -3723,7 +3723,7 @@
       "type": "Text",
       "id": "b2f0df3f-c1f7-482b-a0c4-52dae2204291",
       "actor": "SGM",
-      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meisten muss ich dann die Parameter neu einstellen und die Maschine neut starten.",
+      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meisten muss ich dann die Parameter neu einstellen und die Maschine neu starten.",
       "next": "056ca5e2-4655-4f15-b796-007331d4596c"
     },
     {
@@ -3763,14 +3763,14 @@
       "type": "Choice",
       "id": "cc39e4f9-5b16-4c32-b76a-0980a2776db2",
       "title": "",
-      "name": "Guten Tag Herr Wolff. Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen warum wir so viele Reklamationen zu fehlerhaften Produkten bekommen.",
+      "name": "Guten Tag Herr Wolff. Sie haben recht, ich werde heute ein paar Fragen an Sie richten, damit wir besser verstehen, warum wir so viele Reklamationen bekommen.",
       "next": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7"
     },
     {
       "type": "Choice",
       "id": "6c30c82c-8ea4-4000-937c-388fd741523a",
       "title": "",
-      "name": "Dann fangen wir gleich mit der ersten Frage an.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut.",
+      "name": "Dann fangen wir gleich mit der ersten Frage an.\nSind Sie mit den spezifischen Anforderungen und Vorgaben für den Betrieb dieser Maschine vertraut?",
       "next": "1eed7577-31b0-4c16-8209-7837094c709e"
     },
     {
@@ -3791,7 +3791,7 @@
       "type": "Text",
       "id": "5a6fef39-635b-4dde-a39a-163afeeffdb7",
       "actor": "Turtle",
-      "name": "Dann notieren Sie sich Ihre Gedanken in den Notizen. Später können Sie vergleichen, ob wir beide den gleichen Hinweis aufgenommen haben.\n",
+      "name": "Dann mach Dir weiter Notizen. Später können wir vergleichen, ob wir beide den gleichen Hinweis aufgenommen haben.\n",
       "choices": [
         "5a55678b-ef93-4222-ba0e-9fd2884602dd"
       ]
