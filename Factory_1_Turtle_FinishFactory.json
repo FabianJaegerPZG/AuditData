@@ -390,7 +390,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Was hast Du beobachtet und notiert?\n\n4.Sperrbereich nicht ausreichend gekennzeichnet. (false)\n",
+      "name": "Was hast Du beobachtet und notiert?\n",
       "position": {
         "x": 2064,
         "y": 112
@@ -468,7 +468,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Sehr gut, nun weißt du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
+      "name": "Sehr gut, nun weißt Du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
       "position": {
         "x": 2592,
         "y": 112
@@ -520,7 +520,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Nun kannst du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
+      "name": "Nun kannst Du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
       "position": {
         "x": 3040,
         "y": 160
@@ -652,7 +652,7 @@
       "type": "Text",
       "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
       "actor": "Turtle",
-      "name": "Was hast Du beobachtet und notiert?\n\n4.Sperrbereich nicht ausreichend gekennzeichnet. (false)\n",
+      "name": "Was hast Du beobachtet und notiert?\n",
       "next": "803d84a7-201a-47ed-8eac-23a76680b3ca",
       "lua": "OpenQuiz('SperrlagerQuiz');"
     },
@@ -660,14 +660,14 @@
       "type": "Text",
       "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
       "actor": "Turtle",
-      "name": "Sehr gut, nun weißt du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
+      "name": "Sehr gut, nun weißt Du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
       "next": "85691f3e-4b02-4e88-957e-50160c403695"
     },
     {
       "type": "Text",
       "id": "85691f3e-4b02-4e88-957e-50160c403695",
       "actor": "Turtle",
-      "name": "Nun kannst du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
+      "name": "Nun kannst Du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
       "next": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee"
     }
   ]
