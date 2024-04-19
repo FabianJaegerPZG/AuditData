@@ -114,58 +114,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Guten Tag Frau Winter, ich auditiere heute den Produktionsprozess und dazu gehört auch die Prüfung der Enten.\n",
-      "position": {
-        "x": 896,
-        "y": 768
-      },
-      "angle": 0,
-      "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
-      "z": 3,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "type": "link",
       "id": "ca6ffc7b-5faa-42da-8b41-c7bb34ac5d38",
       "smooth": true,
@@ -176,11 +124,21 @@
         "port": "output"
       },
       "target": {
-        "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
+        "id": "a1a7d5f8-b913-46ca-8f1f-03b369616a7e",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 4,
+      "vertices": [
+        {
+          "x": 896,
+          "y": 656
+        },
+        {
+          "x": 464,
+          "y": 848
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -255,7 +213,7 @@
         "output"
       ],
       "title": "",
-      "name": "Nach welcher Methode gehen Sie vor bei der Prüfung?\n",
+      "name": "Nach welcher Methode gehen Sie bei der Prüfung vor?\n",
       "position": {
         "x": 1856,
         "y": 336
@@ -549,58 +507,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Wie verfahren Sie, wenn eine Ente nicht den Qualitätsstandards entspricht?\n",
-      "position": {
-        "x": 2624,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
-      "z": 15,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "type": "link",
       "id": "3b00797e-692f-4d46-aec6-ed382e5ed72b",
       "smooth": true,
@@ -611,7 +517,7 @@
         "port": "output"
       },
       "target": {
-        "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
+        "id": "496143ac-a17a-49f7-8327-82d03e1dd1bc",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -722,83 +628,6 @@
     },
     {
       "type": "link",
-      "id": "a3780b50-1bc7-4aa7-a16f-ea11b23368d2",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 19,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Was passiert mit den Enten, die in Ordnung sind?",
-      "position": {
-        "x": 3424,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
-      "z": 20,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "a22a5aca-0098-4fe8-950c-5d156c798dbf",
       "smooth": true,
       "embeds": "",
@@ -808,7 +637,7 @@
         "port": "output"
       },
       "target": {
-        "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
+        "id": "7318280d-2314-47b0-9be4-56080863ed1b",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -844,135 +673,6 @@
       "angle": 0,
       "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
       "z": 22,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "639f4e25-80b1-40d3-93da-8dc37b723527",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Danke Frau Winter, wie ich sehe kennen Sie den Prozess ganz gut. \n",
-      "position": {
-        "x": 9600,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
-      "z": 24,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Charge?\n",
-      "position": {
-        "x": 4336,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
-      "z": 51,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1066,61 +766,11 @@
         "port": "output"
       },
       "target": {
-        "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
+        "id": "38c1a8ea-b492-467e-98f3-4121b14f9904",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 51,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "3ef16d1e-e726-4e22-b661-37e78ac24529",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 51,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "b7276b90-e837-49a2-a505-2731ddf520b5",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "ceb067dc-7a23-46c4-bde9-c2245db295ec",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 52,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1196,7 +846,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ja klar - das ist meine Tätigkeit als Prüferin und mit der Prüfanweisung klappt das gut und zügig. Meine Ergebnisse trage ich in die Fehlersammelliste ein.\n",
+      "name": "Ja klar - das ist meine Tätigkeit als Prüferin und mit der Prüfanweisung klappt das gut und zügig. Meine Ergebnisse trage ich in die Fehlersammelliste ein.",
       "position": {
         "x": 4880,
         "y": 352
@@ -1260,31 +910,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "f2af2f03-128b-49aa-9a80-9128e1c8437c",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 54,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -1337,58 +962,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Wie geht es dann weiter?\n",
-      "position": {
-        "x": 5424,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "ccb50c10-59be-41ac-b473-20130d187245",
-      "z": 55,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "type": "link",
       "id": "44084848-a205-4e17-812c-ef84b07c010c",
       "smooth": true,
@@ -1404,31 +977,6 @@
         "port": "input"
       },
       "z": 55,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "6127039c-e5bc-4724-8a76-341b63d55957",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "ccb50c10-59be-41ac-b473-20130d187245",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 56,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1516,31 +1064,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "66174f72-7e9b-4565-b047-48ac5d933c37",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 57,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Lua",
       "inPorts": [
         "input"
@@ -1592,17 +1115,255 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_Prueferin",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja, da sind Sie bei mir richtig.",
+      "position": {
+        "x": 976,
+        "y": 1376
+      },
+      "angle": 0,
+      "id": "b640cb01-1212-461d-b991-2386c8fbfb95",
+      "z": 57,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
-      "id": "a4ec1cfa-ca0c-4294-9564-c4da0f7ec5d8",
+      "id": "6d52c66b-37f2-4e11-8bc3-ffd443519e2a",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "ccb50c10-59be-41ac-b473-20130d187245",
+        "id": "40869ad1-738d-4390-99af-dc4deccedfd1",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
+        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 57,
+      "vertices": [
+        {
+          "x": 1616,
+          "y": 624
+        },
+        {
+          "x": 1040,
+          "y": 512
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a836028f-d437-461d-b0cf-a0258ad41cf5",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "496143ac-a17a-49f7-8327-82d03e1dd1bc",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 57,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8933223b-702c-4be7-81c6-90ae171d40fe",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7318280d-2314-47b0-9be4-56080863ed1b",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 57,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "66174f72-7e9b-4565-b047-48ac5d933c37",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e01f8219-2bae-4b8d-b97f-97684093b0d0",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 57,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3b0f1545-0dc2-49f9-8e23-9b8d8ebf89a4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "c681784d-306f-48e3-b015-ef148ba9d12c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 57,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Guten Tag Frau Winter, ich auditiere heute den Produktionsprozess und dazu gehört auch die Prüfung der Enten.\n",
+      "position": {
+        "x": 656,
+        "y": 1024
+      },
+      "angle": 0,
+      "id": "a1a7d5f8-b913-46ca-8f1f-03b369616a7e",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ce60a403-475e-4f80-8098-cc41a0f7a0f1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a1a7d5f8-b913-46ca-8f1f-03b369616a7e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b640cb01-1212-461d-b991-2386c8fbfb95",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1617,26 +1378,458 @@
       }
     },
     {
-      "type": "dialogue.Text",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
       "inPorts": [
         "input"
       ],
       "outPorts": [
         "output"
       ],
-      "actor": "",
-      "textarea": "Start writing",
+      "title": "",
+      "name": "Wie verfahren Sie, wenn eine Ente nicht den Qualitätsstandards entspricht?",
+      "position": {
+        "x": 2640,
+        "y": 608
+      },
+      "angle": 0,
+      "id": "496143ac-a17a-49f7-8327-82d03e1dd1bc",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?\n",
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Was passiert mit den Enten, die in Ordnung sind?",
       "position": {
-        "x": 6512,
-        "y": 352
+        "x": 3456,
+        "y": 608
       },
       "angle": 0,
-      "id": "3df08bee-260e-497e-a137-84589455e7d4",
+      "id": "7318280d-2314-47b0-9be4-56080863ed1b",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Charge?\n",
+      "position": {
+        "x": 4371.6668701171875,
+        "y": 682.9861450195312
+      },
+      "angle": 0,
+      "id": "e01f8219-2bae-4b8d-b97f-97684093b0d0",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Wie geht es dann weiter?",
+      "position": {
+        "x": 5408,
+        "y": 368
+      },
+      "angle": 0,
+      "id": "ab651728-0d05-4da8-8066-fea04c78f4cf",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "2b8d8c15-ef36-42f5-b4f3-73400279bb89",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ab651728-0d05-4da8-8066-fea04c78f4cf",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 58,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?",
+      "position": {
+        "x": 6512,
+        "y": 432
+      },
+      "angle": 0,
+      "id": "3a8da012-84a1-47f2-8699-ae0d29cfb17d",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ist das Schild \"n.i.O\"  die einzige Kennzeichnung für Ausschussware auf den Behältern?",
+      "position": {
+        "x": 7651.8753662109375,
+        "y": 715.5555877685547
+      },
+      "angle": 0,
+      "id": "c681784d-306f-48e3-b015-ef148ba9d12c",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Und wohin werden die Enten gebracht, die in Ordnung - also i.O. sind?",
+      "position": {
+        "x": 8860.330078125,
+        "y": 773.6632385253906
+      },
+      "angle": 0,
+      "id": "a8d919cb-1a16-4c8d-8180-ba75c1825b47",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Danke Frau Winter, wie ich sehe kennen Sie den Prozess ganz gut. \n",
+      "position": {
+        "x": 9682.8818359375,
+        "y": 692.9861450195312
+      },
+      "angle": 0,
+      "id": "38c1a8ea-b492-467e-98f3-4121b14f9904",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Es gab in letzter Zeit viele Reklamationen und ich suche mit diesem Audit nach Hinweisen. Wie prüfen Sie die Enten? ",
+      "position": {
+        "x": 1232,
+        "y": 672
+      },
+      "angle": 0,
+      "id": "40869ad1-738d-4390-99af-dc4deccedfd1",
       "z": 59,
       "attrs": {
         ".inPorts>.port0>text": {
@@ -1670,6 +1863,166 @@
     },
     {
       "type": "link",
+      "id": "af192555-10de-43ce-bd3f-9564984276c5",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e01f8219-2bae-4b8d-b97f-97684093b0d0",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 59,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "63732460-c9d1-4d8e-9fcb-31369278786b",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "ab651728-0d05-4da8-8066-fea04c78f4cf",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 59,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6ec0db4b-6fbb-40b1-9dbd-acce473f5697",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "3a8da012-84a1-47f2-8699-ae0d29cfb17d",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 59,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "da676961-813f-4394-b4ff-4f7896c54aba",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a8d919cb-1a16-4c8d-8180-ba75c1825b47",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "ceb067dc-7a23-46c4-bde9-c2245db295ec",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 59,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "7bcd302a-0ab0-4a03-b600-815defc11a7c",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "38c1a8ea-b492-467e-98f3-4121b14f9904",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 59,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "86c70ad5-48ca-45b6-97fa-f3b556ec5c0f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b640cb01-1212-461d-b991-2386c8fbfb95",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "40869ad1-738d-4390-99af-dc4deccedfd1",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 60,
+      "vertices": [
+        {
+          "x": 1376,
+          "y": 1344
+        },
+        {
+          "x": 1136,
+          "y": 1072
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "18c3c912-1567-49f6-871b-47ecc9d77a59",
       "smooth": true,
       "embeds": "",
@@ -1679,7 +2032,7 @@
         "port": "output"
       },
       "target": {
-        "id": "3df08bee-260e-497e-a137-84589455e7d4",
+        "id": "3a8da012-84a1-47f2-8699-ae0d29cfb17d",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1747,83 +2100,6 @@
     },
     {
       "type": "link",
-      "id": "1b91c9c1-d604-4843-ab3b-67b2270d55f2",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "3df08bee-260e-497e-a137-84589455e7d4",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 62,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Ist das Schild \"n.i.O\"  die einzige Kennzeichnung für Ausschussware auf den Behältern?\n",
-      "position": {
-        "x": 7584,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
-      "z": 63,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "a96387ea-e69d-4056-b0d6-0ad6e93a245a",
       "smooth": true,
       "embeds": "",
@@ -1833,7 +2109,7 @@
         "port": "output"
       },
       "target": {
-        "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
+        "id": "c681784d-306f-48e3-b015-ef148ba9d12c",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1901,83 +2177,6 @@
     },
     {
       "type": "link",
-      "id": "f59e8486-a6e3-4ac2-b5bc-82c575f37ed2",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 66,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Und wohin werden die Enten gebracht, die in Ordnung - also i.O. sind?\n",
-      "position": {
-        "x": 8720,
-        "y": 352
-      },
-      "angle": 0,
-      "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
-      "z": 67,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "2f2dbe2d-7e73-472d-b9cf-f82482a82b7f",
       "smooth": true,
       "embeds": "",
@@ -1987,7 +2186,7 @@
         "port": "output"
       },
       "target": {
-        "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
+        "id": "a8d919cb-1a16-4c8d-8180-ba75c1825b47",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -2015,7 +2214,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hast du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? \n\nSchreibe deine Vermutung in Deine Notizen. ",
+      "name": "Hast Du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? \n\nSchreibe Deine Vermutung in Deine Notizen. ",
       "position": {
         "x": 10064,
         "y": 352
@@ -2053,199 +2252,6 @@
           "ref-dx": 0
         }
       }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Es gab in letzter Zeit viele Reklamationen und ich suche mit diesem Audit nach Hinweisen, wie es dazu kam. ",
-      "position": {
-        "x": 1296,
-        "y": 768
-      },
-      "angle": 0,
-      "id": "70c7f6d1-6afa-47a0-814a-78475fd68ccf",
-      "z": 79,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "08b31a58-f449-463f-8431-dcb767d8f6e0",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "70c7f6d1-6afa-47a0-814a-78475fd68ccf",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 79,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Daher meine Frage: \nWie prüfen Sie die Enten?",
-      "position": {
-        "x": 1648,
-        "y": 768
-      },
-      "angle": 0,
-      "id": "d6b00a2f-10a4-4ecd-8fc0-3bb7655eac9c",
-      "z": 80,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "42ea6b7b-16f2-436e-8f49-57c62b995381",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "70c7f6d1-6afa-47a0-814a-78475fd68ccf",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "d6b00a2f-10a4-4ecd-8fc0-3bb7655eac9c",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 81,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "975f463d-e1f5-4daf-a8e4-193597fc30a0",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "d6b00a2f-10a4-4ecd-8fc0-3bb7655eac9c",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 82,
-      "vertices": [
-        {
-          "x": 2032,
-          "y": 784
-        },
-        {
-          "x": 1184,
-          "y": 480
-        },
-        {
-          "x": 960,
-          "y": 272
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
     }
   ],
   "gameData": [
@@ -2261,14 +2267,9 @@
       "id": "a7165bcf-5c7a-4609-9387-a9f6af2d62b7",
       "actor": "Factory_Prueferin",
       "name": "Guten Tag, mein Name ist Frau Winter. Ich prüfe die Enten nachdem sie bemalt wurden.\n",
-      "next": "7f830d91-5f16-4309-822f-bc80c37cbaea"
-    },
-    {
-      "type": "Text",
-      "id": "7f830d91-5f16-4309-822f-bc80c37cbaea",
-      "actor": "",
-      "name": "Guten Tag Frau Winter, ich auditiere heute den Produktionsprozess und dazu gehört auch die Prüfung der Enten.\n",
-      "next": "70c7f6d1-6afa-47a0-814a-78475fd68ccf"
+      "choices": [
+        "a1a7d5f8-b913-46ca-8f1f-03b369616a7e"
+      ]
     },
     {
       "type": "Text",
@@ -2281,7 +2282,7 @@
       "type": "Choice",
       "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
       "title": "",
-      "name": "Nach welcher Methode gehen Sie vor bei der Prüfung?\n",
+      "name": "Nach welcher Methode gehen Sie bei der Prüfung vor?\n",
       "next": "1d799b72-6406-4a24-b902-2e436d7a2bc7"
     },
     {
@@ -2305,56 +2306,36 @@
       "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
       "actor": "Factory_Prueferin",
       "name": "Ich gehe Schritt für Schritt nach  Prüfanweisung vor und schaue mir die Enten so genau an. Dazu benutze ich die Prüfmittel, die hier liegen.",
-      "next": "b44e4a03-3931-4778-b20d-132ae40ea29a"
-    },
-    {
-      "type": "Text",
-      "id": "b44e4a03-3931-4778-b20d-132ae40ea29a",
-      "actor": "",
-      "name": "Wie verfahren Sie, wenn eine Ente nicht den Qualitätsstandards entspricht?\n",
-      "next": "91e98bb0-8aa9-468a-90cb-17f19dda6980"
+      "choices": [
+        "496143ac-a17a-49f7-8327-82d03e1dd1bc"
+      ]
     },
     {
       "type": "Text",
       "id": "91e98bb0-8aa9-468a-90cb-17f19dda6980",
       "actor": "Factory_Prueferin",
       "name": "Auch das ist in in der Prüfanweisung beschrieben. Ich gebe die mangelhaften Enten in den Behälter mit dem Schild \"n.i.O.\" - also nicht in Ordnung.",
-      "next": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03"
-    },
-    {
-      "type": "Text",
-      "id": "9fe04a1b-b7a7-4c99-8706-ea68472a7c03",
-      "actor": "",
-      "name": "Was passiert mit den Enten, die in Ordnung sind?",
-      "next": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3"
+      "choices": [
+        "7318280d-2314-47b0-9be4-56080863ed1b"
+      ]
     },
     {
       "type": "Text",
       "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
       "actor": "Factory_Prueferin",
       "name": "Diese Enten gebe ich in den Behälter mit dem Schild \"i.O\" gleich daneben.",
-      "next": "dd127067-357b-46a9-9d2f-04807d4e8dbc"
-    },
-    {
-      "type": "Text",
-      "id": "7c5731a0-6b21-483a-aed8-67ecd79a2584",
-      "actor": "",
-      "name": "Danke Frau Winter, wie ich sehe kennen Sie den Prozess ganz gut. \n",
-      "next": "41f3712d-a47c-4778-91de-94ca7b4a05a9"
-    },
-    {
-      "type": "Text",
-      "id": "dd127067-357b-46a9-9d2f-04807d4e8dbc",
-      "actor": "",
-      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Charge?\n",
-      "next": "16b60c23-bb4b-436e-b2c5-0af06bde6426"
+      "choices": [
+        "e01f8219-2bae-4b8d-b97f-97684093b0d0"
+      ]
     },
     {
       "type": "Text",
       "id": "ceb067dc-7a23-46c4-bde9-c2245db295ec",
       "actor": "Factory_Prueferin",
       "name": "Die werden erstmal ebenfalls dort drüben beim Sperrlagen hingestellt und gehen dann in die Verpackung.",
-      "next": "7c5731a0-6b21-483a-aed8-67ecd79a2584"
+      "choices": [
+        "38c1a8ea-b492-467e-98f3-4121b14f9904"
+      ]
     },
     {
       "type": "Text",
@@ -2370,8 +2351,10 @@
       "type": "Text",
       "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
       "actor": "Factory_Prueferin",
-      "name": "Ja klar - das ist meine Tätigkeit als Prüferin und mit der Prüfanweisung klappt das gut und zügig. Meine Ergebnisse trage ich in die Fehlersammelliste ein.\n",
-      "next": "ccb50c10-59be-41ac-b473-20130d187245"
+      "name": "Ja klar - das ist meine Tätigkeit als Prüferin und mit der Prüfanweisung klappt das gut und zügig. Meine Ergebnisse trage ich in die Fehlersammelliste ein.",
+      "choices": [
+        "ab651728-0d05-4da8-8066-fea04c78f4cf"
+      ]
     },
     {
       "type": "Text",
@@ -2382,17 +2365,12 @@
     },
     {
       "type": "Text",
-      "id": "ccb50c10-59be-41ac-b473-20130d187245",
-      "actor": "",
-      "name": "Wie geht es dann weiter?\n",
-      "next": "8609b5e8-eaba-4efd-be06-f50eaec8099e"
-    },
-    {
-      "type": "Text",
       "id": "8609b5e8-eaba-4efd-be06-f50eaec8099e",
       "actor": "Factory_Prueferin",
       "name": "Herr Blume bringt die beiden Behälter weg. ",
-      "next": "3df08bee-260e-497e-a137-84589455e7d4"
+      "choices": [
+        "3a8da012-84a1-47f2-8699-ae0d29cfb17d"
+      ]
     },
     {
       "type": "Lua",
@@ -2403,60 +2381,108 @@
     },
     {
       "type": "Text",
-      "id": "3df08bee-260e-497e-a137-84589455e7d4",
-      "actor": "",
-      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?\n",
+      "id": "b640cb01-1212-461d-b991-2386c8fbfb95",
+      "actor": "Factory_Prueferin",
+      "name": "Ja, da sind Sie bei mir richtig.",
+      "choices": [
+        "40869ad1-738d-4390-99af-dc4deccedfd1"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "a1a7d5f8-b913-46ca-8f1f-03b369616a7e",
+      "title": "",
+      "name": "Guten Tag Frau Winter, ich auditiere heute den Produktionsprozess und dazu gehört auch die Prüfung der Enten.\n",
+      "next": "b640cb01-1212-461d-b991-2386c8fbfb95"
+    },
+    {
+      "type": "Choice",
+      "id": "496143ac-a17a-49f7-8327-82d03e1dd1bc",
+      "title": "",
+      "name": "Wie verfahren Sie, wenn eine Ente nicht den Qualitätsstandards entspricht?",
+      "next": "91e98bb0-8aa9-468a-90cb-17f19dda6980"
+    },
+    {
+      "type": "Choice",
+      "id": "7318280d-2314-47b0-9be4-56080863ed1b",
+      "title": "",
+      "name": "Was passiert mit den Enten, die in Ordnung sind?",
+      "next": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3"
+    },
+    {
+      "type": "Choice",
+      "id": "e01f8219-2bae-4b8d-b97f-97684093b0d0",
+      "title": "",
+      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Charge?\n",
+      "next": "16b60c23-bb4b-436e-b2c5-0af06bde6426"
+    },
+    {
+      "type": "Choice",
+      "id": "ab651728-0d05-4da8-8066-fea04c78f4cf",
+      "title": "",
+      "name": "Wie geht es dann weiter?",
+      "next": "8609b5e8-eaba-4efd-be06-f50eaec8099e"
+    },
+    {
+      "type": "Choice",
+      "id": "3a8da012-84a1-47f2-8699-ae0d29cfb17d",
+      "title": "",
+      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?",
       "next": "ac871682-7c58-486f-9f68-c2f968f9e2df"
+    },
+    {
+      "type": "Choice",
+      "id": "c681784d-306f-48e3-b015-ef148ba9d12c",
+      "title": "",
+      "name": "Ist das Schild \"n.i.O\"  die einzige Kennzeichnung für Ausschussware auf den Behältern?",
+      "next": "cb03a9d1-f25e-4f32-8589-79169aba097a"
+    },
+    {
+      "type": "Choice",
+      "id": "a8d919cb-1a16-4c8d-8180-ba75c1825b47",
+      "title": "",
+      "name": "Und wohin werden die Enten gebracht, die in Ordnung - also i.O. sind?",
+      "next": "ceb067dc-7a23-46c4-bde9-c2245db295ec"
+    },
+    {
+      "type": "Choice",
+      "id": "38c1a8ea-b492-467e-98f3-4121b14f9904",
+      "title": "",
+      "name": "Danke Frau Winter, wie ich sehe kennen Sie den Prozess ganz gut. \n",
+      "next": "41f3712d-a47c-4778-91de-94ca7b4a05a9"
+    },
+    {
+      "type": "Choice",
+      "id": "40869ad1-738d-4390-99af-dc4deccedfd1",
+      "title": "",
+      "name": "Es gab in letzter Zeit viele Reklamationen und ich suche mit diesem Audit nach Hinweisen. Wie prüfen Sie die Enten? ",
+      "next": "74a79552-ef38-4944-9070-1af1e1f76f51"
     },
     {
       "type": "Text",
       "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
       "actor": "Factory_Prueferin",
       "name": "Meinen Sie das Lager, in dem der Ausschuss gesammelt wird? Ja der ist gleich hier drüben. Herr Blume muss nicht weit schieben.\n",
-      "next": "7cc8322d-755d-4564-b5bf-0c21450e95b6"
-    },
-    {
-      "type": "Text",
-      "id": "7cc8322d-755d-4564-b5bf-0c21450e95b6",
-      "actor": "",
-      "name": "Ist das Schild \"n.i.O\"  die einzige Kennzeichnung für Ausschussware auf den Behältern?\n",
-      "next": "cb03a9d1-f25e-4f32-8589-79169aba097a"
+      "choices": [
+        "c681784d-306f-48e3-b015-ef148ba9d12c"
+      ]
     },
     {
       "type": "Text",
       "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
       "actor": "Factory_Prueferin",
       "name": "Ja, ich denke schon. Mehr steht jedenfalls auch nicht in der Prüfanweisung.\n",
-      "next": "a671075c-63e6-48a9-9e72-69ebc278a927"
-    },
-    {
-      "type": "Text",
-      "id": "a671075c-63e6-48a9-9e72-69ebc278a927",
-      "actor": "",
-      "name": "Und wohin werden die Enten gebracht, die in Ordnung - also i.O. sind?\n",
-      "next": "ceb067dc-7a23-46c4-bde9-c2245db295ec"
+      "choices": [
+        "a8d919cb-1a16-4c8d-8180-ba75c1825b47"
+      ]
     },
     {
       "type": "Text",
       "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
       "actor": "Turtle",
-      "name": "Hast du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? \n\nSchreibe deine Vermutung in Deine Notizen. ",
+      "name": "Hast Du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? \n\nSchreibe Deine Vermutung in Deine Notizen. ",
       "next": "dd6937c7-f155-4170-9100-f97bb6e0b825",
       "lua": ""
-    },
-    {
-      "type": "Text",
-      "id": "70c7f6d1-6afa-47a0-814a-78475fd68ccf",
-      "actor": "",
-      "name": "Es gab in letzter Zeit viele Reklamationen und ich suche mit diesem Audit nach Hinweisen, wie es dazu kam. ",
-      "next": "d6b00a2f-10a4-4ecd-8fc0-3bb7655eac9c"
-    },
-    {
-      "type": "Text",
-      "id": "d6b00a2f-10a4-4ecd-8fc0-3bb7655eac9c",
-      "actor": "",
-      "name": "Daher meine Frage: \nWie prüfen Sie die Enten?",
-      "next": "74a79552-ef38-4944-9070-1af1e1f76f51"
     }
   ]
 }
