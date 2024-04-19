@@ -254,7 +254,7 @@
         "output"
       ],
       "title": "",
-      "name": "Gut, ich präsentiere diese Agenda.",
+      "name": "Gut, präsentieren wir die Agenda.",
       "position": {
         "x": 1280,
         "y": 16
@@ -409,7 +409,7 @@
         "output"
       ],
       "title": "",
-      "name": "Herr Blume nimmt dir übel, dass du seine Anstrengungen zu wenig würdigst, dass er die Reklamationen verringern wollte.",
+      "name": "Herr Blume nimmt es übel, dass seine Anstrengungen zu wenig würdigt werden.",
       "position": {
         "x": 2848,
         "y": 416
@@ -460,7 +460,7 @@
         "output"
       ],
       "title": "",
-      "name": "Deine berechtigte Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend  und ungeschickt formuliert. ",
+      "name": "Die berechtigte Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend und ungeschickt formuliert. ",
       "position": {
         "x": 2832,
         "y": 688
@@ -589,8 +589,8 @@
       },
       "name": "Richtig. Die Formulierung kann als persönlicher Angriff gewertet werden. Deswegen ist es besser Abweichungen sachlich und wertfrei zu formulieren.",
       "position": {
-        "x": 3296,
-        "y": 432
+        "x": 3280,
+        "y": 496
       },
       "angle": 0,
       "id": "253eaf64-45a4-473c-9e84-5ff07bdd364b",
@@ -1496,41 +1496,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "da1b5b53-cabb-47eb-bc32-6031509c9c76",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "9a621fbb-105c-4850-bb65-9378c011027e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "50643169-ffd5-4212-bd81-8220ac240ec5",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 38,
-      "vertices": [
-        {
-          "x": 5760,
-          "y": 352
-        },
-        {
-          "x": 4960,
-          "y": 480
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -1707,6 +1672,118 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Die Kaffeepause muss noch ein wenig warten.",
+      "position": {
+        "x": 5984,
+        "y": 192
+      },
+      "angle": 0,
+      "id": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9",
+      "z": 44,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0c814412-69b3-455b-b1a5-018dd8d8a9bb",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "9a621fbb-105c-4850-bb65-9378c011027e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 44,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0bdf1b0a-5274-4775-bd18-f41d993ebc75",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 45,
+      "vertices": [
+        {
+          "x": 6464,
+          "y": 448
+        },
+        {
+          "x": 5440,
+          "y": 704
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -1742,7 +1819,7 @@
       "type": "Choice",
       "id": "4ca00ce7-6482-4cc9-bebe-955321d6c7be",
       "title": "",
-      "name": "Gut, ich präsentiere diese Agenda.",
+      "name": "Gut, präsentieren wir die Agenda.",
       "next": "6e1bf792-c4fe-455f-868b-2ff9e23e9893",
       "lua": ""
     },
@@ -1768,14 +1845,14 @@
       "type": "Choice",
       "id": "6eb9903e-d4a3-4458-8c47-c042e21109ac",
       "title": "",
-      "name": "Herr Blume nimmt dir übel, dass du seine Anstrengungen zu wenig würdigst, dass er die Reklamationen verringern wollte.",
+      "name": "Herr Blume nimmt es übel, dass seine Anstrengungen zu wenig würdigt werden.",
       "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95"
     },
     {
       "type": "Choice",
       "id": "ff08801c-2c96-491b-8002-6e0724817794",
       "title": "",
-      "name": "Deine berechtigte Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend  und ungeschickt formuliert. ",
+      "name": "Die berechtigte Feststellung, dass der Sperrprozess nicht nach Vorgabe ausgeführt wird, wurde angreifend und ungeschickt formuliert. ",
       "next": "253eaf64-45a4-473c-9e84-5ff07bdd364b"
     },
     {
@@ -1857,7 +1934,7 @@
       "id": "9a621fbb-105c-4850-bb65-9378c011027e",
       "title": "",
       "name": "Endlich Kaffeepause machen.",
-      "next": "50643169-ffd5-4212-bd81-8220ac240ec5"
+      "next": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9"
     },
     {
       "type": "Choice",
@@ -1872,6 +1949,15 @@
       "actor": "TurtleMeetingRoom",
       "name": "Ja, genau. Der Bericht soll auch zeitnah erstellt und versendet werden.",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
+    },
+    {
+      "type": "Text",
+      "id": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9",
+      "actor": "TurtleMeetingRoom",
+      "name": "Die Kaffeepause muss noch ein wenig warten.",
+      "choices": [
+        "d26ba716-ef61-4472-ae21-fd7f4b51055b"
+      ]
     }
   ]
 }
