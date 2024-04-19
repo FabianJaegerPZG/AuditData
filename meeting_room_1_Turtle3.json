@@ -121,7 +121,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -516,7 +516,7 @@
     {
       "type": "Text",
       "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "name": "Das Meeting muss gut strukturiert sein!",
       "lua": "OpenAuditSortingGame();",
       "choices": [
