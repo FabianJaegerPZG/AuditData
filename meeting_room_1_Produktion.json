@@ -128,7 +128,7 @@
         "output"
       ],
       "title": "",
-      "name": "Kein Problem. Schön dass Sie nun da sind.",
+      "name": "Kein Problem. Schön, dass Sie nun da sind.",
       "position": {
         "x": 912,
         "y": 304
@@ -341,7 +341,7 @@
       "type": "Choice",
       "id": "b1b56f56-752a-42fc-bf7e-d4593666c652",
       "title": "",
-      "name": "Kein Problem. Schön dass Sie nun da sind.",
+      "name": "Kein Problem. Schön, dass Sie nun da sind.",
       "next": "80e50405-2d16-45d0-92f0-e3b93235aa5d"
     },
     {
