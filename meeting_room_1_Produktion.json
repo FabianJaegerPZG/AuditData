@@ -128,6 +128,82 @@
         "output"
       ],
       "title": "",
+      "name": "Kein Problem. Schön dass Sie nun da sind.",
+      "position": {
+        "x": 912,
+        "y": 304
+      },
+      "angle": 0,
+      "id": "b1b56f56-752a-42fc-bf7e-d4593666c652",
+      "z": 6,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8fed61d5-b372-40e8-8677-28b82ec7fc9e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b1b56f56-752a-42fc-bf7e-d4593666c652",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 7,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
       "name": "QMB",
       "position": {
         "x": 1312,
@@ -180,8 +256,8 @@
       },
       "name": "",
       "position": {
-        "x": 832,
-        "y": 288
+        "x": 1312,
+        "y": 256
       },
       "angle": 0,
       "id": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
@@ -228,7 +304,7 @@
         "port": "output"
       },
       "target": {
-        "id": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
+        "id": "b1b56f56-752a-42fc-bf7e-d4593666c652",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -256,8 +332,17 @@
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "actor": "Produktion",
       "name": "Bitte, entschuldigen Sie meine Verspätung. In der Produktion gab es einen Notfall, der meine Aufmerksamkeit brauchte. Ich stelle mich kurz vor: Meine Name ist Angelika Schwarz und ich Produktionsleiterin. ",
-      "next": "80e50405-2d16-45d0-92f0-e3b93235aa5d",
-      "lua": ""
+      "lua": "",
+      "choices": [
+        "b1b56f56-752a-42fc-bf7e-d4593666c652"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "b1b56f56-752a-42fc-bf7e-d4593666c652",
+      "title": "",
+      "name": "Kein Problem. Schön dass Sie nun da sind.",
+      "next": "80e50405-2d16-45d0-92f0-e3b93235aa5d"
     },
     {
       "type": "Choice",
