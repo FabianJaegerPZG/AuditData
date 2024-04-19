@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Glaubst du, dass du alles, was du sehen musst, gesehen hast?",
+      "name": "Glaubst Du, dass Du alles, was Du sehen musst, gesehen hast?",
       "position": {
         "x": 416,
         "y": 48
@@ -332,7 +332,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Bist du bereit dazu ein paar Fragen zu beantworten?",
+      "name": "Bist Du bereit dazu ein paar Fragen zu beantworten?",
       "position": {
         "x": 1136,
         "y": 48
@@ -408,10 +408,10 @@
         "output"
       ],
       "title": "",
-      "name": "Ich drehe leiber noch mal eine Runde und mache mir Notizen.",
+      "name": "Ich drehe lieber noch mal eine Runde und mache mir Notizen.",
       "position": {
-        "x": 1488,
-        "y": 336
+        "x": 1376,
+        "y": 368
       },
       "angle": 0,
       "id": "6b3ad60e-caae-401a-8fd5-97e643cff937",
@@ -538,6 +538,16 @@
         "port": "input"
       },
       "z": 15,
+      "vertices": [
+        {
+          "x": 1472,
+          "y": 304
+        },
+        {
+          "x": 1296,
+          "y": 352
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -750,6 +760,31 @@
       }
     },
     {
+      "type": "link",
+      "id": "2801b781-a1c0-4376-b5a1-a342253bf1fa",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6b3ad60e-caae-401a-8fd5-97e643cff937",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "79935b90-d99d-41dc-9ef0-296d0ded9c9b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 25,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -816,10 +851,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Gut, dann sieh sich weiter um und mach Dir Notizen.",
+      "name": "Gut, dann sieh Dich weiter um und mach Dir Notizen.",
       "position": {
-        "x": 1216,
-        "y": 704
+        "x": 1728,
+        "y": 544
       },
       "angle": 0,
       "id": "79935b90-d99d-41dc-9ef0-296d0ded9c9b",
@@ -893,7 +928,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner.",
+      "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner an der Spritzgussmaschine.",
       "position": {
         "x": 3024,
         "y": 96
@@ -969,7 +1004,7 @@
       "type": "Text",
       "id": "aa9ffa32-b53c-48b5-8ac7-ef5893a1c571",
       "actor": "TurtleFactory",
-      "name": "Glaubst du, dass du alles, was du sehen musst, gesehen hast?",
+      "name": "Glaubst Du, dass Du alles, was Du sehen musst, gesehen hast?",
       "choices": [
         "51689a35-24a3-43af-9fcd-33dfb3754b02",
         "6bd9272d-2c96-4ba5-b670-73a301a63d54"
@@ -1002,7 +1037,7 @@
       "type": "Text",
       "id": "bae635f2-cb83-448e-994e-5ecf033facbd",
       "actor": "TurtleFactory",
-      "name": "Bist du bereit dazu ein paar Fragen zu beantworten?",
+      "name": "Bist Du bereit dazu ein paar Fragen zu beantworten?",
       "choices": [
         "821670f3-998d-4012-80c4-100c12cc443c",
         "6b3ad60e-caae-401a-8fd5-97e643cff937"
@@ -1012,8 +1047,8 @@
       "type": "Choice",
       "id": "6b3ad60e-caae-401a-8fd5-97e643cff937",
       "title": "",
-      "name": "Ich drehe leiber noch mal eine Runde und mache mir Notizen.",
-      "next": null
+      "name": "Ich drehe lieber noch mal eine Runde und mache mir Notizen.",
+      "next": "79935b90-d99d-41dc-9ef0-296d0ded9c9b"
     },
     {
       "type": "Choice",
@@ -1048,14 +1083,14 @@
       "type": "Text",
       "id": "79935b90-d99d-41dc-9ef0-296d0ded9c9b",
       "actor": "TurtleFactory",
-      "name": "Gut, dann sieh sich weiter um und mach Dir Notizen.",
+      "name": "Gut, dann sieh Dich weiter um und mach Dir Notizen.",
       "next": null
     },
     {
       "type": "Text",
       "id": "22d364cd-862c-44fc-b0ac-806a150cd365",
       "actor": "TurtleFactory",
-      "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner.",
+      "name": "Gute gemacht. Nun kannst Du mit den Auditgesprächen beginnen. Gehe dazu zu Deinem Interviewpartner an der Spritzgussmaschine.",
       "choices": [
         "e8ffc8a6-d6bb-4949-9748-8fc5ce2f4cc0"
       ]
