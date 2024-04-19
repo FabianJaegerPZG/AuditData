@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "So, jetzt sind wir ja vollständig. Wie möchten Sie das Meeting strukturieren?",
+      "name": "So, jetzt sind wir vollständig. Schau Dir die Agenda an. Hier ist etwas durcheinander geraten.  Wie möchtest Du das Meeting weiter strukturieren?",
       "position": {
         "x": 384,
         "y": 16
@@ -127,10 +127,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das Meeting muss gut strukturiert sein!",
+      "name": "Ein Meeting muss immer gut strukturiert sein!",
       "position": {
-        "x": 752,
-        "y": 16
+        "x": 1072,
+        "y": 656
       },
       "angle": 0,
       "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
@@ -177,7 +177,7 @@
         "port": "output"
       },
       "target": {
-        "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
+        "id": "a88d2fef-ed55-4691-b253-3b16aebe89d9",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -336,6 +336,12 @@
         "port": "input"
       },
       "z": 8,
+      "vertices": [
+        {
+          "x": 1120,
+          "y": 464
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -496,6 +502,93 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Wie möchtest Du das Meeting weiter strukturieren? Mit einem Klick auf die grünen Pfeile kannst Du die Agendapunkte sortieren. ",
+      "position": {
+        "x": 784,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "a88d2fef-ed55-4691-b253-3b16aebe89d9",
+      "z": 13,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "fee67119-d177-46bf-b93a-3db365b89d56",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "a88d2fef-ed55-4691-b253-3b16aebe89d9",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "vertices": [
+        {
+          "x": 1104,
+          "y": 320
+        },
+        {
+          "x": 944,
+          "y": 608
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -510,14 +603,14 @@
       "type": "Text",
       "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
       "actor": "TurtleMeetingRoom",
-      "name": "So, jetzt sind wir ja vollständig. Wie möchten Sie das Meeting strukturieren?",
-      "next": "be5dc836-6d00-46b1-b34b-b62a956a7cf3"
+      "name": "So, jetzt sind wir vollständig. Schau Dir die Agenda an. Hier ist etwas durcheinander geraten.  Wie möchtest Du das Meeting weiter strukturieren?",
+      "next": "a88d2fef-ed55-4691-b253-3b16aebe89d9"
     },
     {
       "type": "Text",
       "id": "be5dc836-6d00-46b1-b34b-b62a956a7cf3",
       "actor": "TurtleMeetingRoom",
-      "name": "Das Meeting muss gut strukturiert sein!",
+      "name": "Ein Meeting muss immer gut strukturiert sein!",
       "lua": "OpenAuditSortingGame();",
       "choices": [
         "44fdb007-7244-436c-b978-718b708619de"
@@ -553,6 +646,13 @@
       "title": "",
       "name": "Alles klar, von mir aus kann es losgehen!",
       "next": "38113649-c0c0-4649-896b-cf7cc4aa3e0e"
+    },
+    {
+      "type": "Text",
+      "id": "a88d2fef-ed55-4691-b253-3b16aebe89d9",
+      "actor": "TurtleMeetingRoom",
+      "name": "Wie möchtest Du das Meeting weiter strukturieren? Mit einem Klick auf die grünen Pfeile kannst Du die Agendapunkte sortieren. ",
+      "next": "be5dc836-6d00-46b1-b34b-b62a956a7cf3"
     }
   ]
 }
