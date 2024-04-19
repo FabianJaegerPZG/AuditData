@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ausgezeichnet!\nDu hast das sehr gut gemacht! \n",
+      "name": "Ausgezeichnet!\nDu hast das Audit erfolgreich abgeschlossen.",
       "position": {
         "x": 960,
         "y": 320
@@ -172,13 +172,13 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleOffice",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Nun hast du hier Deine Arbeit erfolgreich erledigt!",
+      "name": "Nun werden die Reklamation der Kunden zurück gehen.",
       "position": {
         "x": 1456,
         "y": 320
@@ -280,7 +280,7 @@
       "type": "Text",
       "id": "91b99566-e45d-422a-a702-42ee9134591b",
       "actor": "TurtleOffice",
-      "name": "Ausgezeichnet!\nDu hast das sehr gut gemacht! \n",
+      "name": "Ausgezeichnet!\nDu hast das Audit erfolgreich abgeschlossen.",
       "next": "377b319f-6330-462f-9e22-8078f9b8b8bb"
     },
     {
@@ -293,8 +293,8 @@
     {
       "type": "Text",
       "id": "377b319f-6330-462f-9e22-8078f9b8b8bb",
-      "actor": "",
-      "name": "Nun hast du hier Deine Arbeit erfolgreich erledigt!",
+      "actor": "TurtleOffice",
+      "name": "Nun werden die Reklamation der Kunden zurück gehen.",
       "next": "19101146-e10e-47cc-94f6-8379f9cd1873",
       "lua": "OpenCompletionWindow();"
     }
