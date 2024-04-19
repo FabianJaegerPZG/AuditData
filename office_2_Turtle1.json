@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Bereit für den letzten Schritt? Das Verschicken des Auditberichts an alle relevanten Personen.",
+      "name": "Bereit für den letzten Schritt? Das Verschicken des Auditberichts.",
       "position": {
         "x": 448,
         "y": 288
@@ -306,7 +306,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das ist zu gut gemeint, nicht jeder in der Firma benötigt diesen Bericht bzw. sollte ihn sehen. Vorsicht mit großem Verteilern!",
+      "name": "Das ist gut gemeint, aber nicht jeder in der Firma benötigt diesen Bericht bzw. sollte ihn sehen. Vorsicht mit großem Verteilern!",
       "position": {
         "x": 1744,
         "y": 48
@@ -382,7 +382,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ich nehme als Personen, die im Auditplan stehen mit in den Verteiler.",
+      "name": "Ich nehme alle Personen, die im Auditplan stehen mit in den Verteiler.",
       "position": {
         "x": 1344,
         "y": 352
@@ -763,7 +763,7 @@
       "type": "Text",
       "id": "91b99566-e45d-422a-a702-42ee9134591b",
       "actor": "TurtleOffice",
-      "name": "Bereit für den letzten Schritt? Das Verschicken des Auditberichts an alle relevanten Personen.",
+      "name": "Bereit für den letzten Schritt? Das Verschicken des Auditberichts.",
       "next": "b1562789-b452-4fa9-9258-75d220d47ced"
     },
     {
@@ -794,14 +794,14 @@
       "type": "Text",
       "id": "d5131785-753b-4fa2-a24a-fa921bfd1cdf",
       "actor": "TurtleOffice",
-      "name": "Das ist zu gut gemeint, nicht jeder in der Firma benötigt diesen Bericht bzw. sollte ihn sehen. Vorsicht mit großem Verteilern!",
+      "name": "Das ist gut gemeint, aber nicht jeder in der Firma benötigt diesen Bericht bzw. sollte ihn sehen. Vorsicht mit großem Verteilern!",
       "next": "0018281e-2b33-475e-8fa1-0515d0516608"
     },
     {
       "type": "Choice",
       "id": "2e51135f-a3e5-45ea-929d-3c86f3bac1e9",
       "title": "",
-      "name": "Ich nehme als Personen, die im Auditplan stehen mit in den Verteiler.",
+      "name": "Ich nehme alle Personen, die im Auditplan stehen mit in den Verteiler.",
       "next": "5990e0a9-0228-4a5a-89d2-0cc24bcda69a"
     },
     {
