@@ -1823,7 +1823,7 @@
         "port": "output"
       },
       "target": {
-        "id": "e6382112-9a24-4056-8942-4d7091a71f7c",
+        "id": "aee76f09-14e5-4b84-bffb-9da49801a1d5",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -3218,7 +3218,7 @@
         "output"
       ],
       "title": "",
-      "name": "Mit der Wartung der Maschine war alles in Ordnung.  Dann erklären Sie mir, Ihre Arbeitsschritte an der Maschnine.",
+      "name": "Mit dem Wartungsprozess der Maschine war alles in Ordnung. Erklären Sie mir nun, Ihre Arbeitsschritte an der Maschnine.",
       "position": {
         "x": 11008,
         "y": 928
@@ -3667,7 +3667,9 @@
       "id": "3a21ef0f-b9f0-43e2-b984-fb67a46f6e29",
       "actor": "Turtle",
       "name": "Das wissen wir doch schon.",
-      "next": "e6382112-9a24-4056-8942-4d7091a71f7c"
+      "choices": [
+        "aee76f09-14e5-4b84-bffb-9da49801a1d5"
+      ]
     },
     {
       "type": "Text",
@@ -3827,7 +3829,7 @@
       "type": "Choice",
       "id": "5a55678b-ef93-4222-ba0e-9fd2884602dd",
       "title": "",
-      "name": "Mit der Wartung der Maschine war alles in Ordnung.  Dann erklären Sie mir, Ihre Arbeitsschritte an der Maschnine.",
+      "name": "Mit dem Wartungsprozess der Maschine war alles in Ordnung. Erklären Sie mir nun, Ihre Arbeitsschritte an der Maschnine.",
       "next": "e6382112-9a24-4056-8942-4d7091a71f7c"
     },
     {
