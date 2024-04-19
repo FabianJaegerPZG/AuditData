@@ -209,7 +209,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Gute Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: \"Mein Name ist ___ und ich werde heute das interne Audit durchführen.",
+      "name": "Gute Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: \"Mein Name ist Miss Turtle und ich werde heute das interne Audit durchführen.",
       "position": {
         "x": 2080,
         "y": 96
@@ -898,7 +898,7 @@
       "type": "Text",
       "id": "26f95d7f-87f3-4960-b0e9-03f43f1352f2",
       "actor": "TurtleMeetingRoom",
-      "name": "Gute Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: \"Mein Name ist ___ und ich werde heute das interne Audit durchführen.",
+      "name": "Gute Wahl. An deiner Stelle würde ich mich folgendermaßen vorstellen: \"Mein Name ist Miss Turtle und ich werde heute das interne Audit durchführen.",
       "next": "75b03bfb-e355-4f86-ab72-cf0830851ce7"
     },
     {
