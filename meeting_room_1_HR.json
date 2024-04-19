@@ -51,7 +51,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ja, vielen Dank, dass ich mich vorstellen darf. Ich bin seit 5 Jahren in der Firma. Ich möchte ich betonen, dass wir schon mehrere Qualitätsoffensiven - auch in meiner Abteilung - durchgeführt haben. Im Zuge dessen, haben wir vor allem die Themen Diversity und Nachhaltigkeit auf erfolgreiche Beine gestellt.",
+      "name": "Ich möchte ich betonen, dass wir schon mehrere Qualitätsoffensiven - auch in meiner Abteilung - durchgeführt haben. Im Zuge dessen, haben wir vor allem die Themen Diversity und Nachhaltigkeit auf erfolgreiche Beine gestellt.",
       "position": {
         "x": 432,
         "y": 64
@@ -100,11 +100,21 @@
         "port": "output"
       },
       "target": {
-        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
+        "id": "cc5dfb86-368b-4daa-9ef4-d71af8e3e899",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 2,
+      "vertices": [
+        {
+          "x": 368,
+          "y": 304
+        },
+        {
+          "x": 48,
+          "y": 384
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -128,7 +138,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Oh, die Person hat vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n",
+      "name": "Herr Müller hat vergessen seine Position und Abteilung zu nennen. Weisst Du es?",
       "position": {
         "x": 848,
         "y": 64
@@ -290,6 +300,7 @@
       "angle": 0,
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
       "z": 11,
+      "lua": "AddPoints(-3, \"Gut gemacht\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -334,7 +345,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Du hast dich richtig entschieden. Es ist der Personalleiter.",
+      "name": "Du hast dich richtig entschieden. Herr Müller ist Personalleiter.",
       "position": {
         "x": 1616,
         "y": 32
@@ -393,6 +404,7 @@
       "angle": 0,
       "id": "2a3bb515-b725-49bc-9181-cf61678d8549",
       "z": 14,
+      "lua": "AddPoints(-3, \"Gut gemacht\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -444,6 +456,7 @@
       "angle": 0,
       "id": "be41f417-374b-44fa-80e5-f8fa2c2166f5",
       "z": 15,
+      "lua": "AddPoints(10, \"Gut gemacht\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -495,57 +508,7 @@
       "angle": 0,
       "id": "f5b82e17-26d2-4f2c-b87c-899c892669ef",
       "z": 16,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Geschäftsführung",
-      "position": {
-        "x": 1248,
-        "y": 1088
-      },
-      "angle": 0,
-      "id": "9ba1c8f2-ed6c-41f0-b831-300d38e70403",
-      "z": 17,
+      "lua": "AddPoints(-3, \"Gut gemacht\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -793,41 +756,6 @@
     },
     {
       "type": "link",
-      "id": "5ece4cee-c662-491e-9402-15b86081f6a6",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "9ba1c8f2-ed6c-41f0-b831-300d38e70403",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 24,
-      "vertices": [
-        {
-          "x": 1520,
-          "y": 1344
-        },
-        {
-          "x": 464,
-          "y": 944
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "db4e7409-79ec-4b4c-9d55-260e66523217",
       "smooth": true,
       "embeds": "",
@@ -903,31 +831,6 @@
     },
     {
       "type": "link",
-      "id": "b196cf7c-15a2-488d-a117-bb068dd7c2d8",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "9ba1c8f2-ed6c-41f0-b831-300d38e70403",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 28,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "f7c4511d-76fc-4862-a5d9-4d6ba267925f",
       "smooth": true,
       "embeds": "",
@@ -952,6 +855,58 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ja, vielen Dank, dass ich mich vorstellen darf. Ich bin seit 5 Jahren in der Firma. ",
+      "position": {
+        "x": 96,
+        "y": 416
+      },
+      "angle": 0,
+      "id": "cc5dfb86-368b-4daa-9ef4-d71af8e3e899",
+      "z": 29,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "f0b02b89-b886-4bd4-a03a-9b2a656f5564",
       "smooth": true,
@@ -963,6 +918,31 @@
       },
       "target": {
         "id": "2a3bb515-b725-49bc-9181-cf61678d8549",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 30,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "039f65e9-37bf-4fc3-a374-041f7a4228c1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "cc5dfb86-368b-4daa-9ef4-d71af8e3e899",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1026,31 +1006,6 @@
           "r": 8
         }
       }
-    },
-    {
-      "type": "link",
-      "id": "33b66d8c-2d5b-4bdd-9cfd-fd7c414d78dc",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "9ba1c8f2-ed6c-41f0-b831-300d38e70403",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 33,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
     }
   ],
   "gameData": [
@@ -1059,26 +1014,25 @@
       "id": "013f8705-ef72-4649-b57f-319d5071b2c5",
       "actor": "Player",
       "name": "START",
-      "next": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6"
+      "next": "cc5dfb86-368b-4daa-9ef4-d71af8e3e899"
     },
     {
       "type": "Text",
       "id": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6",
       "actor": "HR",
-      "name": "Ja, vielen Dank, dass ich mich vorstellen darf. Ich bin seit 5 Jahren in der Firma. Ich möchte ich betonen, dass wir schon mehrere Qualitätsoffensiven - auch in meiner Abteilung - durchgeführt haben. Im Zuge dessen, haben wir vor allem die Themen Diversity und Nachhaltigkeit auf erfolgreiche Beine gestellt.",
+      "name": "Ich möchte ich betonen, dass wir schon mehrere Qualitätsoffensiven - auch in meiner Abteilung - durchgeführt haben. Im Zuge dessen, haben wir vor allem die Themen Diversity und Nachhaltigkeit auf erfolgreiche Beine gestellt.",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7"
     },
     {
       "type": "Text",
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
       "actor": "TurtleMeetingRoom",
-      "name": "Oh, die Person hat vergessen ihren Namen zu nennen und in welcher Abteilung sie arbeitet.\n",
+      "name": "Herr Müller hat vergessen seine Position und Abteilung zu nennen. Weisst Du es?",
       "choices": [
         "be41f417-374b-44fa-80e5-f8fa2c2166f5",
         "54112f4f-de6b-4619-8e69-9d766b98c939",
         "2a3bb515-b725-49bc-9181-cf61678d8549",
-        "f5b82e17-26d2-4f2c-b87c-899c892669ef",
-        "9ba1c8f2-ed6c-41f0-b831-300d38e70403"
+        "f5b82e17-26d2-4f2c-b87c-899c892669ef"
       ]
     },
     {
@@ -1090,8 +1044,7 @@
         "54112f4f-de6b-4619-8e69-9d766b98c939",
         "2a3bb515-b725-49bc-9181-cf61678d8549",
         "be41f417-374b-44fa-80e5-f8fa2c2166f5",
-        "f5b82e17-26d2-4f2c-b87c-899c892669ef",
-        "9ba1c8f2-ed6c-41f0-b831-300d38e70403"
+        "f5b82e17-26d2-4f2c-b87c-899c892669ef"
       ]
     },
     {
@@ -1106,13 +1059,14 @@
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
       "title": "",
       "name": "QMB",
-      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+      "lua": "AddPoints(-3, \"Gut gemacht\");"
     },
     {
       "type": "Text",
       "id": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
       "actor": "TurtleMeetingRoom",
-      "name": "Du hast dich richtig entschieden. Es ist der Personalleiter.",
+      "name": "Du hast dich richtig entschieden. Herr Müller ist Personalleiter.",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     },
     {
@@ -1120,28 +1074,31 @@
       "id": "2a3bb515-b725-49bc-9181-cf61678d8549",
       "title": "",
       "name": "Produktionsleitung",
-      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+      "lua": "AddPoints(-3, \"Gut gemacht\");"
     },
     {
       "type": "Choice",
       "id": "be41f417-374b-44fa-80e5-f8fa2c2166f5",
       "title": "",
       "name": "Personalabteilung",
-      "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4"
+      "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
+      "lua": "AddPoints(10, \"Gut gemacht\");"
     },
     {
       "type": "Choice",
       "id": "f5b82e17-26d2-4f2c-b87c-899c892669ef",
       "title": "",
       "name": "Einkauf",
-      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299",
+      "lua": "AddPoints(-3, \"Gut gemacht\");"
     },
     {
-      "type": "Choice",
-      "id": "9ba1c8f2-ed6c-41f0-b831-300d38e70403",
-      "title": "",
-      "name": "Geschäftsführung",
-      "next": "8fc12499-8e61-4fbe-92cb-19cca103c299"
+      "type": "Text",
+      "id": "cc5dfb86-368b-4daa-9ef4-d71af8e3e899",
+      "actor": "",
+      "name": "Ja, vielen Dank, dass ich mich vorstellen darf. Ich bin seit 5 Jahren in der Firma. ",
+      "next": "a3ff7c89-08cf-4dd4-99a8-90c6b5770be6"
     }
   ]
 }
