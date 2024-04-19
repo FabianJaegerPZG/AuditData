@@ -367,7 +367,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Im Prinzip darfst du sofort mit den Interviews beginnen. Doch dann vergibst du die Chance dir einen Überblick über die relevanten Begebenheiten im Produktionsprozess zu bekommen.Es ist sinnvoller entweder den Rundgang als erstes zu machen, oder Rundgang und Interviews zu kombinieren. Bitte, starte mit dem Rundgang.",
+      "name": "Im Prinzip darfst Du sofort mit den Interviews beginnen. Doch dann vergibst du die Chance dir einen Überblick über die relevanten Begebenheiten im Produktionsprozess zu bekommen. Es ist sinnvoller entweder den Rundgang als erstes zu machen, oder Rundgang und Interviews zu kombinieren. Bitte, starte mit dem Rundgang.",
       "position": {
         "x": 912,
         "y": 768
@@ -619,7 +619,7 @@
       "type": "Text",
       "id": "e4f69bc0-0b20-4276-829e-1dceeff6fee1",
       "actor": "TurtleFactory",
-      "name": "Im Prinzip darfst du sofort mit den Interviews beginnen. Doch dann vergibst du die Chance dir einen Überblick über die relevanten Begebenheiten im Produktionsprozess zu bekommen.Es ist sinnvoller entweder den Rundgang als erstes zu machen, oder Rundgang und Interviews zu kombinieren. Bitte, starte mit dem Rundgang.",
+      "name": "Im Prinzip darfst Du sofort mit den Interviews beginnen. Doch dann vergibst du die Chance dir einen Überblick über die relevanten Begebenheiten im Produktionsprozess zu bekommen. Es ist sinnvoller entweder den Rundgang als erstes zu machen, oder Rundgang und Interviews zu kombinieren. Bitte, starte mit dem Rundgang.",
       "choices": [
         "6bd9272d-2c96-4ba5-b670-73a301a63d54",
         "51689a35-24a3-43af-9fcd-33dfb3754b02"
