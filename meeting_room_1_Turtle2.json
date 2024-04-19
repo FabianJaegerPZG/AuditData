@@ -458,7 +458,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -472,7 +472,7 @@
       "angle": 0,
       "id": "d9d0e25e-6c20-4346-870c-604d5f1d153a",
       "z": 11,
-      "lua": "AddPoints(-1, \"Unberechtigte Sorge\");",
+      "lua": "AddPoints(-1, \"Kaffee gibt es später\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -676,7 +676,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -829,13 +829,13 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Nein, das brauchen wir nicht zwangsläufig.",
+      "name": "Nein, das brauchen wir nicht. Alles wichtigen Dokumente hast Du in Deinem Aktenordner. ",
       "position": {
         "x": 2512,
         "y": 544
@@ -843,7 +843,7 @@
       "angle": 0,
       "id": "ef4938ab-c727-48c5-baf9-0cb0ad23374e",
       "z": 21,
-      "lua": "AddPoints(-1, \"Unberechtigte Sorge\");",
+      "lua": "AddPoints(-1, \"Leider knapp daneben\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1148,13 +1148,13 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
         "height": 225
       },
-      "name": "Ich denke, wir sind noch nicht so weit!.",
+      "name": "Ich denke, wir sind noch nicht so weit! ",
       "position": {
         "x": 1792,
         "y": 32
@@ -1431,6 +1431,7 @@
       "angle": 0,
       "id": "70418e5b-85b3-4f00-8024-7e806cf25733",
       "z": 37,
+      "lua": "AddPoints(-1, \"Der Einkauf war nicht eingeladen\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1495,7 +1496,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1509,7 +1510,7 @@
       "angle": 0,
       "id": "886bdf7a-6b46-4e12-a51e-af311eda4796",
       "z": 39,
-      "lua": "AddPoints(-1, \"Unberechtigte Sorge\");",
+      "lua": "AddPoints(-1, \"Der Einkauf war nicht eingeladen\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1684,7 +1685,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1698,7 +1699,7 @@
       "angle": 0,
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "z": 44,
-      "lua": "AddPoints(30, \"Produktionsleitung fehlt\");",
+      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1840,10 +1841,10 @@
     {
       "type": "Text",
       "id": "d9d0e25e-6c20-4346-870c-604d5f1d153a",
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "name": "Das ist nun wirklich nicht wichtig.",
       "next": "1fc383bc-9004-4a85-8010-367263107810",
-      "lua": "AddPoints(-1, \"Unberechtigte Sorge\");"
+      "lua": "AddPoints(-1, \"Kaffee gibt es später\");"
     },
     {
       "type": "Choice",
@@ -1855,7 +1856,7 @@
     {
       "type": "Text",
       "id": "f1897e7e-37d8-460b-aced-c7dbe3a3305a",
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "name": "Welche denn?",
       "choices": [
         "395b1465-4f16-4f2b-a209-a3ad9d3306cb",
@@ -1873,10 +1874,10 @@
     {
       "type": "Text",
       "id": "ef4938ab-c727-48c5-baf9-0cb0ad23374e",
-      "actor": "",
-      "name": "Nein, das brauchen wir nicht zwangsläufig.",
+      "actor": "TurtleMeetingRoom",
+      "name": "Nein, das brauchen wir nicht. Alles wichtigen Dokumente hast Du in Deinem Aktenordner. ",
       "next": "1fc383bc-9004-4a85-8010-367263107810",
-      "lua": "AddPoints(-1, \"Unberechtigte Sorge\");"
+      "lua": "AddPoints(-1, \"Leider knapp daneben\");"
     },
     {
       "type": "Choice",
@@ -1895,8 +1896,8 @@
     {
       "type": "Text",
       "id": "ce6d4552-ff87-4af1-92cc-a4f3838bbde3",
-      "actor": "",
-      "name": "Ich denke, wir sind noch nicht so weit!.",
+      "actor": "TurtleMeetingRoom",
+      "name": "Ich denke, wir sind noch nicht so weit! ",
       "next": "1fc383bc-9004-4a85-8010-367263107810",
       "lua": "AddPoints(-1, \"Es fehlt etwas\");"
     },
@@ -1922,14 +1923,15 @@
       "id": "70418e5b-85b3-4f00-8024-7e806cf25733",
       "title": "",
       "name": "Den Einkauf.",
-      "next": "886bdf7a-6b46-4e12-a51e-af311eda4796"
+      "next": "886bdf7a-6b46-4e12-a51e-af311eda4796",
+      "lua": "AddPoints(-1, \"Der Einkauf war nicht eingeladen\");"
     },
     {
       "type": "Text",
       "id": "886bdf7a-6b46-4e12-a51e-af311eda4796",
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "name": "Der Einkauf wurde nicht eingeladen.",
-      "lua": "AddPoints(-1, \"Unberechtigte Sorge\");",
+      "lua": "AddPoints(-1, \"Der Einkauf war nicht eingeladen\");",
       "choices": [
         "f9b84d1d-0e0f-4250-9239-3350fd1eeb59"
       ]
@@ -1944,10 +1946,10 @@
     {
       "type": "Text",
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
-      "actor": "",
+      "actor": "TurtleMeetingRoom",
       "name": "Ah! stimmt! Die müssen wir holen lassen!",
       "next": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "lua": "AddPoints(30, \"Produktionsleitung fehlt\");"
+      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");"
     }
   ]
 }
