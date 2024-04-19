@@ -207,7 +207,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "4. Brauchen Sie noch weitere Informationen?\n",
+      "name": "Brauchst Du noch weitere Informationen?\n",
       "position": {
         "x": 7248,
         "y": 640
@@ -215,58 +215,6 @@
       "angle": 0,
       "id": "07467de3-87a7-4167-aaa9-6d40636fe05a",
       "z": 47,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "SGM",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Da habe ich Ihnen schon gezeigt: Ich habe ja für jeden Auftrag einen Prüfplan. ",
-      "position": {
-        "x": 3552,
-        "y": 672
-      },
-      "angle": 0,
-      "id": "a2b0c90e-e876-45e9-b6f7-784231d4ecb4",
-      "z": 48,
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -391,31 +339,6 @@
         "port": "input"
       },
       "z": 48,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "b108a172-f030-414b-b98c-31d54b65309f",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "a2b0c90e-e876-45e9-b6f7-784231d4ecb4",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "004bcab7-6301-43a9-8a19-5361ffc2acba",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 49,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -1293,7 +1216,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Na die, die ich Ihnen schon die ganze Zeit gezeigt habe.\n",
+      "name": "Das habe ich Ihnen schon gezeigt: Ich habe ja für jeden Auftrag einen Prüfplan. \n",
       "position": {
         "x": 2736,
         "y": 672
@@ -1345,7 +1268,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "1. Hat der Maschinenführer eine Anweisung, nach der er vorgeht?\n\n",
+      "name": "Hat der Maschinenführer eine Anweisung, nach der er vorgeht?\n\n",
       "position": {
         "x": 4400,
         "y": 672
@@ -1637,6 +1560,31 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "7371cbc5-d81e-438c-96c3-5db0bf9ec7ae",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "4b50abb6-c601-48fd-b67c-c6468af94fa5",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "004bcab7-6301-43a9-8a19-5361ffc2acba",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 76,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
         }
       }
     },
@@ -2088,7 +2036,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "2. Geht der Maschinenführer nach Plan vor, nachdem die Maschinen wieder einsatzbereit ist?\n",
+      "name": "Geht der Maschinenführer nach Plan vor, nachdem die Maschinen wieder einsatzbereit ist?\n",
       "position": {
         "x": 5344,
         "y": 640
@@ -2389,107 +2337,6 @@
       }
     },
     {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Mich interessiert dabei vor allem, wie Sie die ersten Enten prüfen bzw. nach welchen Kriterien prüfen Sie sie. Zeigen Sie mir dazu die Anweisung.",
-      "position": {
-        "x": 3120,
-        "y": 720
-      },
-      "angle": 0,
-      "id": "8d43fef4-06b4-4d98-a42c-cb7e9bc80b13",
-      "z": 81,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "1d1587f7-032c-41b5-972f-88d875c8aff0",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "4b50abb6-c601-48fd-b67c-c6468af94fa5",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "8d43fef4-06b4-4d98-a42c-cb7e9bc80b13",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 81,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "9504ddd4-60ef-4055-b60e-143d840302d1",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "8d43fef4-06b4-4d98-a42c-cb7e9bc80b13",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "a2b0c90e-e876-45e9-b6f7-784231d4ecb4",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 81,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "link",
       "id": "f4ca3094-e0fd-4212-9490-ac8ef9aa123d",
       "smooth": true,
@@ -2717,7 +2564,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "3. Kannst Du aus dem Verlauf des Gesprächs Rückschlüsse auf mögliche Reklamationen ziehen?\n\n",
+      "name": "Kannst Du aus dem Verlauf des Gesprächs Rückschlüsse auf mögliche Reklamationen ziehen?\n\n",
       "position": {
         "x": 6256,
         "y": 656
@@ -3104,18 +2951,11 @@
       "type": "Text",
       "id": "07467de3-87a7-4167-aaa9-6d40636fe05a",
       "actor": "Turtle",
-      "name": "4. Brauchen Sie noch weitere Informationen?\n",
+      "name": "Brauchst Du noch weitere Informationen?\n",
       "choices": [
         "8a31905e-56bf-47b1-91cf-75f86d1a7e7f",
         "20015330-d5ef-4846-a939-6032dc61ed62"
       ]
-    },
-    {
-      "type": "Text",
-      "id": "a2b0c90e-e876-45e9-b6f7-784231d4ecb4",
-      "actor": "SGM",
-      "name": "Da habe ich Ihnen schon gezeigt: Ich habe ja für jeden Auftrag einen Prüfplan. ",
-      "next": "004bcab7-6301-43a9-8a19-5361ffc2acba"
     },
     {
       "type": "Text",
@@ -3217,16 +3057,14 @@
       "type": "Text",
       "id": "4b50abb6-c601-48fd-b67c-c6468af94fa5",
       "actor": "SGM",
-      "name": "Na die, die ich Ihnen schon die ganze Zeit gezeigt habe.\n",
-      "choices": [
-        "8d43fef4-06b4-4d98-a42c-cb7e9bc80b13"
-      ]
+      "name": "Das habe ich Ihnen schon gezeigt: Ich habe ja für jeden Auftrag einen Prüfplan. \n",
+      "next": "004bcab7-6301-43a9-8a19-5361ffc2acba"
     },
     {
       "type": "Text",
       "id": "ca1ba203-a415-4598-8c6c-0221f0697b30",
       "actor": "Turtle",
-      "name": "1. Hat der Maschinenführer eine Anweisung, nach der er vorgeht?\n\n",
+      "name": "Hat der Maschinenführer eine Anweisung, nach der er vorgeht?\n\n",
       "choices": [
         "26f14c86-179c-48e7-88a1-83a82441a27e",
         "aeb21c97-a83d-41d1-a780-b1a694aebef0"
@@ -3289,7 +3127,7 @@
       "type": "Text",
       "id": "0deddf72-b216-4957-a48e-93cf843c6857",
       "actor": "Turtle",
-      "name": "2. Geht der Maschinenführer nach Plan vor, nachdem die Maschinen wieder einsatzbereit ist?\n",
+      "name": "Geht der Maschinenführer nach Plan vor, nachdem die Maschinen wieder einsatzbereit ist?\n",
       "choices": [
         "308c5c3d-9ee8-4a57-b3cb-216b995116f2",
         "e4bf90d1-0c56-4d5f-8f88-cf421f187028"
@@ -3311,13 +3149,6 @@
     },
     {
       "type": "Choice",
-      "id": "8d43fef4-06b4-4d98-a42c-cb7e9bc80b13",
-      "title": "",
-      "name": "Mich interessiert dabei vor allem, wie Sie die ersten Enten prüfen bzw. nach welchen Kriterien prüfen Sie sie. Zeigen Sie mir dazu die Anweisung.",
-      "next": "a2b0c90e-e876-45e9-b6f7-784231d4ecb4"
-    },
-    {
-      "type": "Choice",
       "id": "308c5c3d-9ee8-4a57-b3cb-216b995116f2",
       "title": "",
       "name": "Ja.",
@@ -3336,7 +3167,7 @@
       "type": "Text",
       "id": "2f4150f5-d1a2-4e41-a042-ac9d4146961a",
       "actor": "Turtle",
-      "name": "3. Kannst Du aus dem Verlauf des Gesprächs Rückschlüsse auf mögliche Reklamationen ziehen?\n\n",
+      "name": "Kannst Du aus dem Verlauf des Gesprächs Rückschlüsse auf mögliche Reklamationen ziehen?\n\n",
       "choices": [
         "06bb853b-91c6-4008-a984-c70707f43efa",
         "fefb4c5f-8d6a-459c-baa5-ecdbcd8be224"
