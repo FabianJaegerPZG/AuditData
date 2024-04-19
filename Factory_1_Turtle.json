@@ -485,7 +485,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Viel Erfolg! Und vergiss nicht, Dir Notizen zu machen.",
+      "name": "Viel Erfolg! Und vergiss nicht, Dir die Fehler zu notieren.",
       "position": {
         "x": 1376,
         "y": 160
@@ -629,7 +629,7 @@
       "type": "Text",
       "id": "e00c07ae-3f38-438c-bfa4-c751db84441e",
       "actor": "TurtleFactory",
-      "name": "Viel Erfolg! Und vergiss nicht, Dir Notizen zu machen.",
+      "name": "Viel Erfolg! Und vergiss nicht, Dir die Fehler zu notieren.",
       "next": "fe1ce8b9-be05-4860-9ad0-922f6f19c6fd"
     }
   ]
