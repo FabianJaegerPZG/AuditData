@@ -50,8 +50,8 @@
       },
       "name": "",
       "position": {
-        "x": 3392,
-        "y": 224
+        "x": 3696,
+        "y": 272
       },
       "angle": 0,
       "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
@@ -114,16 +114,16 @@
     },
     {
       "type": "link",
-      "id": "aef46958-59d4-4b9a-a160-491358723930",
+      "id": "979ae6ab-bf81-4204-b551-1eebe10566b0",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
+        "id": "f55b5343-a737-4729-be45-4b870c999567",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
+        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -139,16 +139,16 @@
     },
     {
       "type": "link",
-      "id": "979ae6ab-bf81-4204-b551-1eebe10566b0",
+      "id": "aef46958-59d4-4b9a-a160-491358723930",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "f55b5343-a737-4729-be45-4b870c999567",
+        "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
+        "id": "29aaeb2c-e32b-42f8-b47d-110364ec3082",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -200,13 +200,64 @@
         "output"
       ],
       "title": "",
-      "name": "Sprechen über den Sperrprozess. Wo finde ich den Prozess?",
+      "name": "Sprechen wir über den Sperrprozess. Wo finde ich den Prozess?",
       "position": {
         "x": 1888,
         "y": 160
       },
       "angle": 0,
       "id": "f55b5343-a737-4729-be45-4b870c999567",
+      "z": 13,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Gut, ich sehe mir das genau an. ",
+      "position": {
+        "x": 3328,
+        "y": 448
+      },
+      "angle": 0,
+      "id": "29aaeb2c-e32b-42f8-b47d-110364ec3082",
       "z": 13,
       "attrs": {
         ".inPorts>.port0>text": {
@@ -250,6 +301,31 @@
       },
       "target": {
         "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 14,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "c4db3c78-249a-4780-8da6-37c67edccddd",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "29aaeb2c-e32b-42f8-b47d-110364ec3082",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -517,8 +593,15 @@
       "type": "Choice",
       "id": "f55b5343-a737-4729-be45-4b870c999567",
       "title": "",
-      "name": "Sprechen über den Sperrprozess. Wo finde ich den Prozess?",
+      "name": "Sprechen wir über den Sperrprozess. Wo finde ich den Prozess?",
       "next": "53248d3c-3a46-49c1-91a8-b74d19c08bc4"
+    },
+    {
+      "type": "Choice",
+      "id": "29aaeb2c-e32b-42f8-b47d-110364ec3082",
+      "title": "",
+      "name": "Gut, ich sehe mir das genau an. ",
+      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
     },
     {
       "type": "Text",
@@ -548,8 +631,10 @@
       "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
       "actor": "Turtle",
       "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
-      "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03",
-      "lua": ""
+      "lua": "",
+      "choices": [
+        "29aaeb2c-e32b-42f8-b47d-110364ec3082"
+      ]
     }
   ]
 }

@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Anders als geplant, musst Du nun eine weitere Befragung durchführen, um dem Fehler auf die Spur zu kommen. \nWelcher dieser Personen würdest Du jetzt befragen wollen? ",
+      "name": "Welcher dieser Personen möchtest Du jetzt befragen?",
       "position": {
         "x": 304,
         "y": 416
@@ -901,7 +901,7 @@
       "type": "Text",
       "id": "cc5649e0-ba31-45ff-b870-74bd53edef3b",
       "actor": "Turtle",
-      "name": "Anders als geplant, musst Du nun eine weitere Befragung durchführen, um dem Fehler auf die Spur zu kommen. \nWelcher dieser Personen würdest Du jetzt befragen wollen? ",
+      "name": "Welcher dieser Personen möchtest Du jetzt befragen?",
       "choices": [
         "d6dec6c5-8cab-48d7-8702-3505b2c76faa",
         "c684933f-d7e4-4d31-af6a-060e59a6f02a",

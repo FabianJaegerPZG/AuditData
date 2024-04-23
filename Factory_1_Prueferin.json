@@ -303,56 +303,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "2a5b2435-1e45-4a9a-838a-36d7da8fc3e2",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "c2c0568e-697a-4e4a-85ea-48bd352d539a",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 9,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "47308604-f9e7-4489-abdf-eeb43c8e3d06",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "c2c0568e-697a-4e4a-85ea-48bd352d539a",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 10,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -443,7 +393,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ich gehe Schritt für Schritt nach  Prüfanweisung vor und schaue mir die Enten so genau an. Dazu benutze ich die Prüfmittel, die hier liegen.",
+      "name": "Ich gehe Schritt für Schritt nach Prüfanweisung vor und schaue mir die Enten genau an. Dazu benutze ich die Prüfmittel, die hier liegen.",
       "position": {
         "x": 2256,
         "y": 352
@@ -665,7 +615,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Diese Enten gebe ich in den Behälter mit dem Schild \"i.O\" gleich daneben.",
+      "name": "Diese Enten gebe ich in den Behälter mit dem Schild \"i.O.\" gleich daneben.",
       "position": {
         "x": 3856,
         "y": 352
@@ -794,58 +744,6 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ich  mache das schon ganz lange und kenne alle Enten, die wir herstellen. ",
-      "position": {
-        "x": 1408,
-        "y": 128
-      },
-      "angle": 0,
-      "id": "c2c0568e-697a-4e4a-85ea-48bd352d539a",
-      "z": 52,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Factory_Prueferin",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
       "name": "Ja klar - das ist meine Tätigkeit als Prüferin und mit der Prüfanweisung klappt das gut und zügig. Meine Ergebnisse trage ich in die Fehlersammelliste ein.",
       "position": {
         "x": 4880,
@@ -885,31 +783,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "efec4f2f-313a-4f8a-93f3-4ddee6aab536",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "c2c0568e-697a-4e4a-85ea-48bd352d539a",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 53,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -923,7 +796,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Für mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weitere Person befragen.",
+      "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern und noch eine weitere Person befragen.",
       "position": {
         "x": 10464,
         "y": 336
@@ -963,6 +836,56 @@
     },
     {
       "type": "link",
+      "id": "59a4e514-94c2-4216-bdc4-fdaf1967fef1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 54,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1b50fc00-ced3-4c82-8b46-06b1027e9f73",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e7a4abd1-aec8-47ec-a706-b7b336b76957",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 55,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "44084848-a205-4e17-812c-ef84b07c010c",
       "smooth": true,
       "embeds": "",
@@ -972,7 +895,7 @@
         "port": "output"
       },
       "target": {
-        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "id": "6e4eef6b-4531-4975-b7b7-b60e37fd9002",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1002,12 +925,69 @@
         "port": "input"
       },
       "z": 56,
+      "vertices": [
+        {
+          "x": 10896,
+          "y": 432
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
         },
         ".link-tools .tool-remove circle, .marker-vertex": {
           "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ja, mache ich.",
+      "position": {
+        "x": 10384,
+        "y": 704
+      },
+      "angle": 0,
+      "id": "6e4eef6b-4531-4975-b7b7-b60e37fd9002",
+      "z": 56,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
         }
       }
     },
@@ -1302,6 +1282,41 @@
       }
     },
     {
+      "type": "link",
+      "id": "e9c3f544-1c17-49be-afa1-cacecdc073da",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6e4eef6b-4531-4975-b7b7-b60e37fd9002",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 57,
+      "vertices": [
+        {
+          "x": 10928,
+          "y": 736
+        },
+        {
+          "x": 10448,
+          "y": 656
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
       "size": {
         "width": 300,
         "height": 225
@@ -1441,7 +1456,7 @@
         "output"
       ],
       "title": "",
-      "name": "Was passiert mit den Enten, die in Ordnung sind?",
+      "name": "Was passiert mit den Enten, die i.O. - also in Ordnung - sind?",
       "position": {
         "x": 3456,
         "y": 608
@@ -1492,7 +1507,7 @@
         "output"
       ],
       "title": "",
-      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Charge?\n",
+      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Aufträge?\n",
       "position": {
         "x": 4371.6668701171875,
         "y": 682.9861450195312
@@ -1619,7 +1634,7 @@
         "output"
       ],
       "title": "",
-      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?",
+      "name": "Wohin werden die Behälter gebracht?",
       "position": {
         "x": 6512,
         "y": 432
@@ -1670,7 +1685,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ist das Schild \"n.i.O\"  die einzige Kennzeichnung für Ausschussware auf den Behältern?",
+      "name": "Ist das Schild \"n.i.O.\"  die einzige Kennzeichnung für Ausschussware an den Behältern?",
       "position": {
         "x": 7651.8753662109375,
         "y": 715.5555877685547
@@ -1721,10 +1736,10 @@
         "output"
       ],
       "title": "",
-      "name": "Und wohin werden die Enten gebracht, die in Ordnung - also i.O. sind?",
+      "name": "Und wohin werden die Enten gebracht, die in Ordnung sind?",
       "position": {
-        "x": 8860.330078125,
-        "y": 773.6632385253906
+        "x": 8592,
+        "y": 624
       },
       "angle": 0,
       "id": "a8d919cb-1a16-4c8d-8180-ba75c1825b47",
@@ -2060,7 +2075,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Meinen Sie das Lager, in dem der Ausschuss gesammelt wird? Ja der ist gleich hier drüben. Herr Blume muss nicht weit schieben.\n",
+      "name": "Meinen Sie das Sperrlager? Ja das ist gleich hier drüben. Herr Blume muss nicht weit schieben.\n",
       "position": {
         "x": 7040,
         "y": 352
@@ -2214,7 +2229,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hast Du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? \n\nSchreibe Deine Vermutung in Deine Notizen. ",
+      "name": "Hast Du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? Schreibe Deine Vermutung in die Notizen. ",
       "position": {
         "x": 10064,
         "y": 352
@@ -2276,7 +2291,10 @@
       "id": "74a79552-ef38-4944-9070-1af1e1f76f51",
       "actor": "Factory_Prueferin",
       "name": "Nachdem die Enten bemalt worden sind, kommen sie in diesen Kisten zu mir an den Prüfplatz und dann schaue ich sie mir genau an.\n",
-      "next": "c2c0568e-697a-4e4a-85ea-48bd352d539a"
+      "choices": [
+        "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455",
+        "e7a4abd1-aec8-47ec-a706-b7b336b76957"
+      ]
     },
     {
       "type": "Choice",
@@ -2305,7 +2323,7 @@
       "type": "Text",
       "id": "1d799b72-6406-4a24-b902-2e436d7a2bc7",
       "actor": "Factory_Prueferin",
-      "name": "Ich gehe Schritt für Schritt nach  Prüfanweisung vor und schaue mir die Enten so genau an. Dazu benutze ich die Prüfmittel, die hier liegen.",
+      "name": "Ich gehe Schritt für Schritt nach Prüfanweisung vor und schaue mir die Enten genau an. Dazu benutze ich die Prüfmittel, die hier liegen.",
       "choices": [
         "496143ac-a17a-49f7-8327-82d03e1dd1bc"
       ]
@@ -2323,7 +2341,7 @@
       "type": "Text",
       "id": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3",
       "actor": "Factory_Prueferin",
-      "name": "Diese Enten gebe ich in den Behälter mit dem Schild \"i.O\" gleich daneben.",
+      "name": "Diese Enten gebe ich in den Behälter mit dem Schild \"i.O.\" gleich daneben.",
       "choices": [
         "e01f8219-2bae-4b8d-b97f-97684093b0d0"
       ]
@@ -2339,16 +2357,6 @@
     },
     {
       "type": "Text",
-      "id": "c2c0568e-697a-4e4a-85ea-48bd352d539a",
-      "actor": "Factory_Prueferin",
-      "name": "Ich  mache das schon ganz lange und kenne alle Enten, die wir herstellen. ",
-      "choices": [
-        "e7a4abd1-aec8-47ec-a706-b7b336b76957",
-        "cb97a7eb-dfaa-4ec9-b88f-7fc377d7a455"
-      ]
-    },
-    {
-      "type": "Text",
       "id": "16b60c23-bb4b-436e-b2c5-0af06bde6426",
       "actor": "Factory_Prueferin",
       "name": "Ja klar - das ist meine Tätigkeit als Prüferin und mit der Prüfanweisung klappt das gut und zügig. Meine Ergebnisse trage ich in die Fehlersammelliste ein.",
@@ -2360,8 +2368,15 @@
       "type": "Text",
       "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
       "actor": "",
-      "name": "Für mich sieht es so aus, als müstest du deinen Auditplan spontan ändern und noch eine weitere Person befragen.",
+      "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern und noch eine weitere Person befragen.",
       "next": "83ece01b-0ef1-4bef-9ce2-91bf246c1b29"
+    },
+    {
+      "type": "Choice",
+      "id": "6e4eef6b-4531-4975-b7b7-b60e37fd9002",
+      "title": "",
+      "name": "Ja, mache ich.",
+      "next": "dd6937c7-f155-4170-9100-f97bb6e0b825"
     },
     {
       "type": "Text",
@@ -2406,14 +2421,14 @@
       "type": "Choice",
       "id": "7318280d-2314-47b0-9be4-56080863ed1b",
       "title": "",
-      "name": "Was passiert mit den Enten, die in Ordnung sind?",
+      "name": "Was passiert mit den Enten, die i.O. - also in Ordnung - sind?",
       "next": "0d821ba9-ca7d-4415-a3b0-abd254be3ea3"
     },
     {
       "type": "Choice",
       "id": "e01f8219-2bae-4b8d-b97f-97684093b0d0",
       "title": "",
-      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Charge?\n",
+      "name": "Habe ich Sie richtig verstanden? Sie prüfen alle Enten, also 100% der Aufträge?\n",
       "next": "16b60c23-bb4b-436e-b2c5-0af06bde6426"
     },
     {
@@ -2427,21 +2442,21 @@
       "type": "Choice",
       "id": "3a8da012-84a1-47f2-8699-ae0d29cfb17d",
       "title": "",
-      "name": "Wohin werden die Enten gebracht? Gibt es denn ein Sperrlager für die Ausschussware?",
+      "name": "Wohin werden die Behälter gebracht?",
       "next": "ac871682-7c58-486f-9f68-c2f968f9e2df"
     },
     {
       "type": "Choice",
       "id": "c681784d-306f-48e3-b015-ef148ba9d12c",
       "title": "",
-      "name": "Ist das Schild \"n.i.O\"  die einzige Kennzeichnung für Ausschussware auf den Behältern?",
+      "name": "Ist das Schild \"n.i.O.\"  die einzige Kennzeichnung für Ausschussware an den Behältern?",
       "next": "cb03a9d1-f25e-4f32-8589-79169aba097a"
     },
     {
       "type": "Choice",
       "id": "a8d919cb-1a16-4c8d-8180-ba75c1825b47",
       "title": "",
-      "name": "Und wohin werden die Enten gebracht, die in Ordnung - also i.O. sind?",
+      "name": "Und wohin werden die Enten gebracht, die in Ordnung sind?",
       "next": "ceb067dc-7a23-46c4-bde9-c2245db295ec"
     },
     {
@@ -2462,7 +2477,7 @@
       "type": "Text",
       "id": "ac871682-7c58-486f-9f68-c2f968f9e2df",
       "actor": "Factory_Prueferin",
-      "name": "Meinen Sie das Lager, in dem der Ausschuss gesammelt wird? Ja der ist gleich hier drüben. Herr Blume muss nicht weit schieben.\n",
+      "name": "Meinen Sie das Sperrlager? Ja das ist gleich hier drüben. Herr Blume muss nicht weit schieben.\n",
       "choices": [
         "c681784d-306f-48e3-b015-ef148ba9d12c"
       ]
@@ -2480,9 +2495,11 @@
       "type": "Text",
       "id": "41f3712d-a47c-4778-91de-94ca7b4a05a9",
       "actor": "Turtle",
-      "name": "Hast Du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? \n\nSchreibe Deine Vermutung in Deine Notizen. ",
-      "next": "dd6937c7-f155-4170-9100-f97bb6e0b825",
-      "lua": ""
+      "name": "Hast Du auch ein Gefühl dafür bekommen, warum es so viele Reklamationen gab? Schreibe Deine Vermutung in die Notizen. ",
+      "lua": "",
+      "choices": [
+        "6e4eef6b-4531-4975-b7b7-b60e37fd9002"
+      ]
     }
   ]
 }

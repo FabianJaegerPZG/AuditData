@@ -180,8 +180,8 @@
       "z": 15,
       "vertices": [
         {
-          "x": 1664,
-          "y": 432
+          "x": 1760,
+          "y": 464
         },
         {
           "x": 544,
@@ -338,7 +338,7 @@
         "output"
       ],
       "title": "",
-      "name": "Bin mir nicht sicher. Schaue lieber noch mal genauer hin und kontrolliere meine Notizen.",
+      "name": "Ich bin mir nicht sicher und kontrolliere nochmal meine Notizen.",
       "position": {
         "x": 1296,
         "y": 592
@@ -645,7 +645,7 @@
       "type": "Choice",
       "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
       "title": "",
-      "name": "Bin mir nicht sicher. Schaue lieber noch mal genauer hin und kontrolliere meine Notizen.",
+      "name": "Ich bin mir nicht sicher und kontrolliere nochmal meine Notizen.",
       "next": "6f10c722-b73d-4ee6-84d3-8661c14831bd"
     },
     {
