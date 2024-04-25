@@ -267,57 +267,6 @@
       }
     },
     {
-      "type": "dialogue.Lua",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "size": {
-        "width": 250,
-        "height": 135
-      },
-      "name": "",
-      "position": {
-        "x": 2912,
-        "y": 1872
-      },
-      "angle": 0,
-      "id": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "z": 7,
-      "lua": "InterviewPassed();\n",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -1622,6 +1571,7 @@
       "angle": 0,
       "id": "b6f5bf72-6d6c-462a-9c85-7e5ec089e098",
       "z": 42,
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1699,7 +1649,7 @@
       "angle": 0,
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "z": 44,
-      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");",
+      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");\nInterviewPassed();\n",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1756,8 +1706,60 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Produktion",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Entschuldigen Sie die Verspätung, hier bin ich!",
+      "position": {
+        "x": 2992,
+        "y": 1760
+      },
+      "angle": 0,
+      "id": "63940f41-8745-44e3-92ba-5ce679fcdc17",
+      "z": 45,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
-      "id": "7cad7dec-c3d2-4dbe-bdac-faefc44beb5a",
+      "id": "2a751fd4-9320-4058-9a8f-80c2f299a56d",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -1766,7 +1768,7 @@
         "port": "output"
       },
       "target": {
-        "id": "ece9229d-ffbd-43a4-954c-3e96c2281531",
+        "id": "63940f41-8745-44e3-92ba-5ce679fcdc17",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1816,13 +1818,6 @@
         "ddd67182-fe81-4324-b761-59612927bd71",
         "f9b84d1d-0e0f-4250-9239-3350fd1eeb59"
       ]
-    },
-    {
-      "type": "Lua",
-      "id": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "name": "",
-      "next": null,
-      "lua": "InterviewPassed();\n"
     },
     {
       "type": "Choice",
@@ -1941,15 +1936,23 @@
       "id": "b6f5bf72-6d6c-462a-9c85-7e5ec089e098",
       "title": "",
       "name": "Die Produktionsleitung.",
-      "next": "26ee5155-5390-4f2b-bd19-e21b0f284cd2"
+      "next": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
+      "lua": ""
     },
     {
       "type": "Text",
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "actor": "TurtleMeetingRoom",
       "name": "Ah! stimmt! Die müssen wir holen lassen!",
-      "next": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");"
+      "next": "63940f41-8745-44e3-92ba-5ce679fcdc17",
+      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");\nInterviewPassed();\n"
+    },
+    {
+      "type": "Text",
+      "id": "63940f41-8745-44e3-92ba-5ce679fcdc17",
+      "actor": "Produktion",
+      "name": "Entschuldigen Sie die Verspätung, hier bin ich!",
+      "next": null
     }
   ]
 }
