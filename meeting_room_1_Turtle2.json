@@ -1571,7 +1571,7 @@
       "angle": 0,
       "id": "b6f5bf72-6d6c-462a-9c85-7e5ec089e098",
       "z": 42,
-      "lua": "",
+      "lua": "InterviewPassed();",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1649,7 +1649,7 @@
       "angle": 0,
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "z": 44,
-      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");\nInterviewPassed();\n",
+      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");\n\n",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1937,7 +1937,7 @@
       "title": "",
       "name": "Die Produktionsleitung.",
       "next": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
-      "lua": ""
+      "lua": "InterviewPassed();"
     },
     {
       "type": "Text",
@@ -1945,7 +1945,7 @@
       "actor": "TurtleMeetingRoom",
       "name": "Ah! stimmt! Die müssen wir holen lassen!",
       "next": "63940f41-8745-44e3-92ba-5ce679fcdc17",
-      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");\nInterviewPassed();\n"
+      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");\n\n"
     },
     {
       "type": "Text",
