@@ -164,7 +164,7 @@
     },
     {
       "type": "link",
-      "id": "b180ba2e-0edb-4bf5-884f-cf63677a03d0",
+      "id": "3ee12016-13b3-4faa-a027-802c1ea4c3c5",
       "smooth": true,
       "embeds": "",
       "source": {
@@ -173,11 +173,11 @@
         "port": "output"
       },
       "target": {
-        "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
+        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 13,
+      "z": 12,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -200,10 +200,10 @@
         "output"
       ],
       "title": "",
-      "name": "Sprechen wir über den Sperrprozess. Wo finde ich den Prozess?",
+      "name": "Ich möchte mir den Sperrprozess genauer ansehen. Wo finde ich den Prozess, Herr Blume?",
       "position": {
-        "x": 1888,
-        "y": 160
+        "x": 1344,
+        "y": 192
       },
       "angle": 0,
       "id": "f55b5343-a737-4729-be45-4b870c999567",
@@ -251,7 +251,7 @@
         "output"
       ],
       "title": "",
-      "name": "Gut, ich sehe mir das genau an. ",
+      "name": "Gut, ich sehe mir den Prozess genauer  an und mache meine Notizen.",
       "position": {
         "x": 3328,
         "y": 448
@@ -286,31 +286,6 @@
           "ref": "rect",
           "ref-y": 0.5,
           "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "c219b662-9b99-4863-bd92-90c585588701",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 14,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
         }
       }
     },
@@ -353,62 +328,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
-      "position": {
-        "x": 704,
-        "y": 144
-      },
-      "angle": 0,
-      "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
-      "z": 20,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "Turtle",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
       "name": "Wie kann es sein, dass fehlerhafte Enten an den Kunden ausgeliefert wurden, obwohl Frau Winter diese in einem Extra-Behälter aussortiert hatte?",
       "position": {
-        "x": 1248,
-        "y": 160
+        "x": 720,
+        "y": 176
       },
       "angle": 0,
       "id": "ce0d1058-e3f1-4932-b4ce-987da12ce004",
@@ -459,8 +382,8 @@
       },
       "name": "Den Prozess finden Sie im Aktenkoffer. Sie können gerne einen Blick darauf werfen.",
       "position": {
-        "x": 2384,
-        "y": 176
+        "x": 1904,
+        "y": 192
       },
       "angle": 0,
       "id": "53248d3c-3a46-49c1-91a8-b74d19c08bc4",
@@ -509,10 +432,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf?",
       "position": {
-        "x": 2912,
-        "y": 192
+        "x": 2512,
+        "y": 208
       },
       "angle": 0,
       "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
@@ -580,7 +503,7 @@
       "id": "ffc58779-31e8-48e2-baff-be873efe7bfa",
       "actor": "Player",
       "name": "START",
-      "next": "033bf5ee-27f8-4437-805a-80b03ad6faeb"
+      "next": "ce0d1058-e3f1-4932-b4ce-987da12ce004"
     },
     {
       "type": "Lua",
@@ -593,22 +516,15 @@
       "type": "Choice",
       "id": "f55b5343-a737-4729-be45-4b870c999567",
       "title": "",
-      "name": "Sprechen wir über den Sperrprozess. Wo finde ich den Prozess?",
+      "name": "Ich möchte mir den Sperrprozess genauer ansehen. Wo finde ich den Prozess, Herr Blume?",
       "next": "53248d3c-3a46-49c1-91a8-b74d19c08bc4"
     },
     {
       "type": "Choice",
       "id": "29aaeb2c-e32b-42f8-b47d-110364ec3082",
       "title": "",
-      "name": "Gut, ich sehe mir das genau an. ",
+      "name": "Gut, ich sehe mir den Prozess genauer  an und mache meine Notizen.",
       "next": "bf5a8885-2f9b-4e04-9986-81c47f8acc03"
-    },
-    {
-      "type": "Text",
-      "id": "033bf5ee-27f8-4437-805a-80b03ad6faeb",
-      "actor": "Turtle",
-      "name": "Was möchtest Du von Herrn Blume zum Sperrprozess wissen?",
-      "next": "ce0d1058-e3f1-4932-b4ce-987da12ce004"
     },
     {
       "type": "Text",
@@ -630,7 +546,7 @@
       "type": "Text",
       "id": "59b0ecda-a234-4c06-b669-25f97e9a25cd",
       "actor": "Turtle",
-      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf? Mach dir Notizen.",
+      "name": "Vergleiche den Sperrprozess mit dem Sperrlager und dem Prüfplatz. Was fällt Dir auf?",
       "lua": "",
       "choices": [
         "29aaeb2c-e32b-42f8-b47d-110364ec3082"
