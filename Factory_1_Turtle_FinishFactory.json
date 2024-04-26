@@ -50,8 +50,8 @@
       },
       "name": "",
       "position": {
-        "x": 3568,
-        "y": 208
+        "x": 3872,
+        "y": 288
       },
       "angle": 0,
       "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
@@ -139,31 +139,6 @@
     },
     {
       "type": "link",
-      "id": "e69962e5-2f9f-45ca-8f77-cb6475580fc1",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "85691f3e-4b02-4e88-957e-50160c403695",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 15,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "6a88f6de-c3f3-4d8a-8bf9-f7326262a3cf",
       "smooth": true,
       "embeds": "",
@@ -199,6 +174,82 @@
     },
     {
       "type": "link",
+      "id": "e69962e5-2f9f-45ca-8f77-cb6475580fc1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "85691f3e-4b02-4e88-957e-50160c403695",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "73ec36bc-8fec-4be9-bd19-e15caf605011",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 15,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Wie sieht es nun mit der Lösung aus?",
+      "position": {
+        "x": 2432,
+        "y": 592
+      },
+      "angle": 0,
+      "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
+      "z": 16,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "747d76e8-c8ae-442b-a0db-33bcae785dda",
       "smooth": true,
       "embeds": "",
@@ -213,6 +264,316 @@
         "port": "input"
       },
       "z": 17,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6671e802-7098-4de5-bce4-3b51761f4064",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 17,
+      "vertices": [
+        {
+          "x": 2832,
+          "y": 448
+        },
+        {
+          "x": 2528,
+          "y": 320
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "",
+      "position": {
+        "x": 2116.9562072753906,
+        "y": 127.25695610046387
+      },
+      "angle": 0,
+      "id": "37e42486-f719-44f7-8e3a-fd17ea216da2",
+      "z": 18,
+      "lua": "OpenQuiz('SperrlagerQuiz');",
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a6483c43-530a-4adc-bf85-fbebfdf7ba67",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "37e42486-f719-44f7-8e3a-fd17ea216da2",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 18,
+      "vertices": [
+        {
+          "x": 2272,
+          "y": 496
+        },
+        {
+          "x": 2016,
+          "y": 320
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5f2a2f75-0234-4331-b0a3-0552c4700291",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "37e42486-f719-44f7-8e3a-fd17ea216da2",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 19,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Wie geht es nun weiter?",
+      "position": {
+        "x": 2928,
+        "y": 512
+      },
+      "angle": 0,
+      "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
+      "z": 20,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "73b2cecf-7f60-4e30-b1b8-285759c46337",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "85691f3e-4b02-4e88-957e-50160c403695",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 21,
+      "vertices": [
+        {
+          "x": 3408,
+          "y": 528
+        },
+        {
+          "x": 2992,
+          "y": 400
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Gut, wechseln wir in den Meetingraum. ",
+      "position": {
+        "x": 3456,
+        "y": 272
+      },
+      "angle": 0,
+      "id": "73ec36bc-8fec-4be9-bd19-e15caf605011",
+      "z": 22,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "6d1e5172-e5f4-4e04-ba67-e12ac7c639d1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "73ec36bc-8fec-4be9-bd19-e15caf605011",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 23,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -340,8 +701,8 @@
       "title": "",
       "name": "Ich bin mir nicht sicher und kontrolliere nochmal meine Notizen.",
       "position": {
-        "x": 1296,
-        "y": 592
+        "x": 1072,
+        "y": 688
       },
       "angle": 0,
       "id": "d269cfb1-a314-40fb-8e7e-5ca5330e7cb3",
@@ -392,13 +753,13 @@
       },
       "name": "Was hast Du beobachtet und notiert?\n",
       "position": {
-        "x": 2064,
-        "y": 112
+        "x": 1840,
+        "y": 576
       },
       "angle": 0,
       "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
       "z": 57,
-      "lua": "OpenQuiz('SperrlagerQuiz');",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -520,9 +881,9 @@
         "width": 300,
         "height": 225
       },
-      "name": "Nun kannst Du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
+      "name": "Als nächstes kommt die Abschlusspräsentation mit einer Zusammenfassung Deiner Auditbeobachtungen und dann das Abschlussgespräch.",
       "position": {
-        "x": 3040,
+        "x": 3056,
         "y": 160
       },
       "angle": 0,
@@ -560,31 +921,6 @@
     },
     {
       "type": "link",
-      "id": "842f3cf1-09b7-46a4-8370-9fe4ad5f1ea1",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 62,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "5bdcdf16-cb80-4656-9dd1-30ca5ad3df39",
       "smooth": true,
       "embeds": "",
@@ -594,7 +930,7 @@
         "port": "output"
       },
       "target": {
-        "id": "85691f3e-4b02-4e88-957e-50160c403695",
+        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -625,6 +961,37 @@
       "lua": "InterviewPassed();"
     },
     {
+      "type": "Choice",
+      "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
+      "title": "",
+      "name": "Wie sieht es nun mit der Lösung aus?",
+      "next": "803d84a7-201a-47ed-8eac-23a76680b3ca"
+    },
+    {
+      "type": "Text",
+      "id": "37e42486-f719-44f7-8e3a-fd17ea216da2",
+      "actor": "",
+      "name": "",
+      "lua": "OpenQuiz('SperrlagerQuiz');",
+      "choices": [
+        "330254a6-5abf-4d4a-b521-f5bb5e8b0609"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
+      "title": "",
+      "name": "Wie geht es nun weiter?",
+      "next": "85691f3e-4b02-4e88-957e-50160c403695"
+    },
+    {
+      "type": "Choice",
+      "id": "73ec36bc-8fec-4be9-bd19-e15caf605011",
+      "title": "",
+      "name": "Gut, wechseln wir in den Meetingraum. ",
+      "next": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee"
+    },
+    {
       "type": "Text",
       "id": "6f10c722-b73d-4ee6-84d3-8661c14831bd",
       "actor": "Turtle",
@@ -653,22 +1020,26 @@
       "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
       "actor": "Turtle",
       "name": "Was hast Du beobachtet und notiert?\n",
-      "next": "803d84a7-201a-47ed-8eac-23a76680b3ca",
-      "lua": "OpenQuiz('SperrlagerQuiz');"
+      "next": "37e42486-f719-44f7-8e3a-fd17ea216da2",
+      "lua": ""
     },
     {
       "type": "Text",
       "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
       "actor": "Turtle",
       "name": "Sehr gut, nun weißt Du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
-      "next": "85691f3e-4b02-4e88-957e-50160c403695"
+      "choices": [
+        "e8ef32fe-110a-4a63-8ec2-892265d2d84e"
+      ]
     },
     {
       "type": "Text",
       "id": "85691f3e-4b02-4e88-957e-50160c403695",
       "actor": "Turtle",
-      "name": "Nun kannst Du als nächsten Schritt die Abschlusspräsentation vorbereiten mit einer Zusammenfassung Deiner Auditbeobachtungen. ",
-      "next": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee"
+      "name": "Als nächstes kommt die Abschlusspräsentation mit einer Zusammenfassung Deiner Auditbeobachtungen und dann das Abschlussgespräch.",
+      "choices": [
+        "73ec36bc-8fec-4be9-bd19-e15caf605011"
+      ]
     }
   ]
 }
