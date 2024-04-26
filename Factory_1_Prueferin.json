@@ -796,10 +796,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern und noch eine weitere Person befragen.",
+      "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern. Wen möchtest Du befragen?",
       "position": {
-        "x": 10464,
-        "y": 336
+        "x": 10576,
+        "y": 368
       },
       "angle": 0,
       "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
@@ -910,37 +910,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "5166a6c6-9e5c-4286-ba84-223d706a3a76",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "83ece01b-0ef1-4bef-9ce2-91bf246c1b29",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 56,
-      "vertices": [
-        {
-          "x": 10896,
-          "y": 432
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -953,7 +922,7 @@
         "output"
       ],
       "title": "",
-      "name": "Ja, mache ich.",
+      "name": "OK.",
       "position": {
         "x": 10384,
         "y": 704
@@ -1057,8 +1026,8 @@
       },
       "name": "",
       "position": {
-        "x": 10992,
-        "y": 336
+        "x": 12080,
+        "y": 240
       },
       "angle": 0,
       "id": "83ece01b-0ef1-4bef-9ce2-91bf246c1b29",
@@ -1313,6 +1282,57 @@
         },
         ".link-tools .tool-remove circle, .marker-vertex": {
           "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "QM-Mitarbeiter Herr Blume.",
+      "position": {
+        "x": 11184,
+        "y": 240
+      },
+      "angle": 0,
+      "id": "fad12855-d651-4a88-b084-5f24d0ffd982",
+      "z": 57,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
         }
       }
     },
@@ -1838,6 +1858,57 @@
         "output"
       ],
       "title": "",
+      "name": "Der Maschinenführer Herr Wolf.",
+      "position": {
+        "x": 11184,
+        "y": 544
+      },
+      "angle": 0,
+      "id": "76a2806c-b34b-469e-94a4-c4da51d81590",
+      "z": 58,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
       "name": "Es gab in letzter Zeit viele Reklamationen und ich suche mit diesem Audit nach Hinweisen. Wie prüfen Sie die Enten? ",
       "position": {
         "x": 1232,
@@ -2002,6 +2073,57 @@
       }
     },
     {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Die Prüferin Frau Winter.",
+      "position": {
+        "x": 11200,
+        "y": 848
+      },
+      "angle": 0,
+      "id": "be87da04-8a60-4dbc-9e54-579fa1769592",
+      "z": 59,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "86c70ad5-48ca-45b6-97fa-f3b556ec5c0f",
       "smooth": true,
@@ -2048,6 +2170,31 @@
       },
       "target": {
         "id": "3a8da012-84a1-47f2-8699-ae0d29cfb17d",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 60,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "0c291772-44ce-4994-b7d6-054f10e58508",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "fad12855-d651-4a88-b084-5f24d0ffd982",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -2115,6 +2262,114 @@
     },
     {
       "type": "link",
+      "id": "577807c6-e47c-4f63-9d6b-a0318b04a3e4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "76a2806c-b34b-469e-94a4-c4da51d81590",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 61,
+      "vertices": [
+        {
+          "x": 11136,
+          "y": 528
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "43296af2-a91d-4362-be16-0add8250f1fa",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "be87da04-8a60-4dbc-9e54-579fa1769592",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 62,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es sieht danach aus, dass fehlerhafte Enten, nicht ins Sperrlager gebracht werden, sondern an Kunden geliefert werden. Sprechen wir mit Herrn Blume.",
+      "position": {
+        "x": 11616,
+        "y": 208
+      },
+      "angle": 0,
+      "id": "b89c915f-384c-47c0-b7c5-cbf3ccc89a19",
+      "z": 63,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
       "id": "a96387ea-e69d-4056-b0d6-0ad6e93a245a",
       "smooth": true,
       "embeds": "",
@@ -2135,6 +2390,58 @@
         },
         ".link-tools .tool-remove circle, .marker-vertex": {
           "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Der Maschineführer Herr Wolf wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
+      "position": {
+        "x": 11632,
+        "y": 544
+      },
+      "angle": 0,
+      "id": "fab0a0d4-4bf3-412c-8fa8-4dfe370de80d",
+      "z": 64,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
         }
       }
     },
@@ -2191,6 +2498,108 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Die Prüferin Frau WInter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.",
+      "position": {
+        "x": 11632,
+        "y": 832
+      },
+      "angle": 0,
+      "id": "e946f259-a20f-4ae0-8a91-f1d49de726af",
+      "z": 65,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "75d598d2-60c5-42a8-bc7a-4ff3a5443048",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "be87da04-8a60-4dbc-9e54-579fa1769592",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e946f259-a20f-4ae0-8a91-f1d49de726af",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 66,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "5b74f1a9-f9f7-4128-9ae3-4e16fe2b6e20",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "76a2806c-b34b-469e-94a4-c4da51d81590",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "fab0a0d4-4bf3-412c-8fa8-4dfe370de80d",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 67,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "2f2dbe2d-7e73-472d-b9cf-f82482a82b7f",
       "smooth": true,
@@ -2206,6 +2615,126 @@
         "port": "input"
       },
       "z": 68,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a2ed6930-0ce9-48c2-89e1-4dadf3858145",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "fad12855-d651-4a88-b084-5f24d0ffd982",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "b89c915f-384c-47c0-b7c5-cbf3ccc89a19",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 68,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "c32ecee7-0557-4104-9059-a9f07412bc98",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e946f259-a20f-4ae0-8a91-f1d49de726af",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 69,
+      "vertices": [
+        {
+          "x": 11984,
+          "y": 848
+        },
+        {
+          "x": 10560,
+          "y": 608
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "b248e844-4977-49d1-b610-ec7688ccb332",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "fab0a0d4-4bf3-412c-8fa8-4dfe370de80d",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 70,
+      "vertices": [
+        {
+          "x": 11968,
+          "y": 544
+        },
+        {
+          "x": 10592,
+          "y": 304
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "add7590b-2968-4ad1-90ee-3c5ae5b70d43",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "b89c915f-384c-47c0-b7c5-cbf3ccc89a19",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "83ece01b-0ef1-4bef-9ce2-91bf246c1b29",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 71,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -2368,14 +2897,18 @@
       "type": "Text",
       "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
       "actor": "",
-      "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern und noch eine weitere Person befragen.",
-      "next": "83ece01b-0ef1-4bef-9ce2-91bf246c1b29"
+      "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern. Wen möchtest Du befragen?",
+      "choices": [
+        "fad12855-d651-4a88-b084-5f24d0ffd982",
+        "76a2806c-b34b-469e-94a4-c4da51d81590",
+        "be87da04-8a60-4dbc-9e54-579fa1769592"
+      ]
     },
     {
       "type": "Choice",
       "id": "6e4eef6b-4531-4975-b7b7-b60e37fd9002",
       "title": "",
-      "name": "Ja, mache ich.",
+      "name": "OK.",
       "next": "dd6937c7-f155-4170-9100-f97bb6e0b825"
     },
     {
@@ -2402,6 +2935,13 @@
       "choices": [
         "40869ad1-738d-4390-99af-dc4deccedfd1"
       ]
+    },
+    {
+      "type": "Choice",
+      "id": "fad12855-d651-4a88-b084-5f24d0ffd982",
+      "title": "",
+      "name": "QM-Mitarbeiter Herr Blume.",
+      "next": "b89c915f-384c-47c0-b7c5-cbf3ccc89a19"
     },
     {
       "type": "Choice",
@@ -2468,10 +3008,24 @@
     },
     {
       "type": "Choice",
+      "id": "76a2806c-b34b-469e-94a4-c4da51d81590",
+      "title": "",
+      "name": "Der Maschinenführer Herr Wolf.",
+      "next": "fab0a0d4-4bf3-412c-8fa8-4dfe370de80d"
+    },
+    {
+      "type": "Choice",
       "id": "40869ad1-738d-4390-99af-dc4deccedfd1",
       "title": "",
       "name": "Es gab in letzter Zeit viele Reklamationen und ich suche mit diesem Audit nach Hinweisen. Wie prüfen Sie die Enten? ",
       "next": "74a79552-ef38-4944-9070-1af1e1f76f51"
+    },
+    {
+      "type": "Choice",
+      "id": "be87da04-8a60-4dbc-9e54-579fa1769592",
+      "title": "",
+      "name": "Die Prüferin Frau Winter.",
+      "next": "e946f259-a20f-4ae0-8a91-f1d49de726af"
     },
     {
       "type": "Text",
@@ -2484,12 +3038,33 @@
     },
     {
       "type": "Text",
+      "id": "b89c915f-384c-47c0-b7c5-cbf3ccc89a19",
+      "actor": "Turtle",
+      "name": "Es sieht danach aus, dass fehlerhafte Enten, nicht ins Sperrlager gebracht werden, sondern an Kunden geliefert werden. Sprechen wir mit Herrn Blume.",
+      "next": "83ece01b-0ef1-4bef-9ce2-91bf246c1b29"
+    },
+    {
+      "type": "Text",
+      "id": "fab0a0d4-4bf3-412c-8fa8-4dfe370de80d",
+      "actor": "Turtle",
+      "name": "Der Maschineführer Herr Wolf wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
+      "next": "dd6937c7-f155-4170-9100-f97bb6e0b825"
+    },
+    {
+      "type": "Text",
       "id": "cb03a9d1-f25e-4f32-8589-79169aba097a",
       "actor": "Factory_Prueferin",
       "name": "Ja, ich denke schon. Mehr steht jedenfalls auch nicht in der Prüfanweisung.\n",
       "choices": [
         "a8d919cb-1a16-4c8d-8180-ba75c1825b47"
       ]
+    },
+    {
+      "type": "Text",
+      "id": "e946f259-a20f-4ae0-8a91-f1d49de726af",
+      "actor": "Turtle",
+      "name": "Die Prüferin Frau WInter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.",
+      "next": "dd6937c7-f155-4170-9100-f97bb6e0b825"
     },
     {
       "type": "Text",
