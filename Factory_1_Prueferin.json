@@ -790,7 +790,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2511,7 +2511,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Die Prüferin Frau WInter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.",
+      "name": "Die Prüferin Frau Winter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.",
       "position": {
         "x": 11632,
         "y": 832
@@ -2896,7 +2896,7 @@
     {
       "type": "Text",
       "id": "dd6937c7-f155-4170-9100-f97bb6e0b825",
-      "actor": "",
+      "actor": "Turtle",
       "name": "Für mich sieht es so aus, als müstest Du Deinen Auditplan spontan ändern. Wen möchtest Du befragen?",
       "choices": [
         "fad12855-d651-4a88-b084-5f24d0ffd982",
@@ -3063,7 +3063,7 @@
       "type": "Text",
       "id": "e946f259-a20f-4ae0-8a91-f1d49de726af",
       "actor": "Turtle",
-      "name": "Die Prüferin Frau WInter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.",
+      "name": "Die Prüferin Frau Winter macht alles richtig: Es ist eine 100%-Prüfung und die fehlerhaften Enten werden aussortiert.",
       "next": "dd6937c7-f155-4170-9100-f97bb6e0b825"
     },
     {
