@@ -1494,7 +1494,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -1596,7 +1596,7 @@
       "outPorts": [
         "output"
       ],
-      "actor": "",
+      "actor": "Turtle",
       "textarea": "Start writing",
       "size": {
         "width": 300,
@@ -2049,31 +2049,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "ed0d7c24-4606-4a06-957e-d962699408ff",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "83236090-538d-401d-a9d4-a84bdb0c7d2f",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "f554d24a-ecef-4515-8b81-4f94f87bb51b",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 79,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -2136,6 +2111,31 @@
       },
       "target": {
         "id": "c7ee215b-5afa-4442-bbaf-caf2bad5bc7f",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 79,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ed0d7c24-4606-4a06-957e-d962699408ff",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "83236090-538d-401d-a9d4-a84bdb0c7d2f",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e8aa1cef-43a8-4382-99ba-6e3407790d54",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -2850,6 +2850,58 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "SGM",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Gerne.",
+      "position": {
+        "x": 512,
+        "y": 96
+      },
+      "angle": 0,
+      "id": "e8aa1cef-43a8-4382-99ba-6e3407790d54",
+      "z": 85,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "41b4133d-c768-4bb3-8858-a29869be01b6",
       "smooth": true,
@@ -2865,6 +2917,41 @@
         "port": "input"
       },
       "z": 86,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "09107731-397d-4b15-8dd2-acc99a7613b4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e8aa1cef-43a8-4382-99ba-6e3407790d54",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f554d24a-ecef-4515-8b81-4f94f87bb51b",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 86,
+      "vertices": [
+        {
+          "x": 944,
+          "y": 288
+        },
+        {
+          "x": 304,
+          "y": 368
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -3239,9 +3326,7 @@
       "id": "83236090-538d-401d-a9d4-a84bdb0c7d2f",
       "actor": "Player",
       "name": "START",
-      "choices": [
-        "f554d24a-ecef-4515-8b81-4f94f87bb51b"
-      ]
+      "next": "e8aa1cef-43a8-4382-99ba-6e3407790d54"
     },
     {
       "type": "Choice",
@@ -3423,7 +3508,7 @@
     {
       "type": "Text",
       "id": "e299ed83-d813-43e4-93ee-877baa84bfb0",
-      "actor": "",
+      "actor": "Turtle",
       "name": "Richtig. Wir müssen den Prüfprozess genauer anschauen.",
       "choices": [
         "25288b2c-7652-48d9-8ff2-6eee6a8d1f7b"
@@ -3432,7 +3517,7 @@
     {
       "type": "Text",
       "id": "a850a750-3707-4aef-b2de-edaaf05dc593",
-      "actor": "",
+      "actor": "Turtle",
       "name": "Ein Gespräch mit Herrn Blume bringt uns an dieser Stelle nicht weiter. ",
       "next": "b9096173-adc3-44e2-8e94-cefa32f23ffc"
     },
@@ -3520,6 +3605,15 @@
       "name": "Nein.",
       "next": "2f4150f5-d1a2-4e41-a042-ac9d4146961a",
       "lua": "AddPoints(-5, \"Leider falsch\");"
+    },
+    {
+      "type": "Text",
+      "id": "e8aa1cef-43a8-4382-99ba-6e3407790d54",
+      "actor": "SGM",
+      "name": "Gerne.",
+      "choices": [
+        "f554d24a-ecef-4515-8b81-4f94f87bb51b"
+      ]
     },
     {
       "type": "Text",

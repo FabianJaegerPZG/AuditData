@@ -2189,7 +2189,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meisten muss ich dann die Parameter neu einstellen und die Maschine neu starten.",
+      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meistens muss ich dann die Parameter neu einstellen und die Maschine neu starten.",
       "position": {
         "x": 13616,
         "y": 832
@@ -3185,8 +3185,8 @@
       "title": "",
       "name": "Mit dem Wartungsprozess der Maschine war alles in Ordnung. Erklären Sie mir nun Ihre Arbeitsschritte an der Maschnine.",
       "position": {
-        "x": 11008,
-        "y": 928
+        "x": 11168,
+        "y": 752
       },
       "angle": 0,
       "id": "5a55678b-ef93-4222-ba0e-9fd2884602dd",
@@ -3358,31 +3358,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "d1e76945-63f6-4475-b0b9-1f1c81ba187e",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "5a6fef39-635b-4dde-a39a-163afeeffdb7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "5a55678b-ef93-4222-ba0e-9fd2884602dd",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 93,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -3460,20 +3435,20 @@
     },
     {
       "type": "link",
-      "id": "d346926f-b5c3-42c7-b719-fdf8a8d44889",
+      "id": "d1e76945-63f6-4475-b0b9-1f1c81ba187e",
       "smooth": true,
       "embeds": "",
       "source": {
-        "id": "702f089c-d13e-46ee-ae9f-a506ee31700c",
+        "id": "5a6fef39-635b-4dde-a39a-163afeeffdb7",
         "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
         "port": "output"
       },
       "target": {
-        "id": "5a55678b-ef93-4222-ba0e-9fd2884602dd",
+        "id": "975f0542-b22f-482e-9fcb-224ee7a036ba",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
-      "z": 94,
+      "z": 93,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -3509,6 +3484,31 @@
           "y": 528
         }
       ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "d346926f-b5c3-42c7-b719-fdf8a8d44889",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "702f089c-d13e-46ee-ae9f-a506ee31700c",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "975f0542-b22f-482e-9fcb-224ee7a036ba",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 94,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -3797,6 +3797,169 @@
           "r": 8
         }
       }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Gut, dann sehen wir uns diesen Prozess an. ",
+      "position": {
+        "x": 10880,
+        "y": 1344
+      },
+      "angle": 0,
+      "id": "975f0542-b22f-482e-9fcb-224ee7a036ba",
+      "z": 99,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "SGM",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Möchten Sie von mir nochwas zur Wartung wissen?",
+      "position": {
+        "x": 11216,
+        "y": 1120
+      },
+      "angle": 0,
+      "id": "7efb268d-160f-4595-a39b-8577ff7c94e9",
+      "z": 100,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "01e222b6-602d-4f42-ab50-65d6316de6b0",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "975f0542-b22f-482e-9fcb-224ee7a036ba",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "7efb268d-160f-4595-a39b-8577ff7c94e9",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 101,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "f9156041-60ae-4fcf-a71f-aa6742601d1a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "7efb268d-160f-4595-a39b-8577ff7c94e9",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "5a55678b-ef93-4222-ba0e-9fd2884602dd",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 102,
+      "vertices": [
+        {
+          "x": 11568,
+          "y": 1136
+        },
+        {
+          "x": 11040,
+          "y": 976
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -4035,7 +4198,7 @@
       "type": "Text",
       "id": "b2f0df3f-c1f7-482b-a0c4-52dae2204291",
       "actor": "SGM",
-      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meisten muss ich dann die Parameter neu einstellen und die Maschine neu starten.",
+      "name": "Dann stoppe ich die Maschine und überprüfe Druck und Temperatur. Und meistens muss ich dann die Parameter neu einstellen und die Maschine neu starten.",
       "choices": [
         "5ab9e9ae-deba-477a-953b-e8da30e3e514"
       ]
@@ -4063,7 +4226,7 @@
       "actor": "Turtle",
       "name": "Dann müssen wir als nächsten Schritt im Audit den Ablauf an der Maschine anschauen.\n",
       "choices": [
-        "5a55678b-ef93-4222-ba0e-9fd2884602dd"
+        "975f0542-b22f-482e-9fcb-224ee7a036ba"
       ]
     },
     {
@@ -4107,7 +4270,7 @@
       "actor": "Turtle",
       "name": "Bist Du Dir sicher? Schau Dir im nächsten Schritt den Ablauf an der Maschine an.",
       "choices": [
-        "5a55678b-ef93-4222-ba0e-9fd2884602dd"
+        "975f0542-b22f-482e-9fcb-224ee7a036ba"
       ]
     },
     {
@@ -4180,6 +4343,22 @@
       "title": "",
       "name": "Danke für den Hinweis.",
       "next": "056ca5e2-4655-4f15-b796-007331d4596c"
+    },
+    {
+      "type": "Choice",
+      "id": "975f0542-b22f-482e-9fcb-224ee7a036ba",
+      "title": "",
+      "name": "Gut, dann sehen wir uns diesen Prozess an. ",
+      "next": "7efb268d-160f-4595-a39b-8577ff7c94e9"
+    },
+    {
+      "type": "Text",
+      "id": "7efb268d-160f-4595-a39b-8577ff7c94e9",
+      "actor": "SGM",
+      "name": "Möchten Sie von mir nochwas zur Wartung wissen?",
+      "choices": [
+        "5a55678b-ef93-4222-ba0e-9fd2884602dd"
+      ]
     }
   ]
 }
