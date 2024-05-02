@@ -38,85 +38,6 @@
       }
     },
     {
-      "type": "dialogue.Text",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "actor": "",
-      "textarea": "Start writing",
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "name": "Sollen alle Sprungpunkte und Tasks erfüllt werden (Cheat)?",
-      "position": {
-        "x": 16,
-        "y": 288
-      },
-      "angle": 0,
-      "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
-      "z": 1,
-      "lua": "",
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "87a3be87-a541-484d-9a24-766e849b9073",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "482b5745-2dd2-4540-8dcf-71e36d60cb62",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 2,
-      "vertices": [],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -323,54 +244,27 @@
       }
     },
     {
-      "size": {
-        "width": 300,
-        "height": 225
+      "type": "link",
+      "id": "5c4af828-03fd-43f7-aefe-73971f06534d",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "482b5745-2dd2-4540-8dcf-71e36d60cb62",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
       },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Ja, bitte.",
-      "position": {
-        "x": 368,
-        "y": 176
+      "target": {
+        "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
       },
-      "angle": 0,
-      "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
-      "z": 21,
-      "lua": "Cheat();",
+      "z": 12,
       "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
         },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
         }
       }
     },
@@ -391,82 +285,6 @@
       },
       "z": 21,
       "vertices": [],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "size": {
-        "width": 300,
-        "height": 225
-      },
-      "type": "dialogue.Choice",
-      "inPorts": [
-        "input"
-      ],
-      "outPorts": [
-        "output"
-      ],
-      "title": "",
-      "name": "Nein, ich möchte keine Cheats verwenden.",
-      "position": {
-        "x": 368,
-        "y": 464
-      },
-      "angle": 0,
-      "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
-      "z": 23,
-      "attrs": {
-        ".inPorts>.port0>text": {
-          "text": "input"
-        },
-        ".inPorts>.port0>circle": {
-          "port": {
-            "id": "input",
-            "type": "in"
-          }
-        },
-        ".inPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5
-        },
-        ".outPorts>.port0>text": {
-          "text": "output"
-        },
-        ".outPorts>.port0>circle": {
-          "port": {
-            "id": "output",
-            "type": "out"
-          }
-        },
-        ".outPorts>.port0": {
-          "ref": "rect",
-          "ref-y": 0.5,
-          "ref-dx": 0
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "3a6dc6a3-c98f-4606-84f0-e291c2109676",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 23,
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -554,31 +372,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "ba7f0d53-7431-4619-9728-a217c89abdca",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 24,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "type": "dialogue.Text",
       "inPorts": [
         "input"
@@ -594,8 +387,8 @@
       },
       "name": "Willkommen bei Tub Ducks. Wie kann ich Ihnen weiterhelfen?",
       "position": {
-        "x": 720,
-        "y": 320
+        "x": 416,
+        "y": 272
       },
       "angle": 0,
       "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
@@ -683,56 +476,6 @@
     },
     {
       "type": "link",
-      "id": "cab0c3cd-e09b-4258-84b0-13e84ebfcdd0",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 26,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "9bb965f1-293c-4644-ab8a-e07c07c607e0",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 27,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
       "id": "c7ae523b-b647-422c-9c8a-cf561eeb8587",
       "smooth": true,
       "embeds": "",
@@ -773,18 +516,7 @@
       "id": "482b5745-2dd2-4540-8dcf-71e36d60cb62",
       "actor": "",
       "name": "START",
-      "next": "8e56791c-5b69-43d1-b370-8255a826ef92"
-    },
-    {
-      "type": "Text",
-      "id": "8e56791c-5b69-43d1-b370-8255a826ef92",
-      "actor": "",
-      "name": "Sollen alle Sprungpunkte und Tasks erfüllt werden (Cheat)?",
-      "lua": "",
-      "choices": [
-        "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
-        "b6419f12-8752-4c2d-a30a-9f52a34e37ef"
-      ]
+      "next": "61cc9a34-d39d-4aee-9c0b-f4a643193842"
     },
     {
       "type": "Choice",
@@ -811,21 +543,6 @@
       "choices": [
         "1e278688-ffc6-4f7b-b674-05f3f48ebcbe"
       ]
-    },
-    {
-      "type": "Choice",
-      "id": "bca05aa2-6ec7-4aee-b112-b031ef6ab0b0",
-      "title": "",
-      "name": "Ja, bitte.",
-      "next": "61cc9a34-d39d-4aee-9c0b-f4a643193842",
-      "lua": "Cheat();"
-    },
-    {
-      "type": "Choice",
-      "id": "b6419f12-8752-4c2d-a30a-9f52a34e37ef",
-      "title": "",
-      "name": "Nein, ich möchte keine Cheats verwenden.",
-      "next": "61cc9a34-d39d-4aee-9c0b-f4a643193842"
     },
     {
       "type": "Choice",
