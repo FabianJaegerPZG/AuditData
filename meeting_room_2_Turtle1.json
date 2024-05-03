@@ -1002,7 +1002,7 @@
       "angle": 0,
       "id": "68ab9663-7f41-46c6-9aca-392ae2f3c32d",
       "z": 27,
-      "lua": "OpenPDFViewer('Agenda1');",
+      "lua": "OpenPDFViewer('Agenda_Abschlussbesprechung');",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1897,7 +1897,7 @@
       "id": "68ab9663-7f41-46c6-9aca-392ae2f3c32d",
       "actor": "",
       "name": "",
-      "lua": "OpenPDFViewer('Agenda1');",
+      "lua": "OpenPDFViewer('Agenda_Abschlussbesprechung');",
       "choices": [
         "4ca00ce7-6482-4cc9-bebe-955321d6c7be"
       ]
