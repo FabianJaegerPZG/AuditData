@@ -949,7 +949,7 @@
       "angle": 0,
       "id": "deabde16-814f-4a84-b9fd-9d5cb41783b4",
       "z": 27,
-      "lua": "Start Quiz meetingroom2_selection",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1202,7 +1202,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "",
+      "name": "So können wir weitermachen.",
       "position": {
         "x": 4096,
         "y": 656
@@ -1281,8 +1281,8 @@
       "title": "",
       "name": "So ist die Agenda besser und wir können, das Abschlussgespräch nun führen. ",
       "position": {
-        "x": 4528,
-        "y": 624
+        "x": 4624,
+        "y": 592
       },
       "angle": 0,
       "id": "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c",
@@ -1890,7 +1890,7 @@
       "actor": "TurtleMeetingRoom",
       "name": "Aber die Agenda enthält noch weitere Fehler. Findest Du sie?",
       "next": "58568182-7964-4cdc-8da0-c3b200f92354",
-      "lua": "Start Quiz meetingroom2_selection"
+      "lua": ""
     },
     {
       "type": "Text",
@@ -1906,7 +1906,7 @@
       "type": "Text",
       "id": "58568182-7964-4cdc-8da0-c3b200f92354",
       "actor": "",
-      "name": "",
+      "name": "So können wir weitermachen.",
       "lua": "OpenSelectionWindow('meetingroom2_selection');",
       "choices": [
         "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c"
