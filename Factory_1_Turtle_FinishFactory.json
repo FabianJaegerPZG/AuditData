@@ -50,8 +50,8 @@
       },
       "name": "",
       "position": {
-        "x": 3872,
-        "y": 288
+        "x": 4624,
+        "y": 352
       },
       "angle": 0,
       "id": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee",
@@ -210,10 +210,10 @@
         "output"
       ],
       "title": "",
-      "name": "Wie sieht es nun mit der Lösung aus?",
+      "name": "Ok. Nun bin ich den Kundenreklamationen auf die Spur gekommen.",
       "position": {
-        "x": 2432,
-        "y": 592
+        "x": 2336,
+        "y": 608
       },
       "angle": 0,
       "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
@@ -264,41 +264,6 @@
         "port": "input"
       },
       "z": 17,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "6671e802-7098-4de5-bce4-3b51761f4064",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 17,
-      "vertices": [
-        {
-          "x": 2832,
-          "y": 448
-        },
-        {
-          "x": 2528,
-          "y": 320
-        }
-      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -412,6 +377,12 @@
         "port": "input"
       },
       "z": 19,
+      "vertices": [
+        {
+          "x": 2448,
+          "y": 352
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -434,10 +405,10 @@
         "output"
       ],
       "title": "",
-      "name": "Wie geht es nun weiter?",
+      "name": "Ich fasse meine Auditbeobachtungen für das Abschlussgespräch zusammen.",
       "position": {
-        "x": 2928,
-        "y": 512
+        "x": 3456,
+        "y": 352
       },
       "angle": 0,
       "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
@@ -473,41 +444,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "73b2cecf-7f60-4e30-b1b8-285759c46337",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "85691f3e-4b02-4e88-957e-50160c403695",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 21,
-      "vertices": [
-        {
-          "x": 3408,
-          "y": 528
-        },
-        {
-          "x": 2992,
-          "y": 400
-        }
-      ],
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -522,8 +458,8 @@
       "title": "",
       "name": "Gut, wechseln wir in den Meetingraum. ",
       "position": {
-        "x": 3456,
-        "y": 272
+        "x": 4160,
+        "y": 368
       },
       "angle": 0,
       "id": "73ec36bc-8fec-4be9-bd19-e15caf605011",
@@ -574,6 +510,438 @@
         "port": "input"
       },
       "z": 23,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8c123e7a-628b-4962-850e-e6f84cf8646a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "c8b0bfaf-d658-4acb-b70c-11880d1ee5a2",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 24,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich informiere sofort die Geschäftsführerin.",
+      "position": {
+        "x": 3360,
+        "y": 672
+      },
+      "angle": 0,
+      "id": "c8b0bfaf-d658-4acb-b70c-11880d1ee5a2",
+      "z": 25,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "da6c3161-95af-4329-ae47-4bd0c681250a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "85691f3e-4b02-4e88-957e-50160c403695",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 25,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Turtle",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Das kommt sicherlich nicht so gut an. Besser ist es die Abweichung im Abschlussgespräch neutral zu erklären.",
+      "position": {
+        "x": 3968,
+        "y": 672
+      },
+      "angle": 0,
+      "id": "901a0fb0-a758-4057-8e08-622c4b56c123",
+      "z": 26,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "567ff525-6919-49d5-b2ca-65bed228b286",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "c8b0bfaf-d658-4acb-b70c-11880d1ee5a2",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "901a0fb0-a758-4057-8e08-622c4b56c123",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 27,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Factory_QMB",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Sehr gut. Was haben Sie entdeckt? ",
+      "position": {
+        "x": 2496,
+        "y": 192
+      },
+      "angle": 0,
+      "id": "8684c2b5-4a4c-456c-b2d4-48901a61d55a",
+      "z": 28,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "a9758d18-aa45-4e09-98dc-d653305f082f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "8684c2b5-4a4c-456c-b2d4-48901a61d55a",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 28,
+      "vertices": [
+        {
+          "x": 2800,
+          "y": 544
+        },
+        {
+          "x": 2496,
+          "y": 480
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ich muss leider eine Abweichung geben: Behälter mit korrkter und fehlerhafter Ware stehen im Sperrlager nebeneinander und können so leicht verwechselt werden.",
+      "position": {
+        "x": 2848,
+        "y": 176
+      },
+      "angle": 0,
+      "id": "54ff39a3-254b-4780-803c-9ea59c3ff749",
+      "z": 29,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8a143d91-38f9-4785-937f-c6efff45f84f",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "8684c2b5-4a4c-456c-b2d4-48901a61d55a",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "54ff39a3-254b-4780-803c-9ea59c3ff749",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 30,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "ee6268c4-2918-476b-adad-b64d23e6c725",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "54ff39a3-254b-4780-803c-9ea59c3ff749",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 31,
+      "vertices": [
+        {
+          "x": 3264,
+          "y": 400
+        },
+        {
+          "x": 2848,
+          "y": 512
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "aeaf0713-8b4b-4c1f-8670-df3a1506374a",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 31,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "cdf51b08-f18f-4d0c-8df8-df92cc20217e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "901a0fb0-a758-4057-8e08-622c4b56c123",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 32,
+      "vertices": [
+        {
+          "x": 3312,
+          "y": 576
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -650,8 +1018,8 @@
       "title": "",
       "name": "Ja, ich bin bereit für Fragen.",
       "position": {
-        "x": 1376,
-        "y": 48
+        "x": 992,
+        "y": 64
       },
       "angle": 0,
       "id": "c582078e-436b-484c-8672-1fed3460a082",
@@ -753,8 +1121,8 @@
       },
       "name": "Was hast Du beobachtet und notiert?\n",
       "position": {
-        "x": 1840,
-        "y": 576
+        "x": 1824,
+        "y": 448
       },
       "angle": 0,
       "id": "2c193e92-4170-4450-bbbb-4b723212a14d",
@@ -829,10 +1197,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Sehr gut, nun weißt Du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
+      "name": "Was machst Du als nächstes?",
       "position": {
-        "x": 2592,
-        "y": 112
+        "x": 2944,
+        "y": 528
       },
       "angle": 0,
       "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
@@ -881,10 +1249,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Als nächstes kommt die Abschlusspräsentation mit einer Zusammenfassung Deiner Auditbeobachtungen und dann das Abschlussgespräch.",
+      "name": "Sehr gut, als Nächstes ist das Abschlussmeeting geplant.",
       "position": {
-        "x": 3056,
-        "y": 160
+        "x": 3776,
+        "y": 80
       },
       "angle": 0,
       "id": "85691f3e-4b02-4e88-957e-50160c403695",
@@ -918,31 +1286,6 @@
           "ref-dx": 0
         }
       }
-    },
-    {
-      "type": "link",
-      "id": "5bdcdf16-cb80-4656-9dd1-30ca5ad3df39",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 63,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
     }
   ],
   "gameData": [
@@ -964,8 +1307,8 @@
       "type": "Choice",
       "id": "330254a6-5abf-4d4a-b521-f5bb5e8b0609",
       "title": "",
-      "name": "Wie sieht es nun mit der Lösung aus?",
-      "next": "803d84a7-201a-47ed-8eac-23a76680b3ca"
+      "name": "Ok. Nun bin ich den Kundenreklamationen auf die Spur gekommen.",
+      "next": "8684c2b5-4a4c-456c-b2d4-48901a61d55a"
     },
     {
       "type": "Text",
@@ -981,7 +1324,7 @@
       "type": "Choice",
       "id": "e8ef32fe-110a-4a63-8ec2-892265d2d84e",
       "title": "",
-      "name": "Wie geht es nun weiter?",
+      "name": "Ich fasse meine Auditbeobachtungen für das Abschlussgespräch zusammen.",
       "next": "85691f3e-4b02-4e88-957e-50160c403695"
     },
     {
@@ -990,6 +1333,38 @@
       "title": "",
       "name": "Gut, wechseln wir in den Meetingraum. ",
       "next": "4bd5e36f-22a9-42b3-a6a5-c65e47af1cee"
+    },
+    {
+      "type": "Choice",
+      "id": "c8b0bfaf-d658-4acb-b70c-11880d1ee5a2",
+      "title": "",
+      "name": "Ich informiere sofort die Geschäftsführerin.",
+      "next": "901a0fb0-a758-4057-8e08-622c4b56c123"
+    },
+    {
+      "type": "Text",
+      "id": "901a0fb0-a758-4057-8e08-622c4b56c123",
+      "actor": "Turtle",
+      "name": "Das kommt sicherlich nicht so gut an. Besser ist es die Abweichung im Abschlussgespräch neutral zu erklären.",
+      "choices": [
+        "e8ef32fe-110a-4a63-8ec2-892265d2d84e"
+      ]
+    },
+    {
+      "type": "Text",
+      "id": "8684c2b5-4a4c-456c-b2d4-48901a61d55a",
+      "actor": "Factory_QMB",
+      "name": "Sehr gut. Was haben Sie entdeckt? ",
+      "choices": [
+        "54ff39a3-254b-4780-803c-9ea59c3ff749"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "54ff39a3-254b-4780-803c-9ea59c3ff749",
+      "title": "",
+      "name": "Ich muss leider eine Abweichung geben: Behälter mit korrkter und fehlerhafter Ware stehen im Sperrlager nebeneinander und können so leicht verwechselt werden.",
+      "next": "803d84a7-201a-47ed-8eac-23a76680b3ca"
     },
     {
       "type": "Text",
@@ -1027,8 +1402,9 @@
       "type": "Text",
       "id": "803d84a7-201a-47ed-8eac-23a76680b3ca",
       "actor": "Turtle",
-      "name": "Sehr gut, nun weißt Du was im Sperrprozess nicht richtig umgesetzt wird und warum fehlerhafte Enten zum Kunden gelangen.",
+      "name": "Was machst Du als nächstes?",
       "choices": [
+        "c8b0bfaf-d658-4acb-b70c-11880d1ee5a2",
         "e8ef32fe-110a-4a63-8ec2-892265d2d84e"
       ]
     },
@@ -1036,7 +1412,7 @@
       "type": "Text",
       "id": "85691f3e-4b02-4e88-957e-50160c403695",
       "actor": "Turtle",
-      "name": "Als nächstes kommt die Abschlusspräsentation mit einer Zusammenfassung Deiner Auditbeobachtungen und dann das Abschlussgespräch.",
+      "name": "Sehr gut, als Nächstes ist das Abschlussmeeting geplant.",
       "choices": [
         "73ec36bc-8fec-4be9-bd19-e15caf605011"
       ]
