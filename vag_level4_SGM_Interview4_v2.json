@@ -261,7 +261,7 @@
       },
       "name": "Machen wir mal eine Pause in diesem Interview, um uns zu überlegen, was wir erfahren haben. \n",
       "position": {
-        "x": 3968,
+        "x": 3888,
         "y": 672
       },
       "angle": 0,
@@ -420,7 +420,7 @@
       "angle": 0,
       "id": "8a31905e-56bf-47b1-91cf-75f86d1a7e7f",
       "z": 50,
-      "lua": "AddPoints(10, \"Gut gemacht\");",
+      "lua": "AddPoints(10);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1404,7 +1404,7 @@
       "angle": 0,
       "id": "26f14c86-179c-48e7-88a1-83a82441a27e",
       "z": 76,
-      "lua": "AddPoints(10, \"Gut gemacht\");",
+      "lua": "AddPoints(10);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1550,31 +1550,6 @@
       },
       "target": {
         "id": "26f14c86-179c-48e7-88a1-83a82441a27e",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 77,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
-      "type": "link",
-      "id": "8463f5bb-306e-4d17-9ef7-6c4144c272c2",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "68af41ec-5e89-42cc-873f-9085262364c8",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1753,6 +1728,31 @@
       },
       "target": {
         "id": "c6b03f1b-c3f4-4123-b4df-900e8e61a67e",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 77,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "8463f5bb-306e-4d17-9ef7-6c4144c272c2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "68af41ec-5e89-42cc-873f-9085262364c8",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -2024,31 +2024,6 @@
       }
     },
     {
-      "type": "link",
-      "id": "3d5dc52f-462f-4aff-b2c7-b587c90479da",
-      "smooth": true,
-      "embeds": "",
-      "source": {
-        "id": "179de83b-f432-4635-a43d-da9be24e65fb",
-        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "output"
-      },
-      "target": {
-        "id": "eba6b0f9-5f7d-4caa-878a-895c525ba4b4",
-        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
-        "port": "input"
-      },
-      "z": 79,
-      "attrs": {
-        ".marker-target": {
-          "d": "M 10 0 L 0 5 L 10 10 z"
-        },
-        ".link-tools .tool-remove circle, .marker-vertex": {
-          "r": 8
-        }
-      }
-    },
-    {
       "size": {
         "width": 300,
         "height": 225
@@ -2136,6 +2111,31 @@
       },
       "target": {
         "id": "e8aa1cef-43a8-4382-99ba-6e3407790d54",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 79,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "3d5dc52f-462f-4aff-b2c7-b587c90479da",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "179de83b-f432-4635-a43d-da9be24e65fb",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "f6c39ffb-b627-4c19-9b87-7d2365a72671",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -2665,7 +2665,7 @@
       "angle": 0,
       "id": "308c5c3d-9ee8-4a57-b3cb-216b995116f2",
       "z": 83,
-      "lua": "AddPoints(10, \"Gut gemacht\");",
+      "lua": "AddPoints(10);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -3014,6 +3014,58 @@
       }
     },
     {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "SGM",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Haben Sie noch Fragen an mich?",
+      "position": {
+        "x": 8336,
+        "y": 1008
+      },
+      "angle": 0,
+      "id": "f6c39ffb-b627-4c19-9b87-7d2365a72671",
+      "z": 87,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
       "type": "link",
       "id": "ae50c245-beaf-4848-8ddd-0dd6bca869dd",
       "smooth": true,
@@ -3029,6 +3081,37 @@
         "port": "input"
       },
       "z": 88,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "4ddf2ceb-2ba7-4e44-b311-dee165885bb2",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "f6c39ffb-b627-4c19-9b87-7d2365a72671",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "eba6b0f9-5f7d-4caa-878a-895c525ba4b4",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 88,
+      "vertices": [
+        {
+          "x": 8720,
+          "y": 1040
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -3161,7 +3244,7 @@
       "angle": 0,
       "id": "fefb4c5f-8d6a-459c-baa5-ecdbcd8be224",
       "z": 92,
-      "lua": "AddPoints(10, \"Gut gemacht\");",
+      "lua": "AddPoints(10);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -3283,8 +3366,8 @@
       },
       "name": "Danke das freut mich! Ich arbeite gern an meiner Maschine.",
       "position": {
-        "x": 8896,
-        "y": 784
+        "x": 8848,
+        "y": 752
       },
       "angle": 0,
       "id": "32dec55e-5d72-4518-b5dd-7892ed156bac",
@@ -3389,7 +3472,7 @@
       "title": "",
       "name": "Ja",
       "next": "179de83b-f432-4635-a43d-da9be24e65fb",
-      "lua": "AddPoints(10, \"Gut gemacht\");"
+      "lua": "AddPoints(10);"
     },
     {
       "type": "Choice",
@@ -3411,9 +3494,7 @@
       "id": "179de83b-f432-4635-a43d-da9be24e65fb",
       "actor": "Turtle",
       "name": "Wir haben die Ursachen der Reklamation noch nicht gefunden.\n",
-      "choices": [
-        "eba6b0f9-5f7d-4caa-878a-895c525ba4b4"
-      ]
+      "next": "f6c39ffb-b627-4c19-9b87-7d2365a72671"
     },
     {
       "type": "Text",
@@ -3496,7 +3577,7 @@
       "title": "",
       "name": "Ja.",
       "next": "0deddf72-b216-4957-a48e-93cf843c6857",
-      "lua": "AddPoints(10, \"Gut gemacht\");"
+      "lua": "AddPoints(10);"
     },
     {
       "type": "Choice",
@@ -3589,7 +3670,7 @@
       "title": "",
       "name": "Ja.",
       "next": "2f4150f5-d1a2-4e41-a042-ac9d4146961a",
-      "lua": "AddPoints(10, \"Gut gemacht\");"
+      "lua": "AddPoints(10);"
     },
     {
       "type": "Choice",
@@ -3626,6 +3707,15 @@
       ]
     },
     {
+      "type": "Text",
+      "id": "f6c39ffb-b627-4c19-9b87-7d2365a72671",
+      "actor": "SGM",
+      "name": "Haben Sie noch Fragen an mich?",
+      "choices": [
+        "eba6b0f9-5f7d-4caa-878a-895c525ba4b4"
+      ]
+    },
+    {
       "type": "Choice",
       "id": "06bb853b-91c6-4008-a984-c70707f43efa",
       "title": "",
@@ -3639,7 +3729,7 @@
       "title": "",
       "name": "Nein.",
       "next": "07467de3-87a7-4167-aaa9-6d40636fe05a",
-      "lua": "AddPoints(10, \"Gut gemacht\");"
+      "lua": "AddPoints(10);"
     },
     {
       "type": "Text",
