@@ -1202,10 +1202,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "So können wir weitermachen.",
+      "name": "",
       "position": {
-        "x": 4096,
-        "y": 656
+        "x": 4064,
+        "y": 624
       },
       "angle": 0,
       "id": "58568182-7964-4cdc-8da0-c3b200f92354",
@@ -1279,7 +1279,7 @@
         "output"
       ],
       "title": "",
-      "name": "So ist die Agenda besser und wir können, das Abschlussgespräch nun führen. ",
+      "name": "Nun ist die Agenda besser und wir können das Abschlussgespräch führen. ",
       "position": {
         "x": 4624,
         "y": 592
@@ -1328,7 +1328,7 @@
         "port": "output"
       },
       "target": {
-        "id": "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c",
+        "id": "24fbef5e-08da-40d7-936c-aef678422220",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
@@ -1784,6 +1784,93 @@
           "r": 8
         }
       }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "TurtleMeetingRoom",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Sehr gut.",
+      "position": {
+        "x": 4432,
+        "y": 992
+      },
+      "angle": 0,
+      "id": "24fbef5e-08da-40d7-936c-aef678422220",
+      "z": 46,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "1b82a5b8-da84-4694-bbf4-cdb30a5266aa",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "24fbef5e-08da-40d7-936c-aef678422220",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 47,
+      "vertices": [
+        {
+          "x": 4944,
+          "y": 912
+        },
+        {
+          "x": 4560,
+          "y": 816
+        }
+      ],
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
     }
   ],
   "gameData": [
@@ -1906,17 +1993,15 @@
       "type": "Text",
       "id": "58568182-7964-4cdc-8da0-c3b200f92354",
       "actor": "",
-      "name": "So können wir weitermachen.",
-      "lua": "OpenSelectionWindow('meetingroom2_selection');",
-      "choices": [
-        "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c"
-      ]
+      "name": "",
+      "next": "24fbef5e-08da-40d7-936c-aef678422220",
+      "lua": "OpenSelectionWindow('meetingroom2_selection');"
     },
     {
       "type": "Choice",
       "id": "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c",
       "title": "",
-      "name": "So ist die Agenda besser und wir können, das Abschlussgespräch nun führen. ",
+      "name": "Nun ist die Agenda besser und wir können das Abschlussgespräch führen. ",
       "next": "50643169-ffd5-4212-bd81-8220ac240ec5"
     },
     {
@@ -1957,6 +2042,15 @@
       "name": "Die Kaffeepause muss noch ein wenig warten.",
       "choices": [
         "d26ba716-ef61-4472-ae21-fd7f4b51055b"
+      ]
+    },
+    {
+      "type": "Text",
+      "id": "24fbef5e-08da-40d7-936c-aef678422220",
+      "actor": "TurtleMeetingRoom",
+      "name": "Sehr gut.",
+      "choices": [
+        "0ec7fade-4d0b-4f85-bd9b-5a6fcb352c1c"
       ]
     }
   ]
