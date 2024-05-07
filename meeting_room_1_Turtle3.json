@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "So, jetzt sind wir vollständig. Schau Dir die Agenda an. Hier ist etwas durcheinander geraten.  Wie möchtest Du das Meeting weiter strukturieren?",
+      "name": "So, jetzt sind wir vollständig. Schau Dir die Agenda an. Hier ist etwas durcheinander geraten.",
       "position": {
         "x": 384,
         "y": 16
@@ -517,7 +517,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Wie möchtest Du das Meeting weiter strukturieren? Mit einem Klick auf die grünen Pfeile kannst Du die Agendapunkte sortieren. ",
+      "name": "Wie ist die richtige Reihenfolge für das Eröffnungsgespräch? Mit einem Klick auf die grünen Pfeile kannst Du die Agendapunkte sortieren. ",
       "position": {
         "x": 784,
         "y": 96
@@ -603,7 +603,7 @@
       "type": "Text",
       "id": "026ff6a3-f8d3-4a19-8833-63479cfc1844",
       "actor": "TurtleMeetingRoom",
-      "name": "So, jetzt sind wir vollständig. Schau Dir die Agenda an. Hier ist etwas durcheinander geraten.  Wie möchtest Du das Meeting weiter strukturieren?",
+      "name": "So, jetzt sind wir vollständig. Schau Dir die Agenda an. Hier ist etwas durcheinander geraten.",
       "next": "a88d2fef-ed55-4691-b253-3b16aebe89d9"
     },
     {
@@ -651,7 +651,7 @@
       "type": "Text",
       "id": "a88d2fef-ed55-4691-b253-3b16aebe89d9",
       "actor": "TurtleMeetingRoom",
-      "name": "Wie möchtest Du das Meeting weiter strukturieren? Mit einem Klick auf die grünen Pfeile kannst Du die Agendapunkte sortieren. ",
+      "name": "Wie ist die richtige Reihenfolge für das Eröffnungsgespräch? Mit einem Klick auf die grünen Pfeile kannst Du die Agendapunkte sortieren. ",
       "next": "be5dc836-6d00-46b1-b34b-b62a956a7cf3"
     }
   ]
