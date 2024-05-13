@@ -525,7 +525,7 @@
       "angle": 0,
       "id": "2d71e838-0a0a-4e54-a104-b41c93c2478d",
       "z": 32,
-      "lua": "Hinweis Turtle",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -628,7 +628,7 @@
       "angle": 0,
       "id": "ba359429-01fc-4cf7-be82-e93aa836c678",
       "z": 36,
-      "lua": "Hinweis Turtle",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1838,7 +1838,7 @@
       "angle": 0,
       "id": "a33189b2-0a8c-4ab2-925d-8d94a478393a",
       "z": 83,
-      "lua": "Hinweis Turtle",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -3863,7 +3863,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Möchten Sie von mir nochwas zur Wartung wissen?",
+      "name": "Möchten Sie von mir noch etwas zur Wartung wissen?",
       "position": {
         "x": 11216,
         "y": 1120
@@ -4032,7 +4032,7 @@
       "id": "2d71e838-0a0a-4e54-a104-b41c93c2478d",
       "actor": "Turtle",
       "name": "Ist wahrscheinlich eine nett gemeinte Frage, aber hilft im Thema nicht weiter.",
-      "lua": "Hinweis Turtle",
+      "lua": "",
       "choices": [
         "7414efa1-cf1e-48af-8a23-262a61a37897"
       ]
@@ -4042,7 +4042,7 @@
       "id": "ba359429-01fc-4cf7-be82-e93aa836c678",
       "actor": "Turtle",
       "name": "Richtige Frage, aber es ist eine geschlossene Frage, auf die man mit Ja oder Nein antworten kann.",
-      "lua": "Hinweis Turtle",
+      "lua": "",
       "choices": [
         "2f16b089-d574-4e54-90c8-2d6fd6119c97"
       ]
@@ -4156,7 +4156,7 @@
       "id": "a33189b2-0a8c-4ab2-925d-8d94a478393a",
       "actor": "Turtle",
       "name": "Glaubst Du, dass die Ursache für die Reklamationen an der Wartung der Maschine liegt?",
-      "lua": "Hinweis Turtle",
+      "lua": "",
       "choices": [
         "ba3f8e15-4abb-49ad-a7bb-26923505cf04",
         "aad65a88-1ff9-44db-9f6b-e0d46273bc54"
@@ -4355,7 +4355,7 @@
       "type": "Text",
       "id": "7efb268d-160f-4595-a39b-8577ff7c94e9",
       "actor": "SGM",
-      "name": "Möchten Sie von mir nochwas zur Wartung wissen?",
+      "name": "Möchten Sie von mir noch etwas zur Wartung wissen?",
       "choices": [
         "5a55678b-ef93-4222-ba0e-9fd2884602dd"
       ]
