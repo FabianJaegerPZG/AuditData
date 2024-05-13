@@ -835,7 +835,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Nein, das brauchen wir nicht. Alles wichtigen Dokumente hast Du in Deinem Aktenordner. ",
+      "name": "Nein, das brauchen wir nicht. Alle wichtigen Dokumente hast Du in Deinem Aktenordner. ",
       "position": {
         "x": 2512,
         "y": 544
@@ -1347,7 +1347,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Wen vermisst du denn?",
+      "name": "Wen vermisst Du denn?",
       "position": {
         "x": 1760,
         "y": 1376
@@ -1691,7 +1691,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ah! stimmt! Die müssen wir holen lassen!",
+      "name": "Ah! Stimmt! Lassen wir die Produktionsleiterin holen!",
       "position": {
         "x": 2528,
         "y": 1712
@@ -1699,7 +1699,7 @@
       "angle": 0,
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "z": 44,
-      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");",
+      "lua": "AddPoints(30,);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1875,7 +1875,7 @@
       "type": "Text",
       "id": "ef4938ab-c727-48c5-baf9-0cb0ad23374e",
       "actor": "TurtleMeetingRoom",
-      "name": "Nein, das brauchen wir nicht. Alles wichtigen Dokumente hast Du in Deinem Aktenordner. ",
+      "name": "Nein, das brauchen wir nicht. Alle wichtigen Dokumente hast Du in Deinem Aktenordner. ",
       "next": "1fc383bc-9004-4a85-8010-367263107810",
       "lua": "AddPoints(-1, \"Leider knapp daneben\");"
     },
@@ -1912,7 +1912,7 @@
       "type": "Text",
       "id": "654c75b5-8c75-4484-ae98-077c2adb887e",
       "actor": "",
-      "name": "Wen vermisst du denn?",
+      "name": "Wen vermisst Du denn?",
       "choices": [
         "70418e5b-85b3-4f00-8024-7e806cf25733",
         "b6f5bf72-6d6c-462a-9c85-7e5ec089e098"
@@ -1947,9 +1947,9 @@
       "type": "Text",
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "actor": "TurtleMeetingRoom",
-      "name": "Ah! stimmt! Die müssen wir holen lassen!",
+      "name": "Ah! Stimmt! Lassen wir die Produktionsleiterin holen!",
       "next": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "lua": "AddPoints(30, \"Ja, die Produktionsleitung fehlt\");"
+      "lua": "AddPoints(30,);"
     }
   ]
 }
