@@ -1232,7 +1232,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Mit dieser Reaktion heben Sie die Stimmung, weiter so. Jedoch haben Sie bis jetzt keinen Überblick, ob die Wartungen eingehalten wurden. \n",
+      "name": "Mit dieser Reaktion hebst Du die Stimmung, weiter so. Jedoch hast Du jetzt keinen Überblick, ob die Wartungen eingehalten wurden.",
       "position": {
         "x": 7680,
         "y": 480
@@ -4105,7 +4105,7 @@
       "type": "Text",
       "id": "7851aa66-f695-4445-aece-6355dd7d6a2e",
       "actor": "Turtle",
-      "name": "Mit dieser Reaktion heben Sie die Stimmung, weiter so. Jedoch haben Sie bis jetzt keinen Überblick, ob die Wartungen eingehalten wurden. \n",
+      "name": "Mit dieser Reaktion hebst Du die Stimmung, weiter so. Jedoch hast Du jetzt keinen Überblick, ob die Wartungen eingehalten wurden.",
       "choices": [
         "058de7a2-27d0-4179-9d59-94ff1a6ebee6"
       ]
