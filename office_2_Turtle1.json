@@ -210,6 +210,7 @@
       "angle": 0,
       "id": "4e794361-8d74-4ed9-adc7-adcf8063e950",
       "z": 8,
+      "lua": "AddPoints(-3);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -384,12 +385,13 @@
       "title": "",
       "name": "Ich nehme alle Personen, die im Auditplan stehen mit in den Verteiler.",
       "position": {
-        "x": 1344,
-        "y": 352
+        "x": 1392,
+        "y": 512
       },
       "angle": 0,
       "id": "2e51135f-a3e5-45ea-929d-3c86f3bac1e9",
       "z": 11,
+      "lua": "AddPoints(10);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -610,11 +612,25 @@
         "port": "output"
       },
       "target": {
-        "id": "0018281e-2b33-475e-8fa1-0515d0516608",
+        "id": "2e51135f-a3e5-45ea-929d-3c86f3bac1e9",
         "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
         "port": "input"
       },
       "z": 15,
+      "vertices": [
+        {
+          "x": 2176,
+          "y": 240
+        },
+        {
+          "x": 1392,
+          "y": 336
+        },
+        {
+          "x": 1296,
+          "y": 416
+        }
+      ],
       "attrs": {
         ".marker-target": {
           "d": "M 10 0 L 0 5 L 10 10 z"
@@ -778,7 +794,8 @@
       "id": "4e794361-8d74-4ed9-adc7-adcf8063e950",
       "title": "",
       "name": "Sicher ist sicher. Ich sende den Bericht an alle Mitarbeiter von \"Tub Ducks\".  ",
-      "next": "d5131785-753b-4fa2-a24a-fa921bfd1cdf"
+      "next": "d5131785-753b-4fa2-a24a-fa921bfd1cdf",
+      "lua": "AddPoints(-3);"
     },
     {
       "type": "Text",
@@ -795,14 +812,17 @@
       "id": "d5131785-753b-4fa2-a24a-fa921bfd1cdf",
       "actor": "TurtleOffice",
       "name": "Das ist gut gemeint, aber nicht jeder in der Firma benötigt diesen Bericht bzw. sollte ihn sehen. Vorsicht mit großem Verteilern!",
-      "next": "0018281e-2b33-475e-8fa1-0515d0516608"
+      "choices": [
+        "2e51135f-a3e5-45ea-929d-3c86f3bac1e9"
+      ]
     },
     {
       "type": "Choice",
       "id": "2e51135f-a3e5-45ea-929d-3c86f3bac1e9",
       "title": "",
       "name": "Ich nehme alle Personen, die im Auditplan stehen mit in den Verteiler.",
-      "next": "5990e0a9-0228-4a5a-89d2-0cc24bcda69a"
+      "next": "5990e0a9-0228-4a5a-89d2-0cc24bcda69a",
+      "lua": "AddPoints(10);"
     },
     {
       "type": "Text",
