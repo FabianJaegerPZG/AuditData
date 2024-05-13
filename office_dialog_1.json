@@ -207,8 +207,8 @@
       },
       "name": "Haben Sie die Informationen von Herrn Klein bekommen? Dort ist die Zielsetzung beschrieben.",
       "position": {
-        "x": 384,
-        "y": 304
+        "x": 544,
+        "y": 512
       },
       "angle": 0,
       "id": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
@@ -290,8 +290,8 @@
       },
       "name": "Ja, es hieß, dass ich alles im Büro  nachlesen kann, abgesehen davon hat wohl Herr Klein eine Sprachnachricht für mich interlassen.",
       "position": {
-        "x": 720,
-        "y": 144
+        "x": 912,
+        "y": 176
       },
       "angle": 0,
       "id": "8fc12499-8e61-4fbe-92cb-19cca103c299",
@@ -365,8 +365,8 @@
       },
       "name": "",
       "position": {
-        "x": 1552,
-        "y": 224
+        "x": 1824,
+        "y": 240
       },
       "angle": 0,
       "id": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08",
@@ -447,10 +447,10 @@
         "width": 300,
         "height": 225
       },
-      "name": "Wenn Sie Ihn anrufen möchten, dann klicken Sie auf das Telefon.\nWenn Sie aber gleich beginnen wollen mit der Vorbereitung zum Audit, dann können Sie im Computer oder am Whiteboard arbeiten.\n",
+      "name": "Wenn Sie Ihn anrufen möchten, dann klicken Sie auf das Telefon.\nWenn Sie lieber mit der Vorbereitung zum Audit beginnen wollen, dann können Sie im Computer oder am Whiteboard arbeiten.",
       "position": {
-        "x": 1120,
-        "y": 176
+        "x": 1360,
+        "y": 192
       },
       "angle": 0,
       "id": "ea11c3ea-05b7-4d73-aed6-8d96aefb16b7",
@@ -558,7 +558,7 @@
       "type": "Text",
       "id": "ea11c3ea-05b7-4d73-aed6-8d96aefb16b7",
       "actor": "Blume_Office",
-      "name": "Wenn Sie Ihn anrufen möchten, dann klicken Sie auf das Telefon.\nWenn Sie aber gleich beginnen wollen mit der Vorbereitung zum Audit, dann können Sie im Computer oder am Whiteboard arbeiten.\n",
+      "name": "Wenn Sie Ihn anrufen möchten, dann klicken Sie auf das Telefon.\nWenn Sie lieber mit der Vorbereitung zum Audit beginnen wollen, dann können Sie im Computer oder am Whiteboard arbeiten.",
       "next": "6d56eda0-9d65-4878-93ef-ed2fa4c28a08"
     }
   ]
