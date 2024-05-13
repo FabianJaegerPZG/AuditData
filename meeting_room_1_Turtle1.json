@@ -14,7 +14,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Hallo, da bist du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Was tust Du als Erstes? ",
+      "name": "Hallo, da bist Du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Was tust Du als Erstes? ",
       "position": {
         "x": 512,
         "y": 192
@@ -439,7 +439,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
+      "name": "Das war die falsche Wahl. Versuch es noch mal.",
       "position": {
         "x": 1408,
         "y": 512
@@ -874,7 +874,7 @@
       "type": "Text",
       "id": "cad7c0e4-c4a1-4bd1-9e07-1e23f95da45f",
       "actor": "TurtleMeetingRoom",
-      "name": "Hallo, da bist du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Was tust Du als Erstes? ",
+      "name": "Hallo, da bist Du wieder. Du hast die Vorbereitungen zu deinem internen Audit erfolgreich gemeistert. Jetzt musst du das Audit offiziell eröffnen. Was tust Du als Erstes? ",
       "choices": [
         "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
         "306a3052-23d5-4702-b7f0-618158d7b55e"
@@ -919,7 +919,7 @@
       "type": "Text",
       "id": "20402384-47dc-4697-b7bf-0f948283d92b",
       "actor": "TurtleMeetingRoom",
-      "name": "Das war die falsche Wahl, aber ich denke, das weißt du. Versuch es noch mal.",
+      "name": "Das war die falsche Wahl. Versuch es noch mal.",
       "choices": [
         "de5ada05-36ea-4666-9085-62a5f957a7ed",
         "96aad37a-d678-4fd3-84f5-3808d73f4b8c"
