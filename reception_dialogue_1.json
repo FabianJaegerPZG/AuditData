@@ -204,7 +204,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
+      "name": "Zuerst wenden Sie sich bitte nach links und klicken auf die leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
       "position": {
         "x": 1824,
         "y": 720
@@ -538,7 +538,7 @@
       "type": "Text",
       "id": "f3416075-84ab-4834-927b-6ee48640108d",
       "actor": "",
-      "name": "Zuerst wenden Sie sich bitte nach links und klicken auf die blauen leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
+      "name": "Zuerst wenden Sie sich bitte nach links und klicken auf die leuchtenden Kreise. So gelangen Sie zur Treppe und von dort zum Büro. Haben Sie noch weitere Fragen?",
       "lua": "InterviewPassed();",
       "choices": [
         "1e278688-ffc6-4f7b-b674-05f3f48ebcbe"
