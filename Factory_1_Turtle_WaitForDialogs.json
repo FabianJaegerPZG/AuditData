@@ -50,7 +50,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Sie haben noch nicht mit allen beteiligten Personen gesprochen.",
+      "name": "Du hast noch nicht mit allen beteiligten Personen gesprochen.",
       "position": {
         "x": 2192,
         "y": 304
@@ -202,7 +202,7 @@
       "type": "Text",
       "id": "e11ee050-f986-4692-9b6e-e9c02e00da38",
       "actor": "",
-      "name": "Sie haben noch nicht mit allen beteiligten Personen gesprochen.",
+      "name": "Du hast noch nicht mit allen beteiligten Personen gesprochen.",
       "next": "7b8b5899-43ac-462c-9aed-ebfa20862a73"
     },
     {
