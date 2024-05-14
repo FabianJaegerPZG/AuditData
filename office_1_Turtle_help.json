@@ -1,0 +1,555 @@
+{
+  "cells": [
+    {
+      "type": "dialogue.Node",
+      "outPorts": [
+        "output"
+      ],
+      "actor": "Player",
+      "name": "START",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "inPorts": [],
+      "position": {
+        "x": 912,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "2589db8d-3e09-446b-84db-762d469fab26",
+      "z": 0,
+      "attrs": {
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es gibt noch Aufgaben in diesem Büro zu lösen. Benötigst du dabei Hilfe?",
+      "position": {
+        "x": 1360,
+        "y": 352
+      },
+      "angle": 0,
+      "id": "5b6a09fb-d3e3-4023-83df-c5b2f55d7121",
+      "z": 1,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "d5a1efea-a107-450d-998c-9c031b75a5f4",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "2589db8d-3e09-446b-84db-762d469fab26",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "5b6a09fb-d3e3-4023-83df-c5b2f55d7121",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 2,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ja, ich komme hier gerade nicht weiter.",
+      "position": {
+        "x": 1776,
+        "y": 304
+      },
+      "angle": 0,
+      "id": "e3786b50-280d-41b8-a5eb-3bc9f1d3c6b7",
+      "z": 3,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "38fa76e0-0882-4c1d-822a-ddf35a64c5f1",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "5b6a09fb-d3e3-4023-83df-c5b2f55d7121",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "e3786b50-280d-41b8-a5eb-3bc9f1d3c6b7",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 4,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Nein, ich schaffe das schon!",
+      "position": {
+        "x": 1776,
+        "y": 576
+      },
+      "angle": 0,
+      "id": "95b6aa70-4c83-42f3-82f5-4efa94ac251f",
+      "z": 5,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "e902090f-26c6-4eee-bdbe-942ac35fb13e",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "5b6a09fb-d3e3-4023-83df-c5b2f55d7121",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "95b6aa70-4c83-42f3-82f5-4efa94ac251f",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 6,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Ok, viel Erfolg!",
+      "position": {
+        "x": 2224,
+        "y": 576
+      },
+      "angle": 0,
+      "id": "55a1d5d1-6ec2-4c80-bdaa-136747bffda9",
+      "z": 7,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "9ad35560-f0ed-442b-9c54-33f8f945fa33",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "95b6aa70-4c83-42f3-82f5-4efa94ac251f",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "55a1d5d1-6ec2-4c80-bdaa-136747bffda9",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 8,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "type": "dialogue.Text",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "actor": "",
+      "textarea": "Start writing",
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "name": "Es muss das Turtle-Modell (Schildkröte) ausgefüllt und die Fragen für das Audit (schwarzer Aktenordner) ausgewählt werden.",
+      "position": {
+        "x": 2192,
+        "y": 304
+      },
+      "angle": 0,
+      "id": "98253783-7285-438d-bd29-52faa8d760b0",
+      "z": 9,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "be0042ff-6d90-4e49-9c4b-28b851b2accd",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "e3786b50-280d-41b8-a5eb-3bc9f1d3c6b7",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "98253783-7285-438d-bd29-52faa8d760b0",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 10,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    },
+    {
+      "size": {
+        "width": 300,
+        "height": 225
+      },
+      "type": "dialogue.Choice",
+      "inPorts": [
+        "input"
+      ],
+      "outPorts": [
+        "output"
+      ],
+      "title": "",
+      "name": "Ok",
+      "position": {
+        "x": 2640,
+        "y": 336
+      },
+      "angle": 0,
+      "id": "533479c9-8556-4dc8-a4a5-8bb1379d0efb",
+      "z": 11,
+      "attrs": {
+        ".inPorts>.port0>text": {
+          "text": "input"
+        },
+        ".inPorts>.port0>circle": {
+          "port": {
+            "id": "input",
+            "type": "in"
+          }
+        },
+        ".inPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5
+        },
+        ".outPorts>.port0>text": {
+          "text": "output"
+        },
+        ".outPorts>.port0>circle": {
+          "port": {
+            "id": "output",
+            "type": "out"
+          }
+        },
+        ".outPorts>.port0": {
+          "ref": "rect",
+          "ref-y": 0.5,
+          "ref-dx": 0
+        }
+      }
+    },
+    {
+      "type": "link",
+      "id": "69426e2b-97e2-419b-a41c-d60d31d73888",
+      "smooth": true,
+      "embeds": "",
+      "source": {
+        "id": "98253783-7285-438d-bd29-52faa8d760b0",
+        "selector": "g:nth-child(1) g:nth-child(4) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "output"
+      },
+      "target": {
+        "id": "533479c9-8556-4dc8-a4a5-8bb1379d0efb",
+        "selector": "g:nth-child(1) g:nth-child(3) g:nth-child(1) circle:nth-child(1)     ",
+        "port": "input"
+      },
+      "z": 12,
+      "attrs": {
+        ".marker-target": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".link-tools .tool-remove circle, .marker-vertex": {
+          "r": 8
+        }
+      }
+    }
+  ],
+  "gameData": [
+    {
+      "type": "Node",
+      "id": "2589db8d-3e09-446b-84db-762d469fab26",
+      "actor": "Player",
+      "name": "START",
+      "next": "5b6a09fb-d3e3-4023-83df-c5b2f55d7121"
+    },
+    {
+      "type": "Text",
+      "id": "5b6a09fb-d3e3-4023-83df-c5b2f55d7121",
+      "actor": "",
+      "name": "Es gibt noch Aufgaben in diesem Büro zu lösen. Benötigst du dabei Hilfe?",
+      "choices": [
+        "e3786b50-280d-41b8-a5eb-3bc9f1d3c6b7",
+        "95b6aa70-4c83-42f3-82f5-4efa94ac251f"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "e3786b50-280d-41b8-a5eb-3bc9f1d3c6b7",
+      "title": "",
+      "name": "Ja, ich komme hier gerade nicht weiter.",
+      "next": "98253783-7285-438d-bd29-52faa8d760b0"
+    },
+    {
+      "type": "Choice",
+      "id": "95b6aa70-4c83-42f3-82f5-4efa94ac251f",
+      "title": "",
+      "name": "Nein, ich schaffe das schon!",
+      "next": "55a1d5d1-6ec2-4c80-bdaa-136747bffda9"
+    },
+    {
+      "type": "Text",
+      "id": "55a1d5d1-6ec2-4c80-bdaa-136747bffda9",
+      "actor": "",
+      "name": "Ok, viel Erfolg!",
+      "next": null
+    },
+    {
+      "type": "Text",
+      "id": "98253783-7285-438d-bd29-52faa8d760b0",
+      "actor": "",
+      "name": "Es muss das Turtle-Modell (Schildkröte) ausgefüllt und die Fragen für das Audit (schwarzer Aktenordner) ausgewählt werden.",
+      "choices": [
+        "533479c9-8556-4dc8-a4a5-8bb1379d0efb"
+      ]
+    },
+    {
+      "type": "Choice",
+      "id": "533479c9-8556-4dc8-a4a5-8bb1379d0efb",
+      "title": "",
+      "name": "Ok",
+      "next": null
+    }
+  ]
+}
