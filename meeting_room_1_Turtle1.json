@@ -134,6 +134,7 @@
       "angle": 0,
       "id": "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
       "z": 3,
+      "lua": "AddPoints(10, \"Sehr gut. Richtig.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -370,6 +371,7 @@
       "angle": 0,
       "id": "306a3052-23d5-4702-b7f0-618158d7b55e",
       "z": 9,
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -902,7 +904,8 @@
       "id": "93f80561-f3c7-499f-b26e-5ffbb9d46bf8",
       "title": "",
       "name": "Mich persönlich vorstellen.",
-      "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2"
+      "next": "26f95d7f-87f3-4960-b0e9-03f43f1352f2",
+      "lua": "AddPoints(10, \"Sehr gut. Richtig.\");"
     },
     {
       "type": "Text",
@@ -923,7 +926,8 @@
       "id": "306a3052-23d5-4702-b7f0-618158d7b55e",
       "title": "",
       "name": "Nach frischem Kaffee fragen.",
-      "next": "20402384-47dc-4697-b7bf-0f948283d92b"
+      "next": "20402384-47dc-4697-b7bf-0f948283d92b",
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Text",
