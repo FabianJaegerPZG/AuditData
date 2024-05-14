@@ -102,7 +102,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Der Maschineführer Herr Wolf wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
+      "name": "Der Maschineführer Herr Wolff wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
       "position": {
         "x": 1328,
         "y": 320
@@ -358,7 +358,7 @@
         "output"
       ],
       "title": "",
-      "name": "Der Maschinenführer Herr Wolf.",
+      "name": "Der Maschinenführer Herr Wolff.",
       "position": {
         "x": 928,
         "y": 320
@@ -912,7 +912,7 @@
       "type": "Text",
       "id": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38",
       "actor": "Turtle",
-      "name": "Der Maschineführer Herr Wolf wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
+      "name": "Der Maschineführer Herr Wolff wurde schon auditiert. Hier liegt nicht  die Ursache der Reklamationen.\n",
       "next": "cc5649e0-ba31-45ff-b870-74bd53edef3b"
     },
     {
@@ -940,7 +940,7 @@
       "type": "Choice",
       "id": "c684933f-d7e4-4d31-af6a-060e59a6f02a",
       "title": "",
-      "name": "Der Maschinenführer Herr Wolf.",
+      "name": "Der Maschinenführer Herr Wolff.",
       "next": "5f06511e-4c6a-47b2-9dd7-e3a6266f3a38"
     },
     {
