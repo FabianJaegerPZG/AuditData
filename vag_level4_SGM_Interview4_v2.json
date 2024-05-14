@@ -103,7 +103,7 @@
         "width": 300,
         "height": 225
       },
-      "name": "Ich fahre Sie nach Anweisung hoch. Das ist die Anweisung SGM-Neustart der Maschine.\n\n",
+      "name": "Ich fahre sie nach Anweisung hoch. Das ist die Anweisung SGM-Neustart der Maschine.\n\n",
       "position": {
         "x": 928,
         "y": 432
@@ -267,7 +267,7 @@
       "angle": 0,
       "id": "004bcab7-6301-43a9-8a19-5361ffc2acba",
       "z": 48,
-      "lua": "Turtle gibt einen Hinweis",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -420,7 +420,7 @@
       "angle": 0,
       "id": "8a31905e-56bf-47b1-91cf-75f86d1a7e7f",
       "z": 50,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(10, \"Genau.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1039,7 +1039,7 @@
       "angle": 0,
       "id": "3f494164-19af-4a03-bd5b-e15a28ecbc94",
       "z": 67,
-      "lua": "Turtle gibt einen Hinweis",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1303,6 +1303,7 @@
       "angle": 0,
       "id": "b581a192-8b52-47fb-8ccb-4af4d1e0410a",
       "z": 72,
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1404,7 +1405,7 @@
       "angle": 0,
       "id": "26f14c86-179c-48e7-88a1-83a82441a27e",
       "z": 76,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(20, \"Ja, die liegt vor.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1508,6 +1509,7 @@
       "angle": 0,
       "id": "e299ed83-d813-43e4-93ee-877baa84bfb0",
       "z": 76,
+      "lua": "AddPoints(20, \"Richtige Wahl.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1585,6 +1587,7 @@
       "angle": 0,
       "id": "a850a750-3707-4aef-b2de-edaaf05dc593",
       "z": 77,
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1787,7 +1790,7 @@
       "angle": 0,
       "id": "aeb21c97-a83d-41d1-a780-b1a694aebef0",
       "z": 78,
-      "lua": "AddPoints(-5, \"Leider falsch\");",
+      "lua": "AddPoints(-3, \"Leider falsch\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -2665,7 +2668,7 @@
       "angle": 0,
       "id": "308c5c3d-9ee8-4a57-b3cb-216b995116f2",
       "z": 83,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(10, \"Ja, das macht er.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -3244,7 +3247,7 @@
       "angle": 0,
       "id": "fefb4c5f-8d6a-459c-baa5-ecdbcd8be224",
       "z": 92,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(20, \"Das ist richtig\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -3423,7 +3426,7 @@
       "type": "Text",
       "id": "6b57f1b0-ad32-4ab1-9d12-85d88d1f17f7",
       "actor": "SGM",
-      "name": "Ich fahre Sie nach Anweisung hoch. Das ist die Anweisung SGM-Neustart der Maschine.\n\n",
+      "name": "Ich fahre sie nach Anweisung hoch. Das ist die Anweisung SGM-Neustart der Maschine.\n\n",
       "choices": [
         "68af41ec-5e89-42cc-873f-9085262364c8",
         "85b8707c-de44-4dc9-8664-35d9e7c6325c"
@@ -3454,7 +3457,7 @@
       "id": "004bcab7-6301-43a9-8a19-5361ffc2acba",
       "actor": "Turtle",
       "name": "Machen wir mal eine Pause in diesem Interview, um uns zu überlegen, was wir erfahren haben. \n",
-      "lua": "Turtle gibt einen Hinweis",
+      "lua": "",
       "choices": [
         "c7ee215b-5afa-4442-bbaf-caf2bad5bc7f"
       ]
@@ -3472,7 +3475,7 @@
       "title": "",
       "name": "Ja",
       "next": "179de83b-f432-4635-a43d-da9be24e65fb",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(10, \"Genau.\");"
     },
     {
       "type": "Choice",
@@ -3533,7 +3536,7 @@
       "id": "3f494164-19af-4a03-bd5b-e15a28ecbc94",
       "actor": "Turtle",
       "name": "Diese Frage ist an dieser Stelle nicht zielführend. Willst Du nicht erstmal nach einer Anweisung fragen?",
-      "lua": "Turtle gibt einen Hinweis",
+      "lua": "",
       "choices": [
         "28dc9459-b014-4146-8ad6-23bbad0f522e"
       ]
@@ -3569,7 +3572,8 @@
       "id": "b581a192-8b52-47fb-8ccb-4af4d1e0410a",
       "actor": "Turtle",
       "name": "Ein Gespräch mit Frau Schwarz bringt uns an dieser Stelle nicht weiter.",
-      "next": "b9096173-adc3-44e2-8e94-cefa32f23ffc"
+      "next": "b9096173-adc3-44e2-8e94-cefa32f23ffc",
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
@@ -3577,7 +3581,7 @@
       "title": "",
       "name": "Ja.",
       "next": "0deddf72-b216-4957-a48e-93cf843c6857",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(20, \"Ja, die liegt vor.\");"
     },
     {
       "type": "Choice",
@@ -3591,6 +3595,7 @@
       "id": "e299ed83-d813-43e4-93ee-877baa84bfb0",
       "actor": "Turtle",
       "name": "Richtig. Wir müssen den Prüfprozess genauer anschauen.",
+      "lua": "AddPoints(20, \"Richtige Wahl.\");",
       "choices": [
         "25288b2c-7652-48d9-8ff2-6eee6a8d1f7b"
       ]
@@ -3600,7 +3605,8 @@
       "id": "a850a750-3707-4aef-b2de-edaaf05dc593",
       "actor": "Turtle",
       "name": "Ein Gespräch mit Herrn Blume bringt uns an dieser Stelle nicht weiter. ",
-      "next": "b9096173-adc3-44e2-8e94-cefa32f23ffc"
+      "next": "b9096173-adc3-44e2-8e94-cefa32f23ffc",
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
@@ -3615,7 +3621,7 @@
       "title": "",
       "name": "Nein.",
       "next": "0deddf72-b216-4957-a48e-93cf843c6857",
-      "lua": "AddPoints(-5, \"Leider falsch\");"
+      "lua": "AddPoints(-3, \"Leider falsch\");"
     },
     {
       "type": "Text",
@@ -3670,7 +3676,7 @@
       "title": "",
       "name": "Ja.",
       "next": "2f4150f5-d1a2-4e41-a042-ac9d4146961a",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(10, \"Ja, das macht er.\");"
     },
     {
       "type": "Choice",
@@ -3729,7 +3735,7 @@
       "title": "",
       "name": "Nein.",
       "next": "07467de3-87a7-4167-aaa9-6d40636fe05a",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(20, \"Das ist richtig\");"
     },
     {
       "type": "Text",
