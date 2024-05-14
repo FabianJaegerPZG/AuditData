@@ -1431,7 +1431,7 @@
       "angle": 0,
       "id": "70418e5b-85b3-4f00-8024-7e806cf25733",
       "z": 37,
-      "lua": "AddPoints(-1, \"Der Einkauf war nicht eingeladen\");",
+      "lua": "",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1699,7 +1699,7 @@
       "angle": 0,
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "z": 44,
-      "lua": "AddPoints(30,);",
+      "lua": "AddPoints(30, \"Wir brauchen die Produktionsleiterin);",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1924,7 +1924,7 @@
       "title": "",
       "name": "Den Einkauf.",
       "next": "886bdf7a-6b46-4e12-a51e-af311eda4796",
-      "lua": "AddPoints(-1, \"Der Einkauf war nicht eingeladen\");"
+      "lua": ""
     },
     {
       "type": "Text",
@@ -1949,7 +1949,7 @@
       "actor": "TurtleMeetingRoom",
       "name": "Ah! Stimmt! Lassen wir die Produktionsleiterin holen!",
       "next": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "lua": "AddPoints(30,);"
+      "lua": "AddPoints(30, \"Wir brauchen die Produktionsleiterin);"
     }
   ]
 }
