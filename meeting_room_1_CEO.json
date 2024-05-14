@@ -300,7 +300,7 @@
       "angle": 0,
       "id": "54112f4f-de6b-4619-8e69-9d766b98c939",
       "z": 11,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(10, \"Sehr gut\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -404,7 +404,7 @@
       "angle": 0,
       "id": "a9dbe41a-f9aa-4f32-8ada-623d9da1e2a6",
       "z": 14,
-      "lua": "AddPoints(-3);",
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -456,7 +456,7 @@
       "angle": 0,
       "id": "c3b3e44a-565e-4faf-a5b3-29b23ddf3889",
       "z": 16,
-      "lua": "AddPoints(-3);",
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1056,7 +1056,7 @@
       "title": "",
       "name": "Geschäftsführung",
       "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(10, \"Sehr gut\");"
     },
     {
       "type": "Text",
@@ -1071,7 +1071,7 @@
       "title": "",
       "name": "Produktionsleitung",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-      "lua": "AddPoints(-3);"
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
@@ -1079,7 +1079,7 @@
       "title": "",
       "name": "Personalabteilung",
       "next": "458f0a0d-c6bd-4db9-9874-93b91ef389d7",
-      "lua": "AddPoints(-3);"
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
