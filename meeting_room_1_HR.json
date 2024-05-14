@@ -404,7 +404,7 @@
       "angle": 0,
       "id": "2a3bb515-b725-49bc-9181-cf61678d8549",
       "z": 14,
-      "lua": "AddPoints(-3);",
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -456,7 +456,7 @@
       "angle": 0,
       "id": "be41f417-374b-44fa-80e5-f8fa2c2166f5",
       "z": 15,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(10, \"Richtig.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -508,7 +508,7 @@
       "angle": 0,
       "id": "f5b82e17-26d2-4f2c-b87c-899c892669ef",
       "z": 16,
-      "lua": "AddPoints(-3);",
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1075,7 +1075,7 @@
       "title": "",
       "name": "Produktionsleitung",
       "next": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-      "lua": "AddPoints(-3);"
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
@@ -1083,7 +1083,7 @@
       "title": "",
       "name": "Personalabteilung",
       "next": "0507e5e0-8fd8-45d0-ab62-c76be47c32c4",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(10, \"Richtig.\");"
     },
     {
       "type": "Choice",
@@ -1091,7 +1091,7 @@
       "title": "",
       "name": "Einkauf",
       "next": "8fc12499-8e61-4fbe-92cb-19cca103c299",
-      "lua": "AddPoints(-3);"
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Text",
