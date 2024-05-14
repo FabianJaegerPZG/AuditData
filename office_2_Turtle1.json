@@ -210,7 +210,7 @@
       "angle": 0,
       "id": "4e794361-8d74-4ed9-adc7-adcf8063e950",
       "z": 8,
-      "lua": "AddPoints(-3);",
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -391,7 +391,7 @@
       "angle": 0,
       "id": "2e51135f-a3e5-45ea-929d-3c86f3bac1e9",
       "z": 11,
-      "lua": "AddPoints(10);",
+      "lua": "AddPoints(30, \"Richtige Wahl.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -795,7 +795,7 @@
       "title": "",
       "name": "Sicher ist sicher. Ich sende den Bericht an alle Mitarbeiter von \"Tub Ducks\".  ",
       "next": "d5131785-753b-4fa2-a24a-fa921bfd1cdf",
-      "lua": "AddPoints(-3);"
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Text",
@@ -822,7 +822,7 @@
       "title": "",
       "name": "Ich nehme alle Personen, die im Auditplan stehen mit in den Verteiler.",
       "next": "5990e0a9-0228-4a5a-89d2-0cc24bcda69a",
-      "lua": "AddPoints(10);"
+      "lua": "AddPoints(30, \"Richtige Wahl.\");"
     },
     {
       "type": "Text",
