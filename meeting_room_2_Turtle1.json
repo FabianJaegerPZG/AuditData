@@ -366,6 +366,7 @@
       "angle": 0,
       "id": "b3a2650a-9f53-45d0-91b0-d6c06aa0c714",
       "z": 15,
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -417,6 +418,7 @@
       "angle": 0,
       "id": "6eb9903e-d4a3-4458-8c47-c042e21109ac",
       "z": 16,
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -595,6 +597,7 @@
       "angle": 0,
       "id": "253eaf64-45a4-473c-9e84-5ff07bdd364b",
       "z": 21,
+      "lua": "AddPoints(20, \"Das ist richtig.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1440,6 +1443,7 @@
       "angle": 0,
       "id": "9a621fbb-105c-4850-bb65-9378c011027e",
       "z": 36,
+      "lua": "AddPoints(-3, \"Leider nein.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1516,6 +1520,7 @@
       "angle": 0,
       "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
       "z": 39,
+      "lua": "AddPoints(30, \"Richtige Wahl.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1593,6 +1598,7 @@
       "angle": 0,
       "id": "a751365c-c04d-4b8f-b430-3daa78cd3106",
       "z": 41,
+      "lua": "AddPoints(30, \"Richtige Wahl.\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1926,14 +1932,16 @@
       "id": "b3a2650a-9f53-45d0-91b0-d6c06aa0c714",
       "title": "",
       "name": "Herr Blume hat etwas schlechtes gegessen, nun geht es ihm nicht gut.",
-      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95"
+      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95",
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
       "id": "6eb9903e-d4a3-4458-8c47-c042e21109ac",
       "title": "",
       "name": "Herr Blume nimmt es übel, dass seine Anstrengungen zu wenig würdigt werden.",
-      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95"
+      "next": "28bc183c-ea52-4a48-9275-34ee98ff6b95",
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
@@ -1947,7 +1955,8 @@
       "id": "253eaf64-45a4-473c-9e84-5ff07bdd364b",
       "actor": "TurtleMeetingRoom",
       "name": "Richtig. Die Formulierung kann als persönlicher Angriff gewertet werden. Deswegen ist es besser Abweichungen sachlich und wertfrei zu formulieren.",
-      "next": "deabde16-814f-4a84-b9fd-9d5cb41783b4"
+      "next": "deabde16-814f-4a84-b9fd-9d5cb41783b4",
+      "lua": "AddPoints(20, \"Das ist richtig.\");"
     },
     {
       "type": "Text",
@@ -2019,21 +2028,24 @@
       "id": "9a621fbb-105c-4850-bb65-9378c011027e",
       "title": "",
       "name": "Endlich Kaffeepause machen.",
-      "next": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9"
+      "next": "7a14aa98-bb5e-4989-b5f5-e2fc365829e9",
+      "lua": "AddPoints(-3, \"Leider nein.\");"
     },
     {
       "type": "Choice",
       "id": "d26ba716-ef61-4472-ae21-fd7f4b51055b",
       "title": "",
       "name": "Ich möchte den Abschlußbericht versenden.",
-      "next": "a751365c-c04d-4b8f-b430-3daa78cd3106"
+      "next": "a751365c-c04d-4b8f-b430-3daa78cd3106",
+      "lua": "AddPoints(30, \"Richtige Wahl.\");"
     },
     {
       "type": "Text",
       "id": "a751365c-c04d-4b8f-b430-3daa78cd3106",
       "actor": "TurtleMeetingRoom",
       "name": "Ja, genau. Der Bericht soll auch zeitnah erstellt und versendet werden.",
-      "next": "19101146-e10e-47cc-94f6-8379f9cd1873"
+      "next": "19101146-e10e-47cc-94f6-8379f9cd1873",
+      "lua": "AddPoints(30, \"Richtige Wahl.\");"
     },
     {
       "type": "Text",
