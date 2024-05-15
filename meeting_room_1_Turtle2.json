@@ -1699,7 +1699,7 @@
       "angle": 0,
       "id": "26ee5155-5390-4f2b-bd19-e21b0f284cd2",
       "z": 44,
-      "lua": "AddPoints(30, \"Wir brauchen die Produktionsleiterin);",
+      "lua": "AddPoints(30, \"Wir brauchen die Produktionsleiterin\");",
       "attrs": {
         ".inPorts>.port0>text": {
           "text": "input"
@@ -1949,7 +1949,7 @@
       "actor": "TurtleMeetingRoom",
       "name": "Ah! Stimmt! Lassen wir die Produktionsleiterin holen!",
       "next": "ece9229d-ffbd-43a4-954c-3e96c2281531",
-      "lua": "AddPoints(30, \"Wir brauchen die Produktionsleiterin);"
+      "lua": "AddPoints(30, \"Wir brauchen die Produktionsleiterin\");"
     }
   ]
 }
